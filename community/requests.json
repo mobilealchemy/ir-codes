@@ -1,0 +1,39 @@
+{
+  "requests": [
+    {
+      "id": "req-001",
+      "category": "tv",
+      "brand": "Hisense",
+      "model": "EN2B27",
+      "region": "US",
+      "notes": null,
+      "votes": 3,
+      "status": "open",
+      "createdAt": "2026-06-28"
+    },
+    {
+      "id": "req-002",
+      "category": "air_conditioner",
+      "brand": "Daikin",
+      "model": "ARC480A Series",
+      "region": "AU",
+      "notes": "Split system, common in Australia",
+      "votes": 5,
+      "status": "open",
+      "createdAt": "2026-06-25"
+    },
+    {
+      "id": "req-003",
+      "category": "projector",
+      "brand": "Epson",
+      "model": "EH-TW Series",
+      "region": null,
+      "notes": null,
+      "votes": 2,
+      "status": "in_progress",
+      "createdAt": "2026-06-20"
+    }
+  ],
+  "totalCount": 3,
+  "updatedAt": "2026-07-01"
+}

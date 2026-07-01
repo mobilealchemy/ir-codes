@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-01",
+  "packs": [
+    {
+      "id": "samsung-tv-01",
+      "brand": "Samsung",
+      "category": "tv",
+      "model": "BN59 Series",
+      "version": 1,
+      "buttonCount": 12,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "lg-tv-01",
+      "brand": "LG",
+      "category": "tv",
+      "model": "AKB Series",
+      "version": 1,
+      "buttonCount": 12,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sony-tv-01",
+      "brand": "Sony",
+      "category": "tv",
+      "model": "RM-ED Series",
+      "version": 1,
+      "buttonCount": 12,
+      "hmac": null,
+      "encrypted": false
+    }
+  ]
+}
