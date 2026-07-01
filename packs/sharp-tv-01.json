@@ -1,0 +1,198 @@
+{
+  "id": "sharp-tv-01",
+  "brand": "Sharp",
+  "category": "tv",
+  "model": "GA Series (Aquos)",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 1
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 2
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 3
+    },
+    {
+      "key": "mute",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 4
+    },
+    {
+      "key": "channelUp",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 5
+    },
+    {
+      "key": "channelDown",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 6
+    },
+    {
+      "key": "input",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 7
+    },
+    {
+      "key": "up",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 65
+    },
+    {
+      "key": "down",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 66
+    },
+    {
+      "key": "left",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 67
+    },
+    {
+      "key": "right",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 68
+    },
+    {
+      "key": "ok",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 69
+    },
+    {
+      "key": "back",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 84
+    },
+    {
+      "key": "menu",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 48
+    },
+    {
+      "key": "info",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 59
+    },
+    {
+      "key": "digit0",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 16
+    },
+    {
+      "key": "digit1",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 17
+    },
+    {
+      "key": "digit2",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 18
+    },
+    {
+      "key": "digit3",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 19
+    },
+    {
+      "key": "digit4",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 20
+    },
+    {
+      "key": "digit5",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 21
+    },
+    {
+      "key": "digit6",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 22
+    },
+    {
+      "key": "digit7",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 23
+    },
+    {
+      "key": "digit8",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 24
+    },
+    {
+      "key": "digit9",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 25
+    },
+    {
+      "key": "sleep",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 14
+    },
+    {
+      "key": "aspectRatio",
+      "protocolName": "sharp",
+      "device": 1,
+      "subdevice": -1,
+      "function": 121
+    }
+  ]
+}

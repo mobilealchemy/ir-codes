@@ -1,0 +1,44 @@
+{
+  "id": "xiaomi-purifier-01",
+  "brand": "Xiaomi",
+  "category": "airPurifier",
+  "model": "Mi Air Purifier",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "fanSpeedUp",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "fanSpeedDown",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "fanMode",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "fanTimer",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 4
+    }
+  ]
+}

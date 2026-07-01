@@ -8,7 +8,7 @@
       "region": "US",
       "notes": null,
       "votes": 3,
-      "status": "open",
+      "status": "done",
       "createdAt": "2026-06-28"
     },
     {
@@ -19,7 +19,7 @@
       "region": "AU",
       "notes": "Split system, common in Australia",
       "votes": 5,
-      "status": "open",
+      "status": "done",
       "createdAt": "2026-06-25"
     },
     {
@@ -30,10 +30,87 @@
       "region": null,
       "notes": null,
       "votes": 2,
-      "status": "in_progress",
+      "status": "done",
       "createdAt": "2026-06-20"
+    },
+    {
+      "id": "req-004",
+      "category": "air_conditioner",
+      "brand": "Whirlpool",
+      "model": "DG11J1-01",
+      "region": "IN",
+      "notes": "Common in India",
+      "votes": 8,
+      "status": "open",
+      "createdAt": "2026-06-30"
+    },
+    {
+      "id": "req-005",
+      "category": "tv",
+      "brand": "Skyworth",
+      "model": "Android TV",
+      "region": "ZA",
+      "notes": "Very popular in South Africa",
+      "votes": 6,
+      "status": "open",
+      "createdAt": "2026-06-29"
+    },
+    {
+      "id": "req-006",
+      "category": "air_conditioner",
+      "brand": "Voltas",
+      "model": "183V Series",
+      "region": "IN",
+      "notes": null,
+      "votes": 4,
+      "status": "open",
+      "createdAt": "2026-06-28"
+    },
+    {
+      "id": "req-007",
+      "category": "fan",
+      "brand": "Mistral",
+      "model": "MFD500R",
+      "region": "AU",
+      "notes": "Tower fan with remote",
+      "votes": 3,
+      "status": "open",
+      "createdAt": "2026-06-27"
+    },
+    {
+      "id": "req-008",
+      "category": "tv",
+      "brand": "Changhong",
+      "model": "LED Series",
+      "region": "ID",
+      "notes": "Big in Indonesia",
+      "votes": 5,
+      "status": "in_progress",
+      "createdAt": "2026-06-25"
+    },
+    {
+      "id": "req-009",
+      "category": "audioReceiver",
+      "brand": "Pioneer",
+      "model": "VSX Series AVR",
+      "region": null,
+      "notes": null,
+      "votes": 4,
+      "status": "open",
+      "createdAt": "2026-06-24"
+    },
+    {
+      "id": "req-010",
+      "category": "air_conditioner",
+      "brand": "TCL",
+      "model": "GYK Series",
+      "region": "AU",
+      "notes": null,
+      "votes": 3,
+      "status": "open",
+      "createdAt": "2026-06-22"
     }
   ],
-  "totalCount": 3,
+  "totalCount": 10,
   "updatedAt": "2026-07-01"
 }

@@ -1,0 +1,289 @@
+{
+  "id": "panasonic-tv-01",
+  "brand": "Panasonic",
+  "category": "tv",
+  "model": "N2QAYB Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 61
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 32
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 33
+    },
+    {
+      "key": "mute",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 50
+    },
+    {
+      "key": "channelUp",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 52
+    },
+    {
+      "key": "channelDown",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 53
+    },
+    {
+      "key": "input",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 80
+    },
+    {
+      "key": "up",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 82
+    },
+    {
+      "key": "down",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 83
+    },
+    {
+      "key": "left",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 114
+    },
+    {
+      "key": "right",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 98
+    },
+    {
+      "key": "ok",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 73
+    },
+    {
+      "key": "back",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 43
+    },
+    {
+      "key": "home",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 64
+    },
+    {
+      "key": "menu",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 6
+    },
+    {
+      "key": "info",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 57
+    },
+    {
+      "key": "guide",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 226
+    },
+    {
+      "key": "digit0",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "digit1",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 16
+    },
+    {
+      "key": "digit2",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 17
+    },
+    {
+      "key": "digit3",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 18
+    },
+    {
+      "key": "digit4",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 19
+    },
+    {
+      "key": "digit5",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 20
+    },
+    {
+      "key": "digit6",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 21
+    },
+    {
+      "key": "digit7",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 22
+    },
+    {
+      "key": "digit8",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 23
+    },
+    {
+      "key": "digit9",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 24
+    },
+    {
+      "key": "exit",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 210
+    },
+    {
+      "key": "red",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 55
+    },
+    {
+      "key": "green",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 86
+    },
+    {
+      "key": "yellow",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 113
+    },
+    {
+      "key": "blue",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 225
+    },
+    {
+      "key": "play",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 48
+    },
+    {
+      "key": "pause",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 49
+    },
+    {
+      "key": "stop",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "rewind",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 42
+    },
+    {
+      "key": "fastForward",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 26
+    },
+    {
+      "key": "netflix",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 100
+    },
+    {
+      "key": "subtitle",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 195
+    },
+    {
+      "key": "aspectRatio",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 67
+    }
+  ]
+}

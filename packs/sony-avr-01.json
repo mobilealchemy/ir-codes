@@ -1,0 +1,121 @@
+{
+  "id": "sony-avr-01",
+  "brand": "Sony",
+  "category": "audioReceiver",
+  "model": "STR-DN / STR-DH",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 21
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 18
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 19
+    },
+    {
+      "key": "mute",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 20
+    },
+    {
+      "key": "input",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 37
+    },
+    {
+      "key": "up",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 116
+    },
+    {
+      "key": "down",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 117
+    },
+    {
+      "key": "left",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 52
+    },
+    {
+      "key": "right",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 51
+    },
+    {
+      "key": "ok",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 101
+    },
+    {
+      "key": "back",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 99
+    },
+    {
+      "key": "menu",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 96
+    },
+    {
+      "key": "play",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 50
+    },
+    {
+      "key": "pause",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 57
+    },
+    {
+      "key": "stop",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 56
+    },
+    {
+      "key": "soundMode",
+      "protocolName": "sony",
+      "device": 16,
+      "subdevice": -1,
+      "function": 14
+    }
+  ]
+}

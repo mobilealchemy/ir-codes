@@ -1,0 +1,37 @@
+{
+  "id": "xiaomi-vacuum-01",
+  "brand": "Xiaomi",
+  "category": "robotVacuum",
+  "model": "Mi Robot Vacuum",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "clean",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "spotClean",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "dock",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 3
+    }
+  ]
+}

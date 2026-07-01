@@ -1,0 +1,51 @@
+{
+  "id": "dyson-purifier-01",
+  "brand": "Dyson",
+  "category": "airPurifier",
+  "model": "Pure Cool (TP04/HP04)",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 9
+    },
+    {
+      "key": "fanSpeedUp",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "fanSpeedDown",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "fanOscillate",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "fanTimer",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 5
+    },
+    {
+      "key": "fanMode",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 6
+    }
+  ]
+}

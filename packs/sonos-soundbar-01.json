@@ -1,0 +1,65 @@
+{
+  "id": "sonos-soundbar-01",
+  "brand": "Sonos",
+  "category": "audioReceiver",
+  "model": "Beam / Arc / Ray",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 1
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 2
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 3
+    },
+    {
+      "key": "mute",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 4
+    },
+    {
+      "key": "play",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 5
+    },
+    {
+      "key": "pause",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 6
+    },
+    {
+      "key": "previous",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 7
+    },
+    {
+      "key": "next",
+      "protocolName": "nec",
+      "device": 6,
+      "subdevice": 9,
+      "function": 8
+    }
+  ]
+}

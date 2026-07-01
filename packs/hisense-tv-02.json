@@ -1,0 +1,198 @@
+{
+  "id": "hisense-tv-02",
+  "brand": "Hisense",
+  "category": "tv",
+  "model": "EN-31201A",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 14
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 2
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 3
+    },
+    {
+      "key": "mute",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 13
+    },
+    {
+      "key": "channelUp",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 0
+    },
+    {
+      "key": "channelDown",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 1
+    },
+    {
+      "key": "input",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 4
+    },
+    {
+      "key": "up",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 68
+    },
+    {
+      "key": "down",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 69
+    },
+    {
+      "key": "left",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 71
+    },
+    {
+      "key": "right",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 70
+    },
+    {
+      "key": "ok",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 72
+    },
+    {
+      "key": "back",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 40
+    },
+    {
+      "key": "menu",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 6
+    },
+    {
+      "key": "info",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 12
+    },
+    {
+      "key": "digit0",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 16
+    },
+    {
+      "key": "digit1",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 17
+    },
+    {
+      "key": "digit2",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 18
+    },
+    {
+      "key": "digit3",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 19
+    },
+    {
+      "key": "digit4",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 20
+    },
+    {
+      "key": "digit5",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 21
+    },
+    {
+      "key": "digit6",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 22
+    },
+    {
+      "key": "digit7",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 23
+    },
+    {
+      "key": "digit8",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 24
+    },
+    {
+      "key": "digit9",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 25
+    },
+    {
+      "key": "sleep",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 14
+    },
+    {
+      "key": "aspectRatio",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 8,
+      "function": 121
+    }
+  ]
+}

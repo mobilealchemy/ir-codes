@@ -1,0 +1,142 @@
+{
+  "id": "vizio-tv-02",
+  "brand": "Vizio",
+  "category": "tv",
+  "model": "SmartCast (2019+)",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 8
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 16
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 17
+    },
+    {
+      "key": "mute",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 15
+    },
+    {
+      "key": "channelUp",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 18
+    },
+    {
+      "key": "channelDown",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 19
+    },
+    {
+      "key": "input",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 42
+    },
+    {
+      "key": "up",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 88
+    },
+    {
+      "key": "down",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 89
+    },
+    {
+      "key": "left",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 90
+    },
+    {
+      "key": "right",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 91
+    },
+    {
+      "key": "ok",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 92
+    },
+    {
+      "key": "back",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 45
+    },
+    {
+      "key": "home",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 109
+    },
+    {
+      "key": "menu",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 43
+    },
+    {
+      "key": "netflix",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 196
+    },
+    {
+      "key": "play",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 48
+    },
+    {
+      "key": "pause",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 49
+    },
+    {
+      "key": "stop",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 8,
+      "function": 54
+    }
+  ]
+}

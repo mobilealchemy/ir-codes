@@ -1,0 +1,128 @@
+{
+  "id": "mitsubishi-ac-01",
+  "brand": "Mitsubishi",
+  "category": "air_conditioner",
+  "model": "MSZ-AP Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "acPower",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "acTempUp",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "acTempDown",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "acModeCool",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "acModeHeat",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "acModeAuto",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 5
+    },
+    {
+      "key": "acModeDry",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 6
+    },
+    {
+      "key": "acModeFan",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 7
+    },
+    {
+      "key": "acFanAuto",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 8
+    },
+    {
+      "key": "acFanLow",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 9
+    },
+    {
+      "key": "acFanMed",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 10
+    },
+    {
+      "key": "acFanHigh",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 11
+    },
+    {
+      "key": "acSwingVertical",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 12
+    },
+    {
+      "key": "acSwingHorizontal",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 13
+    },
+    {
+      "key": "acTimer",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 14
+    },
+    {
+      "key": "acSleep",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 15
+    },
+    {
+      "key": "acEco",
+      "protocolName": "mitsubishiAC",
+      "device": 0,
+      "subdevice": 0,
+      "function": 16
+    }
+  ]
+}

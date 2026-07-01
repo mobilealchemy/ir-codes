@@ -1,0 +1,128 @@
+{
+  "id": "samsung-ac-01",
+  "brand": "Samsung",
+  "category": "air_conditioner",
+  "model": "AR / DB Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "acPower",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "acTempUp",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "acTempDown",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "acModeCool",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "acModeHeat",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "acModeAuto",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 5
+    },
+    {
+      "key": "acModeDry",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 6
+    },
+    {
+      "key": "acFanAuto",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 8
+    },
+    {
+      "key": "acFanLow",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 9
+    },
+    {
+      "key": "acFanMed",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 10
+    },
+    {
+      "key": "acFanHigh",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 11
+    },
+    {
+      "key": "acSwingVertical",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 12
+    },
+    {
+      "key": "acSwingHorizontal",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 13
+    },
+    {
+      "key": "acTimer",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 14
+    },
+    {
+      "key": "acTurbo",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 15
+    },
+    {
+      "key": "acEco",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 16
+    },
+    {
+      "key": "acLight",
+      "protocolName": "samsung",
+      "device": 1,
+      "subdevice": 0,
+      "function": 17
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "sony-bd-01",
+  "brand": "Sony",
+  "category": "mediaPlayer",
+  "model": "BDP-S / UBP-X Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 21
+    },
+    {
+      "key": "play",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 50
+    },
+    {
+      "key": "pause",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 57
+    },
+    {
+      "key": "stop",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 56
+    },
+    {
+      "key": "rewind",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 55
+    },
+    {
+      "key": "fastForward",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 54
+    },
+    {
+      "key": "previous",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 48
+    },
+    {
+      "key": "next",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 49
+    },
+    {
+      "key": "up",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 116
+    },
+    {
+      "key": "down",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 117
+    },
+    {
+      "key": "left",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 52
+    },
+    {
+      "key": "right",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 51
+    },
+    {
+      "key": "ok",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 101
+    },
+    {
+      "key": "back",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 99
+    },
+    {
+      "key": "home",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 96
+    },
+    {
+      "key": "menu",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 96
+    },
+    {
+      "key": "eject",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 22
+    },
+    {
+      "key": "subtitle",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 99
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "jbl-soundbar-01",
+  "brand": "JBL",
+  "category": "audioReceiver",
+  "model": "Bar 5.0 / 9.1",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "mute",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "input",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 5
+    },
+    {
+      "key": "play",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 6
+    },
+    {
+      "key": "pause",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 7
+    },
+    {
+      "key": "soundMode",
+      "protocolName": "nec",
+      "device": 2,
+      "subdevice": 0,
+      "function": 8
+    }
+  ]
+}

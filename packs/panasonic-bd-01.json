@@ -1,0 +1,135 @@
+{
+  "id": "panasonic-bd-01",
+  "brand": "Panasonic",
+  "category": "mediaPlayer",
+  "model": "DMP-BD / DP-UB Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 61
+    },
+    {
+      "key": "play",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 48
+    },
+    {
+      "key": "pause",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 49
+    },
+    {
+      "key": "stop",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "rewind",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 42
+    },
+    {
+      "key": "fastForward",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 26
+    },
+    {
+      "key": "previous",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 78
+    },
+    {
+      "key": "next",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 79
+    },
+    {
+      "key": "up",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 82
+    },
+    {
+      "key": "down",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 83
+    },
+    {
+      "key": "left",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 114
+    },
+    {
+      "key": "right",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 98
+    },
+    {
+      "key": "ok",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 73
+    },
+    {
+      "key": "back",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 43
+    },
+    {
+      "key": "home",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 64
+    },
+    {
+      "key": "menu",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 6
+    },
+    {
+      "key": "eject",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 22
+    },
+    {
+      "key": "subtitle",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 195
+    }
+  ]
+}

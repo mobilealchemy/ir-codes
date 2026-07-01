@@ -1,0 +1,191 @@
+{
+  "id": "philips-tv-02",
+  "brand": "Philips",
+  "category": "tv",
+  "model": "RC4154 / Ambilight",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 12
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 16
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 17
+    },
+    {
+      "key": "mute",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 13
+    },
+    {
+      "key": "channelUp",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 32
+    },
+    {
+      "key": "channelDown",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 33
+    },
+    {
+      "key": "input",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 56
+    },
+    {
+      "key": "up",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 80
+    },
+    {
+      "key": "down",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 81
+    },
+    {
+      "key": "left",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 85
+    },
+    {
+      "key": "right",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 86
+    },
+    {
+      "key": "ok",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 87
+    },
+    {
+      "key": "back",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 10
+    },
+    {
+      "key": "menu",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 82
+    },
+    {
+      "key": "info",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 15
+    },
+    {
+      "key": "digit0",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 0
+    },
+    {
+      "key": "digit1",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 1
+    },
+    {
+      "key": "digit2",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 2
+    },
+    {
+      "key": "digit3",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 3
+    },
+    {
+      "key": "digit4",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 4
+    },
+    {
+      "key": "digit5",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 5
+    },
+    {
+      "key": "digit6",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 6
+    },
+    {
+      "key": "digit7",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 7
+    },
+    {
+      "key": "digit8",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 8
+    },
+    {
+      "key": "digit9",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 9
+    },
+    {
+      "key": "sleep",
+      "protocolName": "rc5",
+      "device": 0,
+      "subdevice": -1,
+      "function": 38
+    }
+  ]
+}

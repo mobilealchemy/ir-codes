@@ -1,14 +1,564 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-07-01",
   "packs": [
     {
-      "id": "samsung-tv-01",
-      "brand": "Samsung",
-      "category": "tv",
-      "model": "BN59 Series",
+      "id": "dyson-purifier-01",
+      "brand": "Dyson",
+      "category": "airPurifier",
+      "model": "Pure Cool (TP04/HP04)",
       "version": 1,
-      "buttonCount": 12,
+      "buttonCount": 6,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "xiaomi-purifier-01",
+      "brand": "Xiaomi",
+      "category": "airPurifier",
+      "model": "Mi Air Purifier",
+      "version": 1,
+      "buttonCount": 5,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "carrier-ac-01",
+      "brand": "Carrier",
+      "category": "air_conditioner",
+      "model": "RFL Series",
+      "version": 1,
+      "buttonCount": 14,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "daikin-ac-01",
+      "brand": "Daikin",
+      "category": "air_conditioner",
+      "model": "ARC480A (Split)",
+      "version": 1,
+      "buttonCount": 19,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "daikin-ac-02",
+      "brand": "Daikin",
+      "category": "air_conditioner",
+      "model": "ARC478 (Ducted)",
+      "version": 1,
+      "buttonCount": 13,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "fujitsu-ac-01",
+      "brand": "Fujitsu",
+      "category": "air_conditioner",
+      "model": "AR-REG Series",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "gree-ac-01",
+      "brand": "Gree",
+      "category": "air_conditioner",
+      "model": "YAN / YB0F2 Series",
+      "version": 1,
+      "buttonCount": 18,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "haier-ac-01",
+      "brand": "Haier",
+      "category": "air_conditioner",
+      "model": "YR-W08 Series",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "hisense-ac-01",
+      "brand": "Hisense",
+      "category": "air_conditioner",
+      "model": "DG11 Series",
+      "version": 1,
+      "buttonCount": 14,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "hitachi-ac-01",
+      "brand": "Hitachi",
+      "category": "air_conditioner",
+      "model": "RAR Series",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "lg-ac-01",
+      "brand": "LG",
+      "category": "air_conditioner",
+      "model": "AKB / S-Series",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "midea-ac-01",
+      "brand": "Midea",
+      "category": "air_conditioner",
+      "model": "RG70 / R51M Series",
+      "version": 1,
+      "buttonCount": 17,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "mitsubishi-ac-01",
+      "brand": "Mitsubishi",
+      "category": "air_conditioner",
+      "model": "MSZ-AP Series",
+      "version": 1,
+      "buttonCount": 17,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "mitsubishi-ac-02",
+      "brand": "Mitsubishi",
+      "category": "air_conditioner",
+      "model": "SRK Series (Heavy)",
+      "version": 1,
+      "buttonCount": 13,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "panasonic-ac-01",
+      "brand": "Panasonic",
+      "category": "air_conditioner",
+      "model": "CWA75C / A75C",
+      "version": 1,
+      "buttonCount": 18,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "samsung-ac-01",
+      "brand": "Samsung",
+      "category": "air_conditioner",
+      "model": "AR / DB Series",
+      "version": 1,
+      "buttonCount": 17,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "toshiba-ac-01",
+      "brand": "Toshiba",
+      "category": "air_conditioner",
+      "model": "WH / RAS Series",
+      "version": 1,
+      "buttonCount": 14,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "bose-soundbar-01",
+      "brand": "Bose",
+      "category": "audioReceiver",
+      "model": "Soundbar 700 / 500",
+      "version": 1,
+      "buttonCount": 9,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "denon-avr-01",
+      "brand": "Denon",
+      "category": "audioReceiver",
+      "model": "AVR-X Series",
+      "version": 1,
+      "buttonCount": 17,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "jbl-soundbar-01",
+      "brand": "JBL",
+      "category": "audioReceiver",
+      "model": "Bar 5.0 / 9.1",
+      "version": 1,
+      "buttonCount": 8,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "marantz-avr-01",
+      "brand": "Marantz",
+      "category": "audioReceiver",
+      "model": "NR / SR Series",
+      "version": 1,
+      "buttonCount": 13,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "onkyo-avr-01",
+      "brand": "Onkyo",
+      "category": "audioReceiver",
+      "model": "TX-NR / TX-SR",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "samsung-soundbar-01",
+      "brand": "Samsung",
+      "category": "audioReceiver",
+      "model": "HW-Q / HW-S Series",
+      "version": 1,
+      "buttonCount": 8,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sonos-soundbar-01",
+      "brand": "Sonos",
+      "category": "audioReceiver",
+      "model": "Beam / Arc / Ray",
+      "version": 1,
+      "buttonCount": 8,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sony-avr-01",
+      "brand": "Sony",
+      "category": "audioReceiver",
+      "model": "STR-DN / STR-DH",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "yamaha-avr-01",
+      "brand": "Yamaha",
+      "category": "audioReceiver",
+      "model": "RAV Series (RX-V)",
+      "version": 1,
+      "buttonCount": 19,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "delonghi-heater-01",
+      "brand": "De'Longhi",
+      "category": "electricHeater",
+      "model": "Oil / Ceramic Series",
+      "version": 1,
+      "buttonCount": 6,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "generic-heater-01",
+      "brand": "Generic",
+      "category": "electricHeater",
+      "model": "Panel Heater",
+      "version": 1,
+      "buttonCount": 5,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "dyson-fan-01",
+      "brand": "Dyson",
+      "category": "fan",
+      "model": "Pure Cool / Hot+Cool",
+      "version": 1,
+      "buttonCount": 6,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "generic-fan-01",
+      "brand": "Generic",
+      "category": "fan",
+      "model": "3-Speed Ceiling Fan",
+      "version": 1,
+      "buttonCount": 6,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "honeywell-fan-01",
+      "brand": "Honeywell",
+      "category": "fan",
+      "model": "Tower / Pedestal",
+      "version": 1,
+      "buttonCount": 6,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "generic-led-01",
+      "brand": "Generic",
+      "category": "light",
+      "model": "RGB LED Strip Controller",
+      "version": 1,
+      "buttonCount": 6,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "philips-led-01",
+      "brand": "Philips",
+      "category": "light",
+      "model": "LED Panel Remote",
+      "version": 1,
+      "buttonCount": 3,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "lg-bd-01",
+      "brand": "LG",
+      "category": "mediaPlayer",
+      "model": "BP / UBK Series",
+      "version": 1,
+      "buttonCount": 19,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "panasonic-bd-01",
+      "brand": "Panasonic",
+      "category": "mediaPlayer",
+      "model": "DMP-BD / DP-UB Series",
+      "version": 1,
+      "buttonCount": 18,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "samsung-bd-01",
+      "brand": "Samsung",
+      "category": "mediaPlayer",
+      "model": "BD-J / UBD Series",
+      "version": 1,
+      "buttonCount": 19,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sony-bd-01",
+      "brand": "Sony",
+      "category": "mediaPlayer",
+      "model": "BDP-S / UBP-X Series",
+      "version": 1,
+      "buttonCount": 18,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "benq-proj-01",
+      "brand": "BenQ",
+      "category": "projector",
+      "model": "TH / W Series",
+      "version": 1,
+      "buttonCount": 21,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "epson-proj-01",
+      "brand": "Epson",
+      "category": "projector",
+      "model": "EH-TW Series",
+      "version": 1,
+      "buttonCount": 20,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "optoma-proj-01",
+      "brand": "Optoma",
+      "category": "projector",
+      "model": "HD / UHD Series",
+      "version": 1,
+      "buttonCount": 18,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sony-proj-01",
+      "brand": "Sony",
+      "category": "projector",
+      "model": "VPL Series",
+      "version": 1,
+      "buttonCount": 13,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "viewsonic-proj-01",
+      "brand": "ViewSonic",
+      "category": "projector",
+      "model": "PX / PJ Series",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "xiaomi-vacuum-01",
+      "brand": "Xiaomi",
+      "category": "robotVacuum",
+      "model": "Mi Robot Vacuum",
+      "version": 1,
+      "buttonCount": 4,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "irobot-vacuum-01",
+      "brand": "iRobot",
+      "category": "robotVacuum",
+      "model": "Roomba (IR)",
+      "version": 1,
+      "buttonCount": 4,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "fetch-stb-01",
+      "brand": "Fetch",
+      "category": "setTopBox",
+      "model": "Mighty / Mini",
+      "version": 1,
+      "buttonCount": 30,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "foxtel-stb-01",
+      "brand": "Foxtel",
+      "category": "setTopBox",
+      "model": "iQ3 / iQ4 / iQ5",
+      "version": 1,
+      "buttonCount": 37,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sky-stb-01",
+      "brand": "Sky",
+      "category": "setTopBox",
+      "model": "Sky Q / Sky Glass",
+      "version": 1,
+      "buttonCount": 35,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "firetv-stb-01",
+      "brand": "Amazon",
+      "category": "streamingBox",
+      "model": "Fire TV Stick",
+      "version": 1,
+      "buttonCount": 18,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "apple-tv-01",
+      "brand": "Apple",
+      "category": "streamingBox",
+      "model": "Apple TV (IR)",
+      "version": 1,
+      "buttonCount": 11,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "roku-stb-01",
+      "brand": "Roku",
+      "category": "streamingBox",
+      "model": "Streaming Stick / Ultra",
+      "version": 1,
+      "buttonCount": 16,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "xiaomi-stb-01",
+      "brand": "Xiaomi",
+      "category": "streamingBox",
+      "model": "Mi Box S / TV Stick",
+      "version": 1,
+      "buttonCount": 13,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "haier-tv-01",
+      "brand": "Haier",
+      "category": "tv",
+      "model": "HTR Series",
+      "version": 1,
+      "buttonCount": 26,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "hisense-tv-01",
+      "brand": "Hisense",
+      "category": "tv",
+      "model": "EN2B27 / ERF3A69",
+      "version": 1,
+      "buttonCount": 37,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "hisense-tv-02",
+      "brand": "Hisense",
+      "category": "tv",
+      "model": "EN-31201A",
+      "version": 1,
+      "buttonCount": 27,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "insignia-tv-01",
+      "brand": "Insignia",
+      "category": "tv",
+      "model": "NS-RC Series",
+      "version": 1,
+      "buttonCount": 19,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "jvc-tv-01",
+      "brand": "JVC",
+      "category": "tv",
+      "model": "RM-C3 Series",
+      "version": 1,
+      "buttonCount": 25,
       "hmac": null,
       "encrypted": false
     },
@@ -18,7 +568,113 @@
       "category": "tv",
       "model": "AKB Series",
       "version": 1,
-      "buttonCount": 12,
+      "buttonCount": 12
+    },
+    {
+      "id": "lg-tv-02",
+      "brand": "LG",
+      "category": "tv",
+      "model": "AN-MR Series",
+      "version": 1,
+      "buttonCount": 35,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "lg-tv-03",
+      "brand": "LG",
+      "category": "tv",
+      "model": "6711A Series",
+      "version": 1,
+      "buttonCount": 27,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "panasonic-tv-01",
+      "brand": "Panasonic",
+      "category": "tv",
+      "model": "N2QAYB Series",
+      "version": 1,
+      "buttonCount": 40,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "panasonic-tv-02",
+      "brand": "Panasonic",
+      "category": "tv",
+      "model": "EUR7651 Series",
+      "version": 1,
+      "buttonCount": 26,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "philips-tv-01",
+      "brand": "Philips",
+      "category": "tv",
+      "model": "2422 Series",
+      "version": 1,
+      "buttonCount": 35,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "philips-tv-02",
+      "brand": "Philips",
+      "category": "tv",
+      "model": "RC4154 / Ambilight",
+      "version": 1,
+      "buttonCount": 26,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "samsung-tv-01",
+      "brand": "Samsung",
+      "category": "tv",
+      "model": "BN59 Series",
+      "version": 1,
+      "buttonCount": 12
+    },
+    {
+      "id": "samsung-tv-02",
+      "brand": "Samsung",
+      "category": "tv",
+      "model": "AA59 Series",
+      "version": 1,
+      "buttonCount": 33,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "samsung-tv-03",
+      "brand": "Samsung",
+      "category": "tv",
+      "model": "Smart Hub (2020+)",
+      "version": 1,
+      "buttonCount": 34,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sanyo-tv-01",
+      "brand": "Sanyo",
+      "category": "tv",
+      "model": "GXBM Series",
+      "version": 1,
+      "buttonCount": 25,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sharp-tv-01",
+      "brand": "Sharp",
+      "category": "tv",
+      "model": "GA Series (Aquos)",
+      "version": 1,
+      "buttonCount": 27,
       "hmac": null,
       "encrypted": false
     },
@@ -28,7 +684,85 @@
       "category": "tv",
       "model": "RM-ED Series",
       "version": 1,
-      "buttonCount": 12,
+      "buttonCount": 12
+    },
+    {
+      "id": "sony-tv-02",
+      "brand": "Sony",
+      "category": "tv",
+      "model": "RMT-TX Series",
+      "version": 1,
+      "buttonCount": 41,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "sony-tv-03",
+      "brand": "Sony",
+      "category": "tv",
+      "model": "RM-YD Series",
+      "version": 1,
+      "buttonCount": 27,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "tcl-tv-01",
+      "brand": "TCL",
+      "category": "tv",
+      "model": "RC280 / Roku",
+      "version": 1,
+      "buttonCount": 22,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "tcl-tv-02",
+      "brand": "TCL",
+      "category": "tv",
+      "model": "RC802N (Android)",
+      "version": 1,
+      "buttonCount": 29,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "toshiba-tv-01",
+      "brand": "Toshiba",
+      "category": "tv",
+      "model": "CT-90 Series",
+      "version": 1,
+      "buttonCount": 28,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "vizio-tv-01",
+      "brand": "Vizio",
+      "category": "tv",
+      "model": "XRT Series",
+      "version": 1,
+      "buttonCount": 30,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "vizio-tv-02",
+      "brand": "Vizio",
+      "category": "tv",
+      "model": "SmartCast (2019+)",
+      "version": 1,
+      "buttonCount": 19,
+      "hmac": null,
+      "encrypted": false
+    },
+    {
+      "id": "xiaomi-tv-01",
+      "brand": "Xiaomi",
+      "category": "tv",
+      "model": "Mi TV (Android)",
+      "version": 1,
+      "buttonCount": 18,
       "hmac": null,
       "encrypted": false
     }

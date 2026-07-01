@@ -1,0 +1,191 @@
+{
+  "id": "panasonic-tv-02",
+  "brand": "Panasonic",
+  "category": "tv",
+  "model": "EUR7651 Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 61
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 32
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 33
+    },
+    {
+      "key": "mute",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 50
+    },
+    {
+      "key": "channelUp",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 52
+    },
+    {
+      "key": "channelDown",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 53
+    },
+    {
+      "key": "input",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 80
+    },
+    {
+      "key": "up",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 82
+    },
+    {
+      "key": "down",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 83
+    },
+    {
+      "key": "left",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 114
+    },
+    {
+      "key": "right",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 98
+    },
+    {
+      "key": "ok",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 73
+    },
+    {
+      "key": "back",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 43
+    },
+    {
+      "key": "menu",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 6
+    },
+    {
+      "key": "digit0",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "digit1",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 16
+    },
+    {
+      "key": "digit2",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 17
+    },
+    {
+      "key": "digit3",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 18
+    },
+    {
+      "key": "digit4",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 19
+    },
+    {
+      "key": "digit5",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 20
+    },
+    {
+      "key": "digit6",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 21
+    },
+    {
+      "key": "digit7",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 22
+    },
+    {
+      "key": "digit8",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 23
+    },
+    {
+      "key": "digit9",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 24
+    },
+    {
+      "key": "sleep",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "aspectRatio",
+      "protocolName": "kaseikyo",
+      "device": 8,
+      "subdevice": 0,
+      "function": 67
+    }
+  ]
+}

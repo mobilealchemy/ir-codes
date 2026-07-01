@@ -1,0 +1,51 @@
+{
+  "id": "generic-led-01",
+  "brand": "Generic",
+  "category": "light",
+  "model": "RGB LED Strip Controller",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 255,
+      "function": 2
+    },
+    {
+      "key": "brightnessUp",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 255,
+      "function": 10
+    },
+    {
+      "key": "brightnessDown",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 255,
+      "function": 11
+    },
+    {
+      "key": "red",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 255,
+      "function": 4
+    },
+    {
+      "key": "green",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 255,
+      "function": 5
+    },
+    {
+      "key": "blue",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 255,
+      "function": 6
+    }
+  ]
+}

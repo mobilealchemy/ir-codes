@@ -1,0 +1,51 @@
+{
+  "id": "honeywell-fan-01",
+  "brand": "Honeywell",
+  "category": "fan",
+  "model": "Tower / Pedestal",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 16,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "fanSpeedUp",
+      "protocolName": "nec",
+      "device": 16,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "fanSpeedDown",
+      "protocolName": "nec",
+      "device": 16,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "fanOscillate",
+      "protocolName": "nec",
+      "device": 16,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "fanTimer",
+      "protocolName": "nec",
+      "device": 16,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "fanMode",
+      "protocolName": "nec",
+      "device": 16,
+      "subdevice": 0,
+      "function": 5
+    }
+  ]
+}

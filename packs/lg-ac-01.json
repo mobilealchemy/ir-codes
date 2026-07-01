@@ -1,0 +1,121 @@
+{
+  "id": "lg-ac-01",
+  "brand": "LG",
+  "category": "air_conditioner",
+  "model": "AKB / S-Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "acPower",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 8
+    },
+    {
+      "key": "acTempUp",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 64
+    },
+    {
+      "key": "acTempDown",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 65
+    },
+    {
+      "key": "acModeCool",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 10
+    },
+    {
+      "key": "acModeHeat",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 11
+    },
+    {
+      "key": "acModeAuto",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 12
+    },
+    {
+      "key": "acModeDry",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 13
+    },
+    {
+      "key": "acFanAuto",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 14
+    },
+    {
+      "key": "acFanLow",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 15
+    },
+    {
+      "key": "acFanMed",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 16
+    },
+    {
+      "key": "acFanHigh",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 17
+    },
+    {
+      "key": "acSwingVertical",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 18
+    },
+    {
+      "key": "acTimer",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 19
+    },
+    {
+      "key": "acSleep",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 20
+    },
+    {
+      "key": "acLight",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 21
+    },
+    {
+      "key": "acTurbo",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 4,
+      "function": 22
+    }
+  ]
+}

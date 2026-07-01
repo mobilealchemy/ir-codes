@@ -1,0 +1,135 @@
+{
+  "id": "firetv-stb-01",
+  "brand": "Amazon",
+  "category": "streamingBox",
+  "model": "Fire TV Stick",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "up",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 32
+    },
+    {
+      "key": "down",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 33
+    },
+    {
+      "key": "left",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 34
+    },
+    {
+      "key": "right",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 35
+    },
+    {
+      "key": "ok",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 37
+    },
+    {
+      "key": "back",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 40
+    },
+    {
+      "key": "home",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 41
+    },
+    {
+      "key": "menu",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 42
+    },
+    {
+      "key": "play",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 48
+    },
+    {
+      "key": "pause",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 49
+    },
+    {
+      "key": "rewind",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 50
+    },
+    {
+      "key": "fastForward",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 51
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 16
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 17
+    },
+    {
+      "key": "mute",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 18
+    },
+    {
+      "key": "netflix",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 80
+    },
+    {
+      "key": "primeVideo",
+      "protocolName": "nec",
+      "device": 112,
+      "subdevice": 0,
+      "function": 81
+    }
+  ]
+}

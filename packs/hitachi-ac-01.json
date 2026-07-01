@@ -1,0 +1,121 @@
+{
+  "id": "hitachi-ac-01",
+  "brand": "Hitachi",
+  "category": "air_conditioner",
+  "model": "RAR Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "acPower",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "acTempUp",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "acTempDown",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "acModeCool",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "acModeHeat",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "acModeAuto",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 5
+    },
+    {
+      "key": "acModeDry",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 6
+    },
+    {
+      "key": "acFanAuto",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 8
+    },
+    {
+      "key": "acFanLow",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 9
+    },
+    {
+      "key": "acFanMed",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 10
+    },
+    {
+      "key": "acFanHigh",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 11
+    },
+    {
+      "key": "acSwingVertical",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 12
+    },
+    {
+      "key": "acSwingHorizontal",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 13
+    },
+    {
+      "key": "acTimer",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 14
+    },
+    {
+      "key": "acSleep",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 15
+    },
+    {
+      "key": "acEco",
+      "protocolName": "nec",
+      "device": 40,
+      "subdevice": 0,
+      "function": 16
+    }
+  ]
+}

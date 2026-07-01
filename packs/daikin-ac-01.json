@@ -1,0 +1,142 @@
+{
+  "id": "daikin-ac-01",
+  "brand": "Daikin",
+  "category": "air_conditioner",
+  "model": "ARC480A (Split)",
+  "version": 1,
+  "codes": [
+    {
+      "key": "acPower",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 0
+    },
+    {
+      "key": "acTempUp",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 24
+    },
+    {
+      "key": "acTempDown",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 25
+    },
+    {
+      "key": "acModeCool",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 4
+    },
+    {
+      "key": "acModeHeat",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 5
+    },
+    {
+      "key": "acModeAuto",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 6
+    },
+    {
+      "key": "acModeDry",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 7
+    },
+    {
+      "key": "acModeFan",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 8
+    },
+    {
+      "key": "acFanAuto",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 160
+    },
+    {
+      "key": "acFanLow",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 161
+    },
+    {
+      "key": "acFanMed",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 162
+    },
+    {
+      "key": "acFanHigh",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 163
+    },
+    {
+      "key": "acSwingVertical",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 15
+    },
+    {
+      "key": "acSwingHorizontal",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 27
+    },
+    {
+      "key": "acTimer",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 28
+    },
+    {
+      "key": "acSleep",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 29
+    },
+    {
+      "key": "acTurbo",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 30
+    },
+    {
+      "key": "acEco",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 31
+    },
+    {
+      "key": "acLight",
+      "protocolName": "nec",
+      "device": 17,
+      "subdevice": 218,
+      "function": 32
+    }
+  ]
+}

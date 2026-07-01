@@ -1,0 +1,51 @@
+{
+  "id": "delonghi-heater-01",
+  "brand": "De'Longhi",
+  "category": "electricHeater",
+  "model": "Oil / Ceramic Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 32,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "acTempUp",
+      "protocolName": "nec",
+      "device": 32,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "acTempDown",
+      "protocolName": "nec",
+      "device": 32,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "fanMode",
+      "protocolName": "nec",
+      "device": 32,
+      "subdevice": 0,
+      "function": 3
+    },
+    {
+      "key": "fanTimer",
+      "protocolName": "nec",
+      "device": 32,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "acEco",
+      "protocolName": "nec",
+      "device": 32,
+      "subdevice": 0,
+      "function": 5
+    }
+  ]
+}

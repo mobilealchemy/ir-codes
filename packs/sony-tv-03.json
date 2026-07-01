@@ -1,0 +1,198 @@
+{
+  "id": "sony-tv-03",
+  "brand": "Sony",
+  "category": "tv",
+  "model": "RM-YD Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 21
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 18
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 19
+    },
+    {
+      "key": "mute",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 20
+    },
+    {
+      "key": "channelUp",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 16
+    },
+    {
+      "key": "channelDown",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 17
+    },
+    {
+      "key": "input",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 37
+    },
+    {
+      "key": "up",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 116
+    },
+    {
+      "key": "down",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 117
+    },
+    {
+      "key": "left",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 52
+    },
+    {
+      "key": "right",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 51
+    },
+    {
+      "key": "ok",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 101
+    },
+    {
+      "key": "back",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 99
+    },
+    {
+      "key": "home",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 96
+    },
+    {
+      "key": "menu",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 96
+    },
+    {
+      "key": "digit0",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 0
+    },
+    {
+      "key": "digit1",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 1
+    },
+    {
+      "key": "digit2",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 2
+    },
+    {
+      "key": "digit3",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 3
+    },
+    {
+      "key": "digit4",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 4
+    },
+    {
+      "key": "digit5",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 5
+    },
+    {
+      "key": "digit6",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 6
+    },
+    {
+      "key": "digit7",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 7
+    },
+    {
+      "key": "digit8",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 8
+    },
+    {
+      "key": "digit9",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 9
+    },
+    {
+      "key": "aspectRatio",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 62
+    },
+    {
+      "key": "pip",
+      "protocolName": "sony",
+      "device": 1,
+      "subdevice": -1,
+      "function": 91
+    }
+  ]
+}

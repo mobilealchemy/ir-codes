@@ -1,0 +1,100 @@
+{
+  "id": "sony-proj-01",
+  "brand": "Sony",
+  "category": "projector",
+  "model": "VPL Series",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 21
+    },
+    {
+      "key": "source",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 37
+    },
+    {
+      "key": "menu",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 96
+    },
+    {
+      "key": "ok",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 101
+    },
+    {
+      "key": "up",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 116
+    },
+    {
+      "key": "down",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 117
+    },
+    {
+      "key": "left",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 52
+    },
+    {
+      "key": "right",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 51
+    },
+    {
+      "key": "back",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 99
+    },
+    {
+      "key": "brightnessUp",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 18
+    },
+    {
+      "key": "brightnessDown",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 19
+    },
+    {
+      "key": "freeze",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 14
+    },
+    {
+      "key": "blank",
+      "protocolName": "sony",
+      "device": 26,
+      "subdevice": -1,
+      "function": 9
+    }
+  ]
+}

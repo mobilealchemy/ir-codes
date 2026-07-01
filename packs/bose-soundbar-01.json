@@ -1,0 +1,72 @@
+{
+  "id": "bose-soundbar-01",
+  "brand": "Bose",
+  "category": "audioReceiver",
+  "model": "Soundbar 700 / 500",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 76
+    },
+    {
+      "key": "volumeUp",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 12
+    },
+    {
+      "key": "volumeDown",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 13
+    },
+    {
+      "key": "mute",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 14
+    },
+    {
+      "key": "input",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 47
+    },
+    {
+      "key": "play",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 48
+    },
+    {
+      "key": "pause",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 49
+    },
+    {
+      "key": "previous",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 50
+    },
+    {
+      "key": "next",
+      "protocolName": "bose",
+      "device": 1,
+      "subdevice": 0,
+      "function": 51
+    }
+  ]
+}
