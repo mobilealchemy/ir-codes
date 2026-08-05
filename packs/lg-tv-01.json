@@ -1,21 +1,4 @@
-{
-  "id": "lg-tv-01",
-  "brand": "LG",
-  "category": "tv",
-  "model": "AKB Series",
-  "version": 1,
-  "codes": [
-    {"key": "power", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 8},
-    {"key": "volumeUp", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 2},
-    {"key": "volumeDown", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 3},
-    {"key": "mute", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 9},
-    {"key": "channelUp", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 0},
-    {"key": "channelDown", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 1},
-    {"key": "up", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 64},
-    {"key": "down", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 65},
-    {"key": "left", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 7},
-    {"key": "right", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 6},
-    {"key": "ok", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 68},
-    {"key": "input", "protocolName": "nec", "device": 4, "subdevice": 4, "function": 11}
-  ]
-}
+IRv2TP0ï|‹Åhü¥$«&ä¦'Í¯®×Âô¥kèh„åSà³žÿ‰æ>6éG¢^‘Þ©P]Ao¨=@‘êöQã\øÛËÌ£ÝHJs±qý€ÒÞ·mXq)ÔËn@f­šµj#âÎð¸äü£
+6q½|0$JÍúÑí0û¢hFDã<ªø!?óÃŸ÷`~=- ¦îAÇú¹6Yt‚Óñ]C00û³¥+™œAÛ6Â-Š¸¡	ž–ØÄ¶ÔyËå|câæ+¿:‘2HV-Ë˜Mf'ÿ¼7yÜ^æ–­g2š÷w2Þä¢¶c4W)˜¹âNnß·eúŠ`¨ìHfg5’%¸‚=äPÏVêfè˜uæ±Ì¼wç_³n4>¡ì©‡kíÜ­_k¿2’±ígÿÆŸ¯ç»ê÷Ý)]!æÉçâ	:9ïq"~ÀHf€¬„_Á®Ñfò*’O6¿éY8pá­,ŽTmªÙÉ¢l7·Ò‘XÍë™ˆ'¶3Á)³Š|ß½AWZÎ›Rä©"€«½35ÙÎä€~Å?¹òAÃŠˆ£ŒxÔ{Ÿ--@ŸÀ¼ú*
+‘}@'ðsÛ¥ËAÂ‡`XBõ«ê5´-4©6-çûnaˆµ7<ŒD­›Ù6?èÝ^Ä(cC¨c:ÊLÏI1œWÖk¼²•¼"þþÏÌ~©‰soÍ¹ÌÄ+gµ¥†ÕS$êÑú[„íx8˜öY‹ì(`cXÓØÔŸµ<µ~*Û³Ž‰™³Š)¢ýUK¥Å@$jÝÔ©&PžMg­ûÇj4kèÜ‡Y:öÌÇkúæ3°Ù£{\#dy_«¥ÙŠªRy«$*‚Î÷µ6>îû*!QŒV%nÀ÷Ø<rv¾žŽcÓo:#9Î™‡uyõôqÕrÉ˜>•À$ñ/_ÒEpL~ñª_ë}¡R!Umõ©1SÊÎOÒž£hÂxw²…¼6º!âÛ"Å7÷þ4rê"]?Á×‡ÊüãïxS#¤û7ëd ¸ž'4ŠÜ„¦z‘¬—afÌ½iH"ã%÷b¢f›1;áX=t<›G.¯”%+…5Á„¨ËýD/˜äß¸~ô¿s°p³i_ÕÕ.ëªµ[Zž|i ñs¢ÍC¥Žó×RràiFR”AåŠWH±·9yÑLLV!‚t·z
+ØÒ›°³Yö_Xme@nØà—+Y«´X¶Ã‡×h±'å“m§ýëœ–$–IÇP¿ö)—ZÉw‰;ûî¯GÚÏÒzµ÷MjÎÔÜÛêÓ99çÂ«Ò(±YµBë?#ðž¢YÜ)WWçí€W;8z.R1ÎAµ%TÌLôcÛ Ä
