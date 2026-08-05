@@ -1,2 +1,51 @@
-IRv2°¸§¹„ê”jKjJ›¡Öœ"EŠò{âÖğ¨Úï#¿x€>‡éÙ9_„	é$oÌl™ÚŠçj>5%º¤‡ÏUğ¾ªä”VpFÊQÚè ×¤ù	È†.ø÷šñç¯~º5ÙŠ}Ì“ù‹‘VZ—¦Në@ñŠwö”®ºdğ„Á<Ú†>†7&:ó/yjêãcqm³`%€VJš£F‹‘pØÿmß§‰m­œmSDYMâqgAç±HÍ³3Ü“iUÿZV6ÁĞZ‚s[wÆÿÃŞ+HşTáı,³é¨ ovÃQ{ Ø‹'VkA-éd6ÙZfüc1S:3==ÕNGåqYNDP±náÜòÃÖÉgæpûj,¢,ùo¢š(:Ê9} wƒ×hö¿LŸ7²­U¦¼_GŒŞY;ÎpH^Ù€’YP5
-#C¥Øë ø¼W|?Şº\¦ùóÂLeåYeëÌ˜;|Û¹ñıÂŠr…õêh¼ø˜½\*ÛÌ?›Ù¯ğŠ$kÅÃËä¢"YmZ9,2¼Št4ç©&`9%éaåÖöpEÖ"ƒ$~goş¾àgæ7;üÛ±jl‰€VM˜d¾PŒÏNå”£˜jd²ŠÄàèëı°^j–2ú§ÆVĞìwûÚhˆ¢—ê\@š$ËÖV›$ƒ!t‚yµêA÷¬gÖsvK²Œ’™QŒ&¼ó;ù¹>™VÔûŞóËÒøYğX1¼Go£íb’ùv¥†/·Êÿã›š+²×‹¾÷ñw“	t¾6¤Òÿp¨ù	¹Ï¯7²÷R6{Ä>ú_
+{
+  "id": "dyson-purifier-01",
+  "brand": "Dyson",
+  "category": "airPurifier",
+  "model": "Pure Cool (TP04/HP04)",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 9
+    },
+    {
+      "key": "fanSpeedUp",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "fanSpeedDown",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "fanOscillate",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 4
+    },
+    {
+      "key": "fanTimer",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 5
+    },
+    {
+      "key": "fanMode",
+      "protocolName": "nec",
+      "device": 0,
+      "subdevice": 0,
+      "function": 6
+    }
+  ]
+}

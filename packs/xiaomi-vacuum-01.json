@@ -1,1 +1,37 @@
-IRv2Y$6¬ü¹:*ªßWœZL¦èáðhG6Èêr<¥¥ÁH¬—×ŸmRåµ'ÙŒ·K‡WyåžÚ]îÍgpý¬•O¢÷nœ˜k©µ$¿bsY\÷ý<¿šXä´®aYœnŽb~ßßÂW¾sZWçÎÆ#î~5$oZÊ<ãîÖý«%›¢‹fÎ¸@|à–€Póªs?êq:æB¥~·P[ZÂþ;Ú[µ%‰ztÀuÅ)¨-NyPdqÕ%¤›~	.g_Sª}ó8 Ù²";p¬ªæVúÊODÎä»Ä“¢ìaäx8/‘0ª!bÏt„Ýo›Ñ-È+ÕD@(80D9Úô·•»E8mÛ[Æ0-Ç&çÜ¬ÿÏcà#C}®p%{¨3äMgLÎ'ù.ˆl/J´¨Àþ´Í ï-çµ’IXb8ÀFÎF;Ñ¨Ù³šßÐÞ•¸Â+x±•­Èß¼‚å¹]™­§Ëì±'’ªÂ76•0ùó'Ó|M`²ÎZÕvéº}´ú­dÛ¾yNëaÔBÎ7Yô*?˜á¢<SDÒfßAúÌ´ÆÍþÞØ
+{
+  "id": "xiaomi-vacuum-01",
+  "brand": "Xiaomi",
+  "category": "robotVacuum",
+  "model": "Mi Robot Vacuum",
+  "version": 1,
+  "codes": [
+    {
+      "key": "power",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 0
+    },
+    {
+      "key": "clean",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 1
+    },
+    {
+      "key": "spotClean",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 2
+    },
+    {
+      "key": "dock",
+      "protocolName": "nec",
+      "device": 4,
+      "subdevice": 0,
+      "function": 3
+    }
+  ]
+}
