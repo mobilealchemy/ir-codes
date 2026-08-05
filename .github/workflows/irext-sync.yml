@@ -1,0 +1,64 @@
+name: irext sync
+
+on:
+  schedule:
+    - cron: "17 4 3 * *"   # monthly, 3rd day 04:17 UTC (irext updates monthly)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch irext database (LFS via media URL)
+        run: |
+          mkdir -p /tmp/irext
+          # filenames are datestamped — resolve the latest via the GitHub API
+          DB_FILE=$(curl -s "https://api.github.com/repos/irext/database/contents/db" \
+            | python3 -c "import json,sys; fs=[f['name'] for f in json.load(sys.stdin) if f['name'].endswith(('.db','sqlite3.db'))]; print(sorted(fs)[-1])")
+          BIN_FILE=$(curl -s "https://api.github.com/repos/irext/database/contents/binaries" \
+            | python3 -c "import json,sys; fs=[f['name'] for f in json.load(sys.stdin) if 'binaries' in f['name'] and f['name'].endswith('.zip')]; print(sorted(fs)[-1])")
+          echo "using $DB_FILE / $BIN_FILE"
+          curl -sL -o /tmp/irext/db.sqlite3 \
+            "https://media.githubusercontent.com/media/irext/database/master/db/$DB_FILE" &
+          curl -sL -o /tmp/irext/binaries.zip \
+            "https://media.githubusercontent.com/media/irext/database/master/binaries/$BIN_FILE" &
+          wait
+          cd /tmp/irext && unzip -q binaries.zip
+          BINDIR=$(find /tmp/irext -maxdepth 1 -type d -name "irext-binaries*" | head -1)
+          echo "IREXT_BINS=$BINDIR" >> "$GITHUB_ENV"
+
+      - name: Build irext decoder
+        run: |
+          git clone --depth 1 https://github.com/irext/core.git /tmp/irext-core
+          SRC=/tmp/irext-core/decoder/src
+          cc -O2 -DBOARD_PC -I$SRC/include \
+            $SRC/ir_utils.c $SRC/ir_ac_parse_parameter.c $SRC/ir_ac_apply.c \
+            $SRC/ir_ac_control.c $SRC/ir_tv_control.c \
+            $SRC/ir_ac_parse_forbidden_info.c $SRC/ir_decode.c \
+            $SRC/ir_ac_binary_parse.c $SRC/ir_ac_parse_frame_info.c \
+            $SRC/ir_ac_build_frame.c pipeline/irext_dump.c -o /tmp/irext_dump
+
+      - name: Sync new packs
+        env:
+          IRPACK_KEY1: ${{ secrets.IRPACK_KEY1 }}
+          IREXT_DB: /tmp/irext/db.sqlite3
+          IREXT_DUMP: /tmp/irext_dump
+        run: |
+          pip3 -q install cryptography
+          python3 pipeline/sync_irext.py
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "nothing to commit"; exit 0
+          fi
+          git config user.name "irext-sync[bot]"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Monthly irext sync: import new packs"
+          git push
