@@ -110,7 +110,19 @@
       "status": "done",
       "createdAt": "2026-06-22"
     }
+    ,
+    {
+      "id": "req-011",
+      "category": "fan",
+      "brand": "Westinghouse",
+      "model": "Montana",
+      "region": null,
+      "notes": "Ceiling fan with remote",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-08-26"
+    }
   ],
-  "totalCount": 10,
-  "updatedAt": "2026-08-25"
+  "totalCount": 11,
+  "updatedAt": "2026-08-26"
 }
