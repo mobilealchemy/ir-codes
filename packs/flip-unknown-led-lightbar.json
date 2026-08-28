@@ -1,0 +1,1 @@
+{"id":"flip-unknown-led-lightbar","brand":"Unknown","category":"light","model":"LED Lightbar","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":0},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":8},{"key":"fanSpeedDown","protocolName":"nec","device":0,"subdevice":0,"function":10}]}

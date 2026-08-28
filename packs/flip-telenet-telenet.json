@@ -1,0 +1,1 @@
+{"id":"flip-telenet-telenet","brand":"Telenet","category":"setTopBox","model":"telenet","version":1,"codes":[{"key":"volumeUp","protocolName":"rc6","device":0,"subdevice":0,"function":16},{"key":"down","protocolName":"rc6","device":0,"subdevice":0,"function":17},{"key":"mute","protocolName":"rc6","device":0,"subdevice":0,"function":13}]}

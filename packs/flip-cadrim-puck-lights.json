@@ -1,0 +1,1 @@
+{"id":"flip-cadrim-puck-lights","brand":"Cadrim","category":"light","model":"Puck Lights","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":69},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":7},{"key":"fanSpeedDown","protocolName":"nec","device":0,"subdevice":0,"function":21}]}

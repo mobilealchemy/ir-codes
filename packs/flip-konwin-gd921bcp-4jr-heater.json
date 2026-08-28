@@ -1,0 +1,1 @@
+{"id":"flip-konwin-gd921bcp-4jr-heater","brand":"Konwin","category":"electricHeater","model":"GD921BCP 4JR Heater","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":69},{"key":"fanMode","protocolName":"nec","device":0,"subdevice":0,"function":71},{"key":"fanTimer","protocolName":"nec","device":0,"subdevice":0,"function":82}]}

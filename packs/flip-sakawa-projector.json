@@ -1,0 +1,1 @@
+{"id":"flip-sakawa-projector","brand":"SAKAWA","category":"projector","model":"Projector","version":1,"codes":[{"key":"power","protocolName":"nec","device":255,"subdevice":0,"function":232},{"key":"volumeUp","protocolName":"nec","device":255,"subdevice":0,"function":189},{"key":"volumeDown","protocolName":"nec","device":255,"subdevice":0,"function":242}]}

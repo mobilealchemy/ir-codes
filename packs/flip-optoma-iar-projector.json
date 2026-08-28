@@ -1,0 +1,1 @@
+{"id":"flip-optoma-iar-projector","brand":"Optoma","category":"projector","model":"IAR Projector","version":1,"codes":[{"key":"power","protocolName":"nec","device":255,"subdevice":0,"function":232},{"key":"freeze","protocolName":"nec","device":255,"subdevice":0,"function":236},{"key":"menu","protocolName":"nec","device":255,"subdevice":0,"function":235}]}

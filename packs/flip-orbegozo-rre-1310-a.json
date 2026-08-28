@@ -1,0 +1,1 @@
+{"id":"flip-orbegozo-rre-1310-a","brand":"Orbegozo","category":"electricHeater","model":"RRE 1310 A","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":140},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":152},{"key":"fanSpeedDown","protocolName":"nec","device":0,"subdevice":0,"function":148}]}

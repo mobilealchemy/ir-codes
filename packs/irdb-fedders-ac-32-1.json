@@ -1,0 +1,1 @@
+{"id":"irdb-fedders-ac-32-1","brand":"Fedders","category":"airConditioner","model":"AC 32--1","version":1,"codes":[{"key":"acModeAuto","protocolName":"raw","device":32,"subdevice":-1,"function":9},{"key":"acTimer","protocolName":"raw","device":32,"subdevice":-1,"function":25},{"key":"acFanAuto","protocolName":"raw","device":32,"subdevice":-1,"function":26}]}

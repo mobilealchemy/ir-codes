@@ -1,0 +1,1 @@
+{"id":"flip-edifier-speakers-rc31a","brand":"Edifier","category":"audioReceiver","model":"Speakers RC31A","version":1,"codes":[{"key":"volumeUp","protocolName":"nec","device":120,"subdevice":0,"function":1},{"key":"volumeDown","protocolName":"nec","device":120,"subdevice":0,"function":2},{"key":"mute","protocolName":"nec","device":120,"subdevice":0,"function":9}]}

@@ -1,0 +1,1 @@
+{"id":"flip-luminara-candle","brand":"Luminara","category":"light","model":"Candle","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":70},{"key":"fanTimer","protocolName":"nec","device":0,"subdevice":0,"function":22}]}

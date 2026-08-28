@@ -1,0 +1,1 @@
+{"id":"flip-qtx-qtx-led-par","brand":"QTX","category":"light","model":"Qtx led par","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":70},{"key":"fanSpeedDown","protocolName":"nec","device":0,"subdevice":0,"function":22},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":13}]}

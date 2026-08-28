@@ -1,0 +1,1 @@
+{"id":"flip-woozoo-fan","brand":"Woozoo","category":"fan","model":"Fan","version":1,"codes":[{"key":"power","protocolName":"nec","device":128,"subdevice":0,"function":0},{"key":"fanTimer","protocolName":"nec","device":128,"subdevice":0,"function":18}]}

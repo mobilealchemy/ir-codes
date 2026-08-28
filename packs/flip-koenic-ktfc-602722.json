@@ -1,0 +1,1 @@
+{"id":"flip-koenic-ktfc-602722","brand":"KOENIC","category":"fan","model":"KTFC 602722","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":74},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":66},{"key":"fanTimer","protocolName":"nec","device":0,"subdevice":0,"function":73}]}

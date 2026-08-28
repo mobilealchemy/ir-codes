@@ -1,0 +1,1 @@
+{"id":"flip-hlkzine-astronaut-star-projector","brand":"HLKZine","category":"light","model":"Astronaut Star Projector","version":1,"codes":[{"key":"power","protocolName":"nec","device":7,"subdevice":0,"function":255},{"key":"fanMode","protocolName":"nec","device":7,"subdevice":0,"function":14},{"key":"fanTimer","protocolName":"nec","device":7,"subdevice":0,"function":11}]}

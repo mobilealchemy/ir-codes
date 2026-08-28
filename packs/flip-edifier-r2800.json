@@ -1,0 +1,1 @@
+{"id":"flip-edifier-r2800","brand":"Edifier","category":"audioReceiver","model":"R2800","version":1,"codes":[{"key":"mute","protocolName":"nec","device":120,"subdevice":0,"function":9},{"key":"volumeUp","protocolName":"nec","device":120,"subdevice":0,"function":1},{"key":"volumeDown","protocolName":"nec","device":120,"subdevice":0,"function":2}]}

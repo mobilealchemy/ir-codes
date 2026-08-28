@@ -1,0 +1,1 @@
+{"id":"flip-quads-qs303-fan","brand":"Quads","category":"fan","model":"QS303 Fan","version":1,"codes":[{"key":"power","protocolName":"nec","device":48,"subdevice":0,"function":136},{"key":"fanSpeedUp","protocolName":"nec","device":48,"subdevice":0,"function":140},{"key":"fanSpeedDown","protocolName":"nec","device":48,"subdevice":0,"function":135}]}

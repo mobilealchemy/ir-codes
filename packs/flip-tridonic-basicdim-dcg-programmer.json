@@ -1,0 +1,1 @@
+{"id":"flip-tridonic-basicdim-dcg-programmer","brand":"Tridonic","category":"light","model":"basicDIM DCG PROGRAMMER","version":1,"codes":[{"key":"power","protocolName":"rc5","device":29,"subdevice":0,"function":57},{"key":"fanMode","protocolName":"rc5","device":29,"subdevice":0,"function":56}]}

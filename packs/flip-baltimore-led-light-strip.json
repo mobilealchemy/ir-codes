@@ -1,0 +1,1 @@
+{"id":"flip-baltimore-led-light-strip","brand":"Baltimore","category":"light","model":"LED Light Strip","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":69},{"key":"fanMode","protocolName":"nec","device":0,"subdevice":0,"function":24}]}

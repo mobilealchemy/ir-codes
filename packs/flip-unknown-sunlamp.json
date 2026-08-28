@@ -1,0 +1,1 @@
+{"id":"flip-unknown-sunlamp","brand":"Unknown","category":"light","model":"Sunlamp","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":2},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":0},{"key":"fanSpeedDown","protocolName":"nec","device":0,"subdevice":0,"function":1}]}

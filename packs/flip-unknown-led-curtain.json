@@ -1,0 +1,1 @@
+{"id":"flip-unknown-led-curtain","brand":"Unknown","category":"light","model":"LED Curtain","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":69},{"key":"fanTimer","protocolName":"nec","device":0,"subdevice":0,"function":70},{"key":"fanMode","protocolName":"nec","device":0,"subdevice":0,"function":68}]}

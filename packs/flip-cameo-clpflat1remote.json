@@ -1,0 +1,1 @@
+{"id":"flip-cameo-clpflat1remote","brand":"Cameo","category":"light","model":"CLPFLAT1REMOTE","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":0},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":1},{"key":"fanOscillate","protocolName":"nec","device":0,"subdevice":0,"function":5}]}

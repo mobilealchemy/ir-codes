@@ -1,0 +1,1 @@
+{"id":"flip-hitachi-hef-rm1-fan","brand":"Hitachi","category":"fan","model":"HEF RM1 Fan","version":1,"codes":[{"key":"power","protocolName":"nec","device":130,"subdevice":0,"function":31},{"key":"fanTimer","protocolName":"nec","device":130,"subdevice":0,"function":3},{"key":"fanMode","protocolName":"nec","device":130,"subdevice":0,"function":23}]}

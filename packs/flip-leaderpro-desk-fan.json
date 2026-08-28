@@ -1,0 +1,1 @@
+{"id":"flip-leaderpro-desk-fan","brand":"LeaderPro","category":"fan","model":"Desk Fan","version":1,"codes":[{"key":"power","protocolName":"nec","device":48,"subdevice":0,"function":140},{"key":"fanMode","protocolName":"nec","device":48,"subdevice":0,"function":135},{"key":"fanTimer","protocolName":"nec","device":48,"subdevice":0,"function":134}]}

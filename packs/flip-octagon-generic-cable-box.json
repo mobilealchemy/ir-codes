@@ -1,0 +1,1 @@
+{"id":"flip-octagon-generic-cable-box","brand":"Octagon","category":"setTopBox","model":"generic cable box","version":1,"codes":[{"key":"power","protocolName":"nec","device":1,"subdevice":0,"function":10},{"key":"mute","protocolName":"nec","device":1,"subdevice":0,"function":12}]}

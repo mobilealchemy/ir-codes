@@ -1,0 +1,1 @@
+{"id":"flip-t-sun-til-led-24w","brand":"T-SUN","category":"light","model":"TiL LED 24W","version":1,"codes":[{"key":"power","protocolName":"nec","device":168,"subdevice":0,"function":1},{"key":"fanSpeedUp","protocolName":"nec","device":168,"subdevice":0,"function":0},{"key":"fanSpeedDown","protocolName":"nec","device":168,"subdevice":0,"function":13}]}

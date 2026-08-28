@@ -1,0 +1,1 @@
+{"id":"flip-american-lighting-neon-flex-light","brand":"American Lighting","category":"light","model":"Neon Flex Light","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":3},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":6},{"key":"fanSpeedDown","protocolName":"nec","device":0,"subdevice":0,"function":7}]}

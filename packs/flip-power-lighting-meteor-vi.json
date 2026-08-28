@@ -1,0 +1,1 @@
+{"id":"flip-power-lighting-meteor-vi","brand":"Power Lighting","category":"light","model":"Meteor VI","version":1,"codes":[{"key":"power","protocolName":"nec","device":0,"subdevice":0,"function":69},{"key":"fanSpeedUp","protocolName":"nec","device":0,"subdevice":0,"function":8}]}
