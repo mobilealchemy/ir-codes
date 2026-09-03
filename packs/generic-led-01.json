@@ -1,51 +1,4 @@
-{
-  "id": "generic-led-01",
-  "brand": "Generic",
-  "category": "light",
-  "model": "RGB LED Strip Controller",
-  "version": 1,
-  "codes": [
-    {
-      "key": "power",
-      "protocolName": "nec",
-      "device": 0,
-      "subdevice": 255,
-      "function": 2
-    },
-    {
-      "key": "brightnessUp",
-      "protocolName": "nec",
-      "device": 0,
-      "subdevice": 255,
-      "function": 10
-    },
-    {
-      "key": "brightnessDown",
-      "protocolName": "nec",
-      "device": 0,
-      "subdevice": 255,
-      "function": 11
-    },
-    {
-      "key": "red",
-      "protocolName": "nec",
-      "device": 0,
-      "subdevice": 255,
-      "function": 4
-    },
-    {
-      "key": "green",
-      "protocolName": "nec",
-      "device": 0,
-      "subdevice": 255,
-      "function": 5
-    },
-    {
-      "key": "blue",
-      "protocolName": "nec",
-      "device": 0,
-      "subdevice": 255,
-      "function": 6
-    }
-  ]
-}
+IRv2ÑÚ¨9³’–Pê9å¬!qqvi-EMû9|°QªÑóà•Ö	ø
+¢±‚©”HüëÍM£2;7>¯í`­8ì}ü+Nd¡;Â®‹ã`’£ed{k&ñ‘¾âÅÎÝ­Ö(Ïm ž-ç–OÌº›¡ÅëîBÇäyŠ«7ÿ·Q87~ÍOžS1]7GXrØã‚håLí	eýzUv°òWd™{ý’•˜‚ù--4Q râ„ÖŸ"í’éÏ‰íØ’åfö¡ë¤yª”ˆ±q8š¨öMÍ	'¯Tƒ^"*÷B?Ýì[ÙPIüî¡ÿÌ4-%qfŽ--¼@Yâ«;àIÙÚÃ7t·=ªÏáŒj¡òçüºË•ñ_'Å~6kÍyh’Ý˜çƒî]Ê„?Úi8\áòúNDÂö¡ØNÄFâé4
+QUÎ"Â¤´£^„×/u¥n2lO^{+¼8vØó‰»`e!õ«©c†Ð×¾§áX7ð]9¡®æj”ÑÖŠKü„Ÿ—é
+ßÄÛB€1JÇµ·-çš‰É»Þ„«¤>•ÆÐí¥¸T$,êSÊ¡/™èe°à÷2É—ùA»•è6bƒtúŒE§l÷OlÍñ-·ô·È¦²;±­_õè‰ÐàŸ=õŠ¹ÙÙeƒe¯Ö¹ýTùƒ–-†Î29qœ:Åeƒ“¨<hoUE g £ä*çBf›P¬çÆHõÂÌn¤xjÀj~7LˆÚÈmÓÌjs½=TáËšû¨ÁÆ‘L\&äVj7P¼¦.§€YdßJ™4e¶ê%ÿÔ

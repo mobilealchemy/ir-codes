@@ -1,44 +1,1 @@
-{
-  "id": "xiaomi-purifier-01",
-  "brand": "Xiaomi",
-  "category": "airPurifier",
-  "model": "Mi Air Purifier",
-  "version": 1,
-  "codes": [
-    {
-      "key": "power",
-      "protocolName": "nec",
-      "device": 4,
-      "subdevice": 0,
-      "function": 0
-    },
-    {
-      "key": "fanSpeedUp",
-      "protocolName": "nec",
-      "device": 4,
-      "subdevice": 0,
-      "function": 1
-    },
-    {
-      "key": "fanSpeedDown",
-      "protocolName": "nec",
-      "device": 4,
-      "subdevice": 0,
-      "function": 2
-    },
-    {
-      "key": "fanMode",
-      "protocolName": "nec",
-      "device": 4,
-      "subdevice": 0,
-      "function": 3
-    },
-    {
-      "key": "fanTimer",
-      "protocolName": "nec",
-      "device": 4,
-      "subdevice": 0,
-      "function": 4
-    }
-  ]
-}
+IRv2Çémfç–oC¦Îi¾ÛM-O ö€ù §ÖI,;aË¾¥°!’écS¸T:¹™"Æ–=od:Djfù8MXþgYMb;­ÓU¾T))mcÓÁ?ÿç»cYjlÑp˜-û$¹Ô5KîüÄ1•Oºb¡Io§Pf9/!c ‹¦Ò¾ÛÓÇ™iå>™m»'>T¬¯£h,Å¿Ex2ìOØðwÆÍã¡öáÓÞòÐÐT¤™fFÙnp)ß<lýÕß ÞÎzü€<<]H°±ØÝ°˜—=‹ôíªÅ¾z::æ+coPè¢cõ”ŸÍøI3¬zÂ¹EmzïÏC“Óré¦akULRæê&€…Žei#A­PÃjÉÉpÀ‰@¸j¡Î‘%ŠþÕY¿s	H±3ò4Ú#-s¬•Yþ§ÀíŠEXÃŽ¬÷æ ›±ýUžÔv 0àøÎ†{GŸ#fÓNK²ýŒœTÌuÛöSch6íÎ5,i®r¨äx9îKC#y†i˜ùEï—¦D8¬iƒ•ÍÎ-&M-Ó}±)x$“HèÐÍ„À€Ô¬›V5Z›Î¼¤õt”	Vý£AîÒûúrÄ¢Œ—È¥Y–IôÀKABàÙô>&ª¾óZRÐÅNÉÇË››Ø.©õóI-5Òâ{ù_¾ŽßNXqRþ.o|ÁM‹¡›Y×ç

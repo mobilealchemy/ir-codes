@@ -1,30 +1,2 @@
-{
-  "id": "philips-led-01",
-  "brand": "Philips",
-  "category": "light",
-  "model": "LED Panel Remote",
-  "version": 1,
-  "codes": [
-    {
-      "key": "power",
-      "protocolName": "rc5",
-      "device": 20,
-      "subdevice": -1,
-      "function": 12
-    },
-    {
-      "key": "brightnessUp",
-      "protocolName": "rc5",
-      "device": 20,
-      "subdevice": -1,
-      "function": 16
-    },
-    {
-      "key": "brightnessDown",
-      "protocolName": "rc5",
-      "device": 20,
-      "subdevice": -1,
-      "function": 17
-    }
-  ]
-}
+IRv2@ê2i-°91œ&ºF.<e˘&¸W%å[Çû“î>„≥º	◊c”'i˛9H–¬9…Ó¨2‹ ˙J¨‘˛/˚ı»©•Î*ø∞Î=Å»O…≈N≈≈Iª«π$96±R8£–'Ì1~Ywª_ø?S,hqJ|≠ãL¥Ë˙…{ÆÂs_\c”¥ƒjü;>MA!DcÑïËgÿND‘B∫À|°´¨rö"h[/ä0ıŸyıkµDé3Ù∑Õ>cı<[VRæ‡Çïs´xIøÃc¢önáòeY/∑ú’ù!˝£jÙ◊èCu ¸)S"[ùIk‡±oGúΩ»^Ÿ†ã)zÕÒ
+G5k«GΩ`FF¸q]mºi †“j7ú&∆$/4ä™®U˙£û7aﬁDTõo[@$2çÏø-ÂQëoŒ}G¯≥™G·üÏ$Bb˙Wl“∫¿Ù‘†a®É0Òp0´í£i—ÂfuI«çì¢Ï+Zíπ˝ìó¥]ë$c◊Ÿ=N"P*;•Œuö¬¶
