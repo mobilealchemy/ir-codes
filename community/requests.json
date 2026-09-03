@@ -72,9 +72,9 @@
       "brand": "Mistral",
       "model": "MFD500R",
       "region": "AU",
-      "notes": "Tower fan with remote",
+      "notes": "Tower fan with remote — Two Mistral fan remotes in the database: MTFYG07R (captured) and GZ1002BE1 (fan speed / mode / oscillate / timer). Try both under Fan → Mistral.",
       "votes": 3,
-      "status": "in_progress",
+      "status": "done",
       "createdAt": "2026-06-27"
     },
     {
@@ -109,8 +109,7 @@
       "votes": 3,
       "status": "done",
       "createdAt": "2026-06-22"
-    }
-    ,
+    },
     {
       "id": "req-011",
       "category": "fan",
@@ -124,5 +123,5 @@
     }
   ],
   "totalCount": 11,
-  "updatedAt": "2026-08-26"
+  "updatedAt": "2026-09-03"
 }
