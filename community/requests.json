@@ -133,7 +133,19 @@
       "status": "done",
       "createdAt": "2026-09-06"
     }
+    ,
+    {
+      "id": "req-013",
+      "category": "air_conditioner",
+      "brand": "Panasonic",
+      "model": "CS-S10TKH-1",
+      "region": null,
+      "notes": "21 Panasonic AC packs in database, standard A75C protocol family",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-06"
+    }
   ],
-  "totalCount": 12,
+  "totalCount": 13,
   "updatedAt": "2026-09-06"
 }
