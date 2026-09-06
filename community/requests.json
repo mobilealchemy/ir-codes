@@ -121,7 +121,19 @@
       "status": "done",
       "createdAt": "2026-08-26"
     }
+    ,
+    {
+      "id": "req-012",
+      "category": "air_conditioner",
+      "brand": "Panasonic",
+      "model": "CS-PC18QKH",
+      "region": "MY",
+      "notes": "21 Panasonic AC packs in database, including A75C and CS-series remotes",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-06"
+    }
   ],
-  "totalCount": 11,
-  "updatedAt": "2026-09-03"
+  "totalCount": 12,
+  "updatedAt": "2026-09-06"
 }
