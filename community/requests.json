@@ -145,7 +145,19 @@
       "status": "done",
       "createdAt": "2026-09-06"
     }
+    ,
+    {
+      "id": "req-014",
+      "category": "projector",
+      "brand": "Xgody",
+      "model": "Gimbal A2",
+      "region": "ID",
+      "notes": "No public IR codes found. Different product line from HY300 family. May use NEC protocol but codes unconfirmed.",
+      "votes": 1,
+      "status": "in_progress",
+      "createdAt": "2026-09-07"
+    }
   ],
-  "totalCount": 13,
-  "updatedAt": "2026-09-06"
+  "totalCount": 14,
+  "updatedAt": "2026-09-07"
 }
