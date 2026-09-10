@@ -241,8 +241,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-11"
+    },
+    {
+      "id": "req-023",
+      "category": "projector",
+      "brand": "SU.YOSO",
+      "model": "HY-300PRO-KTV",
+      "region": null,
+      "notes": "SU.YOSO sells the HY300 Pro projector made by Magcubic. Two HY300 remote code sets added under Magcubic (search SU.YOSO or Magcubic).",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-11"
     }
   ],
-  "totalCount": 22,
+  "totalCount": 23,
   "updatedAt": "2026-09-11"
 }
