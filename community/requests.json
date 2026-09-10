@@ -120,8 +120,7 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-08-26"
-    }
-    ,
+    },
     {
       "id": "req-012",
       "category": "air_conditioner",
@@ -132,8 +131,7 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-06"
-    }
-    ,
+    },
     {
       "id": "req-013",
       "category": "air_conditioner",
@@ -144,8 +142,7 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-06"
-    }
-    ,
+    },
     {
       "id": "req-014",
       "category": "projector",
@@ -156,8 +153,96 @@
       "votes": 1,
       "status": "in_progress",
       "createdAt": "2026-09-07"
+    },
+    {
+      "id": "req-015",
+      "category": "audioReceiver",
+      "brand": "Yamaha",
+      "model": "ATS-1070 / YAS-107",
+      "region": "US",
+      "notes": "26 Yamaha audio packs in database, including YAS-108 (direct successor, same IR protocol family). Bluetooth serial protocol reversed at github.com/wejn/yamaha-yas-207.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-07"
+    },
+    {
+      "id": "req-016",
+      "category": "air_conditioner",
+      "brand": "Magnavox",
+      "model": "W-08CR3",
+      "region": "US",
+      "notes": "Magnavox window ACs are Midea OEM. 30 Midea AC packs in database, including WWK08CR81N (same CR-series naming).",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-07"
+    },
+    {
+      "id": "req-017",
+      "category": "air_conditioner",
+      "brand": "Tansin",
+      "model": "TAS-36R4",
+      "region": "TW",
+      "notes": "Tansin (立崴) is a small Taiwanese brand OEM'd by Skyworth (創維). Shared RA1A remote with Rient and Skyworth ACs. No public IR codes exist — protocol not yet decoded. SmartIR issue #1535 open for Skyworth RA1A but unresolved.",
+      "votes": 1,
+      "status": "in_progress",
+      "createdAt": "2026-09-09"
+    },
+    {
+      "id": "req-018",
+      "category": "audioReceiver",
+      "brand": "LG",
+      "model": "NB3520A",
+      "region": "US",
+      "notes": "LG 2.1 soundbar. Uses NECx1 protocol (device 44, subdevice 44). Full IR codes in irdb (codes/LG/Sound Bar/44,44.csv). Remote AKB73575401, shared across 30+ LG NB-series soundbars. LG is listed under Audio / AV Receiver in the cloud catalog.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-09"
+    },
+    {
+      "id": "req-019",
+      "category": "air_conditioner",
+      "brand": "Sharp",
+      "model": "CRMC-B094JBEZ",
+      "region": "ID",
+      "notes": "Sharp AC already fully supported with dedicated protocol family. CRMC is Sharp's standard remote prefix.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-09"
+    },
+    {
+      "id": "req-020",
+      "category": "tv",
+      "brand": "TCL",
+      "model": "32S335",
+      "region": "US",
+      "notes": "TCL 3-Series Roku TV. TCL TV packs for IR, Roku packs for navigation. Also supports Wi-Fi control via Roku ECP protocol.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-09"
+    },
+    {
+      "id": "req-021",
+      "category": "air_conditioner",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KT13VF / MUY-KT13VF",
+      "region": "TH",
+      "notes": "Mitsubishi Electric protocol already in cloud catalog. MSY=indoor, MUY=outdoor unit. Standard 18-byte protocol, 38kHz.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-10"
+    },
+    {
+      "id": "req-022",
+      "category": "air_conditioner",
+      "brand": "Sharp",
+      "model": "AH-A9SAY",
+      "region": "ID",
+      "notes": "Sharp AC family already supported. The AH-AxSAY series uses Sharp's CRMC-A907JBEZ remote protocol.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-11"
     }
   ],
-  "totalCount": 14,
-  "updatedAt": "2026-09-07"
+  "totalCount": 22,
+  "updatedAt": "2026-09-11"
 }
