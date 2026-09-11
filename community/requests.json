@@ -252,8 +252,30 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-11"
+    },
+    {
+      "id": "req-024",
+      "category": "tv",
+      "brand": "Hisense",
+      "model": "VIM",
+      "region": null,
+      "notes": "Hisense TVs already supported with 160+ code sets, mostly exact captures from the IRext database. VIM is not a known Hisense model; searching VIDAA also finds Hisense.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-11"
+    },
+    {
+      "id": "req-025",
+      "category": "custom",
+      "brand": "ASUS",
+      "model": "G18 (Windows 11)",
+      "region": null,
+      "notes": "Windows PC control isn't supported yet: laptops have no IR receiver and the app has no PC companion protocol. Logged to gauge demand for PC control.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-11"
     }
   ],
-  "totalCount": 23,
+  "totalCount": 25,
   "updatedAt": "2026-09-11"
 }
