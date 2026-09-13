@@ -296,8 +296,30 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-14"
+    },
+    {
+      "id": "req-028",
+      "category": "air_conditioner",
+      "brand": "Panasonic",
+      "model": "CS-227CFR-W",
+      "region": "Japan",
+      "notes": "Eolia F-series, remote ACXF00-14780. 21 Panasonic AC packs exist but they are export A75C-family captures; the Japanese Eolia remote is not among them. This unit pairs with the Panasonic Smart App, so the fix is the Comfort Cloud transport, whose sign-in was still the retired accsmart login and has been moved to Panasonic's current Auth0 flow. Needs the next release; unverified against a real account.",
+      "votes": 1,
+      "status": "in_progress",
+      "createdAt": "2026-09-14"
+    },
+    {
+      "id": "req-029",
+      "category": "projector",
+      "brand": "LEC",
+      "model": "AMX100",
+      "region": "Japan",
+      "notes": "AMX100 is a white-label mini Android projector also sold as Sainellor, Amovfilm and AimeiSen; no capture exists for it in Flipper-IRDB or irdb under any of those names. LEC added as an alias of the generic captures, and those six sets now also surface under the name Generic instead of only BrandUnknown. Whether they drive an AMX100 is unverified — learning the remote is the reliable path.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-14"
     }
   ],
-  "totalCount": 27,
+  "totalCount": 29,
   "updatedAt": "2026-09-14"
 }
