@@ -285,8 +285,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-13"
+    },
+    {
+      "id": "req-027",
+      "category": "air_conditioner",
+      "brand": "Haier",
+      "model": "HSU-09CORA03TF",
+      "region": "Thailand",
+      "notes": "Already supported. Haier split units run on the computed Haier family, which sends the 176-bit, 160-bit and YR-W02 112-bit frames in a single press, so it drives an HSU wall unit whichever YR-series remote it shipped with. 205 Haier code sets are also published. No change needed; unverified against this unit.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-14"
     }
   ],
-  "totalCount": 26,
-  "updatedAt": "2026-09-13"
+  "totalCount": 27,
+  "updatedAt": "2026-09-14"
 }
