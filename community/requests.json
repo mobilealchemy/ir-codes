@@ -274,8 +274,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-11"
+    },
+    {
+      "id": "req-026",
+      "category": "projector",
+      "brand": "Smoon",
+      "model": "320",
+      "region": "Sawit Seberang, Indonesia",
+      "notes": "Sold in Indonesia as the SMOON HY 320 — the same HY300-family Android projector Magcubic and SU.YOSO rebadge. Smoon added as an alias of Magcubic, so the two HY300 remote code sets now come up when searching Smoon. Unverified against the actual unit.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-13"
     }
   ],
-  "totalCount": 25,
-  "updatedAt": "2026-09-11"
+  "totalCount": 26,
+  "updatedAt": "2026-09-13"
 }
