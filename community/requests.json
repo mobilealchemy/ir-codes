@@ -351,8 +351,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-16"
+    },
+    {
+      "id": "req-033",
+      "category": "tv",
+      "brand": "ROCH",
+      "model": "Smart tv",
+      "region": "Tanzania",
+      "notes": "Filed under Custom Remote, which is the tell that the TV brand list came up empty. ROCH is an African appliance label (Ghana/Nigeria/Tanzania) that rebadges Chinese ODM sets; nothing under that name exists in brands.json, our packs, Flipper-IRDB or irdb, and the model is just \"Smart tv\", so there is no chassis to match on. Deliberately not adding a brand row: with no alias it leads to the synthesized NEC fallback, which will not work, and guessing an alias is worse. Asked for the number printed on the remote — that is what would identify the ODM. Note the brand sweep is weak here: it cycles IRDatabase.brands (the compiled 42 plus cloud rows) blasting synthesized codes, not the 546 brands that have real packs; the Code Database is the tool to point at.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-16"
     }
   ],
-  "totalCount": 32,
+  "totalCount": 33,
   "updatedAt": "2026-09-16"
 }
