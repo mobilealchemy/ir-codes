@@ -318,8 +318,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-14"
+    },
+    {
+      "id": "req-030",
+      "category": "light",
+      "brand": "Iris Ohyama",
+      "model": "R5.0D",
+      "region": "Japan",
+      "notes": "Japanese LED ceiling light (アイリスオーヤマ). No code set: the only Iris Ohyama pack we hold is an oscillating fan from irext, and no capture exists in Flipper-IRDB under any spelling. The Japanese name now finds the brand via searchTerms. Learning the remote through an IR bridge is the working path meanwhile. Note only 10 of 14,484 irext packs are lights — export_irext.py's MIN_KEYS=4 discards the 2-3 button remotes ceiling lights use, so a re-import with a lower floor for this category may well cover it.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-16"
     }
   ],
-  "totalCount": 29,
-  "updatedAt": "2026-09-14"
+  "totalCount": 30,
+  "updatedAt": "2026-09-16"
 }
