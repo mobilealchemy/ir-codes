@@ -303,9 +303,9 @@
       "brand": "Panasonic",
       "model": "CS-227CFR-W",
       "region": "Japan",
-      "notes": "Eolia F-series, remote ACXF00-14780. Asked twice (2026-09-14, 2026-09-16). IR is not available and will not be soon: the 21 Panasonic AC packs we hold are all export A75C-family captures, Flipper-IRDB has five Panasonic AC files and none is an ACXF00, and IRremoteESP8266 — the reference for this protocol — lists only the NKE, DKE, JKE, CKP and RKR variants, every one identified by an A75C or CS- remote. The Japanese domestic Eolia framing has no public encoder, so there is nothing to build a family from without a capture.\n\nThe fix is the Comfort Cloud transport, and it is already released: the Auth0 sign-in rewrite (3e29323) is in v1.5-b2, which is the build that went to the App Store. The requester is on 1.4.1, so updating is the whole answer. Still never run against a real account — worth asking whoever replies to report back.",
+      "notes": "Eolia F-series, remote ACXF00-14780. Asked twice (2026-09-14, 2026-09-16, the second from 1.4.1). IR is not a route and will not be: the 21 Panasonic AC packs we hold are all export A75C-family captures, Flipper-IRDB's five Panasonic AC files hold no ACXF00, and IRremoteESP8266 — the reference for this protocol — implements only NKE, DKE, JKE, CKP and RKR, every one identified by an A75C or CS- remote. The Japanese domestic Eolia framing has no public encoder to build a family from.\n\nComfort Cloud is the only way to drive this unit, and two things had to be true. The Auth0 sign-in rewrite (3e29323) is in v1.5-b2, so that part already shipped. But AddDeviceConfigView.transportOptions never listed .panasonic — nor MELCloud, ThinQ, SmartHQ, De'Longhi, Sensibo, SmartThings, ConnectLife or SwitchBot — so the transport could not be selected at all. Fixed in c9b1ab0, held for the next release. Until that build ships there is nothing this customer can do, and the transport has still never been run against a real account.",
       "votes": 2,
-      "status": "done",
+      "status": "in_progress",
       "createdAt": "2026-09-14"
     },
     {
