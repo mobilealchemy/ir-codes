@@ -68,6 +68,13 @@ KEYMAP = {
 }
 MAX_KEY = {2: 23, 3: 23, 5: 23, 11: 23}
 
+# Fewest decoded keys a pack may carry. Was 4 (5 for AC), which discarded every
+# simple remote — a ceiling light's on/off/dim, a fan's three buttons. Lowered
+# to 1 on request so a sync imports everything it can decode; a pack with no
+# codes at all is still dropped, since it would show an empty remote.
+MIN_CODES = 1
+MIN_CODES_AC = 1
+
 
 def hkdf(ikm, salt, info, length=32):
     prk = hmac_mod.new(salt, ikm, hashlib.sha256).digest()
@@ -141,7 +148,7 @@ def main():
                       "subdevice": None, "function": None,
                       "rawDurations": d, "frequency": 38000}
                      for k, d in decoded.items() if int(k) in km]
-        if len(codes) < (5 if is_ac else 4): continue
+        if len(codes) < (MIN_CODES_AC if is_ac else MIN_CODES): continue
 
         model = (row["remote"] or "").strip() or str(row["id"])
         pack = {"id": pack_id, "brand": brand, "category": cat,
