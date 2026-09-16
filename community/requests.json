@@ -329,8 +329,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-16"
+    },
+    {
+      "id": "req-031",
+      "category": "tv",
+      "brand": "Sharp",
+      "model": "LC-40Q3070U",
+      "region": null,
+      "notes": "Non-smart 1080p US set (its own quick-start manual lists no Wi-Fi or smart features; remote EN-22655S), so it is IR only — no Roku or network transport applies despite the Roku-era Q naming. Sharp was already in the picker, but the curated pack it leads to, sharp-tv-01, held generic NEC numbers tagged as the Sharp protocol: Power sent OBC 1, the digit \"1\". Rebuilt from the canonical Sharp map (address 1, plus Sharp's second device 17 for transport and discrete power), 12 buttons to 48, verified bit-for-bit against the Flipper captures we ship. Published as v2 in manifest v28, so installed builds pick it up. Not tested on a Sharp TV. Request arrived in Spanish, no region given.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-16"
     }
   ],
-  "totalCount": 30,
+  "totalCount": 31,
   "updatedAt": "2026-09-16"
 }
