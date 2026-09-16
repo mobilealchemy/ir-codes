@@ -303,9 +303,9 @@
       "brand": "Panasonic",
       "model": "CS-227CFR-W",
       "region": "Japan",
-      "notes": "Eolia F-series, remote ACXF00-14780. 21 Panasonic AC packs exist but they are export A75C-family captures; the Japanese Eolia remote is not among them. This unit pairs with the Panasonic Smart App, so the fix is the Comfort Cloud transport, whose sign-in was still the retired accsmart login and has been moved to Panasonic's current Auth0 flow. Needs the next release; unverified against a real account.",
-      "votes": 1,
-      "status": "in_progress",
+      "notes": "Eolia F-series, remote ACXF00-14780. Asked twice (2026-09-14, 2026-09-16). IR is not available and will not be soon: the 21 Panasonic AC packs we hold are all export A75C-family captures, Flipper-IRDB has five Panasonic AC files and none is an ACXF00, and IRremoteESP8266 — the reference for this protocol — lists only the NKE, DKE, JKE, CKP and RKR variants, every one identified by an A75C or CS- remote. The Japanese domestic Eolia framing has no public encoder, so there is nothing to build a family from without a capture.\n\nThe fix is the Comfort Cloud transport, and it is already released: the Auth0 sign-in rewrite (3e29323) is in v1.5-b2, which is the build that went to the App Store. The requester is on 1.4.1, so updating is the whole answer. Still never run against a real account — worth asking whoever replies to report back.",
+      "votes": 2,
+      "status": "done",
       "createdAt": "2026-09-14"
     },
     {
