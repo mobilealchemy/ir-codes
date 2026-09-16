@@ -325,8 +325,8 @@
       "brand": "Iris Ohyama",
       "model": "R5.0D",
       "region": "Japan",
-      "notes": "Japanese LED ceiling light (アイリスオーヤマ). No code set: the only Iris Ohyama pack we hold is an oscillating fan from irext, and no capture exists in Flipper-IRDB under any spelling. The Japanese name now finds the brand via searchTerms. Learning the remote through an IR bridge is the working path meanwhile. Note only 10 of 14,484 irext packs are lights — export_irext.py's MIN_KEYS=4 discards the 2-3 button remotes ceiling lights use, so a re-import with a lower floor for this category may well cover it.",
-      "votes": 1,
+      "notes": "Asked twice (2026-09-16, both in Japanese; the second spelled the brand アイリスオオヤマ, which the searchTerms already cover). R5.0-D is the remote, not the light: it ships with the LED ceiling lights of the 5.0 series (CL6D-5.0 and siblings) and Iris Ohyama now sells CL-RL1 as its replacement; R5.0-DL / CL-RL2 are the colour-temperature variants. No code set exists for it anywhere public — Flipper-IRDB has no Iris Ohyama entry and no Japanese ceiling light at all, irdb has no such brand, and the one project that drives this exact remote (Akkiesoft/airpippi, config/R5.0-DL) keeps its ir-ctl captures outside the repo. The brand row now also carries the light category and the remote's model numbers, so the picker and search reach it; learning the remote through an IR bridge is still the only working path. The earlier note here blamed export_irext.py's MIN_KEYS floor for the missing lights — that was wrong and is corrected in CLAUDE.md: the irext index holds 13 light rows in total, 10 already imported, and the floor is now 1 anyway.",
+      "votes": 2,
       "status": "open",
       "createdAt": "2026-09-16"
     },
