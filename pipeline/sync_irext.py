@@ -113,7 +113,7 @@ def main():
     rows = con.execute("""
         SELECT id, category_id, brand_id, brand_name, remote, remote_map,
                sub_cate, operator_name
-        FROM remote_index WHERE status = 1""").fetchall()
+        FROM remote_index WHERE CAST(status AS INTEGER) = 1""").fetchall()
 
     for row in rows:
         cat = CATEGORY.get(row["category_id"])
