@@ -406,8 +406,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-18"
+    },
+    {
+      "id": "req-038",
+      "category": "tv",
+      "brand": "Skill Tech",
+      "model": "Skill tech",
+      "region": "UAE",
+      "notes": "Gulf house brand rebadging Chinese ODM sets, same shape as req-033 (ROCH, Tanzania): nothing under the name in brands.json, our packs, Flipper-IRDB or irdb, and the model field just repeats the brand, so there is no chassis to match. No brand row added — without an alias it leads to the synthesized NEC fallback, and an alias would be a guess. Asked for the number on the remote. Requester is on macOS 1.4 (build 25G83).\n\nSecond one this week, which makes the pattern worth a decision: BrandSweepView is the feature built for exactly this — unknown rebadge, try everything — but it cycles IRDatabase.brands blasting synthesized code sets, so it never reaches the 546 brands that have real packs. Pointing it at the manifest's most common TV code sets instead would make it answer the question it exists to answer.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-18"
     }
   ],
-  "totalCount": 37,
+  "totalCount": 38,
   "updatedAt": "2026-09-18"
 }
