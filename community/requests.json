@@ -384,8 +384,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-17"
+    },
+    {
+      "id": "req-036",
+      "category": "projector",
+      "brand": "Veho",
+      "model": "Quda PJ-1 ROHM (VPJ-002-GR)",
+      "region": "Indonesia",
+      "notes": "Veho's own product, not a white label: Quda PJ-1 \"ROHM\", Android 11, Wi-Fi 6, native 1280x720 scaling 4K, 1.2:1 throw, £179.95. Deliberately NOT aliased to Magcubic — the HY300 class it superficially resembles sells at a quarter the price with different internals, and the BOSEN alias rested on that price/spec profile matching, which this does not. No codes anywhere: no Veho in brands.json, our packs, Flipper-IRDB (Projectors has no Veho/Quda/ROHM folder) or irdb.\n\nIt did surface a gap worth fixing: the projector category offered no Wi-Fi scan and no androidTV/chromecast transport, though these projectors run Android. Added in 41d768d as a .projector case rather than by flipping isTypicallyNetwork, which would also have offered Roku, Samsung, LG, Sony and Apple TV. Held for the next release, and unverified — whether a given Android projector advertises the Android TV remote service is unknown. Learning the remote is the path meanwhile.",
+      "votes": 1,
+      "status": "in_progress",
+      "createdAt": "2026-09-18"
     }
   ],
-  "totalCount": 35,
-  "updatedAt": "2026-09-17"
+  "totalCount": 36,
+  "updatedAt": "2026-09-18"
 }
