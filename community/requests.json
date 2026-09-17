@@ -417,8 +417,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-18"
+    },
+    {
+      "id": "req-039",
+      "category": "fan",
+      "brand": "Mas",
+      "model": "Knnb",
+      "region": null,
+      "notes": "Under-specified rather than spam — the fields differ, so it does not match the triage pattern, but \"Knnb\" is not a model and \"Mas\" matches none of the 255 fan brands we hold. Tried the Arabic-keyboard-layout reading (k→ن, n→ى, b→لا) and it decodes to nothing, so it is most likely a customer who does not know what they have. Asked for the remote's number or a photo. Nothing added.\n\nWorth noting for the fan category specifically: we hold 658 fan packs but only four curated ones (COSMOS wall fan, Dyson, a generic 3-speed ceiling fan, Honeywell), so the rebuilt sweep has very little to work with here compared with TV's 29. The generic 3-speed ceiling fan pack is the one most likely to answer a no-name remote.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-18"
     }
   ],
-  "totalCount": 38,
+  "totalCount": 39,
   "updatedAt": "2026-09-18"
 }
