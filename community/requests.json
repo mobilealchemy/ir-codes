@@ -395,8 +395,19 @@
       "votes": 1,
       "status": "in_progress",
       "createdAt": "2026-09-18"
+    },
+    {
+      "id": "req-037",
+      "category": "air_conditioner",
+      "brand": "Tadiran",
+      "model": "YAC1FB13",
+      "region": "Thailand",
+      "notes": "The remote number is the answer: YAC1FB is a GREE-family part, sold as a replacement for Gree, Trane and Electrolux units. Tadiran had no computed family at all — it is not in GreeAC.brands or any compiled family, and its brands.json row carried no `family`, so ACProtocolRegistry.family(for:) returned nil and the brand fell back to whatever CloudIRService.brandAliases gave it, which is Carrier: twelve irx captures that will not match a GREE remote. Now `family: gree`, which the compiled GreeAC encoder answers, so it needs no build. Also searchable by the remote numbers and by תדיראן.\n\nScope caveat: this routes every Tadiran AC to gree, and Tadiran (Israel) sources from several Chinese OEMs over the years, so an older unit may not match. Evidence is this customer's remote, not the brand as a whole — but nil was the alternative. Request came in Thai, which fits a grey-import or a regional rebadge rather than the Israeli line.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-18"
     }
   ],
-  "totalCount": 36,
+  "totalCount": 37,
   "updatedAt": "2026-09-18"
 }
