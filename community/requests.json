@@ -362,8 +362,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-16"
+    },
+    {
+      "id": "req-034",
+      "category": "projector",
+      "brand": "BOSEN",
+      "model": "二代升級版",
+      "region": "Taiwan",
+      "notes": "Another HY300-class white label. BOSEN (博森生活, bosenlife.com.tw) is a Taiwanese direct-sale brand; the product profile is the HY300 family — Android mini projector, built-in YouTube/Netflix/Disney+, phone casting, NT$1,680–3,280 — so aliased to Magcubic like Smoon and SU.YOSO before it, and the two HY300 remote sets should drive it. Weaker evidence than the Smoon alias, which had a model match (Smoon 320 = HY 320): \"二代升級版\" is marketing copy, not a model, so this is inference from the product profile alone and nobody has seen the remote. If it turns out wrong, drop the aliasOf — learning the remote is the fallback either way.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-17"
     }
   ],
-  "totalCount": 33,
-  "updatedAt": "2026-09-16"
+  "totalCount": 34,
+  "updatedAt": "2026-09-17"
 }
