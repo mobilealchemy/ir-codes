@@ -373,8 +373,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-17"
+    },
+    {
+      "id": "req-035",
+      "category": "tv",
+      "brand": "Vizio",
+      "model": "E55-D0",
+      "region": "United States",
+      "notes": "The button list in the request is the XRT122 — Power, V.Link, Vol, Mute, Input, CC, Ch, Picture Mode, Play/Pause — and we ship a capture of exactly that remote (flip-vizio-xrt122), which agrees with the rebuilt vizio-tv-01 on every shared key. Three of the customer's buttons were missing from the curated pack, so added from the capture consensus at NEC 04 FB: Closed Caption 57 (9/9 remotes), Picture Mode 103 (3/3), Play 51 / Pause 55, plus stop, rewind, fast-forward, dash and Disney+. V.Link is the one button with no code in any capture — nothing maps to it. `previous` also decodes to 26, which collides with lastChannel; kept lastChannel.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-17"
     }
   ],
-  "totalCount": 34,
+  "totalCount": 35,
   "updatedAt": "2026-09-17"
 }
