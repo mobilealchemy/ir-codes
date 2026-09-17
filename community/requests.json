@@ -347,8 +347,8 @@
       "brand": "Magcubic",
       "model": "LCDprojector",
       "region": null,
-      "notes": "Already supported — no change needed. \"LCDprojector\" with \"power: AC100-260V\" is how these arrive: the customer reads the box, not a model plate. It is the HY300 family, covered by magcubic-hy300-01/-02 (the two remotes these ship with) with Smoon and SU.YOSO aliased to it. Deliberately not adding \"LCD projector\" as a searchTerm — it would claim every projector in the catalogue. Requester is on macOS 1.4 (build 25G83, French UI), so a Wi-Fi or Bluetooth bridge is the only option: the Mac build drops the USB and audio blasters.",
-      "votes": 1,
+      "notes": "Already supported — no change needed. \"LCDprojector\" with \"power: AC100-260V\" is how these arrive: the customer reads the box, not a model plate. It is the HY300 family, covered by magcubic-hy300-01/-02 (the two remotes these ship with) with Smoon and SU.YOSO aliased to it. Deliberately not adding \"LCD projector\" as a searchTerm — it would claim every projector in the catalogue. Asked twice in two days (2026-09-16 French/macOS 1.4, 2026-09-17 Portuguese/iOS 1.5), both naming the model \"LCD projector\" — the box name is what people have. First requester is on macOS 1.4 (build 25G83, French UI), so a Wi-Fi or Bluetooth bridge is the only option: the Mac build drops the USB and audio blasters.",
+      "votes": 2,
       "status": "done",
       "createdAt": "2026-09-16"
     },
