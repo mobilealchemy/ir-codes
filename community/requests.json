@@ -439,8 +439,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-20"
+    },
+    {
+      "id": "req-041",
+      "category": "air_conditioner",
+      "brand": "Voltas",
+      "model": "4503627",
+      "region": "India",
+      "notes": "IRremoteESP8266 has a Voltas protocol (ir_Voltas.{h,cpp}, \"122LZF 4011252 Window A/C\" — and this customer's 4503627 is the same shape of Voltas part number). 10 bytes, 80 bits, no header at all: bit mark 1026, one 2553, zero 554, 38 kHz, checksum ~sumBytes(0..8) into byte 9.\n\nNot built, for two reasons. The checksum is a *complemented* byte sum and we have no such type — byteSum, xor, xorNibble, nibbleSum, invertPairs, popcountComplement — so it needs a compiled interpreter change and therefore a release, with packs covering older builds. And there is nothing to validate against: our two Voltas packs are irext and neither is this protocol (irx-11316 is 9000/4500 with 68 bits, irx-11315 is 3490/1620 with 113 bits), and Flipper-IRDB has no Voltas AC. The Electra family was worth building because a capture confirmed every field; this would rest on the library alone.\n\nAsked the customer for the number on the remote, which is what identified Electra. The two irext packs are what they have meanwhile.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-20"
     }
   ],
-  "totalCount": 40,
+  "totalCount": 41,
   "updatedAt": "2026-09-20"
 }
