@@ -428,8 +428,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-18"
+    },
+    {
+      "id": "req-040",
+      "category": "air_conditioner",
+      "brand": "AMENA",
+      "model": "YKR-P/001E",
+      "region": null,
+      "notes": "The remote number identified a whole family we did not have. YKR-* is the Electra protocol in IRremoteESP8266 (ir_Electra.h), which lists AUX YKR-T/011, Electra YKR-M/003E, Subtropic YKR-H/102E and Centek YKR-P/002E — one digit from this customer's YKR-P/001E — plus Electrolux, AEG, Frigidaire and Delonghi models.\n\nBuilt as a computed family: 13 bytes, LSB-first, header 9166/4470, bit 646, one 1647, zero 547, byte 0 = 0xC3, temp in byte 1 bits 3-7 (offset 8), swing byte 1 bits 0-2, fan byte 4 bits 5-7, mode byte 6 bits 5-7, power byte 9 bit 5, byteSum(0..11) into byte 12. Verified three ways: the layout against IRremoteESP8266; the checksum and every field byte against our flip-subtropic-in-07hn1 capture (6/6 frames, bytes 0-8 and 10 exact); and the descriptor against an independent Python encoder over the whole state grid through the app's own interpreter (680/680 states byte for byte).\n\nTwo knowing divergences from that capture. Byte 11 is the light-toggle byte, which the captured remote varies per press — we send IRremoteESP8266's idle value 0x08. And the remote blanks the temperature field in fan and auto, which the descriptor cannot express (setBytes runs before fields, and fields OR in), so we send it; the unit has no target temperature in those modes.\n\nRouted AMENA, AUX, Electra, Subtropic and Centek to the family. Deliberately not Electrolux, Frigidaire or DeLonghi: IRremoteESP8266 lists one model each, they build many others, and they already have capture packs a wrong family would override.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-20"
     }
   ],
-  "totalCount": 39,
-  "updatedAt": "2026-09-18"
+  "totalCount": 40,
+  "updatedAt": "2026-09-20"
 }
