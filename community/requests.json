@@ -494,8 +494,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-20"
+    },
+    {
+      "id": "req-046",
+      "category": "projector",
+      "brand": "Magcubic",
+      "model": "HY300 (not stated)",
+      "region": null,
+      "notes": "\"It says it failed\", with no more than that: the mail came through the review gate, so this customer has 10+ successful commands behind them, and 1.5 predates the support-mail diagnostics (771e1e8, unreleased), so there is nothing else in it.\n\nRuled out delivery. verify_published.py b315ec25 (the commit is the rev, not a range - b315ec25..HEAD excludes the packs it added) reads both magcubic-hy300-01 and -02 clean against the live manifest HMAC on all five providers. Not an integrity failure.\n\nRuled out malformed codes. Decrypted both: plain NEC with device/subdevice/function, no raw timings, so any bridge can encode them. -01 is NEC 00/FF, 12 keys, power function 0x14; -02 is NEC 01/FE, 13 keys, power 0x40. Better, 0x14 is corroborated by the projector's own factory firmware - shift/sun50iw12p1-research reverse-engineered the H713 DTB and its cir_param node carries ir_power_key_code0 = <0x14>. That is the first outside confirmation these codes have ever had; b315ec25 never claimed a source.\n\nMost likely the remote variant. The HY300 shipped two remotes on different NEC addresses, which is why there are two packs, and the factory property is indexed (code0) as if the firmware expects more than one. If they picked remote 1, remote 2 is the next thing to try. Second candidate is a send-time transport failure: the red cross and message come from AddDeviceConfigView's Test, which reports the last log entry's detail, not anything about the code set.\n\nNothing changed. Waiting on which code set they picked and the exact wording.",
+      "votes": 1,
+      "status": "in_progress",
+      "createdAt": "2026-09-20"
     }
   ],
-  "totalCount": 45,
+  "totalCount": 46,
   "updatedAt": "2026-09-20"
 }
