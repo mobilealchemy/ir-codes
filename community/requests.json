@@ -450,8 +450,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-20"
+    },
+    {
+      "id": "req-042",
+      "category": "projector",
+      "brand": "Visualpex",
+      "model": "Androi 11.0",
+      "region": null,
+      "notes": "Same shape as BOSEN (req-034): a marketplace name on the generic Android mini projector, and the model field is the OS version because there is no model. The product profile is the HY300 class — Android 11, 720p native claiming 1080p/4K support, WiFi 6, 180-degree rotation, 1GB/8GB, $40-70 — so aliased to Magcubic like Smoon, SU.YOSO and BOSEN, and the two HY300 remote sets should drive it.\n\nInference from the product profile, not a capture; nobody has seen the remote. The contrast is req-036, the Veho Quda, which was NOT aliased: Veho's own line at £180 with Wi-Fi 6 and a 1.2:1 throw does not fit the class however similar it looks. Price band and marketplace-brand pattern are what separate the two.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-21"
     }
   ],
-  "totalCount": 41,
-  "updatedAt": "2026-09-20"
+  "totalCount": 42,
+  "updatedAt": "2026-09-21"
 }
