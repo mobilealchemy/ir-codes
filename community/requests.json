@@ -325,9 +325,9 @@
       "brand": "Iris Ohyama",
       "model": "R5.0D",
       "region": "Japan",
-      "notes": "Asked twice (2026-09-16, both in Japanese; the second spelled the brand アイリスオオヤマ, which the searchTerms already cover). R5.0-D is the remote, not the light: it ships with the LED ceiling lights of the 5.0 series (CL6D-5.0 and siblings) and Iris Ohyama now sells CL-RL1 as its replacement; R5.0-DL / CL-RL2 are the colour-temperature variants. No code set exists for it anywhere public — Flipper-IRDB has no Iris Ohyama entry and no Japanese ceiling light at all, irdb has no such brand, and the one project that drives this exact remote (Akkiesoft/airpippi, config/R5.0-DL) keeps its ir-ctl captures outside the repo. The brand row now also carries the light category and the remote's model numbers, so the picker and search reach it; learning the remote through an IR bridge is still the only working path. The earlier note here blamed export_irext.py's MIN_KEYS floor for the missing lights — that was wrong and is corrected in CLAUDE.md: the irext index holds 13 light rows in total, 10 already imported, and the floor is now 1 anyway.",
+      "notes": "Asked twice on 2026-09-16, both in Japanese. R5.0-D is the remote, not the light: it ships with the LED ceiling lights of the 5.0 series (CL6D-5.0 and siblings), and CL-RL1 is the current replacement part; R5.0-DL / CL-RL2 are the colour-temperature variants.\n\nI reported that no codes existed anywhere. That was wrong — I had checked Flipper-IRDB and irdb and stopped. SmartIR has an Iris Ohyama ceiling light, LEDHCL-R2, now shipped as smartir-1000-iris-ohyama: on, off, power and brightness up/down. It also has NEC (RE0201-CH2) and Takizumi (TLR-002) ceiling lights, which is three more Japanese lights than we had.\n\nNot the same model as the 5.0 series, so unverified for this customer — Japanese ceiling lights from one maker often share a code set across the range, which is the bet worth offering them. Off is two frames sent in sequence, joined with a 40 ms gap; a first pass dropped it entirely by only reading string commands, which is fixed in the importer.\n\nStatus stays in_progress until someone confirms it drives an R5.0-D light.",
       "votes": 2,
-      "status": "open",
+      "status": "in_progress",
       "createdAt": "2026-09-16"
     },
     {
