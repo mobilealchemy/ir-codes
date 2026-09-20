@@ -516,8 +516,19 @@
       "votes": 1,
       "status": "in_progress",
       "createdAt": "2026-09-20"
+    },
+    {
+      "id": "req-048",
+      "category": "light",
+      "brand": "Luminous led",
+      "model": "E501",
+      "region": "Japan",
+      "notes": "\"Luminous led\", model E501, region \"Nhật\" - Vietnamese for Japan, and the customer writes Vietnamese. Luminous is Doshisha's LED ceiling-light line and E501 is the remote, not the light: it ships with the E50-U06D/U08D/U12D and E50-V06D/V08D/V12D fixtures (kaname78's parts catalogue lists the set, JAN 4550283308707).\n\nNothing public had the codes - absent from SmartIR, Flipper-IRDB and irdb - but IRremoteESP8266 has a whole Doshisha protocol in ir_Doshisha.cpp, which none of those searches would have surfaced: AEHA-shaped, header 3412/1722, bit mark 420, spaces 1310/452, 38kHz, 40 bits MSB-first, framed as 0x800B3048 plus a command byte masked 0xFE and a channel bit. It names the commands too: On 0xC0, Off 0xA0, level up 0xCC, level down 0x2C, night light 0xC8, four discrete levels.\n\nEncoder checked against the three real captures in test/ir_Doshisha_test.cpp and it reproduces 800B3048A5, 800B3048A1 and 800B3048A0 exactly; the sealed packs decode back to the same frames. Shipped as doshisha-light-01/02, one per channel like the Magcubic remotes, four keys each - the protocol has discrete On and Off and no toggle, so no fifth key was invented. Manifest v44, clean on all five providers.\n\nThe gap worth remembering: upstream's \"works on real device\" covers the RCZ01 remote and the CZ-S32D/S38D/S50D lights. This customer has the later E501 and an E50-* fixture. Same maker, same product line, protocol assumed to carry over and not verified against their hardware. If they come back saying it does nothing, that assumption is the thing that broke, and the next step is asking them to learn a button rather than guessing again.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-21"
     }
   ],
-  "totalCount": 47,
-  "updatedAt": "2026-09-20"
+  "totalCount": 48,
+  "updatedAt": "2026-09-21"
 }
