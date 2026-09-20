@@ -461,8 +461,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-21"
+    },
+    {
+      "id": "req-043",
+      "category": "air_conditioner",
+      "brand": "Unionaire",
+      "model": "KUSAN R02301041 (T=2700694)",
+      "region": "Jazan, Saudi Arabia",
+      "notes": "A real manufacturer (Egypt) rather than a rebadge, and the customer gave everything they had — unit code, remote name and remote part number — but none of it resolves. No Unionaire or Kusan in brands.json, our packs, Flipper-IRDB, irdb or IRremoteESP8266's supported list, and R02301041 matches no family prefix we know (not R51/Midea, not YKR/Electra, not YAC/YAA/Gree). The one lead, an eBay listing pairing Unionaire with Changhong remotes, dead-ends: we carry Changhong as a brand but hold zero Changhong AC packs.\n\nNo brand row added, for the ROCH and Skill Tech reason — with no family it leads to the synthesized NEC fallback, which cannot drive an AC state protocol. Asked for a photo of the remote; learning it through a bridge is the working path today. Worth adding properly if anyone ever captures one: Unionaire is a substantial brand across Egypt and the Gulf, and this is the first request for it.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-21"
     }
   ],
-  "totalCount": 42,
+  "totalCount": 43,
   "updatedAt": "2026-09-21"
 }
