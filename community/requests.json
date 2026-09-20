@@ -472,8 +472,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-21"
+    },
+    {
+      "id": "req-044",
+      "category": "air_conditioner",
+      "brand": "Mitsubishi",
+      "model": "SRK09CMP-5",
+      "region": "Vietnam (unit made in Thailand)",
+      "notes": "The naming trap, exactly as the runbook has it: SRK is Mitsubishi Heavy Industries, not Mitsubishi Electric. The customer chose Mitsubishi, where nothing will drive their unit. Already supported under Mitsubishi Heavy — mitsubishi-ac-02 covers all SRK/SRC on the compiled family (145 buttons), and today's SmartIR import added SRK25ZJ-S1/SRK13CRV-S1 and SRK71ZK-S at 157 each. Searching SRK already reaches it; the brand row has carried that term for a while. Nothing to add for the request itself.\n\nIt did expose a mess the SmartIR import made: the brand-row generator created 'Mitsubishi Heavy Industries', 'Mitsubishi Electric Starmex' and 'Ggeneral Electric' (SmartIR's own typo) as separate brands from ones we already had, each with one pack and no family. Aliased to their canonical rows so picking either shows both sets. A name-overlap scan of the whole table found no others worth merging: Eberg/Leberg, Royal Clima/ROYAL, Subtropic/Tropic and Westinghouse/White-Westinghouse are all genuinely different marques.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-21"
     }
   ],
-  "totalCount": 43,
+  "totalCount": 44,
   "updatedAt": "2026-09-21"
 }
