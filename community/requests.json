@@ -468,9 +468,9 @@
       "brand": "Unionaire",
       "model": "KUSAN R02301041 (T=2700694)",
       "region": "Jazan, Saudi Arabia",
-      "notes": "A real manufacturer (Egypt) rather than a rebadge, and the customer gave everything they had — unit code, remote name and remote part number — but none of it resolves. No Unionaire or Kusan in brands.json, our packs, Flipper-IRDB, irdb or IRremoteESP8266's supported list, and R02301041 matches no family prefix we know (not R51/Midea, not YKR/Electra, not YAC/YAA/Gree). The one lead, an eBay listing pairing Unionaire with Changhong remotes, dead-ends: we carry Changhong as a brand but hold zero Changhong AC packs.\n\nNo brand row added, for the ROCH and Skill Tech reason — with no family it leads to the synthesized NEC fallback, which cannot drive an AC state protocol. Asked for a photo of the remote; learning it through a bridge is the working path today. Worth adding properly if anyone ever captures one: Unionaire is a substantial brand across Egypt and the Gulf, and this is the first request for it.",
+      "notes": "Solved from a source we were not using. I had checked Flipper-IRDB, irdb and IRremoteESP8266 and reported that nothing public had Unionaire — wrong: SmartIR (smartHomeHub/SmartIR, MIT) has codes/climate/2140.json, manufacturer Unionaire, model Artify, which is this customer's unit. Broadlink base64, decoded at 269/8192 ms per tick into raw durations and shipped as unionaire-ac-01: 73 tokens, off plus cool and heat 20-28C with auto/low/medium/high.\n\nFrames check out as real captures: 64 bits each, cool.24 to cool.25 differs in three bit positions (temperature plus checksum), cool.24 to cool.24.low in four. Nothing reverse-engineered — these are the remote's own signals.\n\nCoverage is what the file has: no auto, dry or fan mode, and 20-28C only. The brand row carries KUSAN, Artify and يونيونير as search terms.\n\nThe bigger finding is SmartIR itself: 358 climate device files, 56 media_player, 17 fan, all MIT and all real captures keyed by mode/fan/temperature. Air conditioning is where our coverage is thinnest because state protocols need an encoder, and this is a database of captures that sidesteps that. Worth a proper import.",
       "votes": 1,
-      "status": "open",
+      "status": "done",
       "createdAt": "2026-09-21"
     }
   ],
