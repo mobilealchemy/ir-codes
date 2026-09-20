@@ -483,8 +483,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-21"
+    },
+    {
+      "id": "req-045",
+      "category": "tv",
+      "brand": "Sylvox",
+      "model": "OT43A0KAGB",
+      "region": "US",
+      "notes": "Sylvox is an outdoor-TV brand (deck, pool, bathroom sets) and OT43A0KAGB is the 43\" Deck Series, 2023. It runs Android TV 11 with Chromecast built in, which is the whole answer: TV is isTypicallyNetwork, so Add Device -> TV already offers Scan Wi-Fi for Devices plus Android TV (Pair with PIN) and Chromecast. Full control on 1.5 today, no IR bridge and no update. openhoangnc/android_model_name carries SYLVOX Google TV / 4K Google TV-A..E, confirming the platform.\n\nNo IR codes shipped, deliberately. Sylvox is absent from Flipper-IRDB, irdb and SmartIR (GitHub code search, all three, control query proves the search works); the only 'sylv' packs we hold are flip-sylvania-* and irext-*-sylvania, a different marque entirely - do not alias them. The Deck Series remote is IR (replacement remotes advertise 'no programming, 2x AAA'), so codes exist to be captured, we just have none.\n\nA bare brand row would have been worse than nothing: IRDatabase.signal falls back to synthesized(for:) for a cloud brand with no packs, so Sylvox would appear in the picker backed by invented addresses and look supported while working only by coincidence. Same trap as the sweep before 275e3fc. Revisit if a capture turns up.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-20"
     }
   ],
-  "totalCount": 44,
-  "updatedAt": "2026-09-21"
+  "totalCount": 45,
+  "updatedAt": "2026-09-20"
 }
