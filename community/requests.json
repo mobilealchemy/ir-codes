@@ -527,8 +527,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-21"
+    },
+    {
+      "id": "req-049",
+      "category": "fan",
+      "brand": "celasin",
+      "model": "quạt điều hòa tuần hoàn",
+      "region": "Vietnam",
+      "notes": "\"Celasin\" resolves to nothing — not in brands.json, our 672 fan packs, Flipper-IRDB or irdb, and no product under that name turns up publicly; most likely a Shopee or Lazada marketplace name, or a misspelling. The model field is the product description in Vietnamese (an evaporative air cooler / circulator), and the region field says \"Phòng khách\" — living room — so the form was filled loosely and there is no identifier in it at all.\n\nNo brand row: nothing to alias it to, and with no family it would lead to the synthesized NEC fallback. Asked for the number on the remote or a photo. Learning is a better answer than usual here — a fan remote is five or six buttons, so copying it through a bridge takes a minute, unlike an AC where every temperature is its own frame.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-21"
     }
   ],
-  "totalCount": 48,
+  "totalCount": 49,
   "updatedAt": "2026-09-21"
 }
