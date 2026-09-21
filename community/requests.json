@@ -538,8 +538,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-21"
+    },
+    {
+      "id": "req-050",
+      "category": "fan",
+      "brand": "TOSHIBA",
+      "model": "EPS30(PS)",
+      "region": "Egypt",
+      "notes": "Arabic mail signature, and EPS30(PS) is a 16-inch Toshiba wall fan sold all over Egypt (2B, B.TECH, Raya, EHAB): 3 speeds, oscillation, 8-hour timer, 220V 65W. So the button set is power, speed, swing, timer.\n\nThe find was that we already had a plausible pack and no way to reach it. flip-toshiba-fwsa20 is a real Toshiba fan capture - NEC device 0x4B, subdevice 0x14, functions power 0x80, speed 0x20, oscillate 0xC0, timer 0xA0 - exactly the four an EPS30 needs. But IRDatabase's compiled fan catalogue is only Universal, Honeywell and Dyson, and the Toshiba cloud row listed tv, airConditioner and mediaPlayer, so Toshiba never appeared in the fan brand picker. The pack was reachable through the Code Database and nowhere else. Adding \"fan\" to the row fixes it with no release.\n\nAlso added توشيبا to the search terms - the Arabic spelling matched nothing at all before, which matters for a brand whose mail arrives in Arabic - plus EPS and FWSA so a fan model number lands on the brand the way RAS and CT- already do.\n\nNo EPS30 codes claimed. Flipper-IRDB, irdb and SmartIR have nothing for EPS30, Toshiba fan or El Araby. Worth writing down as a naming trap: Toshiba-branded fans and small appliances in Egypt are built by Toshiba El Araby, the joint venture with El Araby Group, not by Toshiba Japan - so the RAS/CT-/REGZA families say nothing about them, and FWSA20 matching is a hope rather than a finding. Checked the sibling theory too: El Araby's own Tornado brand appears only as air conditioners in our packs, no fans to compare against, and cosmos-fan-01 (COSMOS 16-WFGR, the other Egyptian wall fan we hold) is raw with 1200/400 marks and no NEC leader, so it is a different remote family entirely.\n\nTold the customer to try the Toshiba fan set and to say if it does nothing; learning their own remote is the fallback, and that needs a Broadlink or Tuya hub - the only two transports that implement learn.",
+      "votes": 1,
+      "status": "in_progress",
+      "createdAt": "2026-09-22"
     }
   ],
-  "totalCount": 49,
-  "updatedAt": "2026-09-21"
+  "totalCount": 50,
+  "updatedAt": "2026-09-22"
 }
