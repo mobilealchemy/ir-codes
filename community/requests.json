@@ -549,8 +549,19 @@
       "votes": 1,
       "status": "in_progress",
       "createdAt": "2026-09-22"
+    },
+    {
+      "id": "req-051",
+      "category": "tv",
+      "brand": "Buster",
+      "model": "HBTV-42L07FD",
+      "region": "Barcarena-PA, Brazil",
+      "notes": "Portuguese, Barcarena-PA. Two things in one mail, and the note is the real request: \"Conectar no Fire tv Stick na minha tv sem conexao a o Wi-Fi\" - they want to drive a Fire TV Stick with no Wi-Fi.\n\nThat cannot be done, and the reason is hardware. A Fire TV Stick has no IR receiver at all; its bundled remote is Bluetooth. IR universal remotes do not control a Stick, and the only workaround is an external USB IR receiver (Inteset IReTV) in its micro-USB port. Without Wi-Fi our Android TV and ADB paths are out too, so there is no route left.\n\nWhich exposes a pack we should not be shipping: firetv-stb-01, \"Amazon / Fire TV Stick\", streamingBox, 18 buttons. It promises exactly what the hardware cannot do. Its codes are NEC device 0x70 with a tidy sequential grid - power 2, up/down/left/right 32-35, ok 37, back 40, home 41, menu 42, transport 48-51, volume 16-18, Netflix 80, Prime 81 - which reads hand-assigned, and its only commit is a bulk one whose message is about Starlight and AUX. Flagged for removal or relabelling; not deleted unilaterally, since dropping a published pack hits every install. (flip-amazon-firetv-stick-4k-max, 4 buttons, is probably genuine but is the Fire remote's own IR blast at the TV - power and volume - not something the Stick receives.)\n\nThe TV half: H-Buster HBTV-42L07FD, a Brazilian 42\" LED set. No codes anywhere - not Flipper-IRDB (118 TV brand folders, no Buster), not irdb, not SmartIR. Brazilian siblings CCE and Philco are in irdb but there is no evidence H-Buster shares their remotes, so nothing was aliased. No brand row either: with no packs behind it, IRDatabase.signal falls through to synthesized() and Buster would look supported while working by coincidence - the same trap as req-045.\n\nAftermarket part numbers for the family, if a capture ever turns up: FN-7963, FBG-7481, and universal-remote code 7963.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-22"
     }
   ],
-  "totalCount": 50,
+  "totalCount": 51,
   "updatedAt": "2026-09-22"
 }
