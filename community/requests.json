@@ -571,8 +571,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-23"
+  },
+  {
+   "id": "req-053",
+   "category": "airConditioner",
+   "brand": "Cmidea",
+   "model": "?",
+   "region": "?",
+   "notes": "Arabic (\"أُرسلت من الـ iPhone\"), App 1.5, iOS 26.6. Model and region both left as \"؟\", so the brand is the whole request.\n\nCmidea is Midea. Nothing sells under \"Cmidea\" - searched in English and in Arabic, and both return only Midea (ميديا), which is the dominant AC brand across these markets. Treated as a misspelling rather than a separate maker.\n\nMidea itself was already well covered - 47 AC packs, plus eight brands aliased to it (Comfee, Danby, Kaysun, Keystone, Magnavox, MrCool, Pioneer System, Trotec). The customer simply could not reach any of it, because \"Cmidea\" matched no brand row and no pack.\n\nFixed in the cloud: a Cmidea alias row pointing at Midea, and searchTerms on the Midea row itself - ميديا, Cmidea, C Midea, 美的. The Arabic spelling is the one that matters beyond this ticket; until now an Arabic speaker typing ميديا found nothing.\n\nSeparately, and NOT fixed here: the midea protocol family does not exist. Eight brand rows (now nine) declare family \"midea\", but ACProtocolRegistry has no compiled midea encoder and protocols.json has no midea descriptor, so ACProtocolCatalog.signal returns nil for all of them. It is latent rather than active, because RemoteController tries the imported pack's frames FIRST and only computes a frame when no pack was imported - and every one of these brands resolves to Midea's 47 packs. It bites only a customer who adds one of these brands and imports no pack. Worth building: Midea is 48-bit and documented in IRremoteESP8266 ir_Midea.cpp, and one descriptor would light up all nine rows at once.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-09-23"
   }
  ],
- "totalCount": 52,
+ "totalCount": 53,
  "updatedAt": "2026-09-23"
 }
