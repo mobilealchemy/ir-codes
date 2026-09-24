@@ -593,8 +593,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-24"
+  },
+  {
+   "id": "req-055",
+   "category": "audioReceiver",
+   "brand": "LG",
+   "model": "LHB655",
+   "region": null,
+   "notes": "No mail sign-off, so English by default. App 1.5, iOS 27.0. The LHB655 is an LG 5.1 Blu-ray home theater system, and it ships with the AKB73775801 remote (LG Parts), which also covers the LHB675 and the BH5140S / BH6540T range.\n\nWe had the exact model, flip-lg-lhb655, but under DVD / Media Player (Flipper-IRDB files it under Blu-Ray). The customer looked under Audio / AV Receiver, where LG had 25 packs and none of them this one. It would have been the wrong pack to find anyway. Its capture names the volume keys VolUp and VolDown, which the importer does not recognise, so the pack has no volume at all. It is also missing skip, scan and disc menu (SkipBack, ScanForward, DiscMenu).\n\nAdded lg-hts-01, \"LHB655 / BH Home Theater (AKB73775801)\", under audioReceiver. It has 42 keys at Samsung32 address 0x2C and is built from the LHB655 capture. 32 of the codes are confirmed by a second source: the AKB73775801 capture (the LHB655's own remote), the BH9520TW capture, or irdb's LG Sound Bar 44,44 set. They agree everywhere. The digits rest on the LHB655 capture alone. It is also the first LG pack the audio sweep can try.\n\nThe Audio / AV Receiver remote shows power, volume, mute, input, sound effect, sleep and Optical / TV sound (as Source). For disc playback, add the system under DVD / Media Player and pick \"AKB73775801\", which has volume.\n\nNot verified on hardware. The importer's handling of glued names (VolUp, SkipBack) is left for a separate pass, because splitting them naively would also turn ScanBack into Back.\n\nWhat to tell them: Audio / AV Receiver, then Browse Full Code Database, then LG, then \"LHB655 / BH Home Theater (AKB73775801)\".",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-09-24"
   }
  ],
- "totalCount": 54,
+ "totalCount": 55,
  "updatedAt": "2026-09-24"
 }
