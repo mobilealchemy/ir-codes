@@ -604,8 +604,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-24"
+  },
+  {
+   "id": "req-056",
+   "category": "airConditioner",
+   "brand": "Skystar",
+   "model": "67589",
+   "region": "Saudi Arabia",
+   "notes": "Arabic (Outlook for iOS signature), App 1.5, iOS 26.6.2. Neither number is what the form asked for: 67589 reads like a retailer SKU, and the region field holds رقم التصنيف الجمركي 84151010 - the customs tariff line off the box, HS 8415.10.10, wall and split air conditioners. Saudi labelling, so a Saudi customer.\n\nSkystar (سكاي ستار) is a Saudi house brand built in China: SKYSTAR-18UB and HWC-18HC Gold at Saudi retailers, R410A, @skystarac on X. Nothing of ours carried the name, and neither did irdb, Flipper-IRDB or SmartIR.\n\nRouted to the Gree family, on evidence that is suggestive rather than settled. A Saudi forum thread titled for Skystar (Union Air) is summarised by search as saying they come out of Gree's factory - but the thread answers 403 and could not be read, and one summary said only that the compressor is Gree's, which proves nothing about the IR protocol: that comes from the indoor board, and Gree sells compressors to everybody. An Egyptian retailer filing Skystar under Gree is NOT evidence; its search fuzzy-matched Gree's own \"Sky\" model line. HWC-18HC loosely follows Gree's GWC-/GWH- export naming. Weak, taken together.\n\nWhy route anyway: in the released build the Gree encoder is compiled in and ACProtocolRegistry already consults brands.json for family, so a Skystar row with family gree makes the unit work on 1.5 with no pack at all - nothing here depends on the sealed-pack fix. There are no Skystar packs for the family to override, so being wrong costs only a unit that does not respond. Without a family the row would be the req-045 trap: a brand that looks supported and falls through to the synthesized set.\n\nAsked for the reference printed on the back of the remote. Gree remotes say YAP1F, YB1F, YAA1FB, YAC1FB and the like; anything else and the routing comes out.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-09-25"
   }
  ],
- "totalCount": 55,
- "updatedAt": "2026-09-24"
+ "totalCount": 56,
+ "updatedAt": "2026-09-25"
 }
