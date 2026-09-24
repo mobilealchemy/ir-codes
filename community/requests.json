@@ -615,8 +615,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-09-25"
+  },
+  {
+   "id": "req-057",
+   "category": "airConditioner",
+   "brand": "Haier",
+   "model": "INVERTER",
+   "region": "Thailand",
+   "notes": "Thai (\"ส่งจาก iPhone ของฉัน\"), App 1.5, iOS 26.6. \"INVERTER\" is the word printed on the unit, not a model - so the only fact in the request is the brand, and Haier is one of the best-covered brands we have.\n\nWhat 1.5 actually does with it, read from v1.5-b2 rather than main: picking Haier writes codeSetID airConditioner.Haier, the brand resolves to the compiled haier family, and HaierAC.signal sends three frames per press - 176-bit (YR-HD), 160-bit and 112-bit (YR-W02) - each unit acting on the one whose length and checksum it expects. No pack is downloaded on that path (dbCodes stays empty unless the customer imports from the database), so the sealed-pack failure never touches it.\n\nThe trap is the code database. 42 of our 44 Haier AC packs are sealed and fail on 1.5 with \"integrity check failed\"; only haier-ac-01 and haier-ac-02 are plaintext. 1.5 lists them sorted by model name, and the first three it shows are flip-haier-ac-as18gd3hra, -hpd10xcm-lw and -hwe08xcr-l, all sealed. A customer who filed a request after tapping the top entry would look exactly like this one. No diagnostics to confirm it - 1.5 predates them.\n\nNothing published. The reply steers them to add Haier without importing a code set, and asks for the reference on the back of the remote: the three computed frames do not include the older 72-bit protocol (V9014557 remotes), which is the one gap a Thai unit could plausibly fall into.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-09-25"
   }
  ],
- "totalCount": 56,
+ "totalCount": 57,
  "updatedAt": "2026-09-25"
 }
