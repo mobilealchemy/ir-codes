@@ -626,8 +626,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-09-25"
+  },
+  {
+   "id": "req-058",
+   "category": "tv",
+   "brand": "JVC",
+   "model": "48X",
+   "region": "Taiwan",
+   "notes": "No mail signature; the sender's name, 楊瑄萱, is written in Traditional characters (楊, not 杨) and is a typical Taiwanese given name, so Taiwan and a zh-Hant reply. App 1.5, iOS 26.6.2.\n\n48X is a real model, not a size: \"JVC 48吋 4K 連網液晶顯示器 48X\", launched in Taiwan in 2016, champagne-gold body, white remote labelled in Chinese; the Taiwanese licensee's site is jvc.tv. Nothing of ours names it.\n\nOn 1.5 the obvious path cannot work. JVC is in the compiled picker-parity group whose own comment says \"real codes come from the code database; these addresses only feed the synthesized fallback\" - so picking JVC and saving sends an invented NEC set at address 0x9A. Real codes have to come from Browse Full Code Database.\n\nThere, Our Cloud opens exactly one JVC TV pack on 1.5 (jvc-tv-01, the classic JVC protocol, RM-C3 series - unlikely for a 2016 Taiwanese 4K set); the other 34 are sealed. Standard and Extended read irdb and Flipper through the mirror, not the pack path, so they work.\n\nOur 35 JVC TV packs send twenty distinct signatures - JVC has been licensed to many makers: classic JVC, NEC at 0x40, 0x04 (LG's), 0xA0 and others, Samsung32, RC5, and several raw irext captures of mainland 胜利 sets. None is a known 48X capture.\n\nNot done, and worth weighing: the 19 irext 胜利电视 packs are the Asian-market JVC captures and the only JVC data a 1.5 customer cannot reach at all. Unsealing them via REQUESTED would widen the stopgap by 19 speculative packs, so it was left alone. Asked for a photo of the remote, front and back.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-25"
   }
  ],
- "totalCount": 57,
+ "totalCount": 58,
  "updatedAt": "2026-09-25"
 }
