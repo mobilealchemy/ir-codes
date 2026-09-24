@@ -508,9 +508,9 @@
   },
   {
    "id": "req-047",
-   "category": null,
-   "brand": null,
-   "model": null,
+   "category": "custom",
+   "brand": "?",
+   "model": "?",
    "region": "Vietnam",
    "notes": "An empty mail: no words at all, just the diagnostics footer and \"Được gửi từ iPhone của tôi\". Vietnamese, 1.5 (2), iOS 18.6. Nothing to diagnose and nobody to ask without a reply.\n\nThe cause is ours. ReviewPrompter.feedbackURL built the body as \"\\n\\n\\n---\\nApp: ...\", so tapping Send Feedback opened a blank mail above a technical footer with nothing saying what to write. A customer who does not read English gets no cue at all. This is the second near-empty one - an earlier Vietnamese report was the three characters \"Mo ko dc\" (Vietnamese shorthand for \"mở không được\", can't get it to open/turn on) - and both came through the review gate, which only offers the mail after a 10/50/100 success milestone. These are customers with working setups and something specific to say.\n\nFixed in 787911d: a localized prompt line above the blank lines, in all 35 languages, verified by reading the compiled Localizable.strings back out of the built app. Compiled text, not a cloud id, so it reaches anyone only in the next release. The subject stays English so the inbox still sorts.\n\nReply sent in Vietnamese asking what the device is and what happens.\n\nThird instance, 2026-09-21, Indonesian: \"jelek aneh apk nya\" — bad, weird, that is the whole report. Same shape as the other two: 1.5 (2), through the review gate so 10+ successful commands, and no cue in the mail about what to write. Also the first that is a complaint about the app rather than a device failing, which the prompt line in 787911d should separate out — someone with a working setup who dislikes something has no other way to say what. Still unreleased, so the next few of these will look the same.",
    "votes": 2,
