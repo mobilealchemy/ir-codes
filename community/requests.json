@@ -648,8 +648,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-25"
+  },
+  {
+   "id": "req-060",
+   "category": "airConditioner",
+   "brand": "Lloyd",
+   "model": "Pta nhi",
+   "region": "India",
+   "notes": "\"Pta nhi\" is romanized Hindi for \"don't know\"; region \"No\", notes \"On\". The signature is English, so an English reply. Lloyd is Havells' Indian AC brand. App 1.5, iOS 27.0.\n\nNothing anywhere: no brand row, no packs, not in the compiled catalog - Lloyd is not even in the 1.5 brand list, which is why this is a request rather than a failure report. Also absent from SmartIR (CLIMATE.md), Flipper-IRDB, irdb and the irext 20260519 database, and IRremoteESP8266 maps no protocol to it. No web source identifies the OEM behind Lloyd's splits.\n\nNo row added, deliberately. Unlike Skystar there is no evidence for any family, and a row without one is the req-045 trap: Lloyd would appear in the list and send the synthesized NEC set, which never controlled a real AC.\n\nThe reply offers what works on 1.5 today: Gree (compiled, so a brand pick computes real frames with no download) and midea-ac-01 via the code browser (plaintext), as the two commonest OEM families behind house brands - framed as worth a try, not as a match. And learning, with the AC-specific caveat that each press carries the whole state. Asked for the reference on the back of the remote; that is what would identify the family.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-25"
   }
  ],
- "totalCount": 59,
+ "totalCount": 60,
  "updatedAt": "2026-09-25"
 }
