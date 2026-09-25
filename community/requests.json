@@ -659,8 +659,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-09-25"
+  },
+  {
+   "id": "req-061",
+   "category": "projector",
+   "brand": "Yoshoot",
+   "model": "Y05",
+   "region": "",
+   "notes": "Russian (\"Отправлено с iPhone\"), App 1.5, iOS 26.3.1 (a). Nothing of ours carries Yoshoot, and no prior request.\n\nThe Y05 is a cheap mini projector - Rockchip 3326, 1GB/8GB, 1280x600 native, 120 ANSI lumens, Wi-Fi 6, BT 5.0, optional HDMI (noon.com KSA listings; the maker's own site, yoshoothd.com, does not resolve).\n\nDeliberately NOT aliased to Magcubic. It sits in the same price band as the HY300 white labels, but every one of those (Magcubic, Smoon, SU.YOSO, BOSEN, Visualpex) is the Allwinner H713 platform at 1280x720; an RK3326 at 1280x600 is a different ODM and very likely a different remote. Same rule that kept Veho out (req-036). No row without a family either - it would list Yoshoot and send the synthesized set.\n\nLearning is the first answer, as for fans: a projector remote is about ten buttons. Confirmed in v1.5-b2 that learnedCodes wins over the synthesized set (RemoteController checks it before the IR transport falls through), and that Universal is the default and first projector brand to learn onto. Asked for a photo of the remote and of the projector's label; if the remote has no IR window it is Bluetooth and cannot be learned at all.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-25"
   }
  ],
- "totalCount": 60,
+ "totalCount": 61,
  "updatedAt": "2026-09-25"
 }
