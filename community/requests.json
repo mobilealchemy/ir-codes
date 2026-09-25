@@ -637,8 +637,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-09-25"
+  },
+  {
+   "id": "req-059",
+   "category": "projector",
+   "brand": "HY300-A",
+   "model": "LCD Projector",
+   "region": "",
+   "notes": "English, App 1.5, iOS 26.6.1. The model went in the brand field and the box text in the model field - the fifth HY300-family request, after req-023 (SU.YOSO), -026 (Smoon 320), -032 (\"LCDprojector\"), -034 (BOSEN), -042 (Visualpex) and -046.\n\nAlready covered: magcubic-hy300-01 and -02, curated and plaintext, so they open on 1.5. What was missing is a way to find them on 1.5. The Magcubic row has carried HY300 and HY320 as searchTerms, but 1.5 has no brand search and its BrandCatalog does not decode searchTerms, so a customer scrolling the projector list saw Magcubic, BOSEN, Smoon, SU.YOSO and Visualpex - never HY300.\n\nAdded HY300 and HY320 as rows with aliasOf Magcubic. Checked against v1.5-b2 that this reaches the customer: the form's Picker lists brand rows by category; the code browser builds its Our Cloud brand list from pack brands plus every BrandCatalog alias whose canonical has packs; and models(brand:category:) resolves the alias through BrandCatalog.canonical. So HY300 shows in both places and opens the two plaintext packs.\n\nHY320 is on the strength of req-026 (the Smoon HY 320) and the searchTerm already there, not a capture. Model-as-brand rows are the pragmatic answer for a product that has no real brand; same shape as the Cmidea row.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-09-25"
   }
  ],
- "totalCount": 58,
+ "totalCount": 59,
  "updatedAt": "2026-09-25"
 }
