@@ -714,8 +714,19 @@
       "votes": 1,
       "status": "in_progress",
       "createdAt": "2026-09-27"
+    },
+    {
+      "id": "req-066",
+      "category": "tv",
+      "brand": "Sreen",
+      "model": "SRET-55S4KQ2",
+      "region": "Saudi Arabia",
+      "notes": "The best-diagnosed request we have had. SREEN is a Saudi brand; SRET-55S4KQ2 is the 55in QLED on Android 14 (their webOS models are SRET-55S4K1 and SRET-86S4KWQ3, so the range is mixed). The customer worked out the cause themselves: it is AOSP Android, not Android TV.\n\nThat is exactly why no app finds it, ours included. AOSP ships none of the services remote apps browse for — no Android TV Remote Service on 6466/6467, no Google Cast — so Discovery sees nothing however good the network is. Their 2.4GHz note is a red herring; the TV is reachable, it just answers nothing we ask. One retailer listing mentions AirPlay, which would make it visible on Bonjour, but AirPlay is not a control channel we can drive (Companion Link is Apple TV only).\n\nNo codes: Sreen is in no brand table and no pack, and nothing in Flipper-IRDB or irdb. Nothing to ship on 1.5 beyond learning the remote with a Broadlink or Tuya hub.\n\nWorth escalating rather than just closing: ADB on 5555 is almost certainly the working route, and FireTVTransport already speaks it. Nothing in that transport is Amazon-specific except ADBSession.isFireTV(), which only guards discovery, and the monkey app-launch intents. Exposing it as a generic Android (ADB) option would cover this whole class of set — AOSP Android TVs with no Google services — which is the segment every competitor misses too: the six App Store rivals checked on 2026-09-20 all require the Cast or Android TV path. This request is the demand evidence.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-27"
     }
   ],
-  "totalCount": 65,
+  "totalCount": 66,
   "updatedAt": "2026-09-27"
 }
