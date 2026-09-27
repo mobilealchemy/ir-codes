@@ -692,8 +692,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-27"
+    },
+    {
+      "id": "req-064",
+      "category": "audio_receiver",
+      "brand": "Fol",
+      "model": "FS-S2501",
+      "region": "Mexico",
+      "notes": "Spanish. FOL is real and the brand field is not a typo: a Mexican audio brand (folmx.com, folntech.us) selling soundbars named FS-M228L, FS-M2026, FS-M252, FS-P221. FS-S2501 fits that scheme, though that exact model does not surface — plausibly regional or newer.\n\nNothing to ship. No FOL codes in Flipper-IRDB, irdb or SmartIR (control query confirms the search works), and none in our manifest. No brand row either: with no packs behind it, IRDatabase.signal falls through to synthesized() and FOL would look supported while working by coincidence — req-045 and req-051 again.\n\nWorth recording beyond this request: of 1,161 audioReceiver packs, only 10 open on 1.5 — bose/denon/jbl/lg-hts/marantz/onkyo/samsung/sonos/sony/yamaha, all curated. The Flipper AV receiver import from 2026-09-24 is sealed, so it reaches nobody until 0002ab8 ships. That limits what any audio reply can offer to those ten brands or learning the remote.\n\nAsked for the part number printed on the remote itself. FOL bars are ODM products and the remote's own number sometimes names a family we already hold, which is the only realistic route to codes here.",
+      "votes": 1,
+      "status": "open",
+      "createdAt": "2026-09-27"
     }
   ],
-  "totalCount": 63,
+  "totalCount": 64,
   "updatedAt": "2026-09-27"
 }
