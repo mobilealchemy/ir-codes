@@ -703,8 +703,19 @@
       "votes": 1,
       "status": "open",
       "createdAt": "2026-09-27"
+    },
+    {
+      "id": "req-065",
+      "category": "air_conditioner",
+      "brand": "Alpha",
+      "model": "ACN09ULT-INV",
+      "region": "Yangon, Myanmar",
+      "notes": "Alpha International Company Limited is a real Myanmar house brand (alphainternationalmm.com): split inverters named ACN09PRO-INV, ACN12ULT-INV, so ACN09ULT-INV is theirs. We carry Alpha only as a fan brand (irext-583-alpha, sealed) and hold no Alpha AC codes.\n\nOne clue and its limit: the product page names a GMCC Toshiba compressor, and GMCC is Midea's compressor subsidiary. That hints at Midea sourcing but proves nothing about the IR protocol — GMCC sells to most of the industry — so Alpha was not routed to midea on it. No remote model is published anywhere, and that is the datum that would settle it.\n\nNo brand row added: with no codes behind it Alpha would fall through to synthesized() and look supported. Instead the reply asks the customer to try the rebadge parents, which are compiled families and need no pack.\n\nChecked which candidates a 1.5 build can actually open before naming any:\n  Midea    midea-ac-01   152 keys  plaintext\n  Gree     gree-ac-01    200 keys  plaintext\n  Haier    haier-ac-01/02 155/152  plaintext\n  Electra  electra-ac-01 152 keys  plaintext\nTCL, Chigo, AUX and Hisense have 12/5/16/27 AC packs and none open on 1.5, so they were left out of the reply — they would only produce the integrity error.\n\nWhen the customer says which one drives the unit, Alpha gets an airConditioner row with aliasOf set to it, which is a cloud-only fix that works on their build.",
+      "votes": 1,
+      "status": "in_progress",
+      "createdAt": "2026-09-27"
     }
   ],
-  "totalCount": 64,
+  "totalCount": 65,
   "updatedAt": "2026-09-27"
 }
