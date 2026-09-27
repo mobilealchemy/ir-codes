@@ -681,8 +681,19 @@
       "votes": 1,
       "status": "done",
       "createdAt": "2026-09-27"
+    },
+    {
+      "id": "req-063",
+      "category": "tv",
+      "brand": "Polaroid",
+      "model": "Smart TV (not stated)",
+      "region": "France",
+      "notes": "French, and the complaint is in the Region field: \"J'arrive pas a me connecter\". Model given as \"Smart TV\", so nothing to identify the panel by.\n\nTwo separate blockers, both ours, both cloud-fixable:\n- Polaroid was in no picker at all. Not among the 42 compiled TV brands and not in brands.json, so there was no way to select it on any build. Added as tv.\n- All four Polaroid TV packs were sealed, so even once selectable a 1.5 build would have failed them. irext-718/719 (21 keys) and irx-1642/10045 (24 keys, with back, home and settings) are now in REQUESTED and publish plaintext. Decrypted all four first: raw at 38kHz with sane TV key sets, worth shipping.\n\nLeft the projector and mediaPlayer categories off the brand row deliberately. We hold six irext and four irx Polaroid projector packs plus two DVD ones, all sealed; listing those categories on 1.5 would lead a customer straight into the failure this request is about. Add them when 0002ab8 ships.\n\nWhat \"can't connect\" means is still unknown. A Polaroid smart TV may be Android TV, in which case Control via -> Android TV and a PIN is the better route than infrared and needs no codes at all. The reply asks which, and gives the infrared route meanwhile. Told them to scroll to Polaroid, not type it — 1.5 has no brand search.",
+      "votes": 1,
+      "status": "done",
+      "createdAt": "2026-09-27"
     }
   ],
-  "totalCount": 62,
+  "totalCount": 63,
   "updatedAt": "2026-09-27"
 }
