@@ -747,8 +747,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-09-28"
+  },
+  {
+   "id": "req-069",
+   "category": "projector",
+   "brand": "Movie Legend",
+   "model": "A9 Premium",
+   "region": "Vietnam",
+   "notes": "Vietnamese sign-off (Được gửi từ iPhone của tôi), and the brand is Vietnam-only — movielegend.vn — so a Vietnamese reply; no region field was filled. App 1.5, iOS 26.5.2.\n\nMovie Legend is a Vietnamese retail brand, not a maker, and the A9 Premium's own spec sheet identifies the hardware: Android 12, 650 ANSI, auto focus, obstacle avoidance, ±40° auto keystone, 15W with sub bass. That is the Magcubic HY350 class (Allwinner H713/H726) — the same spec line Amazon sells as Alwtniet HY350GT, and the direct successor to the HY300 our two packs cover. So this is the fourth request in the same clone family after req-032, req-059 and req-067, which is why a brand row is the whole cloud-side fix: Movie Legend and HY350 both aliasOf Magcubic, resolving to magcubic-hy300-01 and -02, both plaintext and so openable on 1.5.\n\nTwo honest caveats in the reply. The alias is an inference from the spec sheet, not a decode of their remote — no capture of an A9 Premium exists in Flipper-IRDB or irdb. And the vendor lists the controller as \"Chuột bay + Magic stick\", an air mouse, which is 2.4GHz or Bluetooth rather than infrared; if that is the only controller the unit ships with, the projector may have no IR receiver at all and no IR code set can reach it. Asked for a photo of the remote, which settles it.\n\nThe app-side half is the same lesson as req-066. An Android 12 projector answers ADB on 5555, and AddDeviceConfigView offered the projector category .androidTV and .chromecast — neither of which an AOSP build runs — but not .androidADB, so the one transport that could reach it was unreachable. Added for the next release, with the option's hint reworded to name projectors: a projector owner reading \"For TVs that run plain Android\" would have skipped it.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-09-28"
   }
  ],
- "totalCount": 68,
- "updatedAt": "2026-09-28"
+ "totalCount": 69,
+ "updatedAt": "2026-09-28T08:13:13Z"
 }
