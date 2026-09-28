@@ -736,8 +736,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-28"
+  },
+  {
+   "id": "req-068",
+   "category": "airConditioner",
+   "brand": "Funiki",
+   "model": "22C1K178308752",
+   "region": "Vietnam",
+   "notes": "English sign-off, but Funiki is Hoa Phat's Vietnamese AC brand, so the customer is most likely Vietnamese; replied in English per the signature. App 1.5, iOS 27.0. The model field is a serial number.\n\nWe already held eight Funiki AC packs (irx-11305, -11306, -12570 to -12575), and on 1.5 they were doubly out of reach: no brand row, so Funiki is not in the picker, and all eight sealed, so opening one from the code browser failed the integrity check. The browser does list FUNIKI, because it builds its brand list from pack brands.\n\nNo single family covers them. Funiki has been built in several factories: a 9000/4500 leader at 88, 44 and 48 bits; 112-bit frames behind 3660/1800 and 3300/1300 headers; a 3060/3100 two-part frame; and two that are Coolix - B2 4D 7B 84 E0 1F is 0xB27BE0, Coolix's off. Not Midea 48-bit: 0 of 57 frames pass its header, checksum and complement checks.\n\nSo all eight went into REQUESTED and are plaintext from this publish, and no brand row: without a family it would list Funiki and send the synthesized set. The reply sends the customer to the code browser to try the eight, and asks for the model on the indoor unit's label and the reference on the back of the remote, which would say which factory built it.\n\nWorth building later: a Coolix family would cover two of these and a long list of other brands.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-09-28"
   }
  ],
- "totalCount": 67,
+ "totalCount": 68,
  "updatedAt": "2026-09-28"
 }
