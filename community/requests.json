@@ -149,7 +149,7 @@
    "brand": "Xgody",
    "model": "Gimbal A2",
    "region": "ID",
-   "notes": "No public IR codes found. Different product line from HY300 family. May use NEC protocol but codes unconfirmed.",
+   "notes": "No public IR codes found. Different product line from HY300 family. May use NEC protocol but codes unconfirmed. 2026-09-30: XGODY now aliases Magcubic (req-078), because XGODY's own OTA guide puts the Gimbal 3 and 5 on the HY300 firmware; whether the A2 shares it is unverified.",
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-09-07"
@@ -846,8 +846,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-09-30"
+  },
+  {
+   "id": "req-078",
+   "category": "projector",
+   "brand": "Xgody",
+   "model": "Gimbal 3 pro",
+   "region": "Indonesia",
+   "notes": "Indonesian sign-off (Dikirim dari iPhone saya); an Indonesian reply. App 1.5 on iOS 18.5.\n\nThe Gimbal 3 is the HY300 platform under XGODY's own name, and XGODY says so: its OTA guide is one document for \"HY300/HY320, Gimbal 3&5\", all running \"the open source version of Android TV\" on Allwinner's H713 - and XGODY sells the HY300 itself. The spec sheet matches too: native 720p, Android 11, Wi-Fi 6, Bluetooth 5.0, the 180-degree rotating cylinder stand. So the remote is one of the two HY300 remotes, and magcubic-hy300-01 and -02 (curated, plaintext) are the codes.\n\nAdded XGODY as a projector row aliased to Magcubic, with Gimbal / Gimbal 3 / Gimbal 5 as searchTerms for builds that have brand search - the same step as LCD Projector (req-067) and Movie Legend (req-069). This also reaches req-014's Gimbal A2, which an earlier note called a different line; that model is still unverified.\n\nWi-Fi: \"open source Android TV\" is AOSP, so no Google remote service - the ADB route, which projectors get in the release after 1.5.1.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-09-30"
   }
  ],
- "totalCount": 77,
- "updatedAt": "2026-09-29T20:58:31Z"
+ "totalCount": 78,
+ "updatedAt": "2026-09-29T21:01:17Z"
 }
