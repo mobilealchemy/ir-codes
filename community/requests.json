@@ -835,8 +835,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-09-29"
+  },
+  {
+   "id": "req-077",
+   "category": "airConditioner",
+   "brand": "MOVON",
+   "model": "MOVON SnowMate ( V Series ) 1.0 HP",
+   "region": "Malaysia",
+   "notes": "No sign-off, name or region; an English reply. MOVON is Malaysian (movon.com.my, priced in RM), so English is the safe common language there. App 1.5, iOS 26.6.1.\n\nMOVON Sdn Bhd (formerly Abletech Marketing) sells the SnowMate V Series, model MAC01V, 1.0HP/9k BTU and 1.5HP/12k BTU, R32. Its smart features run through \"MOVON SPACE\", which the app guide shows is the Viomi app rebadged. Viomi is Xiaomi-ecosystem, but that is no route for us: XiaomiTransport only does set_power on plain miIO devices and needs a Mi Home token, which the Viomi app does not surface. A Viomi cloud transport would be a large build on an undocumented API.\n\nNo MOVON IR codes anywhere: no brand row, no pack, nothing in Flipper-IRDB, irdb or SmartIR, and nothing names the indoor unit's OEM or the remote's reference. No brand row: with no family it would list MOVON and send the synthesized set. The reply does what req-071's did: read the reference printed on the remote and map it to the four families that open on 1.5 (R51/RG57 Midea, YAP/YB/YAW Gree, YR Haier, YKR Electra), with learning on a Broadlink as the fallback. When a family works, MOVON gets an airConditioner row aliased to it.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-30"
   }
  ],
- "totalCount": 76,
- "updatedAt": "2026-09-29T01:25:55Z"
+ "totalCount": 77,
+ "updatedAt": "2026-09-29T20:58:31Z"
 }
