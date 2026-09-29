@@ -780,8 +780,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-09-29"
+  },
+  {
+   "id": "req-072",
+   "category": "projector",
+   "brand": "MAGCUBIC",
+   "model": "HY300",
+   "region": null,
+   "notes": "No sign-off, name, region or notes; an English reply, since Magcubic is sold everywhere and says nothing about the customer. App 1.5, iOS 26.5.\n\nAlready supported: the tenth HY300-family request, after req-023, -026, -032, -034, -042, -046, -059, -067 and -069. magcubic-hy300-01 (NEC 00/FF, 12 keys) and -02 (NEC 01/FE, 13 keys) are curated and plaintext, so 1.5 opens them, and both Magcubic and HY300 are projector rows in the form's picker (req-059).\n\nRechecked the one outside datum: the factory DTB's cir_param carries ir_power_key_code0 = <0x14> (shift/sun50iw12p1-research), which is -01's power function. The rest of that repo's key table is labelled an estimate, so it corroborates nothing further. No pack change.\n\nWith no notes this is either \"couldn't find it\" or req-046's \"it failed\", so the reply covers both: where to scroll, remote 1 then remote 2, that the codes go out through an IR blaster chosen when adding the device, and what to send back if neither works.\n\nThe HY300 runs Android 11 on an Allwinner H713, so ADB on 5555 is the Wi-Fi route. 1.5.1 has Android TV (ADB) only under the TV category; projectors get it from ff921fe, the release after.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-09-29"
   }
  ],
- "totalCount": 71,
- "updatedAt": "2026-09-29T00:58:42Z"
+ "totalCount": 72,
+ "updatedAt": "2026-09-29T01:03:59Z"
 }
