@@ -857,8 +857,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-30"
+  },
+  {
+   "id": "req-079",
+   "category": "airConditioner",
+   "brand": "York",
+   "model": "YWM15L",
+   "region": "Malaysia",
+   "notes": "English sign-off, region Malaysia; an English reply. App 1.5, iOS 26.6.2.\n\nYork was in 1.5's compiled AC list but routed nowhere: no family, so a York AC got the synthesized set, and all ten York AC packs are sealed. York is several OEMs at once - decoding the packs finds Gree (flip-york-ac, 9000/4500 35-bit), Coolix (flip-york-full-working, 4D B2), Electra/YKR (irx-4169, C3 header) and TCL-112 (irx-4171, 23 CB 26 01) - so no single family is right for York everywhere.\n\nYork Malaysia's wall units are Haier-built, though: the original remote for the YWM3F/YWM5J series is part 0010401314T, a Haier number, sold as the replacement for Haier V9014557 units - the remote family haier-ac-01 is named for. Gave the York row family: haier. For a York AC with no imported codes that replaces the synthesized set with HaierAC's 176/160/112-bit frames, compiled in 1.5; imported codes still win, and York's own packs stay listed. A York built by someone else gets frames that don't work instead of frames that don't work, so nobody loses.\n\nThe YWM15L itself is not in any listing found; the evidence is its range. If Haier frames do nothing, the reply sends the customer to the code browser and asks for the part number on the remote.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-09-30"
   }
  ],
- "totalCount": 78,
- "updatedAt": "2026-09-29T21:01:17Z"
+ "totalCount": 79,
+ "updatedAt": "2026-09-29T21:07:52Z"
 }
