@@ -769,8 +769,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-09-29"
+  },
+  {
+   "id": "req-071",
+   "category": "airConditioner",
+   "brand": "FreeAir",
+   "model": "تكيف",
+   "region": "Egypt",
+   "notes": "Arabic sign-off; Free Air is Egyptian, so an Arabic reply. App 1.5, iOS 26.3. The model field reads \"تكيف\", which is just \"air conditioning\".\n\nFree Air (freeairgroup.com) is a real Egyptian maker in 10th of Ramadan City: trading since 2003, building its own units since 2017. Models seen: FR-12CR (1.5HP, cool only) and FS-12UR4SGRCA01 (inverter). No Free Air AC codes anywhere: no brand row, no pack, nothing in Flipper-IRDB, irdb or SmartIR, and no replacement-remote listing names a reference.\n\nTwo Midea hints, neither proof. Retailers say the units carry imported Midea compressors — req-065's Alpha had the same GMCC clue and it was not enough to route on, since Midea compressors go to most of the industry. And FR-12CR follows Midea's Egyptian naming (MSM-12CR), which is suggestive but not a remote. So no brand row: with no family it would fall through to the synthesized set and look supported.\n\nThe reply asks the customer to read the reference printed on the back of the remote, which settles the protocol, and maps the common prefixes to the four candidates that open on 1.5, all plaintext: R51/RG57 to Midea (midea-ac-01), YAP/YB/YAW to Gree (gree-ac-01), YR to Haier (haier-ac-01/02), YKR to Electra (electra-ac-01). Midea first if the label can't be read. When the customer says which one works, Free Air gets an airConditioner row with aliasOf that brand — a cloud-only fix their build picks up.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-29"
   }
  ],
- "totalCount": 70,
- "updatedAt": "2026-09-29T00:45:39Z"
+ "totalCount": 71,
+ "updatedAt": "2026-09-29T00:58:42Z"
 }
