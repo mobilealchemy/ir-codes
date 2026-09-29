@@ -758,8 +758,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-09-28"
+  },
+  {
+   "id": "req-070",
+   "category": "fan",
+   "brand": "Gold Line",
+   "model": "ATL 6080",
+   "region": "Israel",
+   "notes": "No sign-off, name or region; replied in Hebrew because Gold Line (Goldline, goldline.co.il) sells only in Israel. App 1.5, iOS 26.6.2.\n\nThere is no ATL-6080. Goldline's ATL-60xx numbers are kitchen appliances (ATL-6628 is a toaster oven); the fan is almost certainly the ATL-8060, a 60in DC ceiling fan (Turbo Hurricane series): 30W DC motor, 5 speeds, colour-temperature LED with 5 brightness steps, timer, sold with a \"smart wireless remote\". The maker's own page answers 403 to automated reads, so the remote's type is inferred, not confirmed: a DC ceiling fan's receiver sits in the canopy and these remotes are almost always RF 433MHz, not infrared.\n\nNo codes anywhere: Goldline is in no brand table, no pack, and nothing in Flipper-IRDB or irdb. Deliberately no brand row: with no pack and no family it would list Gold Line and send the synthesized set. An RF ceiling fan remote carries its own address, so a shared pack would not work even if one existed.\n\nThe route on 1.5 is learning, and it has a trap: RF learning is gated on DeviceCategory.usesRF, which only rollerShutter and garageDoor set, so a device added as Fan can learn infrared only (FixButtonView and LearnAllWizard pass rf: usesRF). LearnView's Infrared / RF 433/315 picker is reachable only through the Custom Remote category's builder. So the reply sends the customer to Custom Remote with a Broadlink RM4 Pro (the RM4 mini has no RF). Worth fixing app-side: ceiling fans are the commonest RF remote in a home, and the Fan category should offer the picker.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-29"
   }
  ],
- "totalCount": 69,
- "updatedAt": "2026-09-28T08:13:13Z"
+ "totalCount": 70,
+ "updatedAt": "2026-09-29T00:45:39Z"
 }
