@@ -802,8 +802,41 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-29"
+  },
+  {
+   "id": "req-074",
+   "category": "tv",
+   "brand": "Dansat",
+   "model": "قديم",
+   "region": "البيت",
+   "notes": "Arabic sign-off; an Arabic reply. App 1.5, iOS 26.5. The fields are thin but not spam: model \"قديم\" is \"old\", region \"البيت\" is \"the house\", the notes are two stray letters. The brand is real.\n\nDansat is a Saudi TV brand (Amazon.sa, Noon; models DTD32BH, DTD5023UW), built on Chinese chassis for the budget end. No Dansat codes anywhere: no brand row, no pack, nothing in Flipper-IRDB or irdb. No brand row added: with nothing behind it, it would list Dansat and send the synthesized set.\n\nOne useful fact for the newer sets: retailers list current Dansat smart models as webOS with a Magic Remote, i.e. LG's webOS licensed to partner brands. Those should answer the LG (webOS) transport over Wi-Fi, though no partner-brand webOS set has been tried against it. This customer says theirs is old, so the reply leads with learning the remote on a Broadlink (Fix a Button), mentions the webOS route for a smart set, and asks for the model label (DTD…) and a photo of the remote, which is what would let us identify the chassis.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-29"
+  },
+  {
+   "id": "req-075",
+   "category": "projector",
+   "brand": "LCD Projector",
+   "model": "HY300Pro",
+   "region": null,
+   "notes": "Spanish sign-off (Enviado desde mi iPhone), so a Spanish reply; nothing says Spain or Latin America, and the one label that differs between the two (Añadir / Agregar dispositivo) is named as the + button instead. App 1.5, iOS 26.5.\n\nAlready supported, the eleventh HY300-family request: \"LCD Projector\" is a projector row aliased to Magcubic since req-067, and both Magcubic packs are named for this unit - magcubic-hy300-01 and -02 are \"HY300 / HY300 Pro (remote 1/2)\", curated and plaintext, so 1.5 opens them. Same reply as req-072: where to scroll, remote 1 then remote 2, the blaster, and what to send back.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-09-29"
+  },
+  {
+   "id": "req-076",
+   "category": "tv",
+   "brand": "دانسايت",
+   "model": "TV smart",
+   "region": null,
+   "notes": "Arabic, from an iPad; the brand typed in Arabic script (دانسايت). App 1.5, iPadOS 26.7. Minutes after req-074 (Dansat, \"old\", from an iPhone), so very likely the same household with a second, smart set.\n\nA smart Dansat needs no codes. Current models run one of two systems: LG webOS licensed to the brand (the 55/65in DTD-UW/WS sets, sold with a Magic Remote) or Android (DTD5021BU, DTD70BU on Android 13). 1.5 already offers both routes for a TV: LG (webOS) over Wi-Fi, and Android / Google TV with PIN pairing, which needs Google's Android TV and its remote service. An Android set without Google services is the req-066 case, reachable over ADB from 1.5.1.\n\nNeither route has been run against a Dansat, and the webOS one has never met a partner-brand set, so the reply says how to tell which system the TV runs and asks for the DTD model number if neither connects.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-09-29"
   }
  ],
- "totalCount": 73,
- "updatedAt": "2026-09-29T01:15:18Z"
+ "totalCount": 76,
+ "updatedAt": "2026-09-29T01:25:55Z"
 }
