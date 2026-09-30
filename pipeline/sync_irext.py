@@ -5,11 +5,17 @@ encrypted packs and append them to the manifest.
 Only pack ids not already in the manifest are added — existing packs are
 never rewritten (encryption nonces would churn the whole repo otherwise).
 
+Each new pack's upstream goes into provenance.json: the irext files it was
+built from, by SHA-256, which is the oid in their Git LFS pointer upstream.
+
 Env:
-  IRPACK_KEY1   hex of the 16-byte static key part (required)
-  IREXT_DB      path to irext sqlite db
-  IREXT_BINS    path to extracted binaries dir
-  IREXT_DUMP    path to compiled irext_dump binary
+  IRPACK_KEY1      hex of the 16-byte static key part (required)
+  IREXT_DB         path to irext sqlite db
+  IREXT_BINS       path to extracted binaries dir
+  IREXT_DUMP       path to compiled irext_dump binary
+  IREXT_DB_NAME    the db's path in irext/database, e.g. db/irext_db_20260519_sqlite3.db
+  IREXT_BINS_NAME  the binaries zip's path there, e.g. binaries/irext-binaries_20260519.zip
+  IREXT_BINS_ZIP   path to that zip as downloaded
 """
 
 import hashlib, hmac as hmac_mod, json, os, re, sqlite3, subprocess, sys
@@ -97,6 +103,43 @@ def slugify(t):
     return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-") or "unknown"
 
 
+def sha256(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for block in iter(lambda: f.read(1 << 20), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def dump_ledger(ledger):
+    """One line per pack, sorted — the format scripts/ircloud/provenance.py in the
+    app repo writes, so either can add to the file without reflowing it."""
+    packs = sorted(ledger["packs"].items())
+    lines = ["{", ' "sources": ' + json.dumps(ledger["sources"], sort_keys=True) + ",", ' "packs": {']
+    lines += [f"  {json.dumps(pid)}: {json.dumps(entry, sort_keys=True)}" + ("," if i < len(packs) - 1 else "")
+              for i, (pid, entry) in enumerate(packs)]
+    lines += [" }", "}"]
+    return "\n".join(lines) + "\n"
+
+
+def record_provenance(pack_ids):
+    files = {}
+    for name_var, path_var in (("IREXT_DB_NAME", "IREXT_DB"), ("IREXT_BINS_NAME", "IREXT_BINS_ZIP")):
+        name, path = os.environ.get(name_var), os.environ.get(path_var)
+        if name and path and os.path.isfile(path):
+            files[name] = sha256(path)
+    if not files:
+        print("no irext file names in the environment: provenance not recorded")
+        return
+    path = f"{REPO}/provenance.json"
+    ledger = json.load(open(path)) if os.path.exists(path) else {"sources": {}, "packs": {}}
+    ledger["sources"]["irext-database"] = "https://github.com/irext/database"
+    for pack_id in pack_ids:
+        ledger["packs"][pack_id] = {"source": "irext-database", "sha256": files}
+    with open(path, "w") as f:
+        f.write(dump_ledger(ledger))
+
+
 def main():
     enc_key, hmac_key = keys()
     manifest = json.load(open(f"{REPO}/manifest.json"))
@@ -173,6 +216,7 @@ def main():
     manifest["updatedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     with open(f"{REPO}/manifest.json", "w") as f:
         json.dump(manifest, f, ensure_ascii=False, separators=(",", ":"))
+    record_provenance([p["id"] for p in added])
     print(f"added {len(added)} packs, manifest v{manifest['version']}")
 
 

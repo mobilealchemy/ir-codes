@@ -31,6 +31,9 @@ jobs:
           cd /tmp/irext && unzip -q binaries.zip
           BINDIR=$(find /tmp/irext -maxdepth 1 -type d -name "irext-binaries*" | head -1)
           echo "IREXT_BINS=$BINDIR" >> "$GITHUB_ENV"
+          echo "IREXT_DB_NAME=db/$DB_FILE" >> "$GITHUB_ENV"
+          echo "IREXT_BINS_NAME=binaries/$BIN_FILE" >> "$GITHUB_ENV"
+          echo "IREXT_BINS_ZIP=/tmp/irext/binaries.zip" >> "$GITHUB_ENV"
 
       - name: Build irext decoder
         run: |
