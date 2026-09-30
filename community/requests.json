@@ -868,8 +868,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-09-30"
+  },
+  {
+   "id": "req-080",
+   "category": "airConditioner",
+   "brand": "Blue star",
+   "model": "2026",
+   "region": "India",
+   "notes": "English sign-off (Sent from my iPhone), so an English reply. App 1.5, iOS 26.5. The region \"Inadiamhah\" reads as a garbled \"India\", perhaps with MH (Maharashtra) run into the end; Blue Star is an Indian AC maker, so India either way. The model \"2026\" is a year, not a model, and the notes say only \"Man\". So the brand is the whole request.\n\nBlue Star is in no list 1.5 offers when adding a device: not compiled, no brands.json row. We do hold four irext-binary AC packs, irx-11309 to -11312, and all four are sealed. 1.5's code browser still lists Blue Star under Our Cloud, because it builds that list from pack brands, so a customer who finds it gets the integrity error on every one of the four. (irext-7805-bluestar is a Chinese 蓝星 TV set, unrelated.)\n\nThe four packs are four different protocols, so no one family fits Blue Star. irx-11309 (\"Blue Star 2556\") is Coolix: every frame is complement pairs, sent twice, and B2 4D 7B 84 E0 1F is off. irx-11310 (\"2607\") is standard Gree, and all 61 frames pass the nibble checksum and the 010 footer. irx-11311 (\"2807\") is the 23 CB 26 01 TCL-112 layout, byte sum correct on all 31, at 3660/1800 rather than TclAC112's 3000/1650. irx-11312 (\"6032\") is an unidentified 140-bit frame at 4590/2510. Its first 112 bits are zero in all 46 frames, and the temperature is in BCD. The numbers are irext's remote ids, not Blue Star part numbers.\n\nOutside our packs: IRremoteESP8266 has a BluestarHeavy protocol (2024, one remote, D716LXM0535A2400313), but only as raw send and decode: 13 bytes MSB-first at 4912/5058, one example frame, no field map, no checksum, no tests. None of our packs is that format. Flipper-IRDB, irdb and SmartIR have no Blue Star.\n\nSo this gets the Funiki fix (req-068), not a family. All four go into REQUESTED and publish plaintext. No brand row: without a family it would list Blue Star and send the synthesized set, and routing to Gree or TCL would be right for one pack in four. The reply sends the customer to Browse Full Code Database > Our Cloud > Blue Star to try the four. It warns that on 1.5 Test Power sends a frame pack's off frame, so the unit has to be switched on first. It asks for the model on the indoor unit's label and a photo of the remote. Whichever set works says which factory built the unit, and that is the evidence a brand row would need.\n\nWorth building later: a Coolix family. It would cover irx-11309, two of the Funiki packs (req-068) and York's flip-york-full-working (req-079).",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-01"
   }
  ],
- "totalCount": 79,
- "updatedAt": "2026-09-29T21:16:31Z"
+ "totalCount": 80,
+ "updatedAt": "2026-09-30T23:57:20Z"
 }
