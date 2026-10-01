@@ -912,8 +912,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-01"
+  },
+  {
+   "id": "req-084",
+   "category": "tv",
+   "brand": "Proscan",
+   "model": "PLDED3273A",
+   "region": "US",
+   "notes": "English (no sign-off; the sender's name), App 1.5, iOS 26.6.2. Proscan had no row and no TV pack, only three sealed Proscan DVD imports. Today's Proscan sets are Curtis International's, not Thomson's: irdb's Proscan TV (RCA protocol, device 15) and the four Mi Remote Proscan sets in Flipper's IRDB are the old Thomson remote, which a Curtis set does not answer to.\n\nCurtis has shipped at least three NEC code sets under its brands, and no capture names the PLDED3273A's own, so three packs, in order of likelihood. Set 1, NEC 0x20: the Flipper capture of the Curtis-made RCA RLDED3258A-B, the same 32\" LED TV/DVD line, listed with the PLDED3273A on the same no-programming replacement remotes; its labels (Source, Enter, Smode, Info, Cc, Sleep) are the ones the PLDED3273A manual prints. That capture has no digits and no mute, so those come from four sibling remotes on the same code set (Furrion, Erisson, Sankey, MosTech), which agree on every digit; 0x53 is mute on all six siblings, though the RCA capture calls it Smode. Set 2, NEC 0/127: the JP1 upgrade for Curtis's own LEDVD2488-B TV/DVD combo, whose FAV/EJECT, EPG/D.SETUP, P.MODE and S.MODE keys match the manual's layout. Set 3, NEC 4 (the LG/Vizio-compatible set): the JP1 Proscan 42LA45H upgrade, which Mi Remote's Proscan set 4517 matches key for key (27/27), plus that set's DVD transport keys; a forum report of DirecTV's Vizio code 10178 working on a Proscan points here.\n\nproscan-tv-01/02/03, labelled Set 1-3 so 1.5's alphabetical list shows them in that order. Row Proscan (tv), search terms PLDED, PLED, PLCD for the next release. Not tested on a set.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-02"
   }
  ],
- "totalCount": 83,
- "updatedAt": "2026-10-01"
+ "totalCount": 84,
+ "updatedAt": "2026-10-02"
 }
