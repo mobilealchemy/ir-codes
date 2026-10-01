@@ -923,8 +923,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-02"
+  },
+  {
+   "id": "req-085",
+   "category": "audioReceiver",
+   "brand": "LG",
+   "model": "RK7",
+   "region": "-",
+   "notes": "Spanish (\"Enviado desde mi iPhone\"), App 1.5, iOS 27.0.1. The RK7 is an LG XBOOM party speaker; Best Buy names AKB74955321, the FH6's remote, as its replacement. LG's audio remotes are Samsung32 at one of two addresses: 0x2C on the soundbars and home theaters, which most of our LG audio packs are, and 0x10 on the mini hi-fi line. An XBOOM's own codes, captured with a Broadlink in a Home Assistant config (remontti/MyHa), are 0x10: power 1E, volume 17/16, mute 1F, function 03, equalizer 40. An LG mini hi-fi capture in Flipper-IRDB (CD_Players/LG) agrees on all six, with its Sound Effect at 40. Three of the 25 LG audio packs we shipped carry 0x10 for power and volume (irext-6368, irext-6369, irx-11838), but they are sealed, so on 1.5 only lg-hts-01 opened, and it is 0x2C.\n\nlg-hifi-01, plaintext so 1.5 opens it: those six, plus previous/next 06/07 (the same on seven LG packs), 8 keys. Left out: play/pause (that capture labels 04 Skip and 07 Play/Pause, the reverse of every other LG pack), digits and the karaoke keys, which the audio layout does not draw. XBOOM added to LG's search terms. Not tested on a speaker.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-02"
   }
  ],
- "totalCount": 84,
+ "totalCount": 85,
  "updatedAt": "2026-10-02"
 }
