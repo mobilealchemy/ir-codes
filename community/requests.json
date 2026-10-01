@@ -901,8 +901,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-01"
+  },
+  {
+   "id": "req-083",
+   "category": "tv",
+   "brand": "Moctex",
+   "model": "-",
+   "region": "Russia",
+   "notes": "Russian (\"Отправлено с iPhone\"), App 1.5, iOS 27.0.1. \"Moctex\" is МосТех typed in Latin lookalikes (the notes say \"мостех\"): MosTech, Moscow's city platform, whose interactive panels with a built-in PC are in Moscow schools. The customer pasted their own capture, 43 lines of NEC hex from another tool (exported 2025-02-14), labelled by what the panel did - \"show desktop\", \"create folder\", \"search bar\" - which is the panel's PC answering.\n\nRead as the IRremote/Arduino 32-bit convention, bit-reversed per byte: address 0x20, and the digits come out 0x10, 0x11, 0x13...0x1B, sequential, where the bytes as written (08 88 C8 28...) are not. Confirmed against our own data: six TV packs at NEC 0x20 (Flipper RCA, Furrion, Crown, Erisson, Elements, Sankey) send the same codes, digits 3/3 each - a common TV-board code set.\n\nThose packs also named what the customer's labels could not, and corrected two. Power is 0x52 (6/6; the customer saw it as \"shutdown with a 5/10 s choice\", the panel's power-off countdown), not 0x1C, their \"on/off\". 0x4B and 0x49 are right and left (6/6), not \"select up\". 0x0A is Exit (5/6), 0x06 Menu (4/6). Where the references are weak the customer's observation wins: volume on 0x03/0x41 (channel on the TV boards), settings 0x07, back 0x48. Left out: 0x1C, 0x0B, 0x0D, 0x1D, 0x26, 0x59 and the lock key 0x5C, which nobody can name with confidence; and digit 1, never captured.\n\nmostech-panel-01, 20 keys, every one re-encoding to the customer's own hex. Rows MosTech, Moctex and МосТех, the last two aliased, so it is found whichever way it is spelt. Not tested on a panel.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-01"
   }
  ],
- "totalCount": 82,
- "updatedAt": "2026-10-01T03:28:15Z"
+ "totalCount": 83,
+ "updatedAt": "2026-10-01"
 }
