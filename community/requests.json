@@ -945,8 +945,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-02"
+  },
+  {
+   "id": "req-087",
+   "category": "airConditioner",
+   "brand": "Electroluk",
+   "model": "ESV12CRR-B5I",
+   "region": "Thailand",
+   "notes": "Thai (ส่งจาก iPhone ของฉัน), App 1.5.1, iOS 26.6.2. \"Electroluk\" is Electrolux; the ESV12CRR-B5I is a Thai-market Electrolux inverter split.\n\nThe ESV line speaks Haier. Our one ESV capture, flip-electrolux-electrol-esv09cro-b2i (an ESV09CRO-B2I in Flipper-IRDB), is a Haier YR-W02 frame: Haier's 3000/3000/3000/4300 header, then 112 bits MSB-first, A6 B2 E0 00 40 A0 00 20 00 00 00 00 05 3D. That reads as model A6, 27C, cool, fan auto, power on, power button 5, and its last byte is the running sum of the other thirteen. The compiled Haier family sends that 112-bit frame in its burst on every build since 1.5.\n\nElectrolux keeps no family: none of the other fifteen Electrolux AC packs is Haier (Midea/Coolix, Gree, Electra, TCL112 among them), so routing the brand would break most owners. The reply sends this customer to Haier instead, and ESV is added to Haier's search terms, so searching the model number on 1.5.1 lands there. On 1.5.1 Test Connection cannot test an IR air conditioner (245dd01, in 1.6), so the reply says to save and press Power. Unverified: that the B5I generation kept the B2I's remote.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-02"
   }
  ],
- "totalCount": 86,
+ "totalCount": 87,
  "updatedAt": "2026-10-02"
 }
