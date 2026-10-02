@@ -934,8 +934,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-02"
+  },
+  {
+   "id": "req-086",
+   "category": "projector",
+   "brand": "Magcubil",
+   "model": "HY300Pro",
+   "region": "-",
+   "notes": "Portuguese sign-off (Enviado do meu iPhone), the same in Brazil and Portugal; a Brazilian Portuguese reply, where the HY300 sells most. App 1.5.1, iOS 27.0.\n\nAlready supported, the thirteenth HY300-family request (req-075 was the same HY300Pro). \"Magcubil\" is Magcubic misspelt. magcubic-hy300-01 and -02 are named \"HY300 / HY300 Pro (remote 1/2)\", curated and plaintext.\n\n1.5.1 is the first release a customer has searched in, so this is the first HY300 reply that can say \"search\". BrandCatalog.matches checks both directions, so \"HY300Pro\" and \"HY300 Pro\" both find Magcubic by its HY300 term, and the code database's search also matches the packs' model names. The misspelling matches nothing; not added as a term on one customer's typo. Find My Remote in 1.5.1 sweeps the curated packs, so it tries both remotes.\n\nThe reply also warns that 1.5.1 cannot drive an audio IR blaster (the req-083 bug, fixed in 69b1b11 for 1.6), since this mail does not say which blaster they have.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-02"
   }
  ],
- "totalCount": 85,
+ "totalCount": 86,
  "updatedAt": "2026-10-02"
 }
