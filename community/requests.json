@@ -967,8 +967,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-089",
+   "category": "projector",
+   "brand": "Magcubic",
+   "model": "HY300PRO",
+   "region": "-",
+   "notes": "Spanish sign-off (Enviado desde mi iPhone), the same in Spain and Latin America; a neutral Spanish reply that names the + button. App 1.6, iOS 26.6.2. No region.\n\nAlready supported, the fourteenth HY300-family request and the first from 1.6. magcubic-hy300-01 and -02 cover it, and on 1.6 \"HY300PRO\" finds Magcubic by its HY300 search term.\n\nBoth packs have a source now, which b315ec25 never gave. srgneisner/hy300-linux-porting carries the projector's own vendor partition (ro.product.vendor.device h713-tuna_p3, the H713 board of the HY300, Pro and Pro+), and its keylayout directory holds one table per remote address. customer_ir_ff00.kl, NEC address 00, is -01 key for key, 12 of 12: POWER 0x14, VOLUME_MUTE 0x01, VOLUME_UP 0x0B, VOLUME_DOWN 0x58, BACK 0x5C, HOME 0x48, the d-pad 0x03/0x02/0x0E/0x1A, centre 0x07, and 0x13, which the firmware names SETTINGS and the pack menu. A second source agrees: a user's Arduino capture of the bundled remote (irplus-codes issue 666), eleven keys as raw timings and power as decoded hex. customer_ir_fe01.kl, address 01, holds all 13 of -02's codes; two names differ, 0x0F being APPS where the pack says source and 0x43 SETTINGS where it says menu (the firmware's MENU is 0x4C).\n\nThe ff00 table is customised for the projector (PRJ_MIRACAST, PRJ_AIRPLAY, two factory-test keys), so address 00 is the remote in the box; the fe01 table is the generic Android-box remote. The firmware ships nineteen tables and Allwinner's multi_ir maps every address as it arrives, so -01 and -02 should both work on one unit: \"remote 1 or remote 2\" is not a per-unit difference here, and req-046's failure was not the code set. Inferred from the firmware, not tried on a projector; a Pro+ on the newer H726 / Android 14 firmware may differ.\n\nThree keys on the bundled remote have no key in the app: Mouse 0x82, Miracast 0x98, AirPlay 0x93. A pack cannot carry them until RemoteKey names them. No pack or table change; the findings are in docs/ir-and-ac-protocols.md.\n\nThe reply gives the 1.6 route (the + button, Proyector, an IR blaster under Controlar mediante, Marca Magcubic, remote 1) and, new with 1.6, the Wi-Fi route: Android TV (ADB) after switching on ADB Debugging in the projector's developer menu, as probonopd's HY300 Pro notes describe. That route is untested with our client.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 88,
+ "totalCount": 89,
  "updatedAt": "2026-10-05"
 }
