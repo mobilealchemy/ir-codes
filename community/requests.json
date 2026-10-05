@@ -989,8 +989,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-091",
+   "category": "airConditioner",
+   "brand": "Sharp",
+   "model": "AH-XP12UHE",
+   "region": "Egypt",
+   "notes": "English sign-off (Sent from my iPhone); an English reply, though the unit is Egyptian. App 1.6, iOS 26.2.1.\n\nThe AH-XP12UHE is El Araby's 1.5 HP cooling-only Plasmacluster inverter, made in Egypt: El Araby's own page (archived 2025-04-07) says \"بارد فقط\", its outdoor unit is the AU-X12UHE, and the AY-XP12UHE is the heat pump. El Araby sells its remote as spare AC-SH-REMOT-248UYH, one remote for its AP…YHE and XP…UHE units, with COOL, HEAT, AUTO, DRY, SUPER JET, COANDA and a Plasmacluster key under a flip cover. No CRMC number for that remote, no manual and no capture was found: not in Flipper-IRDB, SmartIR or IRremoteESP8266's issues, nor in any retailer's listing.\n\nSharp was already supported, and checking that against this unit found a fault. Sharp's 13-byte frame comes in three forms, which IRremoteESP8266 calls A907, A705 and A903, and the remotes nearest this one with public frames all send the A903 form. Our pack for it, sharp-ac-02, \"A705 / A903 remotes\", was A705 only: its 60 cooling codes and Off carry the A705 bit in the temperature byte (0xD0), where all 193 cooling frames captured from A903 remotes (CRMC-A903, CRMC-820, CRMC-A863) carry 0xC0 and all 16 from an A705 remote 0xD0. sharp-ac-03 is the A903 set now, built by scripts/ircloud/gen_sharp_ac_packs.py from the library's layout, which first regenerates both published packs exactly and rebuilds twelve real captures byte for byte; sharp-ac-02 keeps its codes and is titled for the A705 remote alone. The brand's own computed route sends the A907 form, one bit and the fan steps away from A903, and whether an A903 unit answers it is not known.\n\nWhat nothing found can settle is how this remote counts degrees. The A903 remotes above send 0xC0 plus the degrees above 15. The three Sharp sets we hold as captures of 18 to 32 °C remotes (smartir-1300, -1301 and -7300) send the degrees above 17 and no 0xC0, and so does the 18 to 32 °C remote of the library's issue 1819. A unit of one kind shows two degrees off when sent the other's frame. smartir-7300, the Thai AH-AP9GMY, is the nearest relative we have a capture of: an AP-series remote, auto, cool and dry, in the A903 form. So the reply gives both sets, that one first, and the test that tells them apart: set 24 in the app and read the unit's display.\n\nIn progress until the customer says which. Nothing was sent to an air conditioner.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 90,
+ "totalCount": 91,
  "updatedAt": "2026-10-05"
 }
