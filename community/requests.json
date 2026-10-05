@@ -1055,8 +1055,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-097",
+   "category": "tv",
+   "brand": "LG",
+   "model": "-",
+   "region": "-",
+   "notes": "Spanish sign-off (Enviado desde mi iPhone); a Spanish reply. App 1.6, iOS 27.0. Filed under Audio / AV Receiver, with LG as the model, a region field that reads \"De las de a tes\" (probably de las de antes, one of the old ones) and the note \"No es plana\", it is not a flat one. Read as an old LG tube television under the wrong category; the reply says so, so that the customer can correct it.\n\nLG tube sets come in at least two remote families. Six LG and GoldStar remotes in the LIRC database, one of them labelled as a Flatron tube set's, send the codes LG's flat panels still use: NEC device 4, power 8. lg-tv-01, -02 and -03 carry them, and lg-tv-03 (6711A Series) is the set the reply names. At least four other LG remotes send RC-5 at address 0 instead (power 12, volume 16 and 17, programme 32 and 33, TV/AV 56, menu 59, OK 37), and no curated LG set carried that: Find My Remote reached it only through a Philips set with the same power code.\n\nlg-tv-04 is that family now: 28 keys decoded from five LIRC files by majority, each code also run through the 1.6 encoder. Its cursor is the programme and volume codes, because these remotes have one cross for both, as two LG owner's manuals say (the 29FS and 21FU series). scripts/ircloud/gen_lg_rc5_pack.py builds it. An older GoldStar 12-bit family and a TV/VCR combo's have no set.\n\nFound on the way, in the app and not in this pack: every RC-5 code goes out with the toggle bit at 0, so a set that honours the bit may ignore the same key pressed twice running. Read from the 1.6 source; not tried on hardware.\n\nIn progress until the customer answers. The model is unknown, so which family this set answers is too. Nothing was sent to a television.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 96,
+ "totalCount": 97,
  "updatedAt": "2026-10-05"
 }
