@@ -908,7 +908,7 @@
    "brand": "Moctex",
    "model": "-",
    "region": "Russia",
-   "notes": "Russian (\"Отправлено с iPhone\"), App 1.5, iOS 27.0.1. \"Moctex\" is МосТех typed in Latin lookalikes (the notes say \"мостех\"): MosTech, Moscow's city platform, whose interactive panels with a built-in PC are in Moscow schools. The customer pasted their own capture, 43 lines of NEC hex from another tool (exported 2025-02-14), labelled by what the panel did - \"show desktop\", \"create folder\", \"search bar\" - which is the panel's PC answering.\n\nRead as the IRremote/Arduino 32-bit convention, bit-reversed per byte: address 0x20, and the digits come out 0x10, 0x11, 0x13...0x1B, sequential, where the bytes as written (08 88 C8 28...) are not. Confirmed against our own data: six TV packs at NEC 0x20 (Flipper RCA, Furrion, Crown, Erisson, Elements, Sankey) send the same codes, digits 3/3 each - a common TV-board code set.\n\nThose packs also named what the customer's labels could not, and corrected two. Power is 0x52 (6/6; the customer saw it as \"shutdown with a 5/10 s choice\", the panel's power-off countdown), not 0x1C, their \"on/off\". 0x4B and 0x49 are right and left (6/6), not \"select up\". 0x0A is Exit (5/6), 0x06 Menu (4/6). Where the references are weak the customer's observation wins: volume on 0x03/0x41 (channel on the TV boards), settings 0x07, back 0x48. Left out: 0x1C, 0x0B, 0x0D, 0x1D, 0x26, 0x59 and the lock key 0x5C, which nobody can name with confidence; and digit 1, never captured.\n\nmostech-panel-01, 20 keys, every one re-encoding to the customer's own hex. Rows MosTech, Moctex and МосТех, the last two aliased, so it is found whichever way it is spelt. Not tested on a panel.",
+   "notes": "Russian (\"Отправлено с iPhone\"), App 1.5, iOS 27.0.1. \"Moctex\" is МосТех typed in Latin lookalikes (the notes say \"мостех\"): MosTech, Moscow's city platform, whose interactive panels with a built-in PC are in Moscow schools. The customer pasted their own capture, 43 lines of NEC hex from another tool (exported 2025-02-14), labelled by what the panel did - \"show desktop\", \"create folder\", \"search bar\" - which is the panel's PC answering.\n\nRead as the IRremote/Arduino 32-bit convention, bit-reversed per byte: address 0x20, and the digits come out 0x10, 0x11, 0x13...0x1B, sequential, where the bytes as written (08 88 C8 28...) are not. Confirmed against our own data: six TV packs at NEC 0x20 (Flipper RCA, Furrion, Crown, Erisson, Elements, Sankey) send the same codes, digits 3/3 each - a common TV-board code set.\n\nThose packs also named what the customer's labels could not, and corrected two. Power is 0x52 (6/6; the customer saw it as \"shutdown with a 5/10 s choice\", the panel's power-off countdown), not 0x1C, their \"on/off\". 0x4B and 0x49 are right and left (6/6), not \"select up\". 0x0A is Exit (5/6), 0x06 Menu (4/6). Where the references are weak the customer's observation wins: volume on 0x03/0x41 (channel on the TV boards), settings 0x07, back 0x48. Left out: 0x1C, 0x0B, 0x0D, 0x1D, 0x26, 0x59 and the lock key 0x5C, which nobody can name with confidence; and digit 1, never captured.\n\nmostech-panel-01, 20 keys, every one re-encoding to the customer's own hex. Rows MosTech, Moctex and МосТех, the last two aliased, so it is found whichever way it is spelt. Not tested on a panel.\n\nConfirmed by the customer on 2026-10-05, on app 1.6: everything works. They also asked for a sweep through codes for a device whose brand they do not know. That is Find My Remote Automatically, and the reply points them to it.",
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-01"
@@ -1033,8 +1033,30 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-095",
+   "category": "airConditioner",
+   "brand": "TCL",
+   "model": "12",
+   "region": "-",
+   "notes": "Arabic sign-off (أُرسلت من الـ iPhone); an Arabic reply. App 1.6, iOS 26.6.2. The model field says only 12 and the region field the Arabic for air conditioner, so neither the model nor the country is known. 12 is the size, 12,000 BTU: a Saudi shop titles TCL's TAC-12CSU/TSSI1 with the Arabic for \"model 12\".\n\nTCL was already supported, by the app's computed encoder and twelve imported sets, and checking that found two things. Every TCL split capture found but one sends one frame, IRremoteESP8266's TCL112AC: 14 bytes behind a 3000/1650 header. That covers the 12,000 BTU lines that have been captured (XA21I, XA71IN, XA73, XA81, XAC1I, TPG, and the GYKQ-03 and GYKQ-52 remotes), and nothing found shows an Arabic-market split sending anything else, though the newest Gulf and Iraqi lines have no capture at all. The exception is the GYKQ-58(XM) remote's 96-bit frame, which no listing ties to those markets and which nothing of ours sends.\n\nFirst, none of our sets was complete: the two SmartIR captures hold no fan speed, and the irext sets hold cool and heat at one speed. tcl-ac-01 is the first full one: cool, heat, dry, fan and auto at 16 to 31 °C with fan steps, 225 keys, built by scripts/ircloud/gen_tcl_pack.py from the library's frame with the bits real TCL remotes set. Its cool 24 is byte for byte what the XA71IN and XAC1I remotes send, the port reproduces the library's own tests, and the library's receiver decodes every key.\n\nSecond, the app's own encoder is one bit off every real remote: it clears bit 5 of byte 5, which all 3,770 frames of this type in the database set. Reports say units obey such frames silently, as they obey a remote's periodic resend; for power off there is no evidence either way. A pack is sent before the app computes a frame, so the set sidesteps it; the encoder itself waits for a release.\n\nNot found: any capture for T-Super, BreezeIN, VoxIN, SaveIN, FreshIN, XA91 or KC, or a remote's part number for any Arabic-market model. The app's TCL Wi-Fi option calls an HTTP endpoint that no source documents, and TCL's documented local protocol is a different one, so the reply leaves it out.\n\nIn progress until the customer answers. Nothing was sent to an air conditioner.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-096",
+   "category": "airConditioner",
+   "brand": "Peerless",
+   "model": "SMFH09B3A1A1NA",
+   "region": "Israel",
+   "notes": "Hebrew sign-off (נשלח מה-iPhone שלי); a Hebrew reply. App 1.6, iOS 27.0. The region field says bedroom.\n\nPeerless was in nothing of ours: no brand row and no pack. It is a house brand of Israel's Al-Kol group, sold through its Cinema World chain. No Israeli page names the maker, but the model code is Skyworth's own: SMFH09B and SMFH12B carry the dimensions and figures of Skyworth's pages for those models, so the unit is taken to be a Skyworth fixed-speed heat pump. The exact code SMFH09B3A1A1NA is listed nowhere; its siblings SMFH09B-1E1A1NA, SMFH12B-2A2A1NA and SMFH18B-4A1A1NA are.\n\nSkyworth's export remotes for that panel are the RD1A family, and the one protocol known for it is what IRremoteESP8266 calls Airton, after the French brand whose RD1A1 remote and SMVH09B unit it was read from: 56 bits behind a 6630/3350 header, bytes D3 11, and a checksum. We already publish one capture of it, smartir-3160-aquathermal (LM AURI-12): all 257 of its keys are valid frames of that protocol, cool, heat, dry and fan at 16 to 31 °C with fan steps. So Peerless is now a brand row that shares that set, and Airton's row, which had no set at all, shares it too.\n\nWhat is not known: that an SMFH unit ships with an RD1A remote. No source says so, no capture of a Peerless or Skyworth SMFH remote exists, and the replacement remote Israeli shops sell for Peerless looks different in its one stock photo. The reply asks for the code on the label inside the remote's battery cover.\n\nIn progress until the customer answers. Nothing was sent to an air conditioner.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 94,
+ "totalCount": 96,
  "updatedAt": "2026-10-05"
 }
