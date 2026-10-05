@@ -1000,8 +1000,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-092",
+   "category": "tv",
+   "brand": "General Super",
+   "model": "GS40D51P",
+   "region": "-",
+   "notes": "No sign-off, name or region; an Arabic reply, because the brand is sold only in Arabic-speaking markets. App 1.6, iOS 26.5. The Brand field is the television's own label: an oval GENERAL SUPER, then LED TV, then MODEL: GS40D51P, as a Yemeni resale ad of February 2026 shows it.\n\nGeneral Super is a rebadge of Chinese sets, resold in Yemen, Sudan and Saudi Arabia. It is not Super General (UAE) and not General Supreme (Tamkeen, Saudi Arabia), though Arabic writes all three جنرال سوبر. Who imports it was not found. No listing, manual or spec sheet for the GS40D51P exists anywhere that could be reached. It is most likely a plain LED TV with no network: a sibling, the GS32D60, runs an analog MStar board (TP.VST59T.PB768), the label says only LED TV, and the replacement remote sold for the brand has no Home or app key. So infrared only, with no Wi-Fi route. Inferred, not seen.\n\nNo codes for it were found: nothing under the brand in our manifest or brand table, and nothing in Flipper-IRDB, irdb, irext or LIRC. There are two leads. The replacement remote sold as \"LCD/LED GENERAL SUPER\" is a Hisense design (DMP, Still, Recall and a teletext row), one listing sells it for \"General Super and Hisense\", and the brand's H87 sets are Hisense-built (RSAG boards). And sets on generic boards very often answer Toshiba's NEC 40 BF, the commonest code among our own TV packs. So the reply names hisense-tv-01 (NEC 00 BF; all nine packs we hold at that address agree with it key for key) and then toshiba-tv-01, then Find My Remote Automatically, and asks which worked and for a photo of the remote. One published Hisense table (IR_Plus, TV-NEC1-0-191) gives other volume and channel codes than those nine captures do; it was not used.\n\nNo brand row was added: an alias to Hisense would be a guess until an owner confirms it. Open.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 91,
+ "totalCount": 92,
  "updatedAt": "2026-10-05"
 }
