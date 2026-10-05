@@ -1022,8 +1022,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-094",
+   "category": "airConditioner",
+   "brand": "Sharp",
+   "model": "AH-A5ZYC (AH-A5ZCY)",
+   "region": "Indonesia",
+   "notes": "Indonesian sign-off (Dikirim dari iPhone saya); an Indonesian reply. App 1.6, iOS 18.5. The form's notes held a street address and nothing about the unit; it is not recorded here.\n\nNo AH-A5ZYC is listed anywhere. Every search leads to the AH-A5ZCY, Sharp Indonesia's half-PK standard non-inverter (the ZCY series: R32, 5,000 BTU/h, made in China, with the ZCYN its Indonesian-made variant), and every Indonesian Sharp model ends in Y, so the last two letters were probably swapped. A newer AH-A5ZCY2 exists as well, and nothing was found about its remote.\n\nSharp was already supported, and none of it could have worked for this unit. Sharp's lowest tier in Indonesia is other makers' units under Sharp's name. Three Indonesian sellers list the ZCY and ZCYN remote as the Midea RG10B(G)/BGEF, and retailers and reviewers call the series Midea-built. The series it replaced, UCY, is Gree: our one capture of that generation, flip-sharp-sharp-ah-a9ucd, is a valid Gree frame in all eight of its buttons, by the structure, fixed bits and checksum of IRremoteESP8266's own rules. The nineteen sets listed under Sharp for air conditioners were Sharp's own 13-byte frames (eight), that Gree capture, and ten irext sets in other formats: none in either Midea format.\n\nA Midea remote of the RG10 family sends one of two 48-bit frame types, B2 (Coolix) or A1, and no capture of the RG10B(G)/BGEF says which. Its sibling RG10B(D1)/BGEFU1 sends A1; the RG10B1(B) and the RG10R(M2S) send B2, which is also much the commoner of the two in what we publish (224 sets against 23). So Sharp's list now has one set of each, titled by the ZCY models: sharp-ac-04 (B2, to try first) and sharp-ac-05 (A1), with auto, cool, dry and fan at 17 to 30 °C and no heat, the series being cooling only. Their bytes are those of two captures already published under Midea, smartir-1394 and smartir-1395, the second being that sibling remote. Every one was checked for its structure, its checksum or complements and a state that matches its key, then rendered at the reference library's timings, because two keys of the A1 capture had lost their header. scripts/ircloud/gen_sharp_zcy_packs.py builds both.\n\nNot found: a manual for the ZCY, a photo of its remote's label, or any capture of it, in IRremoteESP8266, SmartIR, Flipper-IRDB, irdb, irext, or the Home Assistant, Tasmota and ESPHome forums. That the unit is Midea-built rests on the retail listings of its remote, and which of the two frame types it answers is not known. The reply says an IR blaster is needed and asks which set worked.\n\nIn progress until the customer answers. Nothing was sent to an air conditioner.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 93,
+ "totalCount": 94,
  "updatedAt": "2026-10-05"
 }
