@@ -978,8 +978,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-090",
+   "category": "tv",
+   "brand": "Sony",
+   "model": "KDL-48W650D",
+   "region": "Canada",
+   "notes": "Spanish sign-off (Enviado desde mi iPhone), the same in Spain and Latin America, from Canada; a neutral Spanish reply. App 1.6, iOS 27.0.1. The notes say only \"Yo\".\n\nThe KDL-48W650D is a 2016 Bravia of the W600D / W650D line, the ones that do not run Android. Its remote is the RMT-TX102U (replacement-remote listings name it for the KDL-32W600D and the 40, 48 and 55W650D): Power, Input, Sync Menu, the digits and a dot, the four colour keys, Netflix, Display, Sleep, Wide, Return, Options, Home, the cursor, Volume, Channel, Jump, Muting, Audio, CC and nine playback keys. Nobody has published a capture of it: Flipper-IRDB has 26 Sony TV files, all of which we ship, and none is this remote; the LIRC remotes database has no RMT-TX remote at all; GitHub code search finds one repository that names an RMT-TX102U LIRC file without including it.\n\nIt did not need one, because Sony's TV remotes all send the same codes, and three independent kinds of source agree on them: those 26 captures, a Bravia's own code list (IRCC names every button by its infrared frame; bunk3r/braviapy's dump), and irdb's Sony TV tables. Checked against them, the code set a customer with this remote picks was wrong. In sony-tv-02, \"RMT-TX Series\", Back sent 12-bit 1/59, which irdb calls PREVIOUS CHANNEL and the TV calls Jump, where Return is 15-bit 151/35 in 19 of the 20 captures that hold one. Menu sent 1/96, the same code as the pack's own Home key, where the key beside Home on every RMT-TX remote is Options, 151/54, which is also what the app's Wi-Fi connection sends for Menu. And Guide, the four colour keys and the keypad's dash and Enter were missing, so seven buttons the TV remote draws answered \"isn't supported by this device\".\n\nsony-tv-02 v4 corrects the two and adds twenty keys, 49 in all, and its title now names the remotes and this TV line. sony-tv-03, \"RM-YD Series\", had no Back key at all and gets the one all four RM-YD captures hold; its other gaps, and sony-tv-01's (twelve keys, no Back, Home or digits), are left for their own pass. Both packs come from scripts/ircloud/gen_sony_tv_packs.py, whose self-test refuses to write a code the captures or the TV's list contradict, and which rebuilds all 619 rendered capture bursts byte for byte first. A device saved from either pack is offered the new version as improved codes. Verified by decoding, not on a television: Jump, Wide, Enter and the dot are in no capture and rest on the TV's list and irdb.\n\nWhat this customer most likely wants is Wi-Fi, an iPhone having no infrared, and 1.6 cannot give it for this TV. The app's Sony connection sends a Pre-Shared Key, and this model has nowhere to set one: its own operating instructions list, under Set-up, Network, only Network Set-up, IPv6/IPv4 Priority, Built-in Wi-Fi, Wi-Fi Direct, Device Name and Refresh Internet Content, and under Home Network Setup only Server Display Settings, Server Diagnostics, Remote Start and the Renderer settings. No IP Control, no Authentication. The TV does take a network remote: Sony's SideView app drives the W650D (B&H's listing for it says so), and SideView registers with a four-digit code the TV shows, the /sony/accessControl registration that Home Assistant's braviatv uses too. The one Home Assistant thread about this exact model (community t/18276) ends without its owner confirming it, so that the W650D pairs this way is inferred, not seen.\n\nIn progress until the app can pair that way. The reply gives the route that works on 1.6, an infrared blaster with the corrected code set, says plainly that this TV cannot be reached over Wi-Fi by 1.6, and does not send the customer looking for a Pre-Shared Key the TV does not have.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 89,
+ "totalCount": 90,
  "updatedAt": "2026-10-05"
 }
