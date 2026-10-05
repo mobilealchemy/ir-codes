@@ -1011,8 +1011,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-093",
+   "category": "audioReceiver",
+   "brand": "Philips",
+   "model": "TAB7207/98",
+   "region": "-",
+   "notes": "English sign-off (Sent from my iPhone); an English reply. App 1.6, iOS 26.6.1. The form's category was Audio / AV Receiver, with Soundbar under it.\n\nThe TAB7207 is Philips's 2.1 soundbar with a wireless subwoofer, launched in mid-2022 and built under licence by MMD Hong Kong. /98 is the Asia-Pacific, Gulf and Africa variant, to judge by where Philips lists it. It has HDMI ARC, optical, AUX, USB and Bluetooth and no network of any kind (its leaflet: DLNA no, Smart Home none), so infrared is the only route. Its remote has 15 keys: standby, EQ, HDMI ARC, Pair/BT, previous, next, play/pause, volume up and down, Optical, AUX/USB, and treble and bass up and down. It has no mute key.\n\nNo capture of that remote exists: not in Flipper-IRDB (every one of its 8,901 files was decoded as RC6), its pull requests, irdb, LIRC, irext or SmartIR, and none for any other Philips soundbar of its generation. The nearest thing we hold is flip-philips-tab5105-79, one capture of the TAB5105's remote: the same licensee, a year older, a different remote of 12 keys. It is RC6 at address 16, with volume on 16 and 17, as on every Philips audio device at that address, and Power on 199, where Philips's other soundbars have 12. Which Power the TAB7207 uses, nothing found says. So the reply names that set first and flip-philips-htl2161b-soundbar second (Power 12, the same volume codes), promises Power and Volume and no more, and asks which worked.\n\nLooking at those packs found that the importer had dropped keys from them and from others: the TAB5105's EQ, and the HTL2163's \"Vol +\" and \"Vol -\", which left that soundbar's pack with no volume at all. Fixed across the database the same day: 61 keys in 43 packs, the volume rocker under spellings the importer did not know, and EQ as the audio remote's Sound mode. The TAB5105 set gains Sound mode from it.\n\nWhat the app cannot do for this soundbar: its four input keys, bass and treble have no key in the app, and that needs a release, not a pack.\n\nIn progress until the customer answers. Nothing was sent to a soundbar.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 92,
+ "totalCount": 93,
  "updatedAt": "2026-10-05"
 }
