@@ -1066,8 +1066,30 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-098",
+   "category": "airConditioner",
+   "brand": "LG",
+   "model": "AKB30086702",
+   "region": "-",
+   "notes": "Korean sign-off (나의 iPhone에서 보냄); a Korean reply. App 1.6, iOS 26.3.1. No region given.\n\nAKB30086702 is not a unit but a remote: LG Korea sells it as the wireless remote and holder for ceiling-type system air conditioners, cool and heat (its own model is PWLSSC41H). Its keys include mode, vertical and horizontal swing, AI wind, temperature, fan speed, power soft, energy saving and an indoor-unit selector, with air purification, AI dry and UV on long presses. LG names no units or years for it; the words on its label match LG's 2025 system air conditioners.\n\nNo capture of this remote exists, nor of any Korean ceiling-unit remote: not in IRremoteESP8266's issues, SmartIR, Flipper-IRDB or irext. What is known is LG's frame in general: 28 bits beginning 0x88 with a nibble checksum, in two timing variants, a long 8.5 ms header and a short 3.2 ms one, and both occur among Korean remotes. The only Korean capture from after 2022 has the short one.\n\nLG had 33 imported air-conditioner sets and no curated one, and the app has no LG encoder. Decoding the SmartIR ones key by key found two that are complete and sound, one for each timing: smartir-1070-lg (PC09SQ NSJ, short header) and smartir-1060-lg (R09AWN, R24AWN, E09EK, long header). Each has 261 valid keys: cool, heat, dry, fan and auto at 18 to 30 °C with fan steps. Every key is the kind of frame that also switches a unit on, which matters because an LG unit can ignore an ordinary state frame while it is off. Others are flawed: smartir-1062-lg has 22 invalid keys and smartir-1068-lg holds one frame for every fan step. The reply names the two sound ones, short header first.\n\nWhat the app cannot do for this remote: swing, air purification, energy saving and the timers are separate frames with no key in the app, and how the indoor-unit selector is encoded nobody has published.\n\nIn progress until the customer answers. Nothing was sent to an air conditioner.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-099",
+   "category": "setTopBox",
+   "brand": "Selenga",
+   "model": "T81D",
+   "region": "-",
+   "notes": "Russian sign-off (Отправлено с iPhone); a Russian reply. App 1.6, iOS 27.0. The brand field holds the model, Selenga T81D, and the model field a serial number: T81DB231012994 dates the box to October 2023, on the newer board generation (GX670x).\n\nSelenga is a Russian brand of DVB-T2 receivers and was in nothing of ours: no pack, no brand row. Nor is it in any public code database searched: Flipper-IRDB (tree, issues and pull requests), probonopd/irdb, the LIRC remotes table and irext hold no Selenga and none of the boxes that share its remote. No forum thread read (selenga.club, dvbpro, 4PDA, wvclub) quotes a code table.\n\nWhat is known about the remote: retailers sell one for the Selenga T20D, T20DI, T42D, T68D, T69M, T81D, HD950D and HD980D, and Huayu's universal-remote table lists the T81D under the same code as World Vision's T62A and T625A, several DEXP boxes and Perfeo's Stream-2, so one set would serve all of them. One retailer says the T81D also shipped with a second remote on a different signal, so there may be two families.\n\nWhere the codes are: in the firmware's keymap.xml, one 16-bit value per key. A copy for the World Vision T62 is linked from dvbpro.ru (keymap.zip, 1,642 bytes), and Selenga's own firmware holds the T81D's. Neither was downloaded; that is left with the maintainer. The conversion from a keymap value to an NEC address and command was worked out from forum posts and would have to be checked on the file.\n\nUntil then the reply offers what works today: with a Broadlink bridge, which can learn, the app copies each button from the customer's own remote (Fix a Button on the remote screen). Open until codes are found.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-05"
   }
  ],
- "totalCount": 97,
+ "totalCount": 99,
  "updatedAt": "2026-10-05"
 }
