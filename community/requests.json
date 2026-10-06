@@ -1121,8 +1121,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-07"
+  },
+  {
+   "id": "req-103",
+   "category": "projector",
+   "brand": "Boat",
+   "model": "E1",
+   "region": "-",
+   "notes": "English (Sent from my iPhone), no region; boAt is Indian. App 1.6, iOS 27.0.\n\nThe boAt CineHead E1: Android 13, 1 GB / 8 GB, 720p LCD, 150 ANSI, launched April 2026. The manual (boAt's Cinehead_E1_UM.pdf) shows an IR remote with IR receivers front and rear, 17 keys and no voice: Power, Mute, Home, Settings, the d-pad and OK, Menu, Return, Mouse, Vol+/-, Focus F+/F- and Source. boAt's pages name Zet Town India (Zetwerk, Noida) as manufacturer, which is the Indian assembler; no source names the design ODM or the SoC.\n\nNo codes anywhere: Flipper-IRDB (d126fb1 predates the launch; its open PRs were scanned), flipperdevices/IRDB, irdb, SmartIR, irext, and GitHub code and issue search. Not the HY300: its remote has Focus and Source and no Miracast or AirPlay, and the HY300 runs Android 11 on the H713. One lead, inference only: the H713 firmware's customer_ir_ef11.kl table covers 15 of its 17 keys, a scheme Flipper has on the ABOX T22, Artlii YG300 (NEC 0x02) and NexiGo PJ20 (0x03), power 0x1D. The E1's address is unknown, so no pack was built from it.\n\nThe reply offers 1.6's Wi-Fi route for an Android projector, Android TV (ADB), untested on this unit; learning the buttons with an IR bridge that can learn; and asks for a photo of the remote.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-07"
   }
  ],
- "totalCount": 102,
+ "totalCount": 103,
  "updatedAt": "2026-10-07"
 }
