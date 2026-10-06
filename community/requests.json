@@ -1099,8 +1099,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-07"
+  },
+  {
+   "id": "req-101",
+   "category": "airConditioner",
+   "brand": "ISKA",
+   "model": "YKR-L/201E",
+   "region": "جسر الزرقاء",
+   "notes": "Arabic sign-off (أُرسلت من الـ iPhone), region جسر الزرقاء (Jisr az-Zarqa, Israel); an Arabic reply. App 1.6, iOS 26.5.2.\n\nISKA is not a maker. It is a model line of Tornado Consumer Products (Israel), sold as \"ISKA Inverter X WIFI\" (tornado-top.co.il), most likely built by AUX: Home Center lists \"AUX INV 35 X EU\" as \"from Tornado\". Its YKR-L/201E remote is sold as Tornado's and \"for AUX TORNADO\". IRremoteESP8266 lists YKR-T/M/H/P, not YKR-L, so the remote alone proves nothing. Our own captures do: the two Tornado X-series packs, smartir-1622 (Master-22 X) and smartir-1626 (MASTER-35 X), are Electra frames, 9 ms header, 13 bytes from C3, and byte 12 the sum of bytes 0-11. Tornado's other lines are Coolix and other protocols, so Tornado itself keeps no family.\n\nAdded ISKA as an air-conditioner row on the electra family (req-040's descriptor, already used for AMENA, AUX, Centek, Electra and Subtropic), with YKR-L as a search term. The descriptor reaches every build from 1.5, and on 1.6 Test Power sends its frame. Unverified on an ISKA unit: older Tornado lines used Whirlpool's protocol.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-07"
   }
  ],
- "totalCount": 100,
+ "totalCount": 101,
  "updatedAt": "2026-10-07"
 }
