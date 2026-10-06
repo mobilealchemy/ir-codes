@@ -1110,8 +1110,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-07"
+  },
+  {
+   "id": "req-102",
+   "category": "tv",
+   "brand": "Alc",
+   "model": "N",
+   "region": "-",
+   "notes": "Arabic sign-off (أُرسلت من الـ iPhone), no region; an Arabic reply. App 1.6, iOS 26.3.1. Brand \"Alc\", model \"N\": the customer does not know the model.\n\nMost likely ELC (Arabic اي ال سي), an Egyptian TV brand assembled in Egypt (elc-tv.com; B.TECH and Amazon.eg list it as \"Brand: ELC\"). Nothing named ALC or A.L.C turned up, nor any Alcatel TV. ELC's plain models are the \"N\" series (32N24), which may be what \"N\" means; weak. No board OEM is named anywhere.\n\nNo codes: no ELC entry in Flipper-IRDB (d126fb1), flipperdevices/IRDB, irdb, SmartIR or irext. Two leads, both inference. The plain remote's key set (P.MODE, S.MODE, FAV, MTS, mouse, T.SHIFT) is the generic-board layout, which Flipper has only as NEC 0x20 (Sankey, Furrion, Elements, Erisson, RCA RLDED3258A-B; power 0x52). The 4K OS24 models run webOS with an LG-style Magic Remote. Both families are among the curated TV sets Find My Remote sweeps on 1.6 (proscan-tv-01 and mostech-panel-01 on NEC 0x20, lg-tv-01..03), so the reply sends the customer there and asks for photos of the remote and the back label. No row or pack: an ELC set built on a key-layout resemblance would be a guess.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-07"
   }
  ],
- "totalCount": 101,
+ "totalCount": 102,
  "updatedAt": "2026-10-07"
 }
