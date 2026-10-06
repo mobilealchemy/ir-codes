@@ -1088,8 +1088,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-05"
+  },
+  {
+   "id": "req-100",
+   "category": "projector",
+   "brand": "Projector",
+   "model": "HY300",
+   "region": "-",
+   "notes": "Russian (Отправлено с iPhone), App 1.6, iOS 27.0.1. The brand field says only \"Projector\": the customer does not know the maker.\n\nAlready supported, the fifteenth HY300-family request and the second from 1.6. magcubic-hy300-01 and -02 cover it (req-089 sourced both from the firmware's own key tables). No \"Projector\" row: a bare generic name would claim every projector, where \"LCD Projector\" (req-067) is the HY300 box's own text.\n\nThe reply goes through Browse Full Code Database, not the Brand list. On 1.6 picking Magcubic in the Brand list loads nothing from the cloud: AddDeviceConfigView never reads a picked brand's packs, so a cloud-only brand saves with the synthesized NEC starter set, which no HY300 answers. In the database, Our Cloud, a search for HY300 finds Magcubic by its search term, and remote 1 then Test Power. The Wi-Fi route, Android TV (ADB), is offered as untested, as in req-089.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-07"
   }
  ],
- "totalCount": 99,
- "updatedAt": "2026-10-05"
+ "totalCount": 100,
+ "updatedAt": "2026-10-07"
 }
