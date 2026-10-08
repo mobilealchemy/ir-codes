@@ -1154,8 +1154,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-09"
+  },
+  {
+   "id": "req-106",
+   "category": "airConditioner",
+   "brand": "Funiki",
+   "model": "Điều hoà",
+   "region": "Vietnam",
+   "notes": "Vietnamese sign-off (Được gửi từ iPhone của tôi); model \"Điều hoà\" is just \"air conditioner\", region and notes \"Ok\". Funiki is Hoa Phat's Vietnamese AC brand, so Vietnam. App 1.6, iOS 26.5. A repeat of req-068 (App 1.5), and 1.6 changes what it can reach.\n\nNothing was added; the eight packs from req-068 (irx-11305, -11306, -12570 to -12575, all plaintext) already cover it. Not in 1.6's Brand picker: no compiled Funiki and no brands.json row, kept that way as in req-068, because a row without a computed family would send the synthesized starter set. 1.6's Find My Remote Automatically does not reach them either: for air conditioners it sweeps only the curated packs (DeviceCategory.sweepPacks drops ids starting irx-, irext-, flip-). So the only route is Browse Full Code Database > Our Cloud > FUNIKI, which lists the eight by model title. Every one holds off and cool.24, so Test Power sends a real switched-on frame from each.\n\nNew this time. Funiki's own remotes come in three lines per Vietnamese retailers: Inverter (HIC), MMC and MMC2, the last also called R51 (retailer listing FN-R51M/E, 9000 to 18000 BTU); no source says which maker builds them, and Hoa Phat says only that units are imported from Malaysia and Thailand. IRremoteESP8266 files Fisher's R51L1/BGE remote under Coolix, which fits irx-12571 and -12572: all 57 frames in each are B2 4D complement pairs (Coolix), sent twice, headers 4453 and 4350 rather than Coolix's 4692. The only first-hand Funiki capture anywhere is IRremoteESP8266 issue #2112 (June 2024, Vietnamese author, remote has no model label, still open, no reply): 9000/4500, 550 mark, 1650/500 spaces, 83 data bits then a trailing mark; power off is 30 0C 00 60 10 06 00 00 70 95 and power on 38 0C 00 60 10 06 00 00 70 95 (first byte LSB first, plus 3 trailing bits 101). That matches irx-11305 (FUNIKI 12260) in header, timings, byte 0 (low three bits mode, bit 3 power), byte 1 (temperature minus 16: 0x0C is 28) and byte 3 (0x60), and differs from it in the rest: 12260 sends 88 bits with bytes 4 and 5 at 00 01 where the capture has 10 06, bytes 8 and 9 at 00 where it has 70 95, and an all-ones tail. So 12260 is the closest set but may be missing the bytes the unit checks. The capture is not any IRremoteESP8266 protocol (it decodes as UNKNOWN), and none of the Flipper or SmartIR imports in ir-codes mentions Funiki (irext is the source of all eight).\n\nOn/off (HSC / SC) and inverter (HIC / HSIC) units use different remotes, but nothing public ties either line to a protocol; which of the eight a unit answers to is not known.\n\nInternal: UNCONFIRMED. No set was tested on a unit. Eight are listed in the order to try in the reply: FUNIKI 12260, 11272, 3203, 12265, 11797, 2807, 3200, 77 (12260 first because its structure matches the one real capture; 11272 and 3203 are complete, complement-valid Coolix frames). Funiki has been built in at least five factories (req-068), so no single family fits and a brand row would only add the starter set. A Coolix family would cover two of the eight and the R51 remotes of other brands (req-080's Blue Star irx-11309, York in req-079): a reference encoder from ir_Coolix.cpp, a descriptor in protocols.json whose interpreter has to learn complement-pair bytes (to be checked), cloud packs for older builds, then a family on a brand row; held, because it is a new protocol. For the 83-bit frame: a decoded capture of at least a dozen buttons from the customer's remote, mode, temperature and fan varied, to find which of bytes 4, 5, 8 and 9 move and whether byte 9 is a checksum. The reply asks for the model on the indoor unit's label and the code printed on the remote (R51, MMC, or Inverter text).",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-09"
   }
  ],
- "totalCount": 105,
+ "totalCount": 106,
  "updatedAt": "2026-10-09"
 }
