@@ -1176,8 +1176,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-09"
+  },
+  {
+   "id": "req-108",
+   "category": "setTopBox",
+   "brand": "CLOBO",
+   "model": "CLOBO",
+   "region": "-",
+   "notes": "Russian sign-off (Отправлено с iPhone); a Russian reply. App 1.6, iOS 26.5. No region or notes. The form's category was Set-Top Box and the model field repeats the brand, so the request carries no model, no region and no photo.\n\nNOT IDENTIFIED. Nothing found says CLOBO is a maker of set-top boxes, Android TV boxes, IPTV boxes or DVB-T2 receivers, and nothing found says it is not. What was checked on 2026-10-09: Yandex Market's search for \"clobo приставка\" answers \"no such product, here is similar\" and lists Selenga, NiceDevice, Beko and the like; Ozon and Wildberries put an anti-bot page in front of search and were not read, and neither were Avito, DNS or 4PDA's search; web search finds no CLOBO receiver page, review or manual; Flipper-IRDB, irext's database (brand and brand_name), our 17,577-pack manifest and brands.json hold no CLOBO. The name does turn up elsewhere: Dr. Clobo is a Korean healthcare app and clobo.com is an unrelated site. One search snippet, from a comment on antex-e.ru under a DVB-T2 antenna, has a reader writing \"приставкой CLOBO\", so a DVB-T2 box under that spelling may exist or be a misreading; the page body is script-rendered and was not read.\n\nThe nearest real name is GLOBO (Глобо): GL100 is a DVB-T2 receiver on an ALi3812 chip (dvbpro.ru, 2015), importer globotrading.ru, with its own odd-shaped remote, and Globo STB T90 lite is another. Whether the customer's box says GLOBO is a guess, and C and G are not close in print. Flipper-IRDB's _Converted_/IR_Plus/G/GLOBO/DVB.ir is a raw capture of a different, satellite-style GLOBO DVB remote (158 us marks, 4917/7442 us spaces, not a protocol the importer would have read) and was not imported.\n\nWhat 1.6 gives a Set-Top Box today, from the v1.6-b24 sources and manifest v92. Add a Device > Set-Top Box > Brand lists 12 compiled brands (Universal, Sky, Virgin, DirecTV, Dish, Comcast, ARRIS, Claro, Cox, DSTV, Orange, Xfinity) plus the cloud rows, 13 in brands.json including Android; a brand picked there loads only the synthesized NEC starter set, not real codes. Find My Remote Automatically sweeps the category's curated packs only, and for set-top boxes that is three: foxtel-stb-01 (37 keys), sky-stb-01 (35) and fetch-stb-01 (30); everything else is a bulk import and is skipped. Browse Full Code Database > Our Cloud > Android > MXQ / MXQ Pro (Android TV box) is the one pack aimed at a cheap Android box: flip-android-tv-mxq, plaintext, 15 keys, NEC device 1, from Flipper-IRDB. The 114 non-Chinese set-top-box packs include no DVB-T2 receiver sold in Russia. The same gap is open as req-099 (Selenga T81D). A box that runs Android can instead be added as Android TV (ADB) with no IR hardware, which needs the one-time debugging switch.\n\nNothing published for this request: no brand row (an alias to a guess would send the customer to the wrong codes) and no pack. The reply asks for the model printed on the box's label and a photo of the remote (the name on the remote often differs from the box), and says that an iPhone has no infrared emitter, so IR control needs a Wi-Fi to IR bridge. Open until the device is identified. If it is a DVB-T2 box on the Selenga-style remote, req-099's keymap route applies.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-09"
   }
  ],
- "totalCount": 107,
+ "totalCount": 108,
  "updatedAt": "2026-10-09"
 }
