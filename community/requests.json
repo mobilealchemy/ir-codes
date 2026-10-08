@@ -1165,8 +1165,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-09"
+  },
+  {
+   "id": "req-107",
+   "category": "airConditioner",
+   "brand": "Aukia",
+   "model": "Okia gold",
+   "region": "Saudi Arabia",
+   "notes": "Arabic sign-off (أُرسلت من الـ iPhone), region Saudi Arabia, so an Arabic reply. App 1.6, iOS 26.6.2. Brand \"Aukia\", model \"Okia gold\". AUKIA (أوكيا) is the Gulf-market air conditioner brand, and \"Gold\" is a product line: Saudi classified ads list Okia Gold splits at 18,000 and 27,000 BTU (hot/cold), and Labeb lists an Aukia AUK-12CH/DC in Saudi Arabia and Jordan. No retailer says who builds it. What ties it to AUX is its remotes: replacement sellers list Aukia YKR-H/102E (a Saudi Amazon listing for an \"Aukia\" remote, and eBay beside AUX YKR-H/006E), YKR-H/502E (\"for AUX Aukia\") and YKR-F/001, F/006, F/09E (Remote Control World files them under AUKIA). hobby-hour's universal-remote code lists carry AUKIA and AUX as separate brands.\n\nServed by existing sets plus one cloud change. 1.6's compiled picker has no Aukia and manifest v91/v92 holds no Aukia pack, so a customer typing the brand the way the unit prints it found nothing. Added an \"Aukia\" row: family electra, aliasOf AUX, searchTerms Okia, Okai, أوكيا, اوكيا, اوكاي and YKR-H. The family and the alias read on 1.6, and so do the search terms. The family is the one the AUX row already carries, so the Brand picker now gives a computed Electra frame (13 bytes, header 9166/4470, per docs/ir-and-ac-protocols.md) instead of the synthesized starter set, and Browse Full Code Database > Our Cloud > Aukia lists AUX's 16 packs (12 irext, 4 SmartIR, all sealed, which 1.6 opens). Of those, irx-3749, irx-8719, irx-9585, irx-12966 and smartir-1960 to 1963 send Electra frames (first byte C3, checked by decoding the packs); irx-9819 and irx-3754 are Coolix (4D B2 pairs); irx-3750, irx-3752 and irx-11253 are other frames. electra-ac-01 (\"All YKR remotes: YKR-P / YKR-H / YKR-M / YKR-T\", plaintext, 152 keys) sits under Electra, not AUX, and Find My Remote Automatically reaches it at step 259 of 376 in v91 (AUX's smartir-1961, smartir-1963 and smartir-1962 are steps 3, 4 and 10). In 1.6: Add Device > Air Conditioner > Brand > Aukia > Test Power > Save; or Browse Full Code Database > Our Cloud > Aukia (or AUX, which needs no cloud table change) > AUX FREEDOM AUX-09FH, Kendal Split Inverter, iClima ICI-09A, then AUX 9377, AUX 11832, AUX 4957, AUX 25072 > Test Power > Use These Codes.\n\nInternal: UNCONFIRMED. The customer's remote number is not in the request, and \"Gold\" names a range, not a remote. Nothing public ties AUKIA to a maker beyond its AUX-numbered remotes (the brand is also sold in Jordan, and its listings give no origin), so \"AUKIA is an AUX-built Gulf brand\" is an inference from replacement-remote listings. YKR-H/xxx is the Electra family in our notes, but YKR-F and YKR-K (also sold as AUX/Aukia replacements) have no protocol named by any source found, so a unit whose remote reads YKR-F or YKR-K may not answer to Electra; the AUX packs include Coolix and 8-byte captures for that reason. No set was tried on a unit. If it fails: the number printed on the remote, and one capture of Power from it.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-09"
   }
  ],
- "totalCount": 106,
+ "totalCount": 107,
  "updatedAt": "2026-10-09"
 }
