@@ -1143,8 +1143,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-09"
+  },
+  {
+   "id": "req-105",
+   "category": "airConditioner",
+   "brand": "General",
+   "model": "ASGA30FETA-Q",
+   "region": "-",
+   "notes": "English (Sent from my iPhone), no region; the Gulf's \"General\" is Fujitsu General's own brand. App 1.6, iOS 26.7.1. Model ASGA30FETA-Q (outdoor AOGA30FETA): a 2.5 ton, 30,000 BTU non-inverter wall split, assembled in Thailand. Gulf retailers list it as O General ASGA30FETA-UZ and a Bangladeshi reseller says \"GENERAL is a brand of air conditioner owned by Fujitsu General Limited of Japan\"; the O General site (ogeneralac.com) lists the FETA series with R410A. The -Q suffix was not found anywhere.\n\nServed by existing sets plus one cloud change. 1.6's compiled picker has no \"General\", only General Electric; brands.json already carried \"OGeneral\" aliasOf Fujitsu, with no search terms, so a customer typing the brand the way the unit prints it reached the wrong maker. Added a \"General\" row aliasOf Fujitsu, with searchTerms ASGA, AOGA, ASG, O General and Fujitsu General (OGeneral gets ASGA, AOGA, ASG, O General; Fujitsu gets ASGA, AOGA). Search terms read on 1.6, and so does the alias. 1.6 offers 25 Fujitsu AC packs: 2 Flipper, 7 irext, 16 SmartIR (smartir-1280 to 1294 and 7285), all sealed, which 1.6 opens. There is no computed Fujitsu family (no encoder, no descriptor, no curated pack), so Test Power and the temperature states come from captured frames only.\n\nInternal: the remote is UNCONFIRMED. No retailer, manual or parts page names the remote that ships with ASGA30FETA; Fujitsu General's own remote-compatibility tables (assist.fujitsugeneral.com.au) list only ASTG/ASYG/AGTV/AUTG models. Third-party sellers pair O General non-inverters with AR-RAJ1E (ASGA18FMTA, ASGA24JCC), AR-JE5/JE6/JE11 and AR-RHA2E; none of these names an ASGA..FETA. IRremoteESP8266 (ir_Fujitsu.h) names no AR-JE remote, but AR-JW2 and AR-DL3 are ARJW2 and AR-DB1/AR-DL10/AR-JW17/AR-JW19 are ARDB1, which share one frame shape: 15 bytes, command 0xFC, RestLength 8 (checked in ir_Fujitsu.cpp buildFromState). The 16-byte command 0xFE, RestLength 9 frame is ARRAH2E, ARREB1E, ARREW4E or ARRY4. Decoded from the packs: smartir-1286 (AR-JE5) is 15-byte only, smartir-1282 (AR-JW11) holds both shapes, irx-9833 (7107) and irx-9836 (11692) are 15-byte, and the other SmartIR sets and both Flipper captures are 16-byte; irx-9831/9832/9834/9835 and smartir-1283/1288 (AR-AB5, AR-AB8) are a different 8-byte frame. If the customer's remote reads AR-JE*, AR-JW* or AR-DB*, the 15-byte sets are the ones to try first; whether it is that family is inference.\n\nNot verified on a unit. Only a computed Fujitsu family would remove the guesswork: it needs a reference encoder from ir_Fujitsu.cpp, a descriptor in protocols.json (the interpreter would need a checksum type for the Fujitsu two's-complement sum, to be checked), packs per variant and a family on the Fujitsu row; held, because it is a new protocol.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-09"
   }
  ],
- "totalCount": 104,
+ "totalCount": 105,
  "updatedAt": "2026-10-09"
 }
