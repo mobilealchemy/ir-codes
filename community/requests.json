@@ -1132,8 +1132,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-07"
+  },
+  {
+   "id": "req-104",
+   "category": "airConditioner",
+   "brand": "Panasonic",
+   "model": "CS-PC12MKT",
+   "region": "Thailand",
+   "notes": "Thai sign-off (ส่งจาก iPhone ของฉัน), region Thailand; a Thai reply. App 1.6, iOS 26.2.1. No notes. CS-PC12MKT is Panasonic Thailand's non-inverter 12,000 BTU wall split, the PC/MKT range.\n\nAlready served by existing sets; nothing was added. Remote: Thai retailers' parts listings give CWA75C3623 / CWA75C3297 for the MKT, and a UK listing gives A75C3192, which also names CS-PC12MKT; none of these is a manufacturer source, and Panasonic's own pages were not readable. 1.6 offers 30 Panasonic AC packs. The standard Panasonic AC frame (216 bits: an 8-byte section, then 19 bytes) is the family on the Panasonic row, the computed panasonic-ac-01, and smartir-1026 (CS-PC12QKT, the same range's later Thai model) and smartir-1024 (CS-MRE7MKE), both plaintext; all three decode to the IRremoteESP8266 JKE model bytes. The reply sends the customer to Panasonic in Add Device, then Browse Full Code Database and those three sets with Test Power, with Find My Remote Automatically as the fallback.\n\nInternal: the remote's protocol is UNCONFIRMED. Nothing public names the protocol of A75C3297, A75C3623 or A75C3192: IRremoteESP8266, Flipper-IRDB, SmartIR and irext hold no capture of CS-PC12MKT or those remotes. If it is the standard 216-bit frame, the shipped JKE bytes differ from an older NKE / LKE / CKP unit's in bytes 17, 21 and 23; whether such a unit ignores that is untested. If it is the 32-bit frame (IRremoteESP8266 PanasonicAc32: doubled bytes, 3543/3450 header, a power toggle), nothing computed covers it: the app and protocols.json have no encoder for it, though smartir-1027 (CS-SA9CKP) and about ten irext packs, sealed, are that frame. Pending the number printed on the customer's remote. If AC32 is confirmed: a cloud-only computed pack plus a descriptor, with the interpreter's support for it still to be checked.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-09"
   }
  ],
- "totalCount": 103,
- "updatedAt": "2026-10-07"
+ "totalCount": 104,
+ "updatedAt": "2026-10-09"
 }
