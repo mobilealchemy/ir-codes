@@ -1209,8 +1209,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-09"
+  },
+  {
+   "id": "req-111",
+   "category": "fan",
+   "brand": "Andrakk",
+   "model": "ADK8216R",
+   "region": "-",
+   "notes": "English (Sent from my iPhone), no region given (sold in Nigeria). App 1.6, iOS 26.5.2. Brand \"Andrakk\", model \"ADK8216R\", no notes.\n\nIDENTIFIED, NO CODES. Andrakk is a Nigerian brand, not an Amazon one: Dralkk International Ltd of the Mezonel Group, Surulere, Lagos (andrakkproducts.com address, 3ptechies.com), sold through Jumia, Supermart.ng, Idealpage and similar Nigerian shops. The ADK8216R is a 16-inch rechargeable stand (pedestal) fan: a 12 V lead-acid battery (9 Ah on the maker's page, 7 Ah on Idealpage), AC/DC, three speeds, an LED night light, and a remote control that retailers list (Idealpage, 3ptechies). Category Fan is right. Who makes it is not stated anywhere found: Andrakk's site and FAQ name no factory, and 3ptechies calls Dralkk both a dealer and a manufacturer, so OEM or rebrand is unknown. The maker's own ADK8216R page was only read through a search snippet (a direct fetch answered 404).\n\nIR OR RF: NOT KNOWN. No listing, review or FAQ says which the remote is, and no photo was read. Nothing found points to RF, but a stand fan's remote being infrared is the app's own working assumption (DeviceCategory.mayUseRF), not evidence. The customer can tell in a minute: point the remote at the iPhone's front camera and press a button; an infrared remote shows a faint purple flash, an RF one shows nothing. A remote that must be aimed at the fan is infrared.\n\nSEARCHED, NOTHING: Flipper-IRDB Fans (every brand folder, and code search for andrakk and ADK8216R across the repo), irext's database (brand names, collect_remote, remote_index), irdb, lirc-remotes, SmartIR, IRremoteESP8266 and ESPHome (GitHub code search for andrakk: no hit in any), plus web search for LIRC or capture dumps. No capture of this remote exists in any of them, so there was nothing to check against a remote.\n\nWHAT 1.6 GIVES A FAN (v1.6-b24 sources, manifest v93). Add Device > Fan > Brand: the compiled list is Universal, Honeywell, Dyson, plus the cloud rows (122 fan brands in brands.json); Andrakk is in none of them. Any brand picked there loads only the synthesized NEC starter set (IRDatabase.buildCodeSet), whose address is invented from the brand name, so it would not move a real fan. Find My Remote Automatically sweeps the Fan category's curated packs only: 18 (cosmos-fan-01, dyson-fan-01, generic-fan-01, honeywell-fan-01 and 14 SmartIR sets), none for a rechargeable fan; generic-fan-01 is a synthetic NEC table (device 1, small function numbers), not a capture. Browse Full Code Database > Our Cloud lists the other 977 fan packs by brand; none is Andrakk's.\n\nNothing published for this request but this entry: no brand row (it would list Andrakk and send the synthesized set, as with req-070 and req-108) and no pack (no verified capture). The honest route is learning the remote, which needs a Broadlink: add the fan as Fan with Control via Broadlink Wi-Fi IR, open it and tap the wand icon (Set Up - Learn Your Remote, offered to a Fan on a Broadlink on 1.6), choose Infrared or RF 433/315 under Signal, and learn Power, Speed +, Speed −, Oscillate, Mode, Timer and Ionizer one at a time with Learn This Button. RF learning needs an RM Pro; an RM mini does infrared only. The Fan layout draws only those seven buttons, so a remote button with no counterpart (the night light) has no place on it.\n\nWithout a Broadlink: a photo of the remote, the model printed on the remote or inside the battery cover, and the camera-test result. A captured Power frame from any IR receiver would let a plaintext pack be built, cloud only. UNCONFIRMED: nothing was sent to a unit and the remote type is not known.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-09"
   }
  ],
- "totalCount": 110,
+ "totalCount": 111,
  "updatedAt": "2026-10-09"
 }
