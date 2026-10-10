@@ -1264,8 +1264,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-10"
+  },
+  {
+   "id": "req-116",
+   "category": "projector",
+   "brand": "Doser",
+   "model": "Fire 507 (white)",
+   "region": "-",
+   "notes": "Russian speaker (no sign-off seen; Cyrillic brand text). App 1.7, iOS 26.6.1. Brand field \"Doser Fire 507 белый\" (white), model \"Fire 507\", category Projector.\n\nNOT IDENTIFIED, NO PACK, NO BRAND ROW. Web searches 2026-10-10 (English and Russian, Ozon/Wildberries/Yandex Market phrasing) found no listing, manual or remote photo for any \"Doser Fire 507\"; nothing in our brands.json, manifest (v95) or requests names Doser. The only lead is circumstantial: the \"Fire\" number series (Fire 501, 502, 505, 509) belongs to Volto (Zhongshan Volto Technology, voltogroup.com), whose Fire 502 page lists Android 9.0, 1280x720 native and a remote used for picture correction, with no word on IR vs Bluetooth and no Fire 507. A \"Fire 507\" sold under a reseller name could be the same OEM line, but that is a guess from the model prefix alone; nothing ties Doser to Volto. Not the HY300 class (Allwinner H713, Magcubic remotes) on any evidence, so deliberately NOT aliased to magcubic: a wrong alias would send the customer NEC 00/ff and 01/fe codes that may not match.\n\nWhether the remote is IR or Bluetooth is unknown (many cheap Android projectors pair a BT remote). Whether the unit runs plain Android and would answer ADB is likewise unverified.\n\nWhat 1.7 does for a projector brand: picking a brand in Add Device loads that brand's best cloud pack (c253264), but Doser is in no picker and has no pack, so there is nothing to load. Routes offered in the reply: Find My Remote Automatically (the projector sweep, needs an IR blaster), Learn a Button with an IR bridge that can learn, and a photo of the remote plus the model label so a pack can be built from the remote's real key table. An iPhone has no IR emitter.\n\nNext step if a photo arrives: check the remote against the Volto Fire / H713 key tables (customer_ir_ef11.kl lead in req-103) and Flipper-IRDB projector captures before building any set; never invent codes.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-10"
   }
  ],
- "totalCount": 115,
+ "totalCount": 116,
  "updatedAt": "2026-10-10"
 }
