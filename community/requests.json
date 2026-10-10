@@ -1242,8 +1242,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-09"
+  },
+  {
+   "id": "req-114",
+   "category": "light",
+   "brand": "Shino",
+   "model": "359494",
+   "region": "-",
+   "notes": "Russian (Cyrillic name, no sign-off seen), no region given. App 1.6, iOS 26.6.2. Brand \"Shino\", model \"359494\", category Light, no notes.\n\nIDENTIFIED, NOT INFRARED, NO PACK. Shino is not a lamp brand: it is Novotech's (Hungary) low-voltage 48 V magnetic track system, also sold as Flum. Article 359494 is the Novotech \"NT24 000 SHINO FLUM\" 12 W track spotlight, 3000-6500 K, with Tuya Bluetooth Mesh control (novotech-shop.ru/magnitnye/novotech-flum/359494 and lustore.by listing 359494, both read 2026-10-10). It is controlled from the Smart Life / Tuya app over Bluetooth (voice through a hub: Alice, Marusya, Alexa), and the listings say the remote is NOT included but sold separately as article 358637. Neither listing says what technology that remote uses; no page for 358637 was found. A Tuya Bluetooth Mesh fixture is not infrared, and a remote sold for it is in all likelihood a 2.4 GHz radio or Bluetooth remote, but that is inferred, not read from a source. Confidence that the product is the Novotech 359494: high (exact article match). Confidence that nothing infrared exists for it: medium-high.\n\nChecked: brands.json (no Shino row), manifest packs and Flipper-IRDB / irext lights (no Shino or Novotech). Nothing published: no brand row (it would list Shino and send the made-up NEC starter set, as with req-070, req-108, req-111 and req-112) and no pack (no capture, and the signal is not IR). Cannot be added as a Wi-Fi or Bluetooth device in 1.6 either: the Tuya transport is Wi-Fi/LAN only and sends only power on/off/toggle, and Tuya Bluetooth Mesh is not supported. Reply: tell her, in Russian, that this lamp is controlled by its Smart Life app (Bluetooth), its remote 358637 is a separate radio accessory, and an infrared remote app cannot drive it; the Broadlink route would only help if her remote proved to be infrared (camera test). UNCONFIRMED: nothing was sent to a unit; the 358637 remote technology is not known.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-10"
   }
  ],
- "totalCount": 113,
- "updatedAt": "2026-10-09"
+ "totalCount": 114,
+ "updatedAt": "2026-10-10"
 }
