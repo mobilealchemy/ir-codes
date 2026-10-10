@@ -1286,8 +1286,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-10"
+  },
+  {
+   "id": "req-118",
+   "category": "setTopBox",
+   "brand": "Panasonic",
+   "model": "21.5 ich",
+   "region": "VN",
+   "notes": "Vietnamese (\"Được gửi từ iPhone của tôi\"), no name. App 1.7, iOS 26.6.1. Category Set-Top Box, brand Panasonic, model \"21.5 ich\" (21.5 inch).\n\nNO CLOUD CHANGE. A set-top box has no screen size, so this is almost certainly a small Panasonic TV (21.5 in, most likely a 22-inch LED class set) filed under the wrong category. Panasonic's brands.json row lists tv, airConditioner, projector, mediaPlayer, camera, fan, light, audioReceiver, not setTopBox, so in 1.7 Panasonic under Set-Top Box gives the starter set only. Adding setTopBox would load no Panasonic code (packForBrand filters on category) or would mislabel TV/DVD packs, so deliberately not added. Under TV, 1.7 loads the brand pack on brand pick: manifest v95 holds panasonic-tv-01 (N2QAYB series, curated, the one picked first), panasonic-tv-02 (EUR7651), plus flip-/irext-/irx- Panasonic TV captures.\n\nRemote fit is NOT confirmed for Vietnam: third-party listings (Amazon N2QAYB000494, fits TH-L22X20AK/AS, TH-L22X25A) say 22-inch Panasonic sets ship an N2QAYB remote, but those are seller claims and no source ties N2QAYB to a Vietnam-market TH-22 model. Panasonic uses different suffixes by region. No Wi-Fi route: app has no Viera network transport (PanasonicTransport is Comfort Cloud air conditioners only), and iPhone has no IR emitter, so a TV needs an IR blaster/bridge.\n\nReply (Vietnamese): add it under TV not Set-Top Box, pick Panasonic, try Find My Remote Automatically; IR blaster needed; Wi-Fi not available for Panasonic TVs; send the remote's printed part number (N2QAYB...) and model on the TV label if it fails. Nothing published, manifest stays v95.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-10"
   }
  ],
- "totalCount": 117,
+ "totalCount": 118,
  "updatedAt": "2026-10-10"
 }
