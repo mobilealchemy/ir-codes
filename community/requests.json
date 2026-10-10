@@ -1253,8 +1253,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-10"
+  },
+  {
+   "id": "req-115",
+   "category": "tv",
+   "brand": "onax",
+   "model": "لا اعرف",
+   "region": "Basra, Iraq",
+   "notes": "Arabic (Iraq, Basra; no sign-off seen), model given as \"لا اعرف\" (I don't know). App 1.6, iOS 26.6.2. Brand \"onax\", category TV.\n\nNOT RESOLVED TO A REMOTE, NO PACK. What Onax is: sources found 2026-10-10 are thin. Onax is an Iraqi trading name: ONAX Group (onax.group, Iraqi conglomerate founded 2015, HQ Erbil, 15 companies; its site lists logistics, legal, technology, retail and lab/medical supplies, and does NOT say it sells TVs). Separately, OpenSooq Iraq has a tag page \"split Onax\" (iq.opensooq.com/ar/tags/سبلت-اونكس-onax) with Onax split air conditioners, and a search summary mentions Onax fridges and an Onax air cooler / duct units sold through a Baghdad appliance dealer (TikTok posts, unverified). So Onax looks like an appliance house brand sold in Iraq; no retailer page, listing, manual or remote photo for an Onax-branded TV was found, so it is NOT confirmed that Onax makes a TV at all, let alone on which chassis or OS (Android/AOSP, Google TV, other). Not to be confused with ONN (Walmart), Onix (India) or Onida (India). Sources searched: web search in English and Arabic, onax.group, OpenSooq Iraq (page itself returned 403 to fetch; seen only via search summary).\n\nChecked: brands.json (no Onax row), manifest packs and search terms (no Onax). No OEM identification, so no clearly identical remote; a brand row pointing at an existing pack would be a guess and was not added. Nothing published, no manifest change.\n\nReply (Arabic): the model is unknown, so ask for the model label on the back of the TV and a photo of the remote (front) and the TV; meanwhile try Find My Remote Automatically; tell them honestly that Onax is not in the database yet and a code set needs the model or the remote's printed name. Do not say anything works immediately; allow an hour after a future publish. UNCONFIRMED: no TV, no remote, no smart-TV platform identified; the ADB route (Android over ADB) is only possible if the set turns out to be plain Android with a developer-options toggle, which is unknown.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-10"
   }
  ],
- "totalCount": 114,
+ "totalCount": 115,
  "updatedAt": "2026-10-10"
 }
