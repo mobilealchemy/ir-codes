@@ -1275,8 +1275,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-10"
+  },
+  {
+   "id": "req-117",
+   "category": "projector",
+   "brand": "VOPLLS",
+   "model": "M10",
+   "region": "-",
+   "notes": "English (\"Sent from my iPhone\"), no name or region. App 1.7, iOS 26.7.1. Brand \"VOPLLS\", model \"M10\", category Projector.\n\nIDENTIFIED, REMOTE IS INFRARED, NO CAPTURE ANYWHERE, NO PACK, NO BRAND ROW. VOPLLS is an Amazon budget-projector brand (VSKingtech, support VOPLLS@vskingtech.com; myvoplls.com, vopllstech.com). The M10 is its Netflix-licensed Linux/WiFi 6 projector (1080p native, 4K input, AirPlay and Miracast built in; listings differ on lumens and display type, so several M10 revisions exist). Official manual (myvoplls.com/wp-content/uploads/VOPLLS-M10-Home-Theater-Projector-User-Manual_compressed.pdf, read 2026-10-10) shows an \"Infrared Sensor\" on the projector and its FAQ says an unresponsive remote means check batteries and that the IR receiver is not covered, so the bundled remote is IR. Remote keys per the manual: ON/OFF, Netflix, Prime Video, YouTube and Open Browser hotkeys, Red/Green/Yellow/Blue, Setting, Mute, Signal Source, d-pad, OK, Return, Home, Volume +/-, Focus +/-, Projection mode, number keys, USB Source, Backspace. Replacement-remote listings (Amazon MOVHEIYL B0GLNX7T6W, PZL B0DQV1WZM7, ZWP B0F4KCQ2SD, ECONTROLLY B0FPQ2WS3C, eBay) say the same remote fits VOPLLS M10/P1E, WiMiUS K9, DBPOWER G01 and N5, YABER V12/U12, TOPTRO X9, MECOOL KP2, Blitzwolf BW-V6, FUDONI S1, Tecaki X5, TMY T02, so these are one shared OEM remote family. Some replacement units are said to need OK + Vol- held to pair; that is the seller's wording for the clone, not stated in VOPLLS's manual. Confidence VOPLLS M10 is an IR-remote Linux projector: high. Confidence which NEC address/commands it sends: none.\n\nChecked, nothing usable: brands.json (no VOPLLS row, and none for YABER, DBPOWER, MECOOL, FUDONI, Blitzwolf projectors), manifest v95 (736 projector packs; none VOPLLS or M10; family siblings present only as flip-wimius-s25, flip-wimius-wimius-k1, flip-toptro-tr25, flip-groview-groview, flip-artlii-yg300, flip-wanbo-t6-max, flip-vankyo-v630w, flip-apeman-lc650), irext sqlite (no VOPLLS, Yaber, WiMiUS, TOPTRO or DBPower), Flipper-IRDB and the irdb tree (no VOPLLS, Yaber, DBPOWER, WiMiUS K9, TOPTRO X9, MECOOL KP2 or FUDONI file), SmartIR, GitHub code search (VOPLLS, WiMiUS K9, Yaber V12, DBPOWER G01, TOPTRO X9, Blitzwolf BW-V6, FUDONI S1, MECOOL KP2: no IR data), web search (no remote photos with codes, no forum capture). Near misses deliberately NOT aliased: TOPTRO TR25 and Groview share NECext 86 00 (Focus +/- present) and WiMiUS S25 / Artlii YG300 are NEC 02 00, but TR25 is not the X9 and nothing shows the M10 remote matches any of them; an alias would send possibly-wrong codes. Nothing published, manifest stays v95.\n\nReply (English): say plainly VOPLLS is not in the database yet and no verified code set exists for the M10 remote; iPhone has no IR emitter so IR control needs a blaster; route: Learn a Button with an IR blaster/bridge that can learn, or Find My Remote Automatically (projector sweep) as a long shot; and ask for a clear photo of the remote plus the printed model on its back so a set can be built from the real keys. UNCONFIRMED: M10 NEC address/commands, whether remote hardware differs between M10 revisions, whether 1.7's Mouse/Miracast/AirPlay keys apply (needs a pack to load).",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-10"
   }
  ],
- "totalCount": 116,
+ "totalCount": 117,
  "updatedAt": "2026-10-10"
 }
