@@ -1308,8 +1308,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-12"
+  },
+  {
+   "id": "req-120",
+   "category": "airConditioner",
+   "brand": "Oasis",
+   "model": "OT-12",
+   "region": "Russia",
+   "notes": "Russian sign-off (Отправлено с iPhone), no region field, no notes; a Russian reply. App 1.7, iOS 26.6. Region (Russia or CIS) is INFERRED from the sign-off and from where the brand sells.\n\nThe brand. Oasis is the house brand (\"Making Oasis Everywhere\") of Forte Holding, sold in Russia and Belarus (oasis-home.ru footer credits Forte Holding; the manual of another Oasis product gives info@forteholding.ru; Onliner.by lists the brand as makingoasis). Read from retailer pages, not from Forte. Not related to the Midea 'Oasis DC Inverter' line seen in Ukrainian listings (a Midea model name, not this brand).\n\nThe unit. Oasis OT-12 is a wall split, 12000 BTU, cooling 3.52 kW / heating 3.66 kW, 220 V, sold as non-inverter, remote in the box (retailer pages on e-katalog, vseinstrumenti, kcentr, hobot.by; one dealer says discontinued). A sibling OT-12N exists (a different article). The OT series has -7, -9, -12, -18, -24, -28 N variants (mcgrp.ru manual index).\n\nThe remote and the OEM: NOT FOUND. No page read names the remote model, its code, the factory that builds the unit or its compressor/board supplier. The manual for OT-12N is listed on mcgrp.ru but its file was not reachable. Flipper-IRDB, SmartIR, irext (collect_remote/brand tables of the 20260519 snapshot) and the manifest hold nothing under Oasis; IRremoteESP8266 has no Oasis entry. brands.json has no Oasis row and no earlier Oasis request exists.\n\nDECISION: NO CLOUD CHANGE, status open. Same rule as req-065 (Alpha), req-071 (Free Air) and the MOVON request: with no evidence tying this remote to a family we compute, a brand row would fall through to the synthesized starter set and look supported. Any family would be a guess; none was routed. Manifest stays v95; nothing published but this tracker entry.\n\nWhat 1.7 can do meanwhile (it opens sealed packs): Find My Remote Automatically over an IR bridge, and Browse Full Code Database. An iPhone has no infrared emitter, so the customer needs a Wi-Fi to IR bridge (Broadlink etc.); the reply says so. The reply asks for the code printed on the remote (back or battery cover) and a photo of it, and the label on the indoor unit; with the remote reference the family can be matched. Nothing was sent to a unit. If the remote turns out to be a common Gree/Midea/Haier-style one, add the Oasis row with that family (cloud only, no release).",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-12"
   }
  ],
- "totalCount": 119,
+ "totalCount": 120,
  "updatedAt": "2026-10-12"
 }
