@@ -1319,8 +1319,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-12"
+  },
+  {
+   "id": "req-121",
+   "category": "airConditioner",
+   "brand": "Consul",
+   "model": "Atual",
+   "region": "Brazil",
+   "notes": "Brazilian Portuguese sign-off (Enviado do meu iPhone), no region given; Consul is Whirlpool's Brazilian brand, so Brazil is inferred from brand and sign-off. App 1.7, iOS 26.6.1. Brand Consul, model \"Atual\" (Portuguese for \"current\", not a model), no notes. A Portuguese (pt-BR) reply.\n\nProbable cause: the Consul row in brands.json had no family and no aliasOf, so picking Consul with no imported code set sent the synthesized NEC starter set, which does nothing on a real air conditioner and looks supported.\n\nDECODED the two existing Consul packs (both SmartIR imports, sealed; opened with the repo's own key helper). smartir-1241-consul (model \"CBV12CBBNA, CBY12DBBNA\", 241 keys) is the Whirlpool DG11 21-byte frame: 8972/4486 header, 83 06 ..., sections of 6, 8 and 7 bytes about 8 ms apart, byte 13 = XOR of bytes 2-11, byte 20 = XOR of bytes 14-19; 240 of 241 frames pass both checksums (heat.27.low is a corrupted capture). Compared against the compiled WhirlpoolAC built on the Mac: all 60 cool and 59 of 60 heat frames are byte-identical (e.g. cool 24 low 83 06 03 62 00 00 80 00 00 00 00 00 00 E1 00 02 00 00 00 00 02), with the temperature offset from 18, as in the encoder. Dry and fan keys differ because the pack holds one fixed frame (temp byte 73) where the encoder varies the temperature; the pack has no auto keys. Timings match within capture jitter (bit mark ~580 vs 597, gap ~8.0 ms vs 7.92 ms). smartir-1240-consul (model \"Unknown\", 118 keys) is something else: 9000/4500 header, a 56-bit frame sent three times, 18 xx 00 00 yy 00 ck with ck = byte sum, mode/fan in yy (auto 00, cool 01, heat 02, +10 medium, +20 high). It matches none of our families and I did not identify the protocol; its temperature byte is irregular (24, 25, 26 step by one, other steps by two) and about 8 frames are corrupted, so it looks interpolated rather than fully captured.\n\nRESEARCH (thin). Consul is Whirlpool Corporation's brand in Brazil, same owner as Brastemp (read in general sources). IRremoteESP8266 ir_Whirlpool.h lists DG11J1-3A/-04/-91 and SPIS/SPIW units, no Consul or Brastemp (read). Current Consul model prefixes: CBF (inverter, e.g. CBF09/12/18EBBN) and CBK/CBL (CBK12D / CBL12D Triple Inverter), per webarcondicionado.com.br and a zoom.com.br listing (read). No source found naming the original remote part numbers (W10/W11 hits were refrigerator and washer parts) or tying CBF/CBK remotes to a protocol. A listing for a Brastemp-compatible DG11E5-01 remote could not be read (403). So that current Consul splits share the Whirlpool DG11 frame is INFERRED from the one Consul pack, not read from a source.\n\nCHANGED (cloud only, no release): Consul row gets \"family\": \"whirlpool\" and searchTerms CBF, CBK, CBL, CBV, CBY (searchTerms only help from builds with the searchable brand picker). No aliasOf: the Consul packs live under Consul. Brastemp not added (no source). Diffed by value against HEAD: 869 rows before and after, none removed, only the Consul row changed. Evidence covers one of the two Consul packs (the one carrying real model names); how many current Consul units use it is unknown, so this is a better bet than the starter set, not a guarantee. The compiled encoder treats Power as a toggle, which has no per-key state on a bridge, so Power may need a second press.\n\nUNVERIFIED: nothing sent to a unit. If it fails: ask for the model on the indoor unit label (CBF12..., CBK12..., CBV12...) and the code printed on the remote, with a photo of the remote; then either import smartir-1240-consul, or capture/identify the real remote and, if it is a different protocol, remove the family and route accordingly. Customer also needs an IR bridge (an iPhone has no IR emitter).",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-12"
   }
  ],
- "totalCount": 120,
+ "totalCount": 121,
  "updatedAt": "2026-10-12"
 }
