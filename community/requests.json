@@ -1297,8 +1297,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-10"
+  },
+  {
+   "id": "req-119",
+   "category": "airConditioner",
+   "brand": "Haier",
+   "model": "HSU-13CQAA03TF",
+   "region": "Thailand",
+   "notes": "Thai sign-off (ส่งจาก iPad ของฉัน), no region field, no notes; a Thai reply. App 1.7, iPadOS 26.6.2. Region Thailand is INFERRED from the sign-off and the model, which Thai retailers sell (dkairr.com, ofm.co.th, LINE Shop chiangmaiair).\n\nThe unit. HSU-13CQAA03TF is Haier Thailand's Ultimate Cool (CQAA series) wall split, about 12,795 BTU/h (12,987 on another listing), SEER 13.00, No. 5 label, R32. The dealer dkairr.com tags it Fixed-Speed and OFM sells the sibling HSU13CQAA03T as NON-INVERTER, so it is taken to be an on-off compressor (retailer pages, not Haier's own). No page found names a Wi-Fi module or hOn for it, so no Wi-Fi is assumed (inferred from absence; a Wi-Fi inverter Ultimate Cool exists in Bangladesh, a different product).\n\nThe remote. Same as req-110. The retailer chiangmaiair (LINE Shop) sells A0010401715P as genuine Haier, replacing the discontinued A0010401511E, and its compatibility list (read in full 2026-10-12, 34 entries) names HSU-13CQAA03TF at entry 28, beside the HSU-13CTC03T(H)F of req-110 and CEK, VEK, CTR sets. Its parts listing for the indoor board A0011800630L also names HSU-13CQAA03TF. So the remote is the 0010401715 line (YR-HD / YL-HD in replacement-remote listings, seller claims only). Read from a source: the compatibility list. Inferred: that the unit in the box ships that remote, rather than the discontinued 0010401511E.\n\nProtocol: UNCONFIRMED, as for req-110. Nothing public ties 0010401715, YR-HD or YL-HD to an IRremoteESP8266 variant; the library's Haier models are named in req-110's notes. The one known gap is the library's Model B (first byte 0x59), which neither the app nor any pack sends.\n\nWhat 1.7 does. Add Device > Air Conditioner > Control via (an IR blaster or bridge) > Brand > Haier: the computed haier family, whose press is the 176-, 160-, 112- and 72-bit frames back to back (checked against the library for req-110). haier-ac-01, -02 and -03 carry the same frames under Browse Full Code Database > Our Cloud > Haier. HSU already finds the Haier row when the model is typed whole, so searchTerms need nothing new.\n\nNO CLOUD CHANGE. No pack, family, alias or search term was added; manifest stays v95. Status done means the brand pick covers every frame the library has bar Model B, not that a unit answered: nothing was sent to a unit and no capture of the remote exists.\n\nAn iPad has no infrared emitter, so the customer needs a Wi-Fi to IR bridge (Broadlink etc.); the reply says so and does not promise it works. If it fails: the code on the back of the remote or inside the battery cover (0010401715x, YR-HD or YL-HD), the model on the indoor unit's label, and one capture of Power. A Model B frame would be a plaintext pack from setModel(V9014557_B), cloud only.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-12"
   }
  ],
- "totalCount": 118,
- "updatedAt": "2026-10-10"
+ "totalCount": 119,
+ "updatedAt": "2026-10-12"
 }
