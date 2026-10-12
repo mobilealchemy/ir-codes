@@ -1341,8 +1341,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-13"
+  },
+  {
+   "id": "req-123",
+   "category": "tv",
+   "brand": "Beko",
+   "model": "Universal",
+   "region": "-",
+   "notes": "Russian sign-off (Отправлено с iPhone); a Russian reply. App 1.7, iOS 26.6.1. Category TV, brand Beko, model \"Universal\" (no model given: either the customer does not know it or uses a universal remote). No region or notes; Beko TVs are sold in Turkey, Russia/CIS and Europe, so the region is unknown.\n\nProbable cause: Beko is not a TV brand anywhere 1.7 looks for one. It is in the compiled catalog only for air conditioners (IRDatabase.catalogByCategory at v1.7-b25), and its brands.json row is {\"brand\": \"Beko\", \"categories\": [\"airConditioner\"]}. So Add Device > TV > Brand cannot list Beko, and searching \"Beko\" there finds nothing. The packs do exist: Browse Full Code Database > Our Cloud builds its brand list from the manifest, so Beko shows up there under TV already.\n\nDECODED (sealed packs, opened with the repo's key helper). irx-11394-beko (\"Beko remote_tv_beko\", 24 keys) and irext-7201-beko (\"倍科电视-1\", 21 keys) are both RC5 (889 us half-bit, 38 kHz), address 0: power 12, mute 13, vol+ 16, vol- 17, digits 0-9 = 0-9, up 80, down 81, left 21, right 22, OK 59, menu 59 (same code as OK), input 56, back 57 (irx only). The two packs agree on all 21 keys they share. irx-11394's home and settings are filler frames, not real codes. Other Beko TV codes upstream: irdb Beko/Unknown_TV (RC5 address 0, an older map: power 32, vol 36/37, digits 16-25), irdb Beko/Unknown_Beko (RECS80 device 7, the same old map) and Flipper _Converted_/IR_Plus/BEKO/NR-KK14T61 (RC5 address 16, the same old map). Those look like older CRT-era Beko sets; none of them is imported.\n\nSiblings. Arçelik remotes are shared across brands: an eBay listing for the Arçelik TS4187R-3 (RC3304813/01) remote also lists Beko TS4187R-4 and the Grundig models as compatible. This comes from a search-result summary; the listing page itself was not read. Modern Grundig (Arçelik) packs are also RC5 address 0 with power 12, mute 13 and vol 16/17, but use different arrow keys: up 22, down 23, left 19, right 18, OK 53, back 34, home/menu 25, input 56 (flip-grundig-androidtv 40 keys, flip-grundig-2, flip-grundig-grundig, irext-7469/7474-grundig, irx-11459-grundig). The older Grundig packs (irx-9892, flip-grundig-tp750c/-tp800, irext-7468) are the Grundig/Blaupunkt protocol, and irx-11460 / irext-7470-grundig are NEC 0x38. Vestel-built sets (flip-telefunken-*, flip-finlux-finlux) are RC5 address 1, also with power 12. So power, volume, mute and digits are probably the same on most recent Beko sets, and the arrow keys vary. No Vestel TV pack exists, and no Arçelik or Regal brand exists. Find My Remote's TV sweep does send RC5 0/12 as Power from philips-tv-02 (candidate 20) and lg-tv-04, so it could turn a Beko TV on, but it then load a Philips or LG set.\n\nDONE (cloud only, no release): add \"tv\" to the Beko row, plus searchTerms [\"Беко\", \"Arçelik\", \"Arcelik\"], with no family and no aliasOf: {\"brand\": \"Beko\", \"categories\": [\"airConditioner\", \"tv\"], \"searchTerms\": [\"Беко\", \"Arçelik\", \"Arcelik\"]}. Picking Beko under TV then loads irx-11394-beko (both packs are bulk tier, and it is the fuller one), and Beko's own captures stay first. aliasOf Grundig was considered and rejected: packForBrand would then rank flip-grundig-androidtv (40 keys) above Beko's own sets on no Beko evidence.\n\nUNVERIFIED: nothing was sent to a TV. Which code set this customer's Beko needs is unknown without a model. That modern Beko sets share Grundig's RC5 map is inferred from the shared Arçelik remote listing, not from a Beko capture. If neither Beko set works, ask for the model from the TV's back label (and the code printed on the remote). Then try the Grundig sets, or capture the remote with Learn a Button. The customer also needs a Wi-Fi to IR bridge, because an iPhone has no IR emitter.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-13"
   }
  ],
- "totalCount": 122,
- "updatedAt": "2026-10-12T13:23:01Z"
+ "totalCount": 123,
+ "updatedAt": "2026-10-12T13:36:55Z"
 }
