@@ -1374,8 +1374,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-13"
+  },
+  {
+   "id": "req-126",
+   "category": "tv",
+   "brand": "ALBA",
+   "model": "ALBA",
+   "region": "Iraq",
+   "notes": "Arabic sign-off (أُرسلت من الـ iPhone), region Iraq, so an Arabic reply. App 1.7, iOS 26.6.2. Brand \"ALBA\", model \"ALBA\" (the model field only repeats the brand), category TV. No notes.\n\nWHICH ALBA: only one ALBA television brand is documented, and it is the UK one. Alba is a British brand (Argos bought the Alba and Bush trademarks together, with the distributor renaming itself Harvard International; Sainsbury's, which absorbed Argos, dropped Alba in 2022 and sells Bush). Wikipedia's Alba entry says Alba and Bush TVs were made by Vestel in Turkey (as of 1999; current production not confirmed). Searched 2026-10-13, English and Arabic (تلفزيون ALBA, شاشة البا, ألبا العراق, opensooq Iraq, Alhafidh, Elryan, Bazzaar, Miswag-style phrasing): NO Iraqi or Gulf retailer page or listing for an ALBA-branded TV was found, so a local ALBA house brand is neither shown nor ruled out. The Iraqi set may be an imported (second-hand) UK Alba, or an unrelated ALBA; which, and its OS, size and remote, are UNKNOWN. Not Albatron (irext brand, a Chinese maker; we hold irx-11581-albatron under Albatron).\n\nCODES: none under Alba anywhere. Flipper-IRDB (file tree, TVs/ and _Converted_), probonopd/irdb (tree) and irext (brand, remote_index and collect_remote, 20260519) hold no Alba. What does exist is Bush, the sister brand on the same Vestel remotes: seller listings say so (a replacement remote RC4800 is listed for Bush, Vestel, Hitachi, Finlux and others; an Amazon universal-remote listing names Alba and Bush together, and a second one an RC5117 for Alba, Bush, Hitachi, Techwood, Luxor, Technika, Polaroid and Telefunken). That is shared-remote evidence from sellers, not a capture of an Alba remote. Our manifest (v97) holds 7 Bush TV packs: flip-bush-bush-tv-dled32287hdcntdfvp (39 keys, RC5 device 1), flip-bush-bush-tv-vl32hdled (42, NEC device 8), flip-bush-bush43qt24sb (15, RC5 device 1), irext-7209-bush (23, raw), irext-7210-bush (21, raw), irx-1636-bush (24, raw), irx-13671-bush (24, raw). Vestel in our table is an air-conditioner row only.\n\nDECISION: added an Alba TV row to brands.json, aliasOf Bush, searchTerms ألبا, البا, Vestel, RC4800. No pack was added, so no key counts change and the TV sweep (Find My Remote Automatically) is not reordered. The alias is a trial: Browse Full Code Database > Our Cloud > Alba lists the Bush sets, which are real captures of Vestel-line remotes (RC5 and NEC). It is evidence-based for the UK Alba, and a guess for any other ALBA. The row is a cloud-table change, so it needs no release; the alias and the search terms read on 1.7. On 1.5 and earlier there is no brand search, so scroll to Alba.\n\nIf the cdn host still serves the previous brands.json (see cloud-publishing.md, 'A table can lag on its own'), the row is not yet reaching the app; check verify_published.py before telling the customer it is live.\n\nReply (Arabic): is it a smart set on the same Wi-Fi; an iPhone has no infrared emitter, so IR control needs a bridge such as a Broadlink RM; ask for the model number from the label on the back of the TV and a photo of the remote; allow about an hour; not tested on their TV.\n\nUNVERIFIED: that the customer's ALBA is the UK/Vestel line at all, its model, OS and remote; no Bush set was sent to an ALBA TV. If it fails: the model label on the back of the TV, a photo of the remote, and whether the TV has Android TV / Google TV (a pairing code appears on the TV when added) or is plain Android (ADB route).",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-13"
   }
  ],
- "totalCount": 125,
- "updatedAt": "2026-10-12T20:40:21Z"
+ "totalCount": 126,
+ "updatedAt": "2026-10-13T01:00:00Z"
 }
