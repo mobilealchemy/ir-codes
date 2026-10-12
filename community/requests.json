@@ -1330,8 +1330,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-12"
+  },
+  {
+   "id": "req-122",
+   "category": "airConditioner",
+   "brand": "Springer",
+   "model": "42MACB12S5",
+   "region": "Brazil",
+   "notes": "Portuguese sign-off (Enviado do meu iPhone), no region given; Springer is Carrier's Brazilian brand and 42MACB12S5 is listed only by Brazilian retailers, so a Brazilian Portuguese reply. App 1.7, iOS 27.0.1. No notes.\n\nThe unit. 42MACB12S5 is a Springer Midea Hi Wall On/Off split, 12,000 BTU, cooling only, 220 V single phase, R410A, sold with a remote (Extra / Casas Bahia listing titles, webarcondicionado.com.br spec page; discontinued). Not inverter. Siblings: 42MACA09S5 / 42MACA12S5 (cooling) and 42MAQA09S5 / 42MAQA12S5 (heat and cool). The remote's part number was NOT found on any page read.\n\nWhat 1.7 already did. Springer is not in the compiled catalog; it comes from its brands.json row, which carries no family and no aliasOf. So ACProtocolRegistry.family is nil and picking Springer loads the brand's best pack (DeviceCategory.packForBrand, curated > SmartIR > bulk, fullest first): smartir-1360-springer, \"Split Hi Wall Maxiflex\", 269 keys. 1.7 opens sealed packs, so it loads.\n\nDECODED (sealed packs, opened with the repo's key helper). smartir-1360-springer is COOLIX (the Midea B2 frame): B2 4D, fan/temp/mode bytes each followed by its complement, sent twice, ~4400/4400 header, 550/1600/550 bits, ~5.1 ms gap. off = B2 4D 7B 84 E0 1F (kCoolixOff 0xB27BE0); cool 24 = B2 4D BF 40 40 BF. Temperature codes match IRremoteESP8266 kCoolixTempMap. smartir-1388-midea, captured from a 42MAQA09S5 (same Springer Midea 42MA line), is the same protocol and byte-identical on 52 of 54 shared keys; irx-12456 and irx-12458 (Springer) likewise. Compared against sharp-ac-04 (a Coolix grid rendered from the library): 118 of 217 shared keys identical. The rest are the pack's defects, carried over from SmartIR's 1360.json: every fan speed reuses the auto-fan capture (low/medium/high all send fan 101), every fan-only key sends Auto mode (B2 4D 1F E0 48 B7) instead of Coolix fan mode (temp code 1110, B2 4D BF 40 E4 1B), cool 21 sends 22 °C (byte 0x70), and heat 28 is missing. So on 1.7 power, cooling 17-30 °C (but 21), dry and auto were right; fan speed and the Fan mode were not.\n\nNot Midea's own family. midea-ac-01 is the A1 48-bit frame (A1 .. checksum, then its complement), which a Coolix unit does not answer. An aliasOf Midea would have been harmful: packForBrand would rank the curated midea-ac-01 first. No family exists for Coolix (no descriptor), so none was set.\n\nCHANGED (cloud only, no release): springer-ac-01, a curated Coolix pack, \"Hi Wall Midea (42MAC / 42MAQ; Coolix remote)\", 281 keys from gen_springer_pack.py: sharp-ac-04's library-rendered cooling grid (off; auto, cool, dry, fan at 17-30 °C with the fan steps), plus heat at 17-30 °C with the fan steps for the heat-and-cool 42MAQ units, rendered by the same send routine; the 13 heat keys smartir-1388-midea (42MAQA09S5) holds are byte-identical to it. Every frame is decoded and checked against ir_Coolix.h before writing. Curated outranks SmartIR, so picking Springer now loads it. Springer row gains searchTerms Springer Midea, Springer Carrier, 42MAC, 42MAQ, Maxiflex (1.7 has the searchable brand picker, so a typed 42MACB12S5 now finds Springer). No family, no aliasOf.\n\nUNVERIFIED: nothing was sent to a unit. That the 42MACB12S5's own remote sends Coolix is INFERRED from the 42MAQA09S5 capture and the Springer captures, not from its remote or manual. Other Springer packs (irx-12457 / -12459 are Mitsubishi-style 112-bit frames, irx-12460 and -12461 other protocols) show that older or Carrier-built Springer lines differ. If it fails: ask for the code printed on the remote and a photo of it. The customer also needs a Wi-Fi to IR bridge (an iPhone has no IR emitter).",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-13"
   }
  ],
- "totalCount": 121,
- "updatedAt": "2026-10-12"
+ "totalCount": 122,
+ "updatedAt": "2026-10-12T13:23:01Z"
 }
