@@ -1363,8 +1363,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-13"
+  },
+  {
+   "id": "req-125",
+   "category": "fan",
+   "brand": "Maspion",
+   "model": "MWF-3001 RC",
+   "region": "Banyuwangi, Indonesia",
+   "notes": "Indonesian sign-off (Dikirim dari iPhone saya); region Banyuwangi, a town in East Java, so an Indonesian reply. App 1.7, iOS 26.6.1. No notes.\n\nThe unit. The Maspion MWF-3001 RC (also written MWF3001RC) is a 12 inch (30 cm) wall fan with a remote, three speeds, about 40 W at 220 V 50 Hz, sold by Indonesian retailers (Bhinneka, Tokopedia sellers, MyHartono, Wahana Superstore, Sinar Listrik, Satelit Electronic). Some listings add a timer of up to 7.5 hours and sleep and rhythm modes; others say no timer, so which keys the remote has is not settled. No listing shows the remote or names its part number (Maspion's loose replacement remotes are sold as RC-GWF 5 and RC-GNR 5, but nothing ties either to this fan). The fan is IR: a Mi Remote guide even says the app lacked a Maspion entry.\n\nCodes. NONE found, so no pack and no brand row. Checked: irext (collect_remote and remote_index, 20260519: no Maspion, Miyako, Cosmos, Sekai, Sanex, Regency or GMC row), the local Flipper capture folder, Lucaslhm/Flipper-IRDB and probonopd/irdb file trees (no Maspion, Miyako, Sekai, Sanex or Regency path), GitHub code and repository search (only appliance-repair pages and unrelated repos called maspion), and web searches for Maspion kipas remote codes in Tasmota, ESPHome, Home Assistant, Arduino and Flipper sources (nothing). Our own cosmos-fan-01 (COSMOS 16-WFGR Wall Fan, a raw capture) is a different maker's wall fan; nothing says a Maspion remote shares it, and sending it as Maspion's would be a guess.\n\nWhy no brand row: a Maspion row without codes falls through to the made-up starter set and looks supported (CLAUDE.md, cloud gotchas). Fan remotes of this kind are commonly one-off or OEM-shared, so nothing here is inferred.\n\nDecision: open. Nothing was changed in the cloud. The reply says an IR bridge such as a Broadlink RM is needed (an iPhone has no infrared emitter), offers Find My Remote Automatically under Fan, which tries the fan code sets in turn, and asks for a photo of the remote and any code printed on it or in the battery compartment. If the customer has a Broadlink bridge, the app can learn each button from the remote itself (Learn a Button), which is the only sure route without a capture.\n\nUNVERIFIED: everything about the remote. No capture, manual or photo was found, and nothing was sent to a fan. What to ask for if the sweep fails: the photo and printed code, and, if they can, which keys the remote has (power, speed, swing, timer).",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-13"
   }
  ],
- "totalCount": 124,
- "updatedAt": "2026-10-12T14:10:14Z"
+ "totalCount": 125,
+ "updatedAt": "2026-10-12T20:40:21Z"
 }
