@@ -1418,8 +1418,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-14"
+  },
+  {
+   "id": "req-130",
+   "category": "fan",
+   "brand": "Beko",
+   "model": "BRC241",
+   "region": null,
+   "notes": "French sign-off (Envoyé de mon iPhone), no region and no notes, so a French reply; region NOT given and not guessed (France, Belgium, Switzerland or the Maghreb are all possible). App 1.7, iOS 26.4.2. Customer filed it under Fan, brand Beko, model \"BRC241\".\n\nWHAT BRC241 IS: NOT IDENTIFIED (searched 2026-10-14). No page, parts listing, manual or capture found carries \"BRC241\" / \"BRC 241\" / \"BRC-241\" with Beko: web searches in English, French and Turkish (Beko, Arçelik, télécommande, kumanda, pièces détachées), Beko/Buyspares/eSpares/SOS Accessoire/Leroy Merlin/ManoMano result pages, GitHub code and issue search (only unrelated hits), IRremoteESP8266 (Beko appears only as a Coolix mention and issue #2206, a BEKO AC clone dump), Flipper-IRDB (ACs/Beko/Beko.ir only; no Beko fan; no BRC file), the local irext database 20260519 (no Beko or Arçelik brand), and our own cloud (no Beko fan pack). Beko's real fan codes look like EFS/EFE (e.g. EFE6030W air cooler) and its air conditioners like BBVCN/BRFPA/BPAK/BKF 240/241, so \"BRC241\" matches none of its published fan or AC numbering. Beko AC remote part numbers are 9178xxxxxx. INFERRED, not shown: it is a model or remote code read off a label that this search cannot place; it might be an air-conditioner remote (the '241' ending recurs in Beko AC names such as BPAK 241, BBVCN 241) but nothing ties BRC241 to one, and it may equally be a fan or air cooler as the customer says. Whether its remote is infrared is also unknown.\n\nCODES: none found for it. Our five Beko SmartIR AC sets (BEVCA 120, BPAK 120, BXK 120, BXEU 090, BPEU 120) and flip-beko-beko (3 keys) were NOT compared with anything, since there is no device or capture to compare to; the Beko row has no family, as before.\n\nDECISION: NO CLOUD CHANGE. No pack, no brand row, no category added to Beko (a Beko fan category would list the brand and send made-up starter codes that move no fan), nothing published. Logged open. The honest route is the 1.7 learning wizard through a Broadlink RM, with an RM Pro/RM4 Pro if the remote turns out to be RF (the RM mini is infrared only): Add Device > Ventilateur > Controler via a Broadlink > Save; open the device, the ... menu, Configuration - Apprendre votre telecommande, choose Infrared or RF 433/315, then learn each button. UNVERIFIED: nothing was run against a Broadlink, the device or its remote.\n\nWHAT TO ASK FOR: a photo of the rating label on the device and of the remote, front and back (model, battery, any frequency marking), what the device is and where it was bought; the camera test (point the remote at the iPhone front camera and press a button: a faint purple flash means infrared, nothing means radio). With a model that resolves to a real product, a pack can be built if a capture exists.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-14"
   }
  ],
- "totalCount": 129,
- "updatedAt": "2026-10-14T04:00:00Z"
+ "totalCount": 130,
+ "updatedAt": "2026-10-14T05:00:00Z"
 }
