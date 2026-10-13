@@ -1407,8 +1407,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-14"
+  },
+  {
+   "id": "req-129",
+   "category": "mediaPlayer",
+   "brand": "Samsung",
+   "model": "Ht e350",
+   "region": null,
+   "notes": "No sign-off, name or region, so an English reply and no region (none given). App 1.7, iOS 27.0. Category DVD / Media Player, brand Samsung, model \"Ht e350\".\n\nTHE UNIT (2026-10-14, from replacement-remote listings only). The Samsung HT-E350 is a 2012 Samsung DVD home theater system (5.1; HT-E350K, HT-E350/ZA variants). Amazon and eBay replacement-remote listings tie it to AH59-02424A (HT-E350, E355, E350K, E353K), AH59-02425A (HT-E350, E355, AH59-02422B, AH59-02424A), AH59-02422A/B (HT-E330K, E350K, E353K, E355K) and AH59-02423A (HT-E355, E330, E550). So the HT-E330, E350, E353, E355 family shares one design of remote sold under several AH59-0242x numbers; which number is printed on this customer's remote is NOT known, and these are third-party compatibility claims, not Samsung's (samsungparts.com lists AH59-02425A as a Home Theater remote but its model list did not render). INFERRED, not shown: that the AH59-0242x remotes are electrically the same.\n\nCODES: none tied to this remote. Searched: Flipper-IRDB (checkout: no HT-E, no AH59-0242x; the nearest Samsung home-theater captures are _Converted_/IR_Plus/S/SAMSUNG AH59-01527F, AH59-02195C, AH59-02537A, all NECext CA C2, an older generation, and SoundBars AH59 files), probonopd/irdb Samsung folder (AH59-01527F as 67,83 and AH59-02345A as 7,7, the HT-D5100; nothing for AH59-0242x), the LIRC remotes Samsung folder (AH59-00043E, 01527F, 02345A, 02434A, which is a HW-E450 soundbar; nothing for 0242x), and the local irext database (its Samsung DVD and amplifier sets carry no model or remote name, so nothing can be tied to an HT-E350). A web search for HT-E350 or AH59-02422/24/25 with lirc, irdb, Flipper, Broadlink or pronto found no code listing. The neighbouring generations use different addresses (NEC 67,83 and Samsung32 7,7), so an address cannot be assumed for 2012 by analogy; assuming one would put guessed codes in a pack.\n\nDECISION: NO CLOUD CHANGE. No pack, no descriptor, no brands.json change (the Samsung row already lists mediaPlayer and audioReceiver). Existing Samsung mediaPlayer/audioReceiver packs were not matched to this remote: there is no HT-E350 ground truth to compare their addresses against. Tracker-only, no publish.\n\nWHAT TO TELL THEM: iPhone has no infrared emitter, so an IR bridge (e.g. Broadlink RM) on the home Wi-Fi is needed. Add Device > DVD / Media Player > Control via the bridge > Find My Remote Automatically, with brand Samsung, tapping when the system responds; a Samsung DVD home theater is a disc system, so DVD / Media Player is the category that draws the d-pad and playback keys on 1.7. Or Learn Your Remote (Set Up - Learn Your Remote) from the original remote. UNVERIFIED: nothing tried on an HT-E350, and whether any Samsung set in the sweep happens to match it is unknown.\n\nWHAT TO ASK FOR: the part number printed on the remote (AH59-0242xx), or a photo of the back. A part number lets us look for that remote's capture specifically; a Flipper or Broadlink capture of Power, Volume +/- and Play would let a pack (samsung-hts-01) be built and confirmed.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-14"
   }
  ],
- "totalCount": 128,
- "updatedAt": "2026-10-14T03:00:00Z"
+ "totalCount": 129,
+ "updatedAt": "2026-10-14T04:00:00Z"
 }
