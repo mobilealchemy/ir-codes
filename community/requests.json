@@ -1462,8 +1462,30 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-15"
+  },
+  {
+   "id": "req-134",
+   "category": "tv",
+   "brand": "Samsung",
+   "model": "50",
+   "region": null,
+   "notes": "Spanish sign-off (Enviado desde mi iPhone), which Spain and Latin America share, so a reply in Spanish common to both (it names the + tab rather than Añadir or Agregar). App 1.7, iOS 26.5. The model \"50\" is a screen size.\n\nNothing to fix: Samsung smart TVs are controlled over Wi-Fi by the Samsung (Tizen) transport, found by Scan Wi-Fi for Devices or by its IP, with a one-time permission prompt on the TV; a set without Wi-Fi takes Samsung's IR codes through a blaster. The reply walks both and asks for the full model from the back label if neither works.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-13"
+  },
+  {
+   "id": "req-135",
+   "category": "tv",
+   "brand": "Hissen",
+   "model": "43U6K/2023",
+   "region": null,
+   "notes": "No sign-off, so an English reply. App 1.7, iOS 27.0.1. \"Hissen\" is Hisense; the 43U6K is its 2023 ULED U6K, which runs Google TV in the US and VIDAA elsewhere.\n\nNothing to publish. A Google TV U6K pairs over Wi-Fi as Android / Google TV. 1.7 has no VIDAA network control, so a VIDAA set takes IR through a blaster: flip-hisense-55u6k, a Flipper capture of the same series (21 keys, NEC address 4), under Browse Full Code Database > Our Cloud > Hisense > 55U6K. The reply points there rather than at the Hisense brand pick, whose compiled starter set is NEC address 0x0C. Unverified: that a 43\" U6K answers the 55U6K codes (same series and remote family, inferred).",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-13"
   }
  ],
- "totalCount": 133,
- "updatedAt": "2026-10-14T05:00:00Z"
+ "totalCount": 135,
+ "updatedAt": "2026-10-14T22:52:12Z"
 }
