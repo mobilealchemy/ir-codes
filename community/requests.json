@@ -1451,8 +1451,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-15"
+  },
+  {
+   "id": "req-133",
+   "category": "projector",
+   "brand": "Projector",
+   "model": "HY-320",
+   "region": null,
+   "notes": "Portuguese sign-off (Obter o Outlook para iOS); a Brazilian Portuguese reply, written neutrally, where the HY300 family sells most. Region NOT given. App 1.7, iOS 26.6.1. Customer filed it under Projector, brand \"Projector\", model \"HY-320\", notes \"Não tem esse\" (it isn't there).\n\nAlready supported, the next HY300-family request after req-131. magcubic-hy300-01 and -02 (\"HY300 / HY300 Pro (remote 1/2)\") cover the HY320; req-026 (Smoon HY 320) is the same family.\n\nWHY THE CUSTOMER SAW NOTHING. READ in BrandCatalog.matches / matchingTerm (used by BrandPickerView and by Browse Full Code Database's brand search): lowercase, then a plain substring test, term contains query or query contains a term of 3+ characters. The Magcubic row's searchTerms were HY300, HY320, HY350, none hyphenated, and the printed spelling on these projectors is HY-320, so \"hy-320\" matched no brand name and no term, and \"hy 320\" with a space matched none either. Searching HY320 without the hyphen worked.\n\nCHANGE (cloud only, read by 1.6 and later like the Haier row in req-110): appended HY-300, HY-320, HY-350, HY 300, HY 320, HY 350 to the Magcubic row's searchTerms. Nothing removed, no row added, no pack. Checked no other brands.json row names or lists a hyphenated or spaced hy term. Replayed the app's rule in Python on the new table: HY-320, hy-320, HY-320 Pro and HY 320 each find Magcubic (none did before); HY320 still finds the HY320 row and Magcubic; HY alone still returns the same 8 brands as before.\n\nUNVERIFIED: not searched on an installed build; nothing sent to a projector. Whether the hyphenated spelling reaches the app depends on the cdn host catching up (see the commit).\n\nA punctuation-insensitive match (stripping \"-\" and spaces on both sides) would cure this class of miss for every brand, but it is app-side and waits for a release; not done here.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-15"
   }
  ],
- "totalCount": 132,
+ "totalCount": 133,
  "updatedAt": "2026-10-14T05:00:00Z"
 }
