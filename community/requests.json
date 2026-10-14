@@ -1440,8 +1440,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-14"
+  },
+  {
+   "id": "req-132",
+   "category": "audio_receiver",
+   "brand": "Noon",
+   "model": "S21wck",
+   "region": null,
+   "notes": "Arabic sign-off (أُرسلت من الـ iPhone); an Arabic reply. App 1.7, iOS 27.0.1. Region NOT given. Filed under Audio / AV Receiver, brand \"Noon\", model \"S21wck\".\n\nNOT IDENTIFIED, NO PACK, NOTHING PUBLISHED. \"Noon\" is almost certainly noon.com, the marketplace operating in the UAE, Saudi Arabia and Egypt (read: noon.com listings and its Google Play page via search, 2026-10-15), typed as the brand because that is where it was bought. It is not a maker, so no \"Noon\" brand row was added: it would claim every product noon.com sells.\n\nWHAT S21WCK IS: not found. Searched 2026-10-15: web search in English and Arabic for S21WCK / S21 WCK / S21-WCK, with and without soundbar, speaker, receiver, and restricted to noon.com, amazon.ae/.sa/.eg, jumia.com.eg, sharafdg.com, extra.com, carrefouruae.com and aliexpress.com. Zero pages carry the string; hits were Samsung Galaxy S21, TCL S21BW, Pioneer S-21W, OXS S21, DigitalX X-S21, none related. Flipper-IRDB, irext (collect_remote), our manifest v97 and brands.json have nothing under S21WCK; the only \"noon\" pack is irx-10863-noontec (Noontec, unrelated). gh code and issue search for S21WCK returned only base64 noise. INFERRED, not read: the \"WCK\" suffix and the sold-on-noon context fit the generic Bluetooth speaker with a wireless-charging clock, a class noon.com lists in volume (e.g. the Generic 15W wireless charger Bluetooth speaker, https://www.noon.com/saudi-en/smart-bluetooth-speaker-15w-fast-wireless-charger/ZB91A56E6CE6569A5272DZ/p/), but no listing was tied to S21WCK. These speakers usually have buttons or a few-key IR remote at best, so whether it has an infrared remote at all is UNKNOWN.\n\nNOT REACHED: noon.com's own on-site search (the built-in browser got Cloudflare-style bot protection and an empty page; not bypassed; WebFetch timed out), Amazon.ae (503). A sourced model page may exist there.\n\nReply (Arabic): says noon is the store, that the model is not in the database and no codes tie to it, that the app cannot send IR from the iPhone, and asks for a photo of the device label (brand and model) and, if there is one, of the remote. Does not promise anything works. If the device has no IR remote (likely for a Bluetooth speaker), nothing in the app can control it. Not tested on the unit.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-15"
   }
  ],
- "totalCount": 131,
+ "totalCount": 132,
  "updatedAt": "2026-10-14T05:00:00Z"
 }
