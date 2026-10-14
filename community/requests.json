@@ -1484,8 +1484,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-13"
+  },
+  {
+   "id": "req-136",
+   "category": "airConditioner",
+   "brand": "Mitubishi",
+   "model": "SRK12CJ",
+   "region": "Thailand",
+   "notes": "No sign-off, no name, no notes; region Thailand. A Thai reply: the form is English whatever the app's language, so the typed fields say nothing, and Thailand has one national language (every Thai-region request with a sign-off, req-057, -087, -104, -110 and -119, was Thai and answered in Thai; compare req-067 and req-070, answered in the market's language). App 1.7, iOS 26.6.1. \"Mitubishi\" is a typo, and the naming trap: SRK is Mitsubishi Heavy Industries, not Mitsubishi Electric.\n\nThe unit. SRK12CJ / SRK12CJ-3 (outdoor SRC12CJ) is an MHI cooling-only fixed-speed wall split, 3.45 kW (about 11,800 BTU/h), 220-230 V 50 Hz, covered by MHI's SRK06CJ/09CJ/12CJ technical manual and parts list (ManualsLib 1240712).\n\nThe remote. That manual's parts list for SRK12CJ / SRK12CJ-3 (page 152) carries RKX502A001B, item 21, the only RKX502A part on the page, which also lists CONTROL ASSY, REMOTE; the SRK06CJ and SRK09CJ pages carry the same part (item 19). The column alignment is lost in the extracted text, so the pairing of number and name is inferred, but RKX502A001B is the remote in the SRK12CR-S and SRK05CM/09CM/12CM parts lists too, and replacement listings sell RKX502A001 for SRK09CJ. So the remote is RKX502A001B, the same part req-044's SRK09CMP-5 shipped with.\n\nProtocol: INFERRED, not captured. IRremoteESP8266 names RKX502A001C as its 88-bit MHI remote (SRKxxZJ-S). The B suffix is taken to send the same frame: replacement remotes sell RKX502A001, 001B and 001C as one part, and smartir-1680 (SRK25ZJ-S1, SRK13CRV-S1, a C-series inverter) is 88-bit throughout. No capture of an RKX502A001B or of any CJ unit was found (Flipper-IRDB has SRK20ZJ-S and SRK35ZS-W only).\n\nWhat 1.7 does. Brand Mitsubishi (compiled, no family in brands.json, compiled family mitsubishi) sends MitsubishiAC144, Mitsubishi Electric's frame, which an MHI unit ignores. Mitsubishi Heavy (compiled) and Mitsubishi Heavy Industries (brands.json, family mitsubishiHeavy, aliasOf Mitsubishi Heavy) send MitsubishiHeavyAC: the 152-bit RLA502A frame, a 40 ms gap, then the 88-bit RKX502A frame (AD 51 3C D9 26 ...; byte 9 = mode | power 0x08 | (T-17)<<4, so cool 24 on is 0x79, the same byte flip-mitsubishi-srk20zj-s captures). A computed family loads no pack on brand pick, so Test Power sends that burst. Search: \"SRK12CJ\" finds Mitsubishi Heavy through its SRK term (term of 3 or more letters contained in the query); \"Mitubishi\" finds nothing. Fallbacks in 1.7: mitsubishi-ac-02 (plaintext, both formats) in Find My Remote Automatically, and smartir-1680 (88-bit only, 157 codes) under Browse Full Code Database > Our Cloud > Mitsubishi Heavy.\n\nNothing published, no app change. The reply sends the customer to Mitsubishi Heavy and asks for the number on the remote if it does not respond.\n\nSeen in passing, not fixed: smartir-1031 (SRK25ZMP-S..., 88-bit MHI frames) is filed under Panasonic, and smartir-1123 (SRK25ZSX, 152-bit MHI) under Mitsubishi Electric.\n\nCHANGED (cloud only): the Mitsubishi Heavy row gains searchTerms RKX502A and RLA502A, so the code off the remote finds the brand. No pack, no family change.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-15"
   }
  ],
- "totalCount": 135,
- "updatedAt": "2026-10-14T22:52:12Z"
+ "totalCount": 136,
+ "updatedAt": "2026-10-14T23:10:57Z"
 }
