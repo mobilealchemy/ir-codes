@@ -1506,8 +1506,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-15"
+  },
+  {
+   "id": "req-138",
+   "category": "airConditioner",
+   "brand": "Indurama",
+   "model": "101000769311620623",
+   "region": "Ecuador",
+   "notes": "Spanish sign-off (Enviado desde mi iPhone), region Guayas, Ecuador, so a Latin American Spanish reply. App 1.7, iOS 26.2. Indurama (Induglob S.A., Cuenca) is Ecuador's own appliance maker; it does not say who builds its air conditioners.\n\nThe \"model\" 101000769311620623 is 18 digits and matches nothing Indurama publishes: its split models are ASI codes (ASI-122A, ASI-124A, ASI-126A fixed speed; ASI-12I, ASI-123I, ASI-18I, ASI-24I, ASI-244I inverter) and its store SKUs are 8 digits (10033596). Read as a serial or barcode; unidentified.\n\nWho builds them: INFERRED, Midea for at least part of the range. Two replacement remotes sold as Indurama carry Midea part numbers, RG32A/E (Amazon B01GR6DSRW) and RG15A(B)/E, RG15A1(B)/E, RG15A2(B)/E (B07PLHKJ3S); both are Midea window-unit remotes (ManualsLib's RG15A1/E manual is for a window inverter). No source names the maker of the ASI splits, and a MercadoLibre Ecuador title sells a split remote as \"Indurama/Haier\", seen in a search summary only. Indurama's ASI-122A sheet lists Smart, Super, Swing, Fan, Sleep and Timer.\n\nWhat 1.7 did: nothing under Indurama. No compiled entry, no brands.json row, no pack, and search found nothing. No earlier request named Indurama or Ecuador.\n\nA Midea RG remote sends one of two 48-bit frames and its part number does not say which: B2 (Coolix) or A1 (Midea). The Midea brand pick loads midea-ac-01 (A1, curated, plaintext). Find My Remote in 1.7 tries springer-ac-01 (B2) first; sharp-ac-04 (byte-identical to it) is passed over, and sharp-ac-05 (A1) follows. haier-ac-01 is step 10. A Midea window remote of the RG15 kind may instead send plain NEC buttons (flip-arctic-king-rg15b1, flip-frigidaire-rg15d-ac), which no Indurama set covers.\n\nCHANGED (cloud only): an Indurama row under airConditioner with aliasOf Midea and no family, and searchTerms ASI, RG15A and RG32A. The family was left out on purpose. midea has no compiled encoder and no protocols.json descriptor, so in 1.7 family midea stops the brand pick loading a pack and sends no real Midea frame. Without a family, the brand pick loads midea-ac-01, and Browse Full Code Database > Our Cloud > Indurama lists Midea's 48 sets, among them smartir-1394-midea (RG70C/BGEF, B2) and smartir-1395-midea (RG10B(D1), A1). The reply sends the customer to Indurama, then Find My Remote. It asks for the model on the indoor unit's label and the code on the back of the remote.\n\nUNVERIFIED: who builds Indurama's splits, which frame they answer, and whether this customer's unit is a split or a window unit. Nothing was sent to an Indurama unit.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-15"
   }
  ],
- "totalCount": 137,
- "updatedAt": "2026-10-14T23:30:34Z"
+ "totalCount": 138,
+ "updatedAt": "2026-10-14T23:53:39Z"
 }
