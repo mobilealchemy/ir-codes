@@ -1495,8 +1495,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-15"
+  },
+  {
+   "id": "req-137",
+   "category": "tv",
+   "brand": "BPLTV",
+   "model": "Jkjr",
+   "region": "India",
+   "notes": "English sign-off (Sent from my iPhone), region India, so an English reply. App 1.7, iOS 26.5.2. The model (\"Jkjr\") and notes (\"Nfnfjfb\") are keyboard mashing, so the brand is the whole request: BPL, the Indian TV maker.\n\nBPL had no brands.json row and no pack, so 1.7 offered nothing for it. The one source is Flipper-IRDB's _Converted_/IR_Plus/B/BPL/TV-Code1.ir, RC5 at address 24 (power 12, digits, volume 16/17, channel 32/33, OK 37, menu 59; the arrows share the channel and volume codes, as the capture maps them), in a folder the importer does not read.\n\nCHANGED (cloud only): flip-bpl-tv-code1, \"TV (code 1)\", 28 keys, built by repair_flipper_packs.py from that capture as an orphan source; and a BPL row under tv, so the brand pick finds it. The reply asks for the model from the back label and the remote's code, because one RC5 capture likely covers older BPL sets only: newer BPL smart TVs run Android TV and may pair over Wi-Fi as Android / Google TV.\n\nUNVERIFIED: nothing was sent to a BPL TV, and which BPL sets this capture fits is unknown.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-15"
   }
  ],
- "totalCount": 136,
- "updatedAt": "2026-10-14T23:10:57Z"
+ "totalCount": 137,
+ "updatedAt": "2026-10-14T23:30:34Z"
 }
