@@ -1583,8 +1583,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-16"
+  },
+  {
+   "id": "req-145",
+   "category": "tv",
+   "brand": "toshiba",
+   "model": "شاشة عرض",
+   "region": "",
+   "notes": "Arabic, App 1.7, OS 26.2. No category given; model field is \"شاشة عرض\" (display screen), i.e. a TV. Toshiba TV is already covered: brands.json row lists tv, so on 1.7 the brand pick loads the curated toshiba-tv-01 (31 keys, CT-90 Series; curated tier ranks first, DeviceCategory.packForBrand). Find My Remote Automatically also sweeps smartir-1100-toshiba (8 keys), 11 flip- captures (incl. two Toshiba Fire TV remotes), 35 irext- and 62 irx- packs (110 Toshiba TV packs in manifest v99). Wi-Fi routes read from source: TV offers Roku, Samsung, LG, Sony, Android / Google TV (AndroidTVTransport), Amazon Fire TV and Android TV (ADB) for Fire TV editions. There is no VIDAA transport (Hisense/ConnectLife is AC-only), so a Toshiba VIDAA set is IR-only. Verified by reading source, brands.json and manifest; nothing sent to a TV.\n\nANSWER: no cloud change. Reply in Arabic (MSA): smart TV Wi-Fi route by OS (Android/Google TV, Fire TV) else IR blaster needed (iPhone has no IR emitter); Add Device, TV, Toshiba; if keys do not respond try Find My Remote Automatically; send the TV model (back label) if nothing works.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-16"
   }
  ],
- "totalCount": 144,
- "updatedAt": "2026-10-16T09:00:00Z"
+ "totalCount": 145,
+ "updatedAt": "2026-10-16T10:00:00Z"
 }
