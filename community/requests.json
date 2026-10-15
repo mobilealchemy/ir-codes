@@ -1550,8 +1550,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-16"
+  },
+  {
+   "id": "req-142",
+   "category": "airConditioner",
+   "brand": "Benelux",
+   "model": "EV1460-1",
+   "region": null,
+   "notes": "Spanish, no region (Enviado desde mi iPhone); App 1.7, OS 26.5. Identified as a Benelux EV1460-1 mini split, a Mexican brand's 36,000 BTU / 220 V line (EV1460 = ON/OFF, Boxito and Benelux Mexico listings; ManualsLib lists EV1460-1 under the shared EV1425 manual, which also covers EV1433/1461/1462). Not an evaporative cooler, so Air Conditioner is the right category. No OEM stated anywhere. Replacement remotes sold as 'TCL, Benelux, EV1433, EV1461, EV1462, GYKQ-52' (Coppel, Amazon MX, Sears) never name EV1460, and the manual says remote shape varies by model. Not in brands.json or the manifest (no Benelux row or pack). Nothing added: aliasing Benelux to TCL (tcl-ac-01 is titled for GYKQ-52) would be a guess for this model.\n\nANSWER: no cloud change. Reply in Spanish suggests Find My Remote Automatically under Air Conditioner (it sweeps tcl-ac-01 among others) and asks for photos of the remote and the indoor unit label; says an IR blaster is needed.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-16"
   }
  ],
- "totalCount": 141,
- "updatedAt": "2026-10-15T08:30:00Z"
+ "totalCount": 142,
+ "updatedAt": "2026-10-16T08:30:00Z"
 }
