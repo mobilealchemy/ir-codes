@@ -1528,8 +1528,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-15"
+  },
+  {
+   "id": "req-140",
+   "category": "heater",
+   "brand": "Hoşseven",
+   "model": "HSX32",
+   "region": null,
+   "notes": "Turkish, no name or sign-off; App 1.7, OS 27.0. Notes: 'Sıcak hava üfleyici'. The HSX-32 is Hoşseven's 32 kW natural-gas/LPG warm-air generator (Robur-style, flued, fixed install), not a portable fan heater: akakce, hepsiburada, radyantci, market34 listings. Retailers say a remote ships with it ('Uzaktan kumandalı', 'Oda termostatlı') while hosseven.com.tr says it can run without one; no source says whether the remote is IR, RF or wired, and no manual or remote photo was found (hosseven.com.tr Dokumanlar holds only CE and ISO certificates). No codes anywhere: not in our manifest or brands, Flipper-IRDB (Heaters, 27 brands), probonopd/irdb, irext, or GitHub code search. Nothing added; a pack would have meant inventing codes.\n\nANSWER: no cloud change. Reply in Turkish asks for the remote's model/photo and offers Learn a Button with an IR blaster if it turns out to be IR; says plainly the iPhone has no IR emitter and that the remote may be RF or wired, which no blaster can drive.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-15"
   }
  ],
- "totalCount": 139,
- "updatedAt": "2026-10-15T07:39:00Z"
+ "totalCount": 140,
+ "updatedAt": "2026-10-15T08:30:00Z"
 }
