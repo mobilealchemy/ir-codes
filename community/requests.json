@@ -1539,8 +1539,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-15"
+  },
+  {
+   "id": "req-141",
+   "category": "airConditioner",
+   "brand": "UNlx",
+   "model": "972072",
+   "region": "SA",
+   "notes": "Arabic, Buraidah (Saudi Arabia); App 1.7, OS 27.0.1. Brand typed 'UNlx' (lowercase L), read as UNIX / يونكس, a Saudi house brand imported by Al Omran (per Sultan listings) and made in China. Only OEM hint: one retailer (binmushref.com, UNIX12C / UNIX18C) names Midea as maker; no other source, no manual, no remote photo or remote model (Al Moosa 18TCS-F, Al Husayani TCU18C, Sultan TCOS24-SEER / OMR-24C / UNIX PLUS inverter Wi-Fi 18TCPS). 972072 matches no listing; probably a retailer SKU or barcode, not a model. Not in brands.json or the manifest (no Unix/Unics/يونكس row or pack). Nothing added: a Midea alias on one retailer's line, with no remote model, would be a guess.\n\nANSWER: no cloud change. Reply in Arabic suggests Find My Remote Automatically under Air Conditioner and asks for a photo of the remote and the indoor unit label; says the iPhone has no IR emitter so an IR blaster is needed.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-16"
   }
  ],
- "totalCount": 140,
+ "totalCount": 141,
  "updatedAt": "2026-10-15T08:30:00Z"
 }
