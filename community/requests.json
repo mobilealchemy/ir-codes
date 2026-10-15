@@ -1572,8 +1572,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-16"
+  },
+  {
+   "id": "req-144",
+   "category": "airConditioner",
+   "brand": "panasonic",
+   "model": "split",
+   "region": "",
+   "notes": "Indonesian, App 1.7, OS 26.6.2. No model given (\"split\" only). Panasonic AC is already covered: brands.json row has family \"panasonic\" (computed 27-byte, two-frame protocol; descriptor in protocols.json), so on 1.7 the brand pick loads no pack (loadsPackOnBrandPick is false for an AC with a computed family) and every press is generated. Curated panasonic-ac-01 (A75C / CWA75C remotes, 152 keys) plus 12 SmartIR CS- tables (smartir-1020..1032, e.g. CS-CE7HKEW) and flip-/irx- captures (A75C4187, A75C2600, CWA75C4179, CS-E9HKR, CS-UE12RKE) are in the Find My Remote Automatically sweep. Comfort Cloud Wi-Fi route exists (PanasonicTransport, untested against a real account) for Wi-Fi units only. Verified by reading source, manifest and docs; nothing sent to a unit.\n\nANSWER: no cloud change. Reply in Indonesian: IR blaster needed; Add Device, Air Conditioner, Panasonic; if keys do not respond try Find My Remote Automatically; send the remote model (A75C... on the back) if nothing works.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-16"
   }
  ],
- "totalCount": 143,
- "updatedAt": "2026-10-16T08:30:00Z"
+ "totalCount": 144,
+ "updatedAt": "2026-10-16T09:00:00Z"
 }
