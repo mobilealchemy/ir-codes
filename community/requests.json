@@ -1517,8 +1517,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-15"
+  },
+  {
+   "id": "req-139",
+   "category": "projector",
+   "brand": "XGIMI",
+   "model": "Halo+",
+   "region": null,
+   "notes": "Customer's XGIMI Halo+ (Android TV 10, App 1.7). Its own remote is Bluetooth: XGIMI's product page lists a Bluetooth remote in the box and a Bluetooth pairing routine (hold Return + Home); no IR spec exists for it, only aftermarket IR remotes. IR codes are therefore not the route, and an iPhone has no IR emitter anyway.\n\nANSWER: the Wi-Fi Android TV path. Halo+ ships Google's official Android TV (XGIMI support page says so); certified Android TV runs the Android TV Remote Service v2 that AndroidTVTransport speaks (pair on 6467 with the PIN the projector shows, control on 6466; discovery _androidtvremote2._tcp). In 1.7 a projector can pick it: DeviceCategory.transportOptions inserts .androidTV, .androidADB and .chromecast at 1 for .projector, so Add Device > Projector > Control via > Android / Google TV works.\n\nCHANGED (cloud only): an XGIMI row under projector and streamingBox with searchTerms 极米, Halo, Mogo, H3, Horizon. ir-codes already held 9 XGIMI packs (irext-5572..5577, irext-5846 streamingBox, irx-12737/12738; uPD6121G, NEC-family captures of older XGIMI remotes) but no brand row, so none could be picked. Nothing invented.\n\nUNVERIFIED: no Halo+ hardware; that this projector answers the Android TV Remote Service is inferred from it being certified Android TV (no source reports a Halo+ test). The irext packs are not known to match the Halo+ (its remote is Bluetooth).",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-15"
   }
  ],
- "totalCount": 138,
- "updatedAt": "2026-10-15T02:09:45Z"
+ "totalCount": 139,
+ "updatedAt": "2026-10-15T07:39:00Z"
 }
