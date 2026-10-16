@@ -1594,8 +1594,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-16"
+  },
+  {
+   "id": "req-146",
+   "category": "airConditioner",
+   "brand": "samsung",
+   "model": "AQ09UBTNXAZ",
+   "region": "",
+   "notes": "Brazilian Portuguese, App 1.7, OS 26.6.2. Brand typed \"Sansung\" (Samsung). Model AQ09UBTNXAZ is Samsung's 9,000 BTU MAX hot/cold wall split (older non-WindFree, non-Wi-Fi line; Samsung training manual groups AQ09UBTXAZ/AQ09UBTNXAZ/AQ09UBTXXAZ; Ferguson parts listing). Samsung AC is covered: brands.json row lists airConditioner, ACProtocolRegistry maps samsung to the compiled SamsungAC encoder (112-bit, checked against irx-11318-samsung), so on 1.7 the brand pick loads no pack (loadsPackOnBrandPick is false when acFamily != nil) and sends computed frames. Find My Remote Automatically also sweeps samsung-ac-01 plus 8 smartir-14xx and flip/irx/irdb Samsung AC packs. SmartThings (Wi-Fi) needs a Wi-Fi model; this one has none. Gap found: BrandSearch.matches did not find Samsung for \"Sansung\". Fix: added Sansung to the Samsung searchTerms, ir-codes 7db3a5af (cloud; brand search itself is 1.7+). Verified by reading source, brands.json and the live manifest; nothing sent to an air conditioner.\n\nANSWER: Reply in pt-BR: iPhone has no IR emitter, so an IR blaster is needed; Add Device, Air Conditioner, Samsung; if keys do not respond try Find My Remote Automatically; send a photo of the remote if nothing works.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-16"
   }
  ],
- "totalCount": 145,
+ "totalCount": 146,
  "updatedAt": "2026-10-16T10:00:00Z"
 }
