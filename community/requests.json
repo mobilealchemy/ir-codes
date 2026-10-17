@@ -1605,8 +1605,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-16"
+  },
+  {
+   "id": "req-147",
+   "category": "fan",
+   "brand": "Miyako",
+   "model": "KAW1689RC_B",
+   "region": "",
+   "notes": "Indonesian, App 1.7, OS 18.5. Model typed KAW1689RC_B; product is Miyako KAW-1689 RC, a 16-inch wall fan (kipas angin dinding) with remote, 3 speeds, 7.5 h timer, Magic Wind (Normal/Auto/Sleep) (miyako.co.id/produk/kipas-angin/kaw-1689-rc/, Blibli, Lazada, Tokopedia-style listings); the _B suffix is not on any listing (likely a colour/batch code). Remote assumed IR (Symphony-style 12-bit, like the COSMOS 16-WFGR wall fan pack). Miyako had no brands.json row and no pack (irext, Flipper-IRDB Fans, SmartIR: none). Found real captures in satriamegantara/esp32-desk-companion (src/IRCodes/MiyakoKAW1689.cpp + IRSender.cpp, 2026-07, no licence): a raw 38 kHz power capture that I decoded as Symphony 12-bit 0xD82 (4 repeats, 1260/426 us marks/spaces), and Symphony 12-bit swing 0xD90, timer 0xD88, magic wind 0xD84. Speed up/down are TODO in that repo, so not in the pack. Added brand row Miyako (fan, searchTerms KAW) and curated pack miyako-fan-01 (power = the captured raw frames; oscillate/timer/mode = Symphony frames built with the same timings). Verified: decode of the capture, check_cloud, publish dry-run. NOT verified on hardware; the other three keys rest on one hobbyist's code constants; no speed keys, so the Speed buttons will not work.\n\nANSWER: Reply in Indonesian: iPhone has no IR emitter, so an IR blaster is needed; Tambah Perangkat, Kipas Angin, Miyako; Temukan Remote Otomatis if keys do not respond; power, swing, timer and Magic Wind only, speed keys not available yet; send a photo of the remote if it fails.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-17"
   }
  ],
- "totalCount": 146,
- "updatedAt": "2026-10-16T10:00:00Z"
+ "totalCount": 147,
+ "updatedAt": "2026-10-17T10:00:00Z"
 }
