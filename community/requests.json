@@ -1616,8 +1616,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-17"
+  },
+  {
+   "id": "req-148",
+   "category": "tv",
+   "brand": "Videocon",
+   "model": "V4324M/2017",
+   "region": "IN",
+   "notes": "Videocon V4324M (2017) not found on any retailer or manual page (searched 2026-10-17); presumably a 43-inch non-smart Full HD LED TV with an IR remote, unconfirmed. Videocon had no brands.json row, so the 9 existing Videocon TV packs (irx-12067 to irx-12075, irext) were unreachable from the Brand list. Videocon TV remotes in these packs are mostly NEC (address 0x1C in irx-12067; others 0x5C, 0x02, 0x04 etc.); irx-12067's power frame (NEC 0x1C/0x12) is byte-identical to the Flipper-IRDB _Converted_/IR_Plus/V/VIDEOCON/TV.ir POWER capture, a second independent source. Added brand row Videocon (tv, searchTerms V4324M). Find My Remote Automatically tries the 9 Videocon sets. Verified: decode of packs, check_cloud, publish dry-run. NOT verified on the TV: which of the nine matches the V4324M remote is unknown.\n\nANSWER: Reply in English: iPhone has no IR emitter, so an IR blaster is needed; Add Device, TV, Videocon, then Find My Remote Automatically to step through the 9 sets (use Power); no app update, allow a few hours; send a photo of the remote if none match.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-17"
   }
  ],
- "totalCount": 147,
+ "totalCount": 148,
  "updatedAt": "2026-10-17T10:00:00Z"
 }
