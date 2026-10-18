@@ -1638,8 +1638,19 @@
    "votes": 0,
    "status": "done",
    "createdAt": "2026-10-18"
+  },
+  {
+   "id": "req-150",
+   "category": "tv",
+   "brand": "Sharp",
+   "model": "LC-20D10",
+   "region": "Japan",
+   "notes": "Japanese sign-off (iPhoneから送信), Kanagawa. App 1.7, iOS 26.6.2. LC-20D10 is a 2007 Japanese-domestic Sharp AQUOS 20-inch LCD TV (kakaku.com listing; Sharp's guide eg_lc32-20d10.pdf covers LC-32D10/26D10/20D10). Its remote is the GA567WJSA (used-remote auction listings 'GA567WJSA LC-32D10/LC-26D10/LC-20D10'; the part number is from sellers, not Sharp's manual).\n\nWhat 1.7 did: Sharp TV brand pick loads sharp-tv-01 (curated, 48 keys), the classic Sharp protocol (address 1). A Japanese AQUOS of this era does not speak it: Logitech Harmony's per-model LC-20D10 codeset (pickysysadmin/logitech-harmony-ir-archive, devices/Sharp/LC-20D10.json -> codesets/dd/dd325b2410b8b291.json) is a Kaseikyo/AEHA 48-bit frame, bytes AA 5A 8F 12 + key. flip-sharp-aquos-jp (Flipper-IRDB, 36 keys) already held the same frames but, being a bulk import, was never tried by Find My Remote Automatically and was not the brand pick.\n\nCHANGED (cloud only, no release): sharp-tv-02, 'AQUOS Japan, Kaseikyo 48-bit', 40 keys from the Harmony codeset via scripts/ircloud/gen_sharp_tv_jp_pack.py, rendered as raw timings (3456/1728 header, 432 mark, 432/1296 space). The 29 keys Flipper's capture also holds are bit-for-bit identical (asserted by the script). Curated, 40 keys: stays below sharp-tv-01 so the Sharp brand pick is unchanged, and is step 11 of 87 in Find My Remote Automatically (TV). The customer reaches it via Add Device > TV > Sharp > code set list, or Find My Remote Automatically.\n\nUNVERIFIED: nothing was sent to a television. Harmony's LC-20D10 entry is the only source naming this model; that the unit's GA567WJSA matches it rests on the three model names shared in the seller listings. An iPhone has no IR emitter, so the reply says an IR blaster is needed. If it fails: photo of the remote and its model label.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-19"
   }
  ],
- "totalCount": 149,
- "updatedAt": "2026-10-18"
+ "totalCount": 150,
+ "updatedAt": "2026-10-19"
 }
