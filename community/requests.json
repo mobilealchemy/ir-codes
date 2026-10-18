@@ -1627,8 +1627,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-17"
+  },
+  {
+   "id": "req-149",
+   "category": "air_conditioner",
+   "brand": "Panasonic",
+   "model": "CS-S10RKH-1",
+   "region": null,
+   "notes": "CS-S10RKH-1 is the indoor unit of a Panasonic split air conditioner, filed under Set-Top Box by mistake. Panasonic ACs are covered in 1.7 by the computed Panasonic AC family plus panasonic-ac-01 and the SmartIR/flip captures swept by Find My Remote Automatically. No cloud change. Reply (en, 2026-10-18) steers to Add Device > Air Conditioner > Panasonic and asks for the remote's A75C/CWA75C model if nothing works.",
+   "votes": 0,
+   "status": "done",
+   "createdAt": "2026-10-18"
   }
  ],
- "totalCount": 148,
- "updatedAt": "2026-10-17T10:00:00Z"
+ "totalCount": 149,
+ "updatedAt": "2026-10-18"
 }
