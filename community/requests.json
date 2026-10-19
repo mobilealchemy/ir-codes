@@ -1649,8 +1649,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-19"
+  },
+  {
+   "id": "req-151",
+   "category": "air_conditioner",
+   "brand": "Daikin",
+   "model": "ARC480A33",
+   "region": null,
+   "notes": "Request names the remote, not a unit: ARC480A33, a Daikin remote. English (no sign-off), App 1.7, iOS 27.0. Variant: IRremoteESP8266 DAIKIN152 (single 152-bit section, 3492/1718 header, 5-bit leader; ir_Daikin.h lists ARC480A5 and the ARC480A14 reference under it). No source names ARC480A33 itself in the library; what ties it to DAIKIN152 is (a) the siblings we ship, Flipper-IRDB's ARC480A41 and ARC480A53 captures, both decode as DAIKIN152 frames with right checksums (11 DA 27 00 00 ... C5 ..), and (b) Daikin Thailand's genuine-remote listing (part 4019416L, 'code ARC480A33' on the back cover, shop.line.me/@chiangmaiair/product/1001006931) which lists FTC15NV14, FTC20NV14, FTC25NV14, FTC25NV1V, FTC35NV1V, ATF25/35UV1V, FTF25/35UV1V and FTM-PV2S units, and Vietnamese retailers (dienmaytruongthinhphat.com, made in Thailand) naming ATF25UV1V / FTC25NV1V / FTF25UV1V. Units are seller claims, not Daikin documentation. One Vietnamese retailer calls it the remote for non-inverter cool-only units (seller claim).\n\nNO CLOUD CHANGE: a full set of the variant already exists. smartir-1110-daikin, 'FTC15NV14, FTC20NV14, FTC25NV14' (181 keys, cool / dry / fan 18-32 C, off), all 181 frames decode as DAIKIN152 with a right checksum; FTC25NV14 is in the Thai listing above. Also DAIKIN152: smartir-1117-daikin (DTXF35TVMA, 316 keys, one malformed key cool.29.high) which is what the Daikin brand pick loads on 1.7 (fullest SmartIR set), smartir-1112-daikin (ATKC09TV2S / FTKQ12TV2S, one malformed key cool.32.low), flip-daikin-arc480a41 (13) and flip-daikin-arc480a53 (12). The other Daikin SmartIR sets are the 280-bit or 64-bit frames and do not fit. Find My Remote Automatically on 1.7: smartir-1117 is step 63 of 382, smartir-1110 step 244. No retitle: nobody has captured an ARC480A33, so naming it on a pack would rest on the seller list, not on bytes. Reply (en, 2026-10-19) points at Add Device > Air Conditioner > Daikin, then Browse Full Code Database > Our Cloud > Daikin > the FTC15NV14 set.\n\nUNVERIFIED: nothing was sent to a Daikin unit; that the ARC480A33 sends DAIKIN152 is inferred from siblings and the Thai listing. An iPhone has no IR emitter, so the reply says an IR bridge is needed. If it fails: the model on the indoor unit's label.",
+   "votes": 0,
+   "status": "done",
+   "createdAt": "2026-10-19"
   }
  ],
- "totalCount": 150,
+ "totalCount": 151,
  "updatedAt": "2026-10-19"
 }
