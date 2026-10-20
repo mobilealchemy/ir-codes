@@ -1660,8 +1660,19 @@
    "votes": 0,
    "status": "done",
    "createdAt": "2026-10-19"
+  },
+  {
+   "id": "req-152",
+   "category": "audio_receiver",
+   "brand": "Sony",
+   "model": "SA-D40",
+   "region": null,
+   "notes": "Request spells the brand \"Somy\"; it is Sony (no other \"Somy\" request in the tracker, so no brand row added). English (no sign-off beyond Sent from my iPhone), App 1.7, iOS 26.4.2.\n\nPRODUCT: Sony SA-D40, an 80 W 4.1-channel multimedia speaker system with Bluetooth, USB and a TV input (Flipkart and Amazon.in listings, India). Its remote commander has only: on/standby, FUNCTION, play/pause, skip back / skip forward, folder +/-, VOLUME +/- (read: SA-D40 operating instructions as quoted at https://www.manua.ls/sony/sa-d40/manual; inputs TV / USB / BLUETOOTH). The remote is RM-ANU156 by seller claim: replacement-remote listings name it for SA-D10, SA-D100 and SA-D40 (https://woniry.in/products/sony-home-theater-rm-anu156-remote-replacement, Amazon.in B08DCVRW98, eBay 285592228408), and Sony India's SA-D10 support page lists RM-ANU156 among its components (https://www.sony.co.in/electronics/support/sound-bars-home-theater-systems-sound-bars/sa-d10). An open IRplus request asks for this remote's code with no answer (irplus-remote/irplus-codes.github.io issue 699). Infrared is inferred (a 2017-era basic remote commander; no page says so).\n\nCODES: Logitech Harmony's database entries for the SA-D100 and SA-D10 share one code set (pickysysadmin/logitech-harmony-ir-archive, devices/Sony/SA-D100.json -> codesets/d9/d95bb3c03e7f3d2c.json). Its 14 commands are exactly this remote's buttons. Used here: PowerToggle Sony 15-bit address 48 command 21, VolumeUp 48/18, VolumeDown 48/19, Function 15-bit address 176 command 105. Flipper-IRDB's Sony_Amp.ir (our flip-sony-amp) captured the identical four plus Mute 48/20, a key this remote lacks. Also in the Harmony set and not used: play/pause 20-bit address 16 ext 8 command 58, skip back / forward 48 / 49, folder down / up 46 / 47; the same 16/8 commands for play/pause and previous/next are what the sony-avr-01 consensus table already holds, so they are corroborated.\n\nCLOUD: new curated sony-audio-01, \"SA-D10 / SA-D40 / SA-D100 (RM-ANU156)\", 4 keys (power, volumeUp, volumeDown, input), built by scripts/ircloud/gen_sony_sa_d_pack.py as SIRC 15-bit three-frame bursts, bit-for-bit equal to flip-sony-amp's captured frames. Why a new set when flip-sony-amp holds the same codes: its title, \"Amp\", gives nobody a way to find it, and it adds a Mute this remote has not. Audio on 1.7 draws power, volume +/-, mute, input, source, sleep, menu and sound mode and no playback or cursor keys, so the skip and play/pause codes would buy nothing and were left out; the release after draws playback keys only if the pack holds them (they can be added for the release after 1.7). Find My Remote Automatically on 1.7: 4-key sets rank after 862 fuller audio sets, so sony-audio-01 sits near step 1,060 of 1,166; the customer is pointed at it by title instead. Reply (en, 2026-10-20): Add Device > Audio / AV Receiver > Sony, Browse Full Code Database > Our Cloud > Sony > the set.\n\nUNVERIFIED: nothing was sent to an SA-D40; that the SA-D40's remote is an RM-ANU156 and infrared rests on seller listings and the D10/D100 Harmony set, not on a Sony page for the D40. An iPhone has no IR emitter, so the reply says an IR bridge is needed. If it fails: the model number printed on the remote.",
+   "votes": 0,
+   "status": "done",
+   "createdAt": "2026-10-20"
   }
  ],
- "totalCount": 151,
- "updatedAt": "2026-10-19"
+ "totalCount": 152,
+ "updatedAt": "2026-10-20"
 }
