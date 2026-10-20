@@ -1671,8 +1671,19 @@
    "votes": 0,
    "status": "done",
    "createdAt": "2026-10-20"
+  },
+  {
+   "id": "req-153",
+   "category": "audio_receiver",
+   "brand": "Creative",
+   "model": "Sound Blaster RM-1800 / DDTS-100",
+   "region": null,
+   "notes": "Logged after the fact from commit e4c8eea7 (2026-10-20 09:24), which was labelled req-152 before that number was taken (req-152 is the Sony SA-D40 entry). The request mail is not in this repository, so the customer, region, language, app version and exact wording are unknown. Model is read from the work: Creative Sound Blaster remote RM-1800 (also RM-1500 / RM-900 / RM-1000W) and the DDTS-100 decoder.\n\nCLOUD: two packs imported from probonopd/irdb (NEC, device 193 / subdevice 68), shape-validated only, not tested on hardware: irdb-creative-sound-blaster-rm1800 (29 keys: power, mute, volume, play, playPause, stop, previous, next, rewind, fastForward, record, cursor and OK, settings, info, digits 0-9) and irdb-creative-ddts-100 (4 keys: power, mute, volume up and down). Both filed under audioReceiver, brand Creative, version 1. brands.json: the Creative row (audioReceiver) gained searchTerms Creative Technology, Sound Blaster, Katana, Stage, Stage Air, Inspire, GigaWorks, RM1800, RM1500, DDTS-100 and three Arabic spellings of the brand; nothing else changed. The Arabic terms suggest an Arabic-speaking requester, but that is an inference, not a record.",
+   "votes": 0,
+   "status": "done",
+   "createdAt": "2026-10-20"
   }
  ],
- "totalCount": 152,
+ "totalCount": 153,
  "updatedAt": "2026-10-20"
 }
