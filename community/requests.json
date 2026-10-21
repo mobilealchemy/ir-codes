@@ -1693,8 +1693,19 @@
    "votes": 1,
    "status": "in_progress",
    "createdAt": "2026-10-21"
+  },
+  {
+   "id": "req-155",
+   "category": "audio_receiver",
+   "brand": "HF Audio",
+   "model": "Soundbar 2.-",
+   "region": "US",
+   "notes": "Spanish sign-off (Enviado desde mi iPhone); Spanish reply, usted. App 1.7, iOS 26.2.1. Customer typed brand \"Audio hf\", model \"Soundbar 2.-\" (probably 2.0 or 2.1 cut off), region US. Brand recorded as HF Audio.\n\nWHAT IT IS. READ: HF Audio is a Mexican consumer-audio brand with its own site (hfaudio.mx, certificate expired when fetched) and a soundbar line sold through Mexican retailers and marketplaces: HF-SOUNDBAR21 (2.1, Bluetooth, USB, remote; 320 W on hfaudio.mx and pro-l.com, 1,500 W on gcaudio.mx) and HF-SOUNDBAR550 (5.1) - http://hfaudio.mx/home-audio/44-soundbar-21-barra-de-sonido-de-320w-7503023894579.html, https://www.gcaudio.mx/catalogo/hf-soundbar21-barra-y-woofer/, https://www.sears.com.mx/producto/2981959/barra-de-sonido-hf-audio-hf-soundbar21, https://www.amazon.com.mx/SOUNDBAR-hf-soundbar550-Sistema-Audio-Completo/dp/B07PV36F4V. INFERRED: the customer's \"Soundbar 2.-\" is the HF-SOUNDBAR21 (2.1); the OEM is unknown, and no listing says the remote is infrared (a Bluetooth/USB budget bar with a plain remote almost certainly is, not confirmed). No manual, FCC ID or remote photo found.\n\nCODES. None. Searched: the web (HF Audio / Audio HF / AudioHF with soundbar, remote, manual, FCC), gh code search for HF-SOUNDBAR21, hfaudio and \"HF Audio\" .ir files (only unrelated Hugging Face repos), Flipper-IRDB main tree (no HF Audio folder or file), probonopd/irdb tree, irext remote_index (no brand). Nothing ties any shared OEM code set (e.g. the common NEC soundbar boards) to this product, so none was borrowed.\n\nCLOUD. Nothing changed: no brand row, no pack, no alias. No Swift, no descriptors.\n\nREPLY (es): IR bridge needed (iPhone has no emitter); Add Device > Audio / AV Receiver > Control via the bridge > Brand; Find My Remote Automatically under Audio, and Set Up - Learn Your Remote with a Broadlink; asks for the model on the soundbar's label and a photo of the remote, front and back. On 1.7 an Audio device draws power, volume, mute, input, source, sleep, menu and sound mode only.\n\nUNVERIFIED: nothing sent to an HF Audio unit; remote type is inferred.",
+   "votes": 0,
+   "status": "in_progress",
+   "createdAt": "2026-10-21"
   }
  ],
- "totalCount": 154,
+ "totalCount": 155,
  "updatedAt": "2026-10-21"
 }
