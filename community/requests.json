@@ -1682,8 +1682,19 @@
    "votes": 0,
    "status": "done",
    "createdAt": "2026-10-20"
+  },
+  {
+   "id": "req-154",
+   "category": "projector",
+   "brand": "Xnano",
+   "model": "1100",
+   "region": null,
+   "notes": "Spanish sign-off (Enviado desde mi iPhone); a Spanish reply, neutral Latin American. Region \"Nads\" and notes \"Nada\" both mean nothing, so no region is recorded. App 1.7, iOS 26.6.2. Customer filed it under Projector, brand Xnano, model 1100. Nothing of ours carried Xnano, and no prior request.\n\nWHAT XNANO IS. READ: a real brand with an official Mercado Libre store (mercadolibre.com.mx/tienda/xnano) and its own site, xnano.com, whose model list is X1, X1 Pro, X1 Max, X3, X3 Pro, X3 Max, X5, X6, X7, HA108, HA109, HM102, HM103 (xnano.com/pages/download). No product called 1100 appears on that site, in Mercado Libre's listings, on Amazon, Walmart or Alibaba; the 1100 is probably a lumen figure (Mercado Libre listings claim 14,000 to 25,000 lm, projector-database.com rates the HA110 at 1,000 ANSI) or a mistyped HA110. INFERRED, not confirmed.\n\nTWO PLATFORMS UNDER ONE NAME. READ: the X-series is Amlogic T972 on Android 9 with a voice remote (androidpctv.com/xnano-x1/, xnano.com X1 page); androidpctv.com/xnano-x3-projector/ says the X3 remote is Bluetooth with a microphone. The X1 page does not say whether its remote is IR or Bluetooth. The cheap HA-series is the other platform: androidpctv.com/xnano-ha109-projector/ reads the HA109 as Allwinner H713, Android 11, a small remote because the body has no buttons, and \"found under other brands\". That is the HY300 platform. Nobody found the HA110's or the 1100's SoC.\n\nCODES. None. Searched: Flipper-IRDB main tree and flipperdevices/IRDB (Projectors/ has ABOX, Artlii, NexiGo, Wanbo and others, no Xnano, HA109 or HA108), probonopd/irdb, gh code and issue search for xnano (only unrelated repos), the web for the remote and its IR codes. projector-database.com was behind a challenge and could not be read, so the HA110 spec is from a search snippet only. No remote photo found, so the HA109 remote was not compared with the two HY300 sets.\n\nADDED: brands.json row Xnano, projector, aliasOf Magcubic (like XGODY, Smoon, Visualpex), so the HY300 / HY300 Pro remote 1 and 2 sets are offered. Weaker evidence than most: the H713 reading is for the HA109 only, and the customer's model matches no listing. If the 1100 is an X-series unit with a Bluetooth voice remote, no IR set can reach it (an IR bridge or learning would not either, since the remote is not infrared) and the alias is harmless but useless. No pack, no descriptor, no Swift. If it proves wrong, drop the aliasOf.\n\nUNVERIFIED: nothing sent to a projector; the alias is not confirmed against the unit. TO ASK FOR: a photo of the remote (front and back; whether it has a microphone button) and of the projector's label. If it is Android without Google TV, the ADB route (req-069 added it for projectors) may reach it; untested, and whether the installed build offers it was not checked.",
+   "votes": 1,
+   "status": "in_progress",
+   "createdAt": "2026-10-21"
   }
  ],
- "totalCount": 153,
- "updatedAt": "2026-10-20"
+ "totalCount": 154,
+ "updatedAt": "2026-10-21"
 }
