@@ -1704,8 +1704,19 @@
    "votes": 0,
    "status": "in_progress",
    "createdAt": "2026-10-21"
+  },
+  {
+   "id": "req-156",
+   "category": "air_conditioner",
+   "brand": "TCL",
+   "model": "TAC05CSD/XS-2",
+   "region": "ID",
+   "notes": "TCL TAC05CSD/XS-2 (1/2 PK split, Indonesia), app 1.7, iOS 26.2, reply in Indonesian. UNIT: TCL Indonesia lists the TAC-05CSD/XSS (Elite series) and a retailer the TAC-05CSD/XBS; the exact XS-2 suffix and its remote (KT-TC1 / GYKQ-xx) are not confirmed by any listing found. CODES: none for this model. Searched the web (TCL Indonesia, Blibli, eBay GYKQ listings, hifi-remote GYKQ-03), gh code search and issues for TAC05CSD / TAC-05CSD (only an unrelated scraped retailer HTML page), Flipper-IRDB, IRremoteESP8266 TCL112 issues. CLOUD: nothing changed. 1.7 already serves the TCL air-conditioner family: 14 packs including tcl-ac-01 (225 keys, the TCL112 frame GYKQ-52/GYKQ-03 send), swept by Find My Remote Automatically; the bit-5 TclAC112 encoder fix is in v1.7-b25. UNVERIFIED: whether this model's remote sends the TCL112 frame; nothing tested on a unit.",
+   "votes": 0,
+   "status": "in_progress",
+   "createdAt": "2026-10-23"
   }
  ],
- "totalCount": 155,
- "updatedAt": "2026-10-21"
+ "totalCount": 156,
+ "updatedAt": "2026-10-23"
 }
