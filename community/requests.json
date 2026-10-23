@@ -1715,8 +1715,19 @@
    "votes": 0,
    "status": "in_progress",
    "createdAt": "2026-10-23"
+  },
+  {
+   "id": "req-157",
+   "category": "projector",
+   "brand": "Lonaisci",
+   "model": "HY300PLUS",
+   "region": "TH",
+   "notes": "Thai sign-off (ส่งจาก iPhone ของฉัน), region Chonburi, Thailand; Thai reply. App 1.7, iOS 26.5.2. Customer filed Projector / Lonaisci / HY300PLUS.\n\nWHAT IT IS. READ: Lonaisci is a budget Amazon/TikTok projector brand; its US listing 'Mini Projector ... HY300 Pro' (amazon.com B0GC3GWT44) is the Magcubic HY300 Pro platform rebadged, and 'HY300PLUS' reads as the HY300Pro+ (Magcubic's own IR manual covers HY300Pro, HY300Pro+, HY320, HY320 Mini; manuals.plus/ae/1005008723346736). Same remote is sold for Magcubic/Xgody/Aubor/Maypug. INFERRED, not confirmed for this unit: some listings claim Android 13, others 11; the HY300 family is Allwinner H713 on plain Android 11 (androidpctv.com/hy300-projector/), not Android TV. Remote: listings show both a plain IR remote and a Bluetooth voice remote (dual-mode IR+BT replacements exist for the Pro+), so which one this customer has is unknown.\n\nCODES. None new: web search for Lonaisci, HY300 Plus IR codes; GitHub code search needs sign-in (not usable); the Flipper-IRDB/irdb trees were already searched in req-154 and have no HY300. The existing magcubic-hy300-01/-02 packs are the only candidates.\n\nADDED: brands.json row Lonaisci, projector, aliasOf Magcubic, searchTerms HY300 Plus / HY300PLUS / HY300 Pro (searchTerms work only from the release after 1.7). Same evidence level as Xnano (req-154): platform match by listing, nothing tested on a unit. No pack, no descriptor, no Swift.\n\nWI-FI ROUTE. UNVERIFIED: plain Android over ADB (port 5555) could in principle work (req-069 added ADB for projectors), but whether this projector exposes developer options / ADB and whether the installed build offers it for a projector was not checked, so the reply does not promise it.\n\nTO ASK FOR: photo of the remote (front and back, microphone button?) and the projector's label. If the remote is Bluetooth only, no IR set can reach it.",
+   "votes": 0,
+   "status": "in_progress",
+   "createdAt": "2026-10-24"
   }
  ],
- "totalCount": 156,
- "updatedAt": "2026-10-23"
+ "totalCount": 157,
+ "updatedAt": "2026-10-24"
 }
