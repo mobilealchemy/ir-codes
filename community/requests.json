@@ -1737,8 +1737,19 @@
    "votes": 0,
    "status": "in_progress",
    "createdAt": "2026-10-25"
+  },
+  {
+   "id": "req-159",
+   "category": "airConditioner",
+   "brand": "Funiki",
+   "model": "-",
+   "region": "VN",
+   "notes": "Vietnamese sign-off (Được gửi từ iPhone của tôi), so a Vietnamese reply. No App or OS line. The model field is a Google Shopping URL, so no model. Third Funiki request, after req-068 and req-106.\n\nSEARCHED 2026-10-26 (rule of 2026-10-25), nothing new. irext's newest snapshot (irext_db_20260929) holds the same eight FUNIKI remotes we ship (remote_index 11305, 11306, 12570 to 12575) and none in collect_remote. Flipper-IRDB, probonopd/irdb, SmartIR, LIRC and IRremoteESP8266 have no Funiki. IRremoteESP8266 #2112 (the 83-bit capture) is still open with no replies. GitHub repos found this time (nguyennhuhungmb86mb-ai/funiki-ac-control, Nguyenhueq12/NHue_Funiki, phambaphu2412-ui/dieu-khien-may-lanh*, hethongmaylanh/funiki_truong_hoc) are MQTT web dashboards for school projects and carry no IR codes. Vietnamese retailer pages only restate the three remote lines (MMC, MMC2/R51, Inverter).\n\nDECISION. Nothing added; still no brand row. The Coolix generator behind springer-ac-01 (req-122) is a pack, not a family installed builds compute, so a Funiki row would still send the synthesized starter set. Reply sends the customer to Browse Full Code Database > Our Cloud > FUNIKI in the req-106 order (12260, 11272, 3203, 12265, 11797, 2807, 3200, 77) and asks for the indoor unit's model label and the code on the back of the remote. Nothing tested on a unit.\n\nOPEN: the same as req-106. A Coolix family would cover irx-12571 and -12572; the 83-bit frame needs a decoded capture of a dozen varied buttons.",
+   "votes": 0,
+   "status": "done",
+   "createdAt": "2026-10-26"
   }
  ],
- "totalCount": 158,
- "updatedAt": "2026-10-25"
+ "totalCount": 159,
+ "updatedAt": "2026-10-26"
 }
