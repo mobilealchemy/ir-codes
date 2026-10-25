@@ -1748,8 +1748,19 @@
    "votes": 0,
    "status": "done",
    "createdAt": "2026-10-26"
+  },
+  {
+   "id": "req-160",
+   "category": "setTopBox",
+   "brand": "ZTE",
+   "model": "ZXV10 B866 iptv",
+   "region": "-",
+   "notes": "Russian sign-off (Отправлено с iPhone), so a Russian reply. App 1.7, iOS 26.3.1. The region field is the box's label (\"Сделано в Китае ZTE Corporation\"), not a place; the address suggests an Armenian name, so the market is unknown (B866V2 is shipped by Rostelecom/Wink in Russia, Claro, Viettel and others).\n\nBEFORE. No ZTE brand row and no compiled ZTE in the Set-Top Box picker, so ZTE was reachable only from the code browser: irx-8607-zte (\"remote_iptv_zte\") and irx-8609-zte, both sealed irext captures; irext-6028/6029-zte are streaming-box remotes; flip-rostelecom-wink-stb is Rostelecom's own remote.\n\nFOUND. Logitech Harmony's database has the ZXV10 B866V2 itself (pickysysadmin/logitech-harmony-ir-archive, CC0, devices/ZTE/ZXV10_B866V2.json, codeset 7a3a75446f4cef36): 44 commands, all NEC1 address 00/FF. irx-8607-zte is the same remote: all 13 navigation, volume, mute, power, menu and back keys it shares with Harmony decode to the same commands. It differs on Channel +/- (it sends 0x0D/0x13, which Harmony files as PageUp/PageDown; Harmony's channel keys are 0x0B/0x15) and its input key is a copy of digit 0.\n\nADDED. zte-stb-01 (\"ZXV10 B866 / B866V2 IPTV\", plaintext, 36 keys: power, mute, volume, channel, cursor, OK, back, menu, guide, info, playback, previous/next, four colours, digits), from gen_zte_stb_pack.py, which refuses to write unless every code passes its complement check and agrees with irx-8607-zte where it should. A ZTE row (setTopBox, streamingBox; searchTerms ZXV10, B866, B860, ЗТЕ, 中兴, which help only from the release after 1.7). Nothing sent to a B866.",
+   "votes": 0,
+   "status": "done",
+   "createdAt": "2026-10-26"
   }
  ],
- "totalCount": 159,
+ "totalCount": 160,
  "updatedAt": "2026-10-26"
 }
