@@ -1726,8 +1726,19 @@
    "votes": 0,
    "status": "in_progress",
    "createdAt": "2026-10-24"
+  },
+  {
+   "id": "req-158",
+   "category": "fan",
+   "brand": "Hatari",
+   "model": "Ac Classic1",
+   "region": "TH",
+   "notes": "Region TH (Thai reply). Mail came with the sender's address, not recorded. App 1.7, iOS 26.6. Customer filed Fan / Hatari / Ac Classic1.\n\nWHAT IT IS. READ: Hatari AC CLASSIC1 is an 8 L evaporative air cooler (พัดลมไอเย็น), not a plain fan: 4 speeds, left-right swing, 1-8 h timer, ionizer, touch panel and remote (homepro.co.th/p/1094223; ennxo.com/product/1143153). No manual or remote button list on any page found, no remote part number.\n\nCODES. Only candidate in any source: Flipper-IRDB Fans/Hatari/HatariL1Fan.ir (our flip-hatari-hataril1fan, 5 keys, NEC address 02: Power 0x11, Speed 0x0D, Timer 0x09, Swing 0x05, Natural 0x15), captured from a Hatari SlideSmart L1 slide fan; its comment says 'probably all remote controlled Hatari fans', a guess by one uploader, not a statement that the line shares a remote. No other source: irext has no Hatari, probonopd/irdb has none, GitHub code and issue search and Thai web queries (pantip, Lazada, HomePro) found no capture for AC Classic1 or any Hatari air cooler.\n\nDECISION. No pack: nothing ties a capture to this model. ADDED: Hatari row searchTerms ฮาตาริ, AC Classic1, HT-, HC- (work only from the release after 1.7). Reply points the customer at the existing Hatari set as an untested try, and asks for a photo of the remote (front and back) and the model label. Nothing tested on a unit.\n\nOPEN: a photo of the remote, or a capture, would settle whether the L1 codes match.",
+   "votes": 0,
+   "status": "in_progress",
+   "createdAt": "2026-10-25"
   }
  ],
- "totalCount": 157,
- "updatedAt": "2026-10-24"
+ "totalCount": 158,
+ "updatedAt": "2026-10-25"
 }
