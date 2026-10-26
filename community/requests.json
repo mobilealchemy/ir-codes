@@ -1781,8 +1781,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-27"
+  },
+  {
+   "id": "req-163",
+   "category": "airConditioner",
+   "brand": "New confort plus",
+   "model": "BRODH-DOM-12I",
+   "region": "Algeria",
+   "notes": "French (Algeria): a French reply. App 1.8, iOS 27.2, sent from an iPhone, which has no infrared emitter, so the reply needs an IR bridge such as a Broadlink RM. The customer's iOS and app versions are current (1.8 is live).\n\nUNIT / BRAND: NOT IDENTIFIED. Searches on 2026-10-27 for \"New Confort Plus\" (with climatiseur, Algerie, Ouedkniss, Jumia, split, the Arabic spelling) and for BRODH-DOM-12I returned no page naming either: no seller, maker, importer, manual or replacement-remote listing. The only \"Confort Plus\" hits are Atlantic Takao and LG ducted lines in France, unrelated. Ouedkniss could not be fetched. INFERRED, not read: 12I looks like 12,000 BTU inverter and DOM like domestic; Algerian house brands are mostly local assemblies of Chinese platforms (Midea, Gree, AUX, Hisense, TCL, Chigo), but nothing ties this one to any.\n\nREMOTE: NOT IDENTIFIED. No remote model number, photo or listing found.\n\nCODES: nothing for the brand or model in our manifest (no 'confort' row or pack), Flipper-IRDB tree, irdb, SmartIR, irext, or gh search code / issues for BRODH, \"New Confort Plus\", BRODH-DOM. No row added: with no evidence of the family, a family row would send one family's frames to a unit that may not use it, and aliasOf alone would load a guessed parent's set. Nothing published.\n\nREPLY (French): the brand is not in the list, so the reply routes by the Add Device config screen's Find My Remote Automatically, which in 1.8 sweeps the whole category (curated sets first, fullest first; the brand picked does not narrow it), asks to press Power and confirm when the unit answers, and falls back to Parcourir toute la base de codes > Notre cloud for Midea, Gree or AUX by hand. It asks for photos of the remote front and back and the indoor unit's label to identify the remote's code.\n\nUNVERIFIED: the brand, the unit, the remote and its protocol; nothing was sent to an air conditioner. Status stays open until the customer answers with the remote's photos. The mail's sender address was not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-27"
   }
  ],
- "totalCount": 162,
+ "totalCount": 163,
  "updatedAt": "2026-10-27"
 }
