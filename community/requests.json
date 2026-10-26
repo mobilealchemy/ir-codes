@@ -1759,8 +1759,19 @@
    "votes": 0,
    "status": "done",
    "createdAt": "2026-10-26"
+  },
+  {
+   "id": "req-161",
+   "category": "airConditioner",
+   "brand": "Sharp",
+   "model": "9807125E029349 (a serial number, not a model)",
+   "region": "Pekanbaru, Indonesia",
+   "notes": "Indonesian sign-off (Dikirim dari iPhone saya); region Pekanbaru (Riau), so an Indonesian reply. App 1.7, iOS 26.5. No notes. The sender's address is not recorded.\n\nThe \"model\" is not a model. 9807125E029349 is 14 characters (digits, one E, digits) and looks like a serial number from the unit's label. No source was found that decodes a Sharp air-conditioner serial: searches for Sharp Indonesia and Sharp AC serial/date-code formats returned only other makers' (Carrier, York) and Sharp calculators/typewriters (oldcalculatormuseum.com/t-sharpsn.html: first digit = year, last = month, 1964-1974 only, which does not fit), and a generic Sharp HVAC page for the US trade. Reading it as 98-07 (1998, July) or week/year would be a guess and is not used. So the number tells us neither the model nor the remote. READ: nothing. INFERRED: only that it is a serial.\n\nWhat Sharp Indonesia sells (retailer and marketplace listings; sharp-indonesia.com answers 403 to a fetch): the budget AH-A5/A7/A9UCY and UCYN (Turbo Cool, R32, Gree-type remote YB1FA, per Tokopedia/Shopee listings and the klimata Android app's own note \"Sharp Gree OEM (AH-A5UCY, AH-A9UCY, YB0F2)\"), the current ZCY/ZCYN (Midea RG10B per req-094), older AH-AxSAY (A907), and the inverter AH-XP..YMY / AH-X..ZY lines (J-Tech, no public capture; see ir-and-ac-protocols.md, req-127). Earlier Indonesian Sharp requests: req-019 (CRMC-B094JBEZ), req-022 (AH-A9SAY), req-094 (AH-A5ZCY).\n\nSearched for captures not already shipped: GitHub code and issue search for AH-A9UCY, AH-XP10YMY, AH-A9ZCY, YB1FA and Sharp Indonesia remotes. Found only retail scrapes, IRremoteESP8266 (YB1FA under Kelvinator; AH-XP10NRY is A903), pyhvac sharp.py (J-Tech, no capture), klimata (protocol labels, no frames), and Flipper-IRDB's Sharp AH-A9UCD, which we already hold. No new capture of an Indonesian Sharp remote. No pack added, no table changed.\n\nDecision: open, waiting for the model. Sharp is a computed family on 1.7, so picking the brand loads no pack (loadsPackOnBrandPick is false for an air conditioner whose brand has a family) and sends the computed A907 frame, which is the sharp-ac-01 form; that suits the AxSAY units and probably not the UCY/ZCY ones. The reply sends the customer to the code database, Our Cloud, Sharp, and names the sets: AH-A5ZCY (sharp-ac-04, 05), AH-A5UCY (sharp-ac-06, 07), A907 (sharp-ac-01), A903 (sharp-ac-03), AH-AP9GMY (smartir-7300-sharp). The ZCY/UCY come first because they are the budget Sharps that dominate Indonesian sales (inferred from listings, not counted), the A907 pick is already what the brand row sends. It asks for the AH-... label on the indoor unit and a photo of the remote, front and back, and says an IR bridge such as a Broadlink RM is needed.\n\nUNVERIFIED: the serial's meaning, the customer's model, whether any ranked set answers the unit. Nothing was sent to an air conditioner.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-26"
   }
  ],
- "totalCount": 160,
+ "totalCount": 161,
  "updatedAt": "2026-10-26"
 }
