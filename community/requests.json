@@ -1792,8 +1792,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-27"
+  },
+  {
+   "id": "req-164",
+   "category": "airConditioner",
+   "brand": "LG",
+   "model": "AKB75215321",
+   "region": "Depok (Indonesia)",
+   "notes": "Indonesian (signature \"Dikirim dari iPhone saya\"): an Indonesian reply. App 1.8, iOS 26.6.1, from an iPhone, which has no infrared emitter, so the reply needs an IR bridge such as a Broadlink RM. Model AKB75215321 is the remote's own number, not the unit's.\n\nREMOTE: not found anywhere by that exact number. Web searches (2026-10-28) hit only a Lazada Indonesia tag page titled for the code with no listing text, and siblings: AKB75215320 (Anderic), AKB75215401/402 (eBay, Amazon, sold for Libero E+, S4NQ09WA51A, P24AWN-N214 and similar). gh search code / issues for AKB75215321: no hits. Flipper-IRDB, irext, SmartIR, our manifest: no pack names it.\n\nPROTOCOL (INFERRED, not read for this number): the AKB75215xxx family is LG's DUAL Inverter-era remote; IRremoteESP8266 lists AKB75215403 as an LG2 (short header, 28-bit) remote, and our lg-ac-01 / lg-ac-03 are LG2 sets. That the 321 is LG2 is an inference from its siblings, not a capture.\n\nCOVERAGE: LG is not in brands.json, so picking LG in the compiled picker loads the best LG pack by rank, lg-ac-02 (213 keys, the LONG-header 6711A timing, wrong for an AKB remote), then lg-ac-01 (165, short header, most AKB remotes), lg-ac-03 (165, AKB74955603 fan 9/10). Find My Remote Automatically (manifest v108 counts): lg-ac-02 is step 6 of 42 curated AC sets, lg-ac-01 step 8, lg-ac-03 step 9; SmartIR LG sets follow the curated ones. So the reply tells the customer to open Our Cloud > LG and pick lg-ac-01 first, then lg-ac-03 if only the fan speeds are off. No new codes: nothing real to add, a pack would only duplicate lg-ac-01/03. Nothing published.\n\nWI-FI: the app has an LG ThinQ cloud transport (account sign-in) for ThinQ-enabled LG units, UNVERIFIED against a real account (its source says so). The reply mentions it only as an option if the unit has a Wi-Fi/ThinQ logo.\n\nUNVERIFIED: the remote's protocol and timing, and that any LG set drives this unit; nothing was sent to an air conditioner. Status stays open until the customer answers with the unit's model number and a photo of the remote. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-28"
   }
  ],
- "totalCount": 163,
- "updatedAt": "2026-10-27"
+ "totalCount": 164,
+ "updatedAt": "2026-10-28"
 }
