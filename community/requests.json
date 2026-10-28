@@ -1814,8 +1814,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-28"
+  },
+  {
+   "id": "req-166",
+   "category": "tv",
+   "brand": "ماديبا (Madiba?)",
+   "model": "H620DF-AS",
+   "region": "",
+   "notes": "Arabic (signature \"أُرسلت من الـ iPhone\"): an Arabic reply. App 1.8, iOS 27.0.1, an iPhone with no IR emitter, so an IR bridge such as a Broadlink RM is needed.\n\nBRAND / TV: NOT IDENTIFIED. Searches on 2026-10-29 (Arabic and Latin spellings Madiba, Madeba, with H620DF-AS, smart TV, Arabic retailer pages) returned no brand, maker, importer or listing. The Latin spelling is a guess from the Arabic.\n\nONLY LEAD: the model's remote-code stem. gh search code for H620DF found five copies of one debloat file for a Vision 2024VISION43STV (CVTE TP.T950D4T board, Amlogic, Android 13, CVTE's own launcher, not Google TV) naming its remote as H620DF-DS, with an ADB factory menu (MENU 1 1 4 7). So H620DF-xx looks like a CVTE-board remote family; INFERRED, not shown for -AS or for this brand. If this TV is CVTE-based, no Cast / Android TV service is expected and ADB is the only Wi-Fi route.\n\nCODES: none. Nothing for H620DF, Madiba or Madeba in our manifest and brands.json, irext (collect_remote, remote_index), the Flipper-IRDB tree, irdb, SmartIR, or gh search code / issues. No CVTE or Vision TV set exists in any source found. No row added and nothing published: a guessed family would send frames to a set that may not use them.\n\nREPLY (Arabic): says the brand is not in the list yet, routes through Add Device > TV > Find My Remote Automatically with an IR bridge, and asks for photos of the remote (front and back, any H620DF-AS print), the TV's back label, and whether Settings > About shows Android. Nothing is promised.\n\nUNVERIFIED: brand, TV OS, remote protocol; nothing was sent to a TV. Status stays open until the customer answers. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-29"
   }
  ],
- "totalCount": 165,
- "updatedAt": "2026-10-28"
+ "totalCount": 166,
+ "updatedAt": "2026-10-29"
 }
