@@ -1803,8 +1803,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-28"
+  },
+  {
+   "id": "req-165",
+   "category": "airConditioner",
+   "brand": "Panasonic",
+   "model": "",
+   "region": "Kampus (Indonesia)",
+   "notes": "Indonesian (signature \"Dikirim dari iPhone saya\"): Indonesian reply. App 1.8, iOS 26.5, an iPhone with no IR emitter, so an IR bridge such as a Broadlink RM is needed. No model given (\"-\"), so no exact-code search was possible; same case as req-144.\n\nCOVERAGE (manifest v108, read 2026-10-28): brands.json Panasonic row has family \"panasonic\" (computed 27-byte two-frame protocol), so the brand pick loads no pack and presses are generated. Curated panasonic-ac-01 (A75C / CWA75C, 152 keys) is about step 17 of 42 curated AC sets in Find My Remote Automatically; SmartIR CS- tables (smartir-1020..1032, 121-241 keys) follow the curated sets, plus irx- and flip- captures (A75C4187, A75C2600, CWA75C4179, CS-E9HKR, CS-UE12RKE). Step numbers are my recount of the documented ranking, not read off the app. Comfort Cloud Wi-Fi route (PanasonicTransport) exists for Wi-Fi units, UNTESTED against a real account. No cloud change, nothing published.\n\nUNVERIFIED: that any Panasonic set drives this unit; nothing was sent to an air conditioner. Reply asks for the indoor unit's model sticker and a photo of the remote (A75C... number). Status stays open until the customer answers. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-28"
   }
  ],
- "totalCount": 164,
+ "totalCount": 165,
  "updatedAt": "2026-10-28"
 }
