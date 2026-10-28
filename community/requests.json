@@ -1808,7 +1808,7 @@
    "id": "req-165",
    "category": "airConditioner",
    "brand": "Panasonic",
-   "model": "",
+   "model": "-",
    "region": "Kampus (Indonesia)",
    "notes": "Indonesian (signature \"Dikirim dari iPhone saya\"): Indonesian reply. App 1.8, iOS 26.5, an iPhone with no IR emitter, so an IR bridge such as a Broadlink RM is needed. No model given (\"-\"), so no exact-code search was possible; same case as req-144.\n\nCOVERAGE (manifest v108, read 2026-10-28): brands.json Panasonic row has family \"panasonic\" (computed 27-byte two-frame protocol), so the brand pick loads no pack and presses are generated. Curated panasonic-ac-01 (A75C / CWA75C, 152 keys) is about step 17 of 42 curated AC sets in Find My Remote Automatically; SmartIR CS- tables (smartir-1020..1032, 121-241 keys) follow the curated sets, plus irx- and flip- captures (A75C4187, A75C2600, CWA75C4179, CS-E9HKR, CS-UE12RKE). Step numbers are my recount of the documented ranking, not read off the app. Comfort Cloud Wi-Fi route (PanasonicTransport) exists for Wi-Fi units, UNTESTED against a real account. No cloud change, nothing published.\n\nUNVERIFIED: that any Panasonic set drives this unit; nothing was sent to an air conditioner. Reply asks for the indoor unit's model sticker and a photo of the remote (A75C... number). Status stays open until the customer answers. Sender address not recorded.",
    "votes": 1,
@@ -1825,8 +1825,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-29"
+  },
+  {
+   "id": "req-167",
+   "category": "airConditioner",
+   "brand": "Turbocool",
+   "model": "R32",
+   "region": "",
+   "notes": "Thai (signature \"ส่งจาก iPhone ของฉัน\"): a Thai reply. App 1.8, iOS 26.0, an iPhone with no IR emitter, so an IR bridge such as a Broadlink RM is needed. No region given. \"R32\" in the Model field is a refrigerant, not a model, and the reply says so kindly.\n\nBRAND: Turbo Cool is a product name, not an OEM. In Thailand it names (1) Uni Master's TURBO COOL SERIES (DAS Inter Group; FUW-400 / 600 / 800 / 1200, 12,000 to 32,000 BTU), wall-type indoor units sold as replacement coils for an outdoor unit \"of any brand\" and, bare, by many Shopee and Lazada shops as \"ใช้ได้กับน้ำยา R22 R32 R410\" with a wireless remote in the box; and (2) Haier Thailand's \"แอร์ Turbo Cool\" HSU-13CQRD03T (12,000 BTU, R32, fixed speed). A Carrier \"turbo cool\" wall unit of the 2000s also exists (Pantip). Read from the maker and shop pages on 2026-10-29. Which one the customer owns is NOT known.\n\nREMOTE: Thai replacement-remote shops sell one remote as \"TCL / Unimaster / Turbocool, FUW400\" (ThaiRemote SKU-01421; u-device's \"TCL, Turbocool, Uni master\" title), and Shopee / Lazada titles (read through BigGo) pair Turbo Cool with FUW400 190424(XHY-S), GYKQ-52 and GYKQ-05; Amazon and AliExpress sell 190424(XHY-S) as the TCL GYKQ-52 remote. The same Turbo Cool titles also sell YKR-P/001E and /002E (the AMENA look), X9000, Midea 51M/E, Aqua AQA-KRV9WG and AKARI RC-055T remotes, so the name does not pin one remote. irext lists the Thai brand \"Central Air\" (paired with Turbo Cool in those titles) at remotes 2807 and 3200, which decode here, run locally, to the same TCL112AC frames as TCL's irx-3503 and irx-11243. IRremoteESP8266's ir_Tcl.h lists a GYKQ-52E (Daewoo) under TCL112AC.\n\nCODES: no capture or pack names Turbo Cool, Uni Master or FUW. Searched on 2026-10-29: manifest v108 and brands.json (only TurboX, a TV brand), irext (brand, remote_index, collect_remote), the Flipper-IRDB, irdb and SmartIR trees (GitHub), IRremoteESP8266 (ir_Tcl.h, SupportedProtocols.md), gh search code and issues for turbocool, Unimaster, GYKQ-52, XHY-S, and the web in Thai and English. LIRC's remote index was not reachable (404), so it was not searched. No new pack.\n\nACTION (cloud only, no release): brands.json row Turbocool (airConditioner, aliasOf TCL, searchTerms เทอร์โบคูล, เทอร์โบคลู, Uni Master, FUW), so the brand pick loads tcl-ac-01 (TCL112AC, 225 keys, titled for GYKQ-52; the app's ranking replayed on manifest v108). \"Turbo Cool\" and the Thai spelling were added to the Haier row's searchTerms, so a search finds the Haier series too (the shipping BrandSearch was run over both rows). Find My Remote Automatically reaches tcl-ac-01 at about step 5 of the curated and SmartIR air-conditioner sets, haier-ac-01 at 10, electra-ac-01 at 11, midea-ac-01 at 15 (my recount of the documented ranking, not read off the app).\n\nREPLY (Thai): explains R32, names the two Turbo Cool readings, says the Turbocool brand now loads TCL's set as an inference from shop listings (not tested), gives Add Device > Air Conditioner > Control via (IR bridge) > Brand > Test Power > Save, then Find My Remote Automatically, Haier and AMENA (YKR-P) fallbacks, and asks for photos of the remote (front, back, the printed code) and the indoor unit's model label and front. Asks to allow an hour and reopen the app.\n\nUNVERIFIED: the unit, its remote, and that a TCL112AC frame drives a Turbo Cool fan coil; the alias is an inference from replacement-remote listings; nothing was sent to an air conditioner. Not done: TCL has no search term for GYKQ, so typing a remote code finds nothing. Status stays open until the customer answers with the photos. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-10-29"
   }
  ],
- "totalCount": 166,
+ "totalCount": 167,
  "updatedAt": "2026-10-29"
 }
