@@ -1869,8 +1869,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-10-31"
+  },
+  {
+   "id": "req-171",
+   "category": "tv",
+   "brand": "GHIA",
+   "model": "Ghia 40 smart Android",
+   "region": "",
+   "notes": "Spanish (sign-off \"Enviado desde mi iPhone\"), and GHIA is a Mexican brand, so a Mexican Spanish reply. App 1.9, iOS 18.5 (22F76), an iPhone with no IR emitter. No region and no notes. Sender address not recorded.\n\nDEVICE: \"Ghia 40 smart Android\" names no model. GHIA's 40-inch Android set is the G40ATV22 (\"Android TV Certificado\" on Amazon Mexico, Android TV on Liverpool, Full HD with 2 HDMI and 2 USB on the CVA sheet). The G40W25 is also 40 inches and runs Whale OS, so the model is inferred and the reply asks for the label. Google's supported_devices.csv (read 2026-11-01) lists Ghia, GHIA, device stanford, model SMART TV, and Ghia, GHIA, zhongshan, 4K SMART TV, so GHIA does sell certified Android TV sets. Which model is which is not stated there.\n\nROUTE: Android / Google TV over Wi-Fi with the PIN. On iOS 1.9 only Home works on that route (key code and direction swapped, CLAUDE.md), fixed in 2.1 (43), in review on 2026-11-01. In 2.1, Brand > Android TV recommends it. It has never met a real TV, a GHIA included. If this set refuses it, Android TV (ADB) is next, then an IR bridge. ADB was left out of the reply: it means developer options and an open debugging port, for a route 2.1 should make unnecessary.\n\nCODES: NONE FOUND. Tried 2026-11-01: manifest v109 and brands.json; Flipper-IRDB and probonopd/irdb trees; irext remote_index and collect_remote; SmartIR, IRremoteESP8266 and lirc-remotes (the only \"ghia\" hits are inside De'Longhi air conditioner names); gh search code and issues for ghia, G32ATV22 and G40ATV22; the web in Spanish and English, including Amazon Mexico and Mercado Libre. Those sell IR-only compatibles for the G32ATV22 with Netflix, YouTube, Prime Video and Google Play keys, and name no part number. No pack built: a shared Android TV platform does not tie this set to any other brand's remote. No brands.json row either: GHIA would load no codes, and over a bridge it would send the starter set's made-up ones. So a search for GHIA in Add Device still finds nothing; the reply names Android TV instead.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-01"
   }
  ],
- "totalCount": 170,
- "updatedAt": "2026-10-31"
+ "totalCount": 171,
+ "updatedAt": "2026-11-01"
 }
