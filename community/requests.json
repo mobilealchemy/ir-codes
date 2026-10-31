@@ -1858,8 +1858,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-10-31"
+  },
+  {
+   "id": "req-170",
+   "category": "setTopBox",
+   "brand": "Dstv",
+   "model": "5u",
+   "region": "Zimbabwe",
+   "notes": "No sign-off, Zimbabwe, so an English reply. App 1.9, iOS 27.0.1. Sender address not recorded.\n\nDEVICE: the DStv HD 5U, MultiChoice's single-view HD decoder. A Malawi MultiChoice article has the HD5 (5S and 5U) shipping with a B6 remote, and one retailer lists the B4 for 1131-1133, 1110, Explora 1-3 and HD 4U/5U, with A7 and A10 sold for HD and Explora decoders alike. No code set names a 5U, so that it answers one of these is inferred from remotes being sold across the range.\n\nWHAT WE HAD: brand DSTV and flip-dstv-explorer, from Flipper-IRDB (Cable_Boxes/DSTV/DSTV_EXPLORER.ir), which the brand pick loaded. It lacked Channel Up and Down: the file calls them Cu and Cd, which the importer doesn't read, so those keys went out as made-up starter codes. Find My Remote never tried it either, since a category with curated packs sweeps only those.\n\nTHREE PROTOCOLS, and which decoder needs which isn't documented. The Flipper capture, from a remote with a Showmax key, is XMP-shaped: bursts of about 300 us, gaps carrying a nibble each. The Explora A6 remote is NEC-shaped with an 8 ms leader and F6 first. Older decoders are RC-5 device 24: probonopd/irdb has it under both Multichoice (DSD910) and UEC (DVB).\n\nADDED: dstv-stb-01, 30 keys, the Flipper capture limited to what the layout draws, now with the channel keys; the brand pick loads it. dstv-stb-02, 29 keys, the A6: Tooblippe/DSTV_EXPLORA_REMOTE (dstv_remote_ir.ino) and the MultiChoice Explora threads on the B4X forum (Pronto hex) agree byte for byte on all 24 keys they share, and both were written to drive real Explora decoders. dstv-stb-03, 29 keys, RC-5 device 24 from irdb. flip-dstv-explorer v3 gains Cu and Cd. All three new sets are in Find My Remote. brands.json gets searchTerms: DStv, MultiChoice, Explora, 5U, 4U, 6S.\n\nSEARCHED: our manifest; irext collect_remote and remote_index (none); Flipper-IRDB (one file); probonopd/irdb (above); gh search code and repositories, with mmphego/DSTV-WiFi-Remote and AthenkosiFadana/dstv-ir-controller, whose IRcodes.h is the Flipper capture; remotecentral and web searches for the 5U (no codes).\n\nNOT VERIFIED: nothing was sent to a decoder, and whether a 5U answers to any of the three is inferred. Find My Remote is the honest route for this customer. The app was not run with these sets.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-10-31"
   }
  ],
- "totalCount": 169,
+ "totalCount": 170,
  "updatedAt": "2026-10-31"
 }
