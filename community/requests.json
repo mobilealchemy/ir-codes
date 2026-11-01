@@ -1902,8 +1902,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-02"
+  },
+  {
+   "id": "req-174",
+   "category": "airConditioner",
+   "brand": "TRANE",
+   "model": "190428625",
+   "region": "",
+   "notes": "Arabic (signature \"أُرسلت من الـ iPhone\"): an Arabic reply. App 1.9, iOS 27.2 (24B119), an iPhone with no IR emitter, so an IR bridge such as a Broadlink RM is needed. No region given. Sender address not recorded.\n\nMODEL: 190428625 matched nothing on the web (English and Arabic), GitHub code and issues, Flipper-IRDB, probonopd/irdb, irext, LIRC, SmartIR or IRremoteESP8266 (2026-11-02). The form requires a Model, so it may be a serial, or a number off the remote: req-167's notes record a TCL remote sold as 190424(XHY-S), the same shape. That is a guess, and the reply asks for photos of the remote and the indoor unit's label.\n\nWHAT A PICK DID: CloudIRService's compiled brandAliases held Trane -> Carrier (462bf45, 2026-08-28, no source recorded), so on 1.9 picking Trane loaded smartir-1165-carrier, a Carrier 42P250HX capture (8400/4200, CD AC 0B FD) whose frame neither of Trane's own sets carries.\n\nCODES: both Trane sets are irext's numbered tables, filed under many brands, so neither is a capture of a Trane remote. irx-4287-trane (2807, 31 keys) is byte for byte irx-3503-tcl and irx-3841-carrier, and is the TCL112AC message at irext's timings: cool 24 is 23 CB 26 01 00 24 03 07 38 00 00 00 00 7B at 3660/1800/400/1400. tcl-ac-01's differs in byte 8 (fan and vane) and byte 12's flag, at 3000/1650/500/1050. irx-11294-trane (3472, 46 keys) is byte for byte irx-3839-carrier: 72 bits at 4500/2400/450/950, temperature as BCD in byte 6, no family we could name.\n\nREMOTES: one shop title puts Trane beside TCL: eBay.de 285880965247, \"GYKQ-78 Fernbedienung für Trane Daizuki UNIX TCL ONIDA Rheem Split Typ Klimaanlage\" (search result, the page answers 403); GYKQ is TCL's part prefix. Others point elsewhere: YAC1FB, a Gree part sold for Trane (req-037), and TREMOTE2AHANDA / AREMOTE2AHANDA on Trane's US ductless units, frame unknown.\n\nSHIPPED, cloud only: Trane's row has aliasOf TCL, and ترين, تراين, تران, 特灵, 特靈 and GYKQ-78 as search terms, so a pick loads tcl-ac-01 on installed builds (read at v1.9-b35: resolveBrand gives Trane, Carrier, TCL, and packForBrand ranks the curated set first). It reaches a build at its next launch. App side, next release: the compiled Carrier alias is gone. The code browser still lists Trane's own two sets, which the reply gives as the fallback.\n\nNOT VERIFIED: nothing was sent to a unit. That this customer's Trane obeys the TCL frame is inferred; a Trane on a Gree-family remote will not. Left open for the customer's photos.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-02"
   }
  ],
- "totalCount": 173,
+ "totalCount": 174,
  "updatedAt": "2026-11-02"
 }
