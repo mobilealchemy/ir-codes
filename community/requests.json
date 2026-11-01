@@ -1880,8 +1880,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-01"
+  },
+  {
+   "id": "req-172",
+   "category": "audio_receiver",
+   "brand": "Punta",
+   "model": "P-4510BU",
+   "region": "",
+   "notes": "English (sign-off \"Sent from my iPhone\"): an English reply. App 1.9, iOS 26.2 (23C55), an iPhone with no IR emitter, so an IR bridge such as a Broadlink RM is needed. No region and no notes; Punta sells in India, so that market is inferred. Sender address not recorded.\n\nDEVICE: the Punta P-4510BU, a real product of Punta (puntaglobal.com, Bhubaneshwar, Odisha; listed at Rs 3,999): a 5.1 Bluetooth speaker with USB/SD, FM, RCA and a \"Smart Remote Control\", per the maker's page. The maker's product photo shows a small black remote with the Punta logo: a red power key, a teal key opposite it, a number pad, a blue D-pad with a centre key and a few more keys. The photo is too small to read the labels, and no source gives a part number for the remote. That it is infrared is inferred from that photo and the class of product; no source says so.\n\nCODES: none. Searched 2026-11-01: manifest v109 (17,593 packs) and brands.json (882 rows), no Punta and no 4510; Flipper-IRDB (main tree of 13,547 paths and gh code search); probonopd/irdb (index of 3,205 sets, and the codes folder's 648 makers, none starting \"Pun\"); irext snapshot 20260519 (brand, collect_remote and remote_index); SmartIR and IRremoteESP8266 (gh code search); the LIRC remotes table; gh code search for \"PUNTA P-4510BU\", P-4510BU, P4510BU and \"punta speaker remote\", and gh issue search for \"PUNTA remote IR\" and P-4510BU. Web, in English and Hindi: Punta's own pages for the P-4510BU, the P-4450U and the 5.1 range (no manual; its Drivers and Catalogue links were not opened); Flipkart's P-3450UF listing and the search results for its P-4450U and P-2190BU listings (a search summary says the sales package names one remote; the P-3450UF page itself, when fetched, said nothing about it, and none gives a part number); replacement-remote listings on Flipkart (Philips, boAt, Intex, Reconnect and Zebronics, none naming Punta); RemoteCentral, JP1 / hifi-remote and ManualsLib. Nothing ties any shared code set to this product, so none was borrowed. Punta's support (its site's support tickets page, sales@puntaglobal.com) was not asked.\n\nCLOUD: nothing changed. No brand row: with no pack behind it a Punta row would look supported while every press sends the starter set's invented codes (req-045, req-051, req-064). No Swift, no descriptors.\n\nREPLY (en): no codes found, so nothing was added; a bridge is needed; with a Broadlink the customer can teach the app the remote through Layout > Custom > Learn a Button; Find My Remote Automatically tries only 15 sets from well-known brands in this category on 1.9, so it is unlikely to find this one; asks for a photo of the remote, front and back, and any number printed on it, which is the only realistic route to codes here.\n\nUNVERIFIED: nothing was sent to a P-4510BU, and the steps were read from v1.9-b35, not run. Whether the customer owns a bridge or still has the remote is not known.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-01"
   }
  ],
- "totalCount": 171,
+ "totalCount": 172,
  "updatedAt": "2026-11-01"
 }
