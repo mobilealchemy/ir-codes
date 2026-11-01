@@ -1891,8 +1891,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-01"
+  },
+  {
+   "id": "req-173",
+   "category": "projector",
+   "brand": "Magcubic",
+   "model": "HY320 Mini",
+   "region": "Domažlice, Czech Republic",
+   "notes": "Czech: the sign-off is a Czech name and the region is Domažlice, so a Czech reply. App 1.7, iOS 27.0.1 (24A446), an iPhone with no IR emitter. Sender address not recorded.\n\nDEVICE: the Magcubic HY320 Mini: Android 11, 720p, Wi-Fi 6, Bluetooth 5.0 (ProjectorCentral). Already covered by the Magcubic row and the HY300 sets; nothing there named the HY320, which is likely why it was asked for.\n\nCODES, READ: allan-alb/allshremote (MIT, 2024), devices/magcubic/HY320.ts, holds raw captures from a Magcubic HY320 remote. All 15 buttons decode as NEC 00/FF and equal magcubic-hy300-01 key for key, which is the first capture tied to an HY320 and not a sibling. It adds one code its app files under advanced commands, connectionsConfig, NEC 00/FF 0x09. INFERRED for the Mini: replacement-remote listings sell one infrared remote for HY320mini, HY320, HY300 Pro and HY300 (ManoMano, seen in search results only, its page refused the fetch; Sodial on PriceRunner), and no capture names a Mini. Also searched, nothing: Flipper-IRDB tree, probonopd/irdb index, irext (collect_remote and remote_index), SmartIR, LIRC, gh code and issue search for HY320 and Magcubic beyond the above.\n\nCHANGED (cloud): magcubic-hy300-01 v3 is renamed to name the HY320 and the Mini and gains Source as 0x09. Source is drawn on every projector and on this set went out as the starter set's made-up code, so it was dead; that it now opens connection settings is inferred from the capture's name, and the vendor's customer_ir_ff00.kl has no 0x09, so on an HY300's firmware it may still do nothing. New magcubic-hy300-03: the other stock remote of this hardware, NEC 02/FD, the vendor's customer_ir_fd02.kl as documented by well0nez/allwinner-h713-linux and measured there on an HY310 and an HY300PRO-G-EU. It has the 12 keys the layout draws and that were measured; left out are 0x45 (MOUSE in the table, never seen from the remote), 0x66 (PRJ_BRC_PAIR) and focus 0x51/0x50, which have no key in the layout. HY310 added to the row's terms. Both sources disagree on what 0x98 and 0x93 are (PRJ_MIRACAST and PRJ_AIRPLAY in one vendor dump, PRJ_FOCUS_UP and DN in the other), so those keys are left as they were.\n\nREPLY (cs): IR bridge needed; Brand HY320 or Magcubic loads the set; remote 2 and 3 through the code database if not; with no bridge, Android TV (ADB) over Wi-Fi. The Android TV PIN route is not offered, because on 1.7 every press through it arrives as Home. That the ADB route reaches this model is inferred: cleanyourtv's Alwtniet HY320 Mini example drives the same firmware family over network ADB, and the menu path is not confirmed for the Mini.\n\nUNVERIFIED: nothing was sent to an HY320 Mini, and the steps were read from v1.7-b25, not run.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-02"
   }
  ],
- "totalCount": 172,
- "updatedAt": "2026-11-01"
+ "totalCount": 173,
+ "updatedAt": "2026-11-02"
 }
