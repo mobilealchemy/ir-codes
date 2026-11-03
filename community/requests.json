@@ -1913,8 +1913,41 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-02"
+  },
+  {
+   "id": "req-175",
+   "category": "fan",
+   "brand": "china",
+   "model": "chian",
+   "region": "china",
+   "notes": "Arabic (notes and name): an Arabic reply. App 2.1. No brand or model to search: an unbranded fan made in China. Reply: an IR bridge, Find My Remote Automatically over the fan sets, or Set Up — Learn Your Remote on a Broadlink; asked for photos of the fan's label and the remote. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-03"
+  },
+  {
+   "id": "req-176",
+   "category": "airConditioner",
+   "brand": "LG",
+   "model": "T05NL",
+   "region": "",
+   "notes": "Indonesian (signature \"Dikirim dari iPhone saya\"): an Indonesian reply. App 1.9. T05NL matched no listing on the web or LG's parts site. Reply: pick LG, else Find My Remote Automatically; asked for the part number on the remote (AKB…) and the indoor unit's label. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-03"
+  },
+  {
+   "id": "req-177",
+   "category": "airConditioner",
+   "brand": "Daikin",
+   "model": "-",
+   "region": "TH",
+   "notes": "Thai (signature \"ดาวน์โหลด Outlook for iOS\"): a Thai reply. App 1.9. No model given, so nothing to search beyond the brand. Reply: pick Daikin, else Find My Remote Automatically; asked for the model on the remote and the indoor unit's label. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-03"
   }
  ],
- "totalCount": 174,
- "updatedAt": "2026-11-02"
+ "totalCount": 177,
+ "updatedAt": "2026-11-03"
 }
