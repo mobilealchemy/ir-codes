@@ -1946,8 +1946,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-03"
+  },
+  {
+   "id": "req-178",
+   "category": "setTopBox",
+   "brand": "Android tv box",
+   "model": "X96 X96 miniX 96W",
+   "region": "",
+   "notes": "Russian (signature \"Отправлено с iPhone\"): a Russian reply. App 1.9. An X96-family Android TV box (X96, X96 mini, X96W). Added android-stb-01, that remote's code set, under Streaming Box, whose remote has Home and Back; the Android brand now shows under Streaming Box too. Reply: update to 2.1 and connect over Wi-Fi through debugging (ADB), with no bridge; or, with an IR bridge, Streaming Box > Android > the X96 set. Sender address not recorded.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-03"
   }
  ],
- "totalCount": 177,
+ "totalCount": 178,
  "updatedAt": "2026-11-03"
 }
