@@ -1957,8 +1957,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-03"
+  },
+  {
+   "id": "req-179",
+   "category": "projector",
+   "brand": "HD",
+   "model": "not given",
+   "region": "",
+   "notes": "Russian (Отправлено с iPhone): a Russian reply. The mail had only Category Projector and Brand HD: no Model, App or OS lines, so the build is unknown, and the reply asks for an update first. Sender address not recorded.\n\nBRAND: HD is a resolution printed on cheap projectors, not a maker. No row added, as req-100 decided for \"Projector\": a bare generic name would claim every projector, where \"LCD Projector\" is the HY300 box's own text.\n\nREPLY (ru): IR bridge needed; Find My Remote Automatically for projectors; Magcubic if the unit or remote says HY300 or HY320; Android TV (ADB) over Wi-Fi if it runs Android. Asks for photos of the remote and the model label.\n\nUNVERIFIED: which projector it is. Nothing was sent to one.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-09"
   }
  ],
- "totalCount": 178,
- "updatedAt": "2026-11-03"
+ "totalCount": 179,
+ "updatedAt": "2026-11-09"
 }
