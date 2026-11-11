@@ -1990,8 +1990,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-11"
+  },
+  {
+   "id": "req-182",
+   "category": "tv",
+   "brand": "TIT",
+   "model": "Ti65G2025",
+   "region": "",
+   "notes": "Signed off in Arabic, so an Arabic reply. App 2.2. The set runs Google TV, so it connects over Wi-Fi with a pairing code and needs no IR bridge. Searching TIT in the TV brand list now leads to Android TV. Not tried on a set. Sender address not recorded.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-12"
   }
  ],
- "totalCount": 181,
- "updatedAt": "2026-11-11"
+ "totalCount": 182,
+ "updatedAt": "2026-11-12"
 }
