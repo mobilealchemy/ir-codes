@@ -1979,8 +1979,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-11"
+  },
+  {
+   "id": "req-181",
+   "category": "airConditioner",
+   "brand": "Nasco",
+   "model": "MSAFB-12CR-Mirror",
+   "region": "",
+   "notes": "Signed off in English, so an English reply. App 2.2, an iPhone with no IR emitter, so an IR bridge is needed. Nasco added under Air Conditioner, with a code set for its split units. Not tried on a unit. Sender address not recorded.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-11"
   }
  ],
- "totalCount": 180,
+ "totalCount": 181,
  "updatedAt": "2026-11-11"
 }
