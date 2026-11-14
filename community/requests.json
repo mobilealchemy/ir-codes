@@ -2001,8 +2001,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-12"
+  },
+  {
+   "id": "req-183",
+   "category": "airConditioner",
+   "brand": "Gold (Haam)",
+   "model": "Haam",
+   "region": "",
+   "notes": "Signed off in Arabic, so an Arabic reply. App 2.2, an iPhone with no IR emitter, so an IR bridge is needed. Haam added under Air Conditioner, with a code set for its Gold split line, heat included. Not tried on a unit. Sender address not recorded.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-15"
   }
  ],
- "totalCount": 182,
- "updatedAt": "2026-11-12"
+ "totalCount": 183,
+ "updatedAt": "2026-11-15"
 }
