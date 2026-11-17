@@ -2012,8 +2012,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-15"
+  },
+  {
+   "id": "req-184",
+   "category": "airConditioner",
+   "brand": "HJI",
+   "model": "HJI-H24-BO",
+   "region": "",
+   "notes": "English (Sent from my iPhone): an English reply. App 2.2, iOS 26.7.1, an iPhone with no IR emitter, so an IR bridge is needed. HJI is the brand of Foshan Jitian Intelligent Technology (hjiair.com, Nanhai, Foshan), whose split units are sold wholesale on Alibaba, mostly into Ghana and Nigeria; the customer's region isn't stated. H24 reads as 24000 BTU. No HJI codes found: our tables, irext (collect_remote), probonopd/irdb, SmartIR (its HJI hits are inside base64 codes), Flipper-IRDB, IRremoteESP8266 and LIRC files on GitHub, GitHub issues, the maker's site and its Alibaba listings, none of which names the remote. No row added: the family can't be told without the remote. Reply: Find My Remote Automatically; asked for photos of the remote with its code and of the indoor unit's label. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-17"
   }
  ],
- "totalCount": 183,
- "updatedAt": "2026-11-15"
+ "totalCount": 184,
+ "updatedAt": "2026-11-17"
 }
