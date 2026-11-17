@@ -2023,8 +2023,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-17"
+  },
+  {
+   "id": "req-185",
+   "category": "airConditioner",
+   "brand": "Aqua",
+   "model": "Panjang",
+   "region": "Indonesia",
+   "notes": "Indonesian (Dikirim dari iPhone saya): an Indonesian reply. App 2.3, iOS 27.2. \"Panjang\" in the Model field is Indonesian for \"long\", not a model: the long remote. The form doesn't say whether an IR bridge is in use; an iPhone has no IR emitter. AQUA was in nothing of ours: no brand row, no pack. AQUA is Haier's brand in Southeast Asia (the former Sanyo white-goods business); AQUA Japan's Indonesian AC flyers name PT Haier Sales Indonesia as distributor. Its replacement remotes on Tokopedia come in two families. Haier designs: the long one, part 0010401715DK / 0010401715CM, sold for the AQA-KR5FQAL (keys TURBO/QUIET, COOL, HEAT, DRY, HEALTH AIRFLOW, LOCK, LIGHT, RESET; the same 0010401715 part family as Haier Thailand's CTC remote, req-110), and an oval TURBO/QUIET one sold for AQA-KRV9WG, AQA-KCR5ANE and AQA-AR5AHP. And Gree's YV1FB7, sold for older AQUA and for Sanyo units (titles read \"Gree Sanyo Aqua YV1FB7\"); YV1FB7 is a Gree remote (Gree GWC36LB, Tosot, Argo). No capture of any AQUA remote found: our tables and manifest, irext (no AQUA brand), Flipper-IRDB, probonopd/irdb, SmartIR (only Aqua Thermal), IRremoteESP8266, GitHub code and issues, and the web in Indonesian and Vietnamese. Added: AQUA under Air Conditioner, using Haier's codes; typing YV1FB7 finds Gree. Reply: pick AQUA; with a YV1FB7 remote, pick Gree; else Find My Remote Automatically. Not tried on a unit. Sender address not recorded.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-18"
   }
  ],
- "totalCount": 184,
- "updatedAt": "2026-11-17"
+ "totalCount": 185,
+ "updatedAt": "2026-11-18"
 }
