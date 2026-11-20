@@ -1,5 +1,5 @@
 {
- "sources": {"flipper-irdb": "https://github.com/Lucaslhm/Flipper-IRDB.git", "irext-database": "https://github.com/irext/database"},
+ "sources": {"flipper-irdb": "https://github.com/Lucaslhm/Flipper-IRDB.git", "irext-database": "https://github.com/irext/database", "smartir": "https://github.com/smartHomeHub/SmartIR.git"},
  "packs": {
   "flip-amazon-firetv-evg487": {"commit": "d126fb1b6f1e114c52b4a8c19839ea65e3a9c24d", "source": "flipper-irdb"},
   "flip-apple-tv-gen2": {"commit": "d126fb1b6f1e114c52b4a8c19839ea65e3a9c24d", "source": "flipper-irdb"},
@@ -666,6 +666,8 @@
   "irx-13915-goldstar": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"},
   "irx-13916-unknown": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"},
   "irx-1526-domy": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"},
-  "irx-1527-domy": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"}
+  "irx-1527-domy": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"},
+  "smartir-1396-midea": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"},
+  "smartir-1397-midea": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"}
  }
 }

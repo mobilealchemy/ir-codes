@@ -2034,8 +2034,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-18"
+  },
+  {
+   "id": "req-186",
+   "category": "airConditioner",
+   "brand": "Midea",
+   "model": "Midea",
+   "region": "",
+   "notes": "Malay (Dihantar daripada iPhone saya): a Malay reply. App 2.3, iOS 26.6.1. The Model field repeats the brand and Region reads \"Rumah\" (Malay for \"home\"), Notes \"Tiada\" (\"none\"): no model and no region; Malaysia is inferred from the language, not given. Midea was already covered: 48 AC sets before this (midea-ac-01 generated from IRremoteESP8266's ir_Midea, four Flipper-IRDB captures, irext, SmartIR 1380-1395), and nine rebrands route to it. Checked: our manifest and brands.json, Flipper-IRDB ACs/Midea (4 captures, all in), SmartIR climate (four Midea files not yet imported). Added: smartir-1396-midea (MI2-56GDN1, 169 states) and smartir-1397-midea (remote RG51G5/CEU1, 225 states), real captures. Not added: SmartIR 4380 (MCD-24HRN1-Q1) and 4381 (remote RG70C1/BGEF), in Xiaomi's compressed raw format, which import_smartir.py can't read. Reply: an iPhone has no IR emitter, so a Wi-Fi IR bridge such as a Broadlink RM; pick Midea, Test Power, else Find My Remote Automatically; send the remote's model code (RG.../R51...) and the indoor unit's label if none works. Not tried on a unit. Sender address not recorded.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-21"
   }
  ],
- "totalCount": 185,
- "updatedAt": "2026-11-18"
+ "totalCount": 186,
+ "updatedAt": "2026-11-21"
 }
