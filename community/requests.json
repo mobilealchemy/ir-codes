@@ -2056,8 +2056,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-25"
+  },
+  {
+   "id": "req-188",
+   "category": "tv",
+   "brand": "Cristor",
+   "model": "Plazma",
+   "region": "",
+   "notes": "French sign-off (Envoyé de mon iPhone), so a French reply. App 2.4, iOS 26.2. No region or notes. \"Plazma\" is not a model: in North Africa a flat-screen TV is commonly called a plasma, so the set may be an old plasma or a current smart TV; the reply asks for the label. The sender's address is not recorded.\n\nWHAT IT IS: Cristor is a brand of Algeria's Condor group. Algerian listings (Ouedkniss) sell Cristor TVs from 32 to 75 inches: Google TV sets (the I5 and I6 series, e.g. P50I6, and a 32-inch A40), an M6 series on Android 13 (P50M6), and an N32M4 32-inch HD set listed with no operating system. Cristor Atlas is a line of satellite receivers, not TVs.\n\nCODES SEARCHED 2026-11-26, none for a Cristor or Condor TV: our manifest and brands.json; Flipper-IRDB (only _Converted_/IR_Plus/C/CRISTOR ATLAS, two satellite receivers: Atlas.ir, one RC-5 Menu signal, and HD 200 S.ir, NECext FD E2; DYON's Condor DVB-S is a Dyon receiver); probonopd/irdb; irext 20260519; SmartIR; the LIRC remotes table; GitHub code and issues (only irplus-codes issues 252 and 568, both for the Atlas 200S receiver); the web in French and Arabic (Ouedkniss, Avito, Jumia, Tunisian shops). Replacement remotes listed for Condor TVs in Tunisia (CMD-21, CMD-25, CSR722-TN3) name no original remote and carry no codes.\n\nCLOUD: \"Cristor\" added to the search terms of the TV row \"Android TV\" (as TIT, req-182), so typing the brand in the TV brand list finds Android TV: a Google TV set pairs over Wi-Fi with a code and needs no bridge. 2.4's BrandSearch, run on the terms: \"Cristor\", \"Cristor Plazma\" and \"CRISTOR TV\" match. A Cristor row of its own would recommend the IR route with no codes behind it.\n\nREPLY: with apps (Google TV), Add Device, TV, Scan Wi-Fi for Devices, Pair with PIN, Save, or Brand › Android TV with the TV's address. Without apps, an iPhone has no IR emitter: a Wi-Fi IR bridge such as a Broadlink RM, then Find My Remote Automatically (no Cristor set exists), or Learn a Button on a Broadlink (top-right button › Layout › Custom). Asks for the model number on the label and a photo of the remote.\n\nUNVERIFIED: Android TV pairing has never met a real TV; whether the M6 is a certified Android TV; nothing was sent to a Cristor set.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-26"
   }
  ],
- "totalCount": 187,
- "updatedAt": "2026-11-25"
+ "totalCount": 188,
+ "updatedAt": "2026-11-26"
 }
