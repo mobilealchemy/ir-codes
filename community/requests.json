@@ -2067,8 +2067,19 @@
    "votes": 1,
    "status": "done",
    "createdAt": "2026-11-26"
+  },
+  {
+   "id": "req-189",
+   "category": "airConditioner",
+   "brand": "Sharp",
+   "model": "Sharp (no model given)",
+   "region": "Vietnam",
+   "notes": "Vietnamese sign-off (Được gửi từ iPhone của tôi), so a Vietnamese reply. The Region field says \"Lớp học\" (a classroom), so region Vietnam is INFERRED from the sign-off. App 2.4.1, iOS 27.2.1. No notes. The sender's address is not recorded.\n\nThe Model field repeats the brand, so there is nothing model-specific to search. Searched 2026-11-26: our manifest (23 Sharp air-conditioner packs), GitHub code and issue search (AH-X10ZEW, AH-X9ZEW, AH-XP10YHW, AH-X10XEW, AH-A9UEW, CRMC-B206, J-Tech), and the web in Vietnamese and English. Elsewhere only placeholder codes: ngochai89stu/hai-os-simpleXL lists AH-X10ZEW with default values it marks untested.\n\nNEW: Flipper-IRDB's ACs/Sharp/Sharp_AH_X9VEW_AC.ir is the remote of a J-Tech Inverter unit sold in Vietnam (AH-X9VEW, 1 HP, per Điện Máy Xanh and FPT Shop listings). Decoded, all twelve frames (POWER_ON, Off, TEMP_14 to TEMP_30) are the A907 form: AA 5A CF 10, byte 4 0xC0|(T-15) from 16 to 30 °C, byte 11 0xE0, byte 6 0x52 (cool, fan nibble 5), byte 8 0x0F where sharp-ac-01 has 0x08. That is the frame the app sends when Sharp is picked, so the brand pick is the right first try for a Vietnamese J-Tech unit. Our flip-sharp-ah-x9vew-ac pack holds one of the file's twelve signals. No pack added, no table changed.\n\nReply (Vietnamese): an IR bridge is needed; pick Sharp first, then Find My Remote Automatically, then the A903, A705 and AH-AP9GMY sets; asks for the AH-... label on the indoor unit and a photo of the remote, front and back.\n\nUNVERIFIED: the customer's model and remote; nothing was sent to any air conditioner.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-26"
   }
  ],
- "totalCount": 188,
+ "totalCount": 189,
  "updatedAt": "2026-11-26"
 }
