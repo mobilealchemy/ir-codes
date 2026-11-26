@@ -2078,8 +2078,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-26"
+  },
+  {
+   "id": "req-190",
+   "category": "audioReceiver",
+   "brand": "Kaiser",
+   "model": "KIS (not a Kaiser model found)",
+   "region": "Mexico",
+   "notes": "Spanish sign-off (Enviado desde mi iPhone) and region MX, so a Mexican Spanish reply (usted). App 2.4.1, iOS 27.2.1. No notes. The sender's address is not recorded.\n\nWHAT IT IS: Kaiser is a Mexican audio brand sold by Walmart, Bodega Aurrera, Liverpool, Sears, Sanborns, Home Depot Mexico and Cyberpuerta: sound bars and home theaters KBS-3040, 3050, 3057, 3080, 3092, 5010, 6060, the KXB-6020 home theater, KSW-1108 party speakers and a KSR speaker. No Kaiser model named KIS was found, so \"KIS\" is read as a partial or mistyped model.\n\nSEARCHED 2026-11-27: our manifest and brands.json (no Kaiser at all), Flipper-IRDB (tree and code search), probonopd/irdb, SmartIR, irext 20260519 (only Kaisui, a TV brand), GitHub code and issue search (Kaiser KBS, KBS-3092, KBS-3040, KBS3080, KBS-6060, KXB-6020, KSW-1108, kaiser soundbar, kaiser barra de sonido, kaiser teatro en casa), and the web in Spanish (retail listings, universal-remote code lists). No Kaiser remote capture or code list exists in any of them. No pack added, no table changed: a brand row with no codes behind it would only send the starter set.\n\nReply (Spanish): an IR bridge is needed; Add Device > Audio / AV Receiver, the bridge under Connection, Find My Remote Automatically; with a Broadlink, Learn a Button from their own remote; asks for the exact model on the label and photos of the remote, front and back.\n\nUNVERIFIED: what the device is; nothing was sent to it.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-27"
   }
  ],
- "totalCount": 189,
- "updatedAt": "2026-11-26"
+ "totalCount": 190,
+ "updatedAt": "2026-11-27"
 }
