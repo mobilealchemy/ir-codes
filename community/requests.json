@@ -2111,8 +2111,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-27"
+  },
+  {
+   "id": "req-193",
+   "category": "tv",
+   "brand": "LG",
+   "model": "75QNED70B6T",
+   "region": "Saudi Arabia",
+   "notes": "Arabic sign-off, region KSA, so an Arabic reply. App 2.4.1, iOS 27.0.1. The 75QNED70B6T is LG's 2025 QNED, running webOS.\n\nNothing to add: an LG webOS set is controlled over Wi-Fi by the LG (webOS) transport, found by Scan Wi-Fi for Devices (2.4.1 carries the multicast entitlement the SSDP search needs on a real iPhone) or reached by typing its IP, and the TV asks once to allow the app. The reply walks that, the Local Network permission if the scan finds nothing, and the TV's own power-on-over-Wi-Fi setting for waking it. LG IR sets also exist for anyone on a blaster. Not tried on a 2025 LG.",
+   "votes": 1,
+   "status": "done",
+   "createdAt": "2026-11-28"
   }
  ],
- "totalCount": 192,
- "updatedAt": "2026-11-27T11:18:13Z"
+ "totalCount": 193,
+ "updatedAt": "2026-11-27T16:23:10Z"
 }
