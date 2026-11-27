@@ -2100,8 +2100,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-27"
+  },
+  {
+   "id": "req-192",
+   "category": "tv",
+   "brand": "Remote Control",
+   "model": "Remote Control",
+   "region": "",
+   "notes": "No mail sign-off, only the typed name, which doesn't settle a language; the words in the form are English, so an English reply. App 2.4.1, iOS 26.5. Brand and Model both read \"Remote Control\", so no TV was named.\n\nSEARCHED: \"Remote Control\" is not a brand in brands.json, the manifest, irext, SmartIR or Flipper-IRDB (its \"remote control\" files are other makers' remotes, none a TV). With no device named there was nothing to search the web or GitHub for. Nothing added.\n\nReply sent in English: how to add a TV on 2.4.1 (the brand first; a smart TV through Scan Wi-Fi for Devices and Pair with PIN; a TV without apps through an IR bridge and Test Power), and a request for the brand, the model on the back label and the remote's number. Status stays open until the customer answers. Sender address not recorded.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-27"
   }
  ],
- "totalCount": 191,
+ "totalCount": 192,
  "updatedAt": "2026-11-27"
 }
