@@ -2089,8 +2089,19 @@
    "votes": 1,
    "status": "open",
    "createdAt": "2026-11-27"
+  },
+  {
+   "id": "req-191",
+   "category": "airConditioner",
+   "brand": "Panasonic",
+   "model": "R32 (the refrigerant, not a model)",
+   "region": "",
+   "notes": "English sign-off (Sent from my iPhone), no region, no notes: an English reply. App 2.4.1, iOS 18.7.8. The sender's address is not recorded.\n\nWHAT IT IS: \"R32\" in the Model field is the refrigerant printed on the label, not a model (as with req-167). Panasonic sells its current splits as R32 lines, e.g. Panasonic Malaysia's \"Standard Inverter R32 PU Series\" (CS-PU9XKH-1) and the X-Deluxe XPU series, on ACXA75C / A75C remotes. Which unit the customer owns is NOT known.\n\nCOVERAGE ON 2.4.1: the Panasonic row has family \"panasonic\" (the computed 27-byte two-frame protocol, descriptor in protocols.json), so the brand pick loads no pack and every press is generated. Evidence that the R32-era remotes speak it: SmartIR 1035 (CW-HU window units, remote ACXA75C20160) decodes to that frame; wtks/A75C4269 on GitHub documents the A75C4269 remote with the same mode, temperature and fan bytes; an Android app's table (yvliet/klimata) files CS-PU9 and CS-XU10 under the 27-byte protocol (not a primary source). Panasonic Comfort Cloud is a Control via option for Wi-Fi units, untested against a real account. On 2.4.1 Find My Remote Automatically sweeps every brand's curated sets before any SmartIR one, so the reply points to Browse Full Code Database > Our Cloud > Panasonic instead.\n\nSEARCHED 2026-11-27: manifest v117 and brands.json (34 Panasonic AC packs), Flipper-IRDB (ACs/Panasonic: the same five files we ship), SmartIR at 3dca407 (four Panasonic tables not yet imported, below), irext 20260519 (19 Panasonic AC remotes in remote_index, 17 shipped as irx-; remotes 10024 and 10025 never imported and not re-decoded, since the binaries are not on disk; 9821 is status 4), GitHub code and issues (ACXA75C, A75C4269, A75C4407, CS-PU9, CS-XPU9, Panasonic R32), and the web (Panasonic Malaysia, replacement-remote listings). No source ties codes to \"R32\" itself.\n\nADDED (cloud only, no release): four real SmartIR Panasonic tables as packs: smartir-1033-panasonic (CS-UZ34VKE, the 27-byte protocol with byte 15 0x89), smartir-1035-panasonic (CW-HU window units, remote ACXA75C20160, the 27-byte protocol with byte 9 0x0D), smartir-1034-panasonic (CS-MKS7/9/12NKU, a different 19-byte single frame, header 3400/1600) and smartir-7032-panasonic (remotes A75C443x and siblings, the 32-bit Panasonic AC protocol, header 3500/3500, ESPHome raw). The last two are protocols the brand pick cannot send, so a pack is their only route. 181 to 241 keys each.\n\nREPLY (English): R32 is the refrigerant; Panasonic is supported with no update; an IR bridge is needed (or Comfort Cloud for a Wi-Fi unit); Add Device > Air Conditioner > Control via > Brand Panasonic > Test Power > Save; if no response, Browse Full Code Database > Our Cloud > Panasonic and try the sets; asks for the indoor unit's model (CS-...) and the remote's number (ACXA75C... or A75C...).\n\nUNVERIFIED: the unit and its remote; that any set drives it; nothing was sent to an air conditioner. Status stays open until the customer answers.",
+   "votes": 1,
+   "status": "open",
+   "createdAt": "2026-11-27"
   }
  ],
- "totalCount": 190,
+ "totalCount": 191,
  "updatedAt": "2026-11-27"
 }

@@ -667,7 +667,11 @@
   "irx-13916-unknown": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"},
   "irx-1526-domy": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"},
   "irx-1527-domy": {"sha256": {"binaries/irext-binaries_20260929.zip": "2dccd7c5fdc09d68eda10e864f1dc9da16c6b0e79402b665440f3edd39e89f79", "db/irext_db_20260929_sqlite3.db": "fc9507bb6a0bd65fb7d407b7a65287e66ccaa00f80067ae9cc7a425cdfaca571"}, "source": "irext-database"},
+  "smartir-1033-panasonic": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"},
+  "smartir-1034-panasonic": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"},
+  "smartir-1035-panasonic": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"},
   "smartir-1396-midea": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"},
-  "smartir-1397-midea": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"}
+  "smartir-1397-midea": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"},
+  "smartir-7032-panasonic": {"commit": "3dca407e3c475b57c02c08b97ae521a4ef0bbf43", "source": "smartir"}
  }
 }
